@@ -1,0 +1,231 @@
+%keyboard
+  -# Keybindings for desktop switching
+  -# Go to a desktop
+  %keybind{ :key => 'C-A-h' }
+    %action{ :name => 'GoToDesktop' }
+      %to left
+      %wrap no
+
+  %keybind{ :key => 'C-A-l' }
+    %action{ :name => 'GoToDesktop' }
+      %to right
+      %wrap no
+
+  -# Go to a specific desktop
+  %keybind{ :key => 'C-A-1' }
+    %action{ :name => 'GoToDesktop' }
+      %to 1
+
+  %keybind{ :key => 'C-A-2' }
+    %action{ :name => 'GoToDesktop' }
+      %to 2
+
+  %keybind{ :key => 'C-A-3' }
+    %action{ :name => 'GoToDesktop' }
+      %to 3
+
+  %keybind{ :key => 'C-A-4' }
+    %action{ :name => 'GoToDesktop' }
+      %to 4
+
+  %keybind{ :key => 'C-A-5' }
+    %action{ :name => 'GoToDesktop' }
+      %to 5
+
+  %keybind{ :key => 'C-A-6' }
+    %action{ :name => 'GoToDesktop' }
+      %to 6
+
+  %keybind{ :key => 'C-A-7' }
+    %action{ :name => 'GoToDesktop' }
+      %to 7
+
+  %keybind{ :key => 'C-A-8' }
+    %action{ :name => 'GoToDesktop' }
+      %to 8
+
+  %keybind{ :key => 'C-A-9' }
+    %action{ :name => 'GoToDesktop' }
+      %to 9
+
+  %keybind{ :key => 'C-A-0' }
+    %action{ :name => 'GoToDesktop' }
+      %to 10
+
+  -# Keybindings for sending windows to desktops
+  -# Send to a desktop
+  %keybind{ :key => 'C-S-A-h' }
+    %action{ :name => 'SendToDesktop' }
+      %to left
+      %wrap no
+
+  %keybind{ :key => 'C-S-A-l' }
+    %action{ :name => 'SendToDesktop' }
+      %to right
+      %wrap no
+
+  -# Send to a specific desktop
+  %keybind{ :key => 'C-S-A-1' }
+    %action{ :name => 'SendToDesktop' }
+      %to 1
+
+  %keybind{ :key => 'C-S-A-2' }
+    %action{ :name => 'SendToDesktop' }
+      %to 2
+
+  %keybind{ :key => 'C-S-A-3' }
+    %action{ :name => 'SendToDesktop' }
+      %to 3
+
+  %keybind{ :key => 'C-S-A-4' }
+    %action{ :name => 'SendToDesktop' }
+      %to 4
+
+  %keybind{ :key => 'C-S-A-5' }
+    %action{ :name => 'SendToDesktop' }
+      %to 5
+
+  %keybind{ :key => 'C-S-A-6' }
+    %action{ :name => 'SendToDesktop' }
+      %to 6
+
+  %keybind{ :key => 'C-S-A-7' }
+    %action{ :name => 'SendToDesktop' }
+      %to 7
+
+  %keybind{ :key => 'C-S-A-8' }
+    %action{ :name => 'SendToDesktop' }
+      %to 8
+
+  %keybind{ :key => 'C-S-A-9' }
+    %action{ :name => 'SendToDesktop' }
+      %to 9
+
+  %keybind{ :key => 'C-S-A-0' }
+    %action{ :name => 'SendToDesktop' }
+      %to 0
+
+  -# Keybindings for window switching
+  %keybind{ :key => 'A-Tab' }
+    %action{ :name => 'NextWindow' }
+      %allDesktops yes
+      %bar no
+      %finalactions
+        %action{ :name => 'Focus' }
+        %action{ :name => 'Raise' }
+        %action{ :name => 'Unshade' }
+
+  %keybind{ :key => 'A-S-Tab' }
+    %action{ :name => 'PreviousWindow' }
+      %allDesktops yes
+      %bar no
+      %finalactions
+        %action{ :name => 'Focus' }
+        %action{ :name => 'Raise' }
+        %action{ :name => 'Unshade' }
+
+  %keybind{ :key => 'A-Escape' }
+    %action{ :name => 'Lower' }
+    %action{ :name => 'FocusToBottom' }
+    %action{ :name => 'Unfocus' }
+
+  -# Keybindings for setting window sizes
+  %keybind{ :key => 'W-1' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
+      %width 1200
+      %height 800
+
+  %keybind{ :key => 'W-2' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
+      %width 800
+      %height 600
+
+  -# Keybindings related to window states and positions
+  %keybind{ :key => 'W-d' }
+    %action{ :name => 'ToggleShowDesktop' }
+
+  %keybind{ :key => 'W-c' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
+
+  %keybind{ :key => 'C-A-s' }
+    %action{ :name => 'ToggleMaximizeFull' }
+
+  %keybind{ :key => 'C-A-c' }
+    %action{ :name => 'Close' }
+
+  %keybind{ :key => 'A-space' }
+    %action{ :name => 'ShowMenu' }
+      %menu client-menu
+
+  -# Alternate keybindings for changing window states
+  %chainQuitKey C-g
+
+  %keybind{ :key => 'C-A-i' }
+    %keybind{ :key => 'c' }
+      %action{ :name => 'Close' }
+
+    %keybind{ :key => 's' }
+      %action{ :name => 'ToggleMaximizeFull' }
+
+  -# Keybindings for starting applications
+  %keybind{ :key => 'C-A-t' }
+    %action{ :name => 'Execute' }
+      %command urxvt
+
+  %keybind{ :key => 'C-A-m' }
+    %action{ :name => 'Execute' }
+      %command urxvt -e vifm_run
+
+  %keybind{ :key => 'C-A-v' }
+    %action{ :name => 'Execute' }
+      %command urxvt -e vim_run
+
+  -# Keybindings for controlling an application launcher
+  %keybind{ :key => 'W-r' }
+    %action{ :name => 'Execute' }
+      %command rofi -show run
+
+  %keybind{ :key => 'W-space' }
+    %action{ :name => 'Execute' }
+      %command rofi -show drun
+
+  %keybind{ :key => 'C-A-w' }
+    %action{ :name => 'Execute' }
+      %command rofi -show window
+
+  -# Keybindings for changing a keyboard layout
+  %keybind{ :key => 'W-j' }
+    %action{ :name => 'Execute' }
+      %command xkb-switch -s us
+
+  %keybind{ :key => 'W-k' }
+    %action{ :name => 'Execute' }
+      %command xkb-switch -s ru
+
+  -# Keybindings for controlling the mouse pointer and a touchpad
+  %keybind{ :key => 'W-x' }
+    %action{ :name => 'Execute' }
+      %command pointer_hide
+
+  %keybind{ :key => 'C-A-p' }
+    %action{ :name => 'Execute' }
+      %command touchpad_toggle
+
+  -# Keybindings for controlling the sound subsystem
+  %keybind{ :key => 'W-q' }
+    %action{ :name => 'Execute' }
+      %command amixer set Speaker 1%-
+
+  %keybind{ :key => 'W-w' }
+    %action{ :name => 'Execute' }
+      %command amixer set Speaker 1%+
+
+  %keybind{ :key => 'W-e' }
+    %action{ :name => 'Execute' }
+      %command amixer set Speaker toggle

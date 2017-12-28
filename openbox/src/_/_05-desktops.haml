@@ -1,0 +1,20 @@
+%desktops
+  -# This stuff is only used at startup, pagers allow you to change them
+  -# during a session.
+
+  -# These are default values to use when other ones are not already set
+  -# by other applications, or saved in your session.
+
+  -# Use obconf if you want to change these without having to log out
+  -# and back in.
+  %number 10
+
+  %firstdesk 1
+
+  %names
+    - (1..10).each do |n|
+      %name= n
+
+  %popupTime 0
+  -# the number of milliseconds to show the popup for when switching
+  -# desktops; set this to 0 to disable the popup

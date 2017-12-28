@@ -1,0 +1,13 @@
+pointer_hide &
+
+touchpad_toggle &
+
+~/.fehbg &
+
+# devilspie &
+
+dunst &
+
+~/.config/polybar/launch.sh &
+
+# vim: set filetype=zsh:

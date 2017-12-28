@@ -1,0 +1,11 @@
+#! /usr/bin/env ruby
+
+require 'haml'
+
+File.open 'rc.xml', 'w' do |f|
+  f.write Haml::Engine.new(File.read 'src/rc.haml').render
+end
+
+File.open 'menu.xml', 'w' do |f|
+  f.write Haml::Engine.new(File.read 'src/menu.haml').render
+end
