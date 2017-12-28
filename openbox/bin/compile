@@ -2,6 +2,11 @@
 
 require 'haml'
 
+Haml::Options.defaults.merge!(
+  :format => :xhtml,
+  :autoclose => %w{action separator}
+)
+
 File.open 'rc.xml', 'w' do |f|
   f.write Haml::Engine.new(File.read 'src/rc.haml').render
 end
