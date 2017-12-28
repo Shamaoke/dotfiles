@@ -17,27 +17,27 @@
   -# Window frame
   %context{ :name => 'Frame' }
     %mousebind{ :button => 'A-Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'A-Left', :action => 'Click' }
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'A-Left', :action => 'Drag' }
-      %action{ :name => 'Move' }/
+      %action{ :name => 'Move' }
 
     %mousebind{ :button => 'A-Right', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'A-Right', :action => 'Drag' }
-      %action{ :name => 'Resize' }/
+      %action{ :name => 'Resize' }
 
     %mousebind{ :button => 'A-Middle', :action => 'Press' }
-      %action{ :name => 'Lower' }/
-      %action{ :name => 'FocusToBottom' }/
-      %action{ :name => 'Unfocus' }/
+      %action{ :name => 'Lower' }
+      %action{ :name => 'FocusToBottom' }
+      %action{ :name => 'Unfocus' }
 
     %mousebind{ :button => 'A-Up', :action => 'Click' }
       %action{ :name => 'GoToDesktop' }
@@ -66,42 +66,42 @@
   -# Title bar
   %context{ :name => 'Titlebar' }
     %mousebind{ :button => 'Left', :action => 'Drag' }
-      %action{ :name => 'Move' }/
+      %action{ :name => 'Move' }
 
     %mousebind{ :button => 'Left', :action => 'DoubleClick' }
-      %action{ :name => 'ToggleMaximize' }/
+      %action{ :name => 'ToggleMaximize' }
 
     %mousebind{ :button => 'Up', :action => 'Click' }
       %action{ :name => 'if' }
         %shaded no
         %then
-          %action{ :name => 'Shade' }/
-          %action{ :name => 'FocusToBottom' }/
-          %action{ :name => 'Unfocus' }/
-          %action{ :name => 'Lower' }/
+          %action{ :name => 'Shade' }
+          %action{ :name => 'FocusToBottom' }
+          %action{ :name => 'Unfocus' }
+          %action{ :name => 'Lower' }
 
     %mousebind{ :button => 'Down', :action => 'Click' }
       %action{ :name => 'if' }
         %shaded yes
         %then
-          %action{ :name => 'Unshade' }/
-          %action{ :name => 'Raise' }/
+          %action{ :name => 'Unshade' }
+          %action{ :name => 'Raise' }
 
   -# Common settings for elements of the window decoration
   %context{ :name => 'Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Middle', :action => 'Press' }
-      %action{ :name => 'Lower' }/
-      %action{ :name => 'FocusToBottom' }/
-      %action{ :name => 'Unfocus' }/
+      %action{ :name => 'Lower' }
+      %action{ :name => 'FocusToBottom' }
+      %action{ :name => 'Unfocus' }
 
     %mousebind{ :button => 'Right', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
       %action{ :name => 'ShowMenu' }
         %menu client-menu
 
@@ -128,82 +128,82 @@
 
   %context{ :name => 'TRCorner BRCorner BLCorner TLCorner' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
   -# The part of a window inside the window decoration.
   -# Only press events can be used in this context.
   -# Click events will be passed through to the application.
   %context{ :name => 'Client' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'Middle', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'Right', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
   -# The application icon shown in the window titlebar.
   %context{ :name => 'Icon' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
       %action{ :name => 'ShowMenu'}
         %menu client-menu
 
   -# The all-desktops button in the window titlebar.
   %context{ :name => 'AllDesktops' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Left', :action => 'Click' }
-      %action{ :name => 'ToggleOmnipresent' }/
+      %action{ :name => 'ToggleOmnipresent' }
 
   -# The shade button in the window titlebar.
   %context{ :name => 'Shade' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'Left', :action => 'Click' }
-      %action{ :name => 'ToggleShade' }/
+      %action{ :name => 'ToggleShade' }
 
   -# The iconify button in the window titlebar.
   %context{ :name => 'Iconify' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'Left', :action => 'Click' }
-      %action{ :name => 'Iconify' }/
+      %action{ :name => 'Iconify' }
 
   -# The maximize button in the window titlebar.
   %context{ :name => 'Maximize' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Middle', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Right', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Left', :action => 'Click' }
-      %action{ :name => 'ToggleMaximize' }/
+      %action{ :name => 'ToggleMaximize' }
 
     %mousebind{ :button => 'Middle', :action => 'Click' }
       %action{ :name => 'ToggleMaximize' }
@@ -216,12 +216,12 @@
   -# The close button in the window titlebar.
   %context{ :name => 'Close' }
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
-      %action{ :name => 'Unshade' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
+      %action{ :name => 'Unshade' }
 
     %mousebind{ :button => 'Left', :action => 'Click' }
-      %action{ :name => 'Close' }/
+      %action{ :name => 'Close' }
 
   -# The Desktop
   -# These bindings will override the ones, specified for icons
@@ -252,12 +252,12 @@
         %to next
 
     %mousebind{ :button => 'Left', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
     %mousebind{ :button => 'Right', :action => 'Press' }
-      %action{ :name => 'Focus' }/
-      %action{ :name => 'Raise' }/
+      %action{ :name => 'Focus' }
+      %action{ :name => 'Raise' }
 
   -# These bindings will _not_ override the ones, specified for icons
   -# on the desktop.
