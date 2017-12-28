@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+!!! xml
 %openbox_menu{ :xmlns => 'http://openbox.org/3.4/menu' }
-  %menu{ :id => 'root' }
+  %menu{ :id => 'root', :label => 'openbox' }
     -# the id of the menu will be referenced by a keybind
 
-    %separator{ :label => 'Applications' }/
+    %separator{ :label => 'Applications' }
 
     %item{ :label => 'Firefox' }
       %action{ :name => 'Execute' }
@@ -17,7 +17,7 @@
       %action{ :name => 'Execute' }
         %command qbittorrent
 
-    %separator/
+    %separator
 
     %item{ :label => 'Log out' }
       %action{ :name => 'Exit' }
