@@ -1,0 +1,78 @@
+" general settings
+
+" установить кодировку utf-8
+  set encoding=utf-8
+
+" подсвечивать найденные слова
+" set hlsearch
+
+" отключить звуковой сигнал
+  set belloff=all
+
+" отображать абсолютные номера строк
+  set number
+
+" отображать относительные номера строк
+  set relativenumber
+
+" always show the tab line
+  set showtabline=2
+
+" всегда отображать статусную строку
+  set laststatus=2
+
+" копировать отступ из предыдущей строки
+  set autoindent
+
+" отключить перенос строк
+  set nowrap
+
+" ставить пробелы вместо символов табуляции
+  set expandtab
+
+" установить размер отступа при нажатии Tab
+  set softtabstop=2
+
+" устанавить размер отступа при нажатии >> или <<
+  set shiftwidth=2
+
+" установить размер табуляции
+" set ts=6
+
+" установить режим отображения спец-символов
+  set list
+
+" установить спец-символы
+  set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
+
+" использовать символ пробела в качестве заполнителя разделителей панелей
+" (т. е. фактически, не использовать никаких видимых символов)
+  set fillchars+=vert:\ 
+
+" настройка фолдинга
+  set nofoldenable
+  set foldlevelstart=99
+  set foldmethod=syntax
+
+" настроить поля для вертикального скроллинга
+  set scrolloff=10
+
+" настроить поля для горизонтального скроллинга
+  set sidescrolloff=20
+
+" установить величину сдвига при горизонтальном скроллинге
+  set sidescroll=1
+
+" выделять текущую линию
+" set cursorline
+
+" выделять текущую колонку
+" set cursorcolumn
+
+" не создавать файлы с резервной копией
+  set nobackup
+
+" не создавать swap-файлы
+  set noswapfile
+
+" vim: set filetype=vim:

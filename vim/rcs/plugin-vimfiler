@@ -1,0 +1,9 @@
+" vimfiler settings
+
+" set vimfiler as the default explorer
+let g:vimfiler_as_default_explorer = 1
+
+" set hotkey to open vimfiler
+map <C-n> :VimFiler -split -winwidth=70<CR>
+
+" vim: set filetype=vim:

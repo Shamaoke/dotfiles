@@ -1,0 +1,42 @@
+" load Vundle settings
+source ~/.dotfiles/vim/rcs/vundle
+
+" load Markdown settings
+source ~/.dotfiles/vim/rcs/plugin-markdown
+
+" load Matchparen settings
+source ~/.dotfiles/vim/rcs/plugin-matchparen
+
+" load NERDTree settings
+source ~/.dotfiles/vim/rcs/plugin-nerdtree
+
+" load Rust settings
+source ~/.dotfiles/vim/rcs/plugin-rust
+
+" load Tagbar settings
+source ~/.dotfiles/vim/rcs/plugin-tagbar
+
+" load Unite settings
+source ~/.dotfiles/vim/rcs/plugin-unite
+
+" load Vimfiler settings
+source ~/.dotfiles/vim/rcs/plugin-vimfiler
+
+" load a colorscheme
+source ~/.dotfiles/vim/rcs/colorscheme
+
+" load auto command settings
+source ~/.dotfiles/vim/rcs/autocmd
+
+" load cursor settings
+source ~/.dotfiles/vim/rcs/cursor
+
+" load kebindings
+source ~/.dotfiles/vim/rcs/keybindings
+source ~/.dotfiles/vim/rcs/keybindings-russian
+
+" load omni-completion settings
+source ~/.dotfiles/vim/rcs/omni-completion
+
+" load general settings
+source ~/.dotfiles/vim/rcs/general

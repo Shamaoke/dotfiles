@@ -1,0 +1,6 @@
+" matchparen (an embedded plugin)
+
+" отключить выделение парных скобок
+  let g:loaded_matchparen=1
+
+" vim: set filetype=vim:

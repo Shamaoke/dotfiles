@@ -1,0 +1,11 @@
+" unite settings
+
+" unmpap Ctrl-F, since it's used internally for forward scrolling
+map <C-f> <Nop>
+
+" use Ctrl-F as a modifier key
+map <C-f>f :Unite file file/new directory/new<CR>
+map <C-f>b :Unite buffer<CR>
+map <C-f>r :Unite file_rec<CR>
+
+" vim: set filetype=vim:

@@ -1,0 +1,9 @@
+" nerdtree configuration
+
+" задать месторасположения файла с закладками NERDTree
+" let NERDTreeBookmarksFile=""
+
+" keybindings
+map <silent> <C-n> :NERDTreeToggle<CR>
+
+" vim: set filetype=vim:

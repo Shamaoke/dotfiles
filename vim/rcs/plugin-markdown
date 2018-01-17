@@ -1,0 +1,6 @@
+" vim-markdown
+
+" выделять заголовок YAML
+  let g:vim_markdown_frontmatter=1
+
+" vim: set filetype=vim:

@@ -1,0 +1,10 @@
+" omni-completion
+
+" включить omni-completion
+" filetype plugin on
+  set omnifunc=syntaxcomplete#Complete
+
+" запретить автокомментирование (оно устанавливается при включении omni-completion)
+  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" vim: set filetype=vim:

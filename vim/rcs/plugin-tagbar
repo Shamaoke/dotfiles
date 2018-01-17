@@ -1,0 +1,6 @@
+" tagbar
+
+" установить клавиатурную комбинацию для открытия панели Tagbar'а
+  map <silent> <C-l> :TagbarToggle<CR>
+
+" vim: set filetype=vim:
