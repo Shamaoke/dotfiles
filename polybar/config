@@ -1,0 +1,160 @@
+[colors]
+# background   = #ff272822
+# border-color = #fffd971f
+
+background-color     = #ff211d2f
+foreground-color     = #ffecebe1
+foreground-alt-color = #ff423b59
+border-color         = #ffbaa6ff
+
+[global/wm]
+margin-top    = 0
+margin-bottom = 0
+# margin-bottom = 18
+
+[bar/sample]
+monitor            = LVDS-0
+width              = 100%
+# width              = 1600
+height             = 24
+padding-right      = 2
+padding-left       = 2
+fixed-center       = true
+background         = ${colors.background-color}
+foreground         = ${colors.foreground-color}
+border-bottom-size = 2
+border-color       = ${colors.border-color}
+# font-0             = Afiado:pixelsize=11;2
+font-0             = Dejavu Sans Mono:size=10;1
+# font-0             = PT Sans:size=11;2
+# font-0             = PT Mono:size=10;1
+separator          = "  "
+modules-left       = ewmh
+modules-center     = date
+modules-right      = xkeyboard wired-network wireless-network battery volume
+
+[module/ewmh]
+type = internal/xworkspaces
+
+label-active-padding-right = 1
+label-empty-padding-right  = 1
+
+label-active-foreground = ${colors.foreground-color}
+label-empty-foreground  = ${colors.foreground-alt-color}
+
+[module/date]
+type     = internal/date
+interval = 1
+date     = %Y-%m-%d
+# time     = %H:%M:%S
+time     = %H:%M
+label    = %date% %time%
+
+[module/xkeyboard]
+type        = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = caps lock
+
+[module/wired-network]
+type               = internal/network
+interface          = enp19s0
+
+label-connected    = ++
+label-disconnected = --
+
+label-connected-foreground    = #00ff00
+label-disconnected-foreground = #ff0000
+
+[module/wireless-network]
+type               = internal/network
+interface          = wlp7s0
+
+label-connected    = **
+label-disconnected = --
+
+label-connected-foreground    = #00ff00
+label-disconnected-foreground = #ff0000
+
+[module/battery]
+type = internal/battery
+full-at = 99
+
+label-full        = bat %percentage%%
+label-charging    = bat %percentage%%
+label-discharging = bat %percentage%%
+
+# label-full        = xx %percentage%
+# label-charging    = ++ %percentage%
+# label-discharging = -- %percentage%
+
+# U+e91a
+# format-discharging-prefix = 
+# U+e91a
+# format-full-prefix = 
+# U+e91a
+# format-charging-prefix = 
+
+
+# format-full        = <ramp-capacity> <label-full>
+# format-charging    = <ramp-capacity> <label-charging>
+# format-discharging = <ramp-capacity> <label-discharging>
+
+# ramp-capacity-0 = 
+# ramp-capacity-1 = 
+# ramp-capacity-2 = 
+# ramp-capacity-3 = 
+# ramp-capacity-4 = 
+
+[module/volume]
+type = internal/volume
+
+master-mixer = Speaker
+
+label-volume = vol %percentage%%
+label-muted  = vol %percentage%%
+
+# include-file = /home/user/.config/polybar/master-soundcard
+
+master-soundcard = hw:0
+
+# master-soundcard = hw:0
+# master-mixer     = Master # default
+
+# label-volume            = %percentage%
+
+# format-volume = <ramp-volume> <label-volume>
+# format-muted  = <ramp-volume> <label-muted>
+
+# ramp-volume-0 = 
+# ramp-volume-1 = 
+# ramp-volume-2 = 
+
+# U+e989
+# format-volume-prefix    = 
+# format-volume-suffix    = %
+# label-muted             = %percentage%
+# U+e989
+# format-muted-prefix     = 
+# format-muted-suffix     = %
+format-muted-foreground = #ff0000
+
+# [module/pavolume]
+# type     = custom/script
+# interval = 0.01
+# label    = %output%
+# exec     = ~/.config/polybar/pavolume.sh
+
+# click-right = exec pavucontrol
+# click-left  = ~/.config/polybar/pavolume.sh --togmute
+# scroll-up   = ~/.config/polybar/pavolume.sh --up
+# scroll-down = ~/.config/polybar/pavolume.sh --down
+
+# [module/volume-2]
+# type = internal/volume
+
+# master-soundcard = hw:0
+# master-mixer     = Speaker
+
+# format-muted-foreground = #ff0000
+
+# vim: ft=dosini:
