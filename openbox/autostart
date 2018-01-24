@@ -1,3 +1,5 @@
+ibus-daemon -drx &
+
 pointer_hide &
 
 touchpad_toggle &
