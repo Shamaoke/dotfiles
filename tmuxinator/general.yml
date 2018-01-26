@@ -1,0 +1,31 @@
+name: <%= @args[0] || (File.basename Dir.pwd) %>
+
+# startup_window: git
+
+startup_pane: 1
+
+windows:
+  - editor: vim
+  - work_a:
+  - work_b:
+  - top:
+  - build:
+  - install:
+  - git:
+      layout: tiled
+      panes:
+        - watch -ctn 1 git\ godlog
+        - watch -ctn 1 git\ st
+        -
+        -
+  - console:
+  - dbconsole:
+  - server:
+  - api:
+  - config:
+  - man:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - fm: vifm
