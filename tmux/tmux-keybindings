@@ -1,0 +1,4 @@
+# выбирать окна только из текущей, а не из всех сессий
+# данная комбинация возвращает поведение программы в версиях < 2.6
+# см. https://github.com/tmux/tmux/issues/1115
+bind-key -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
