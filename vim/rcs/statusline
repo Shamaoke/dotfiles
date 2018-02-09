@@ -1,0 +1,10 @@
+" configure the status line
+  set statusline=
+  set statusline+=%{getcwd()}
+  set statusline+=%=
+" set statusline+=%-20([%05l:%05v]%)
+  set statusline+=[%05l:%05v]
+  set statusline+=\ 
+  set statusline+=%P
+
+" vim: set filetype=vim:
