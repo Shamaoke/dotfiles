@@ -11,6 +11,6 @@
   autocmd BufRead,BufNewFile *.feature set filetype=cucumber
   autocmd BufRead,BufNewFile .xinitrc  set filetype=zsh
   autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
-  autocmd BufRead,BufNewFile tmux-colorscheme set filetype=tmux
+  autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
 
 " vim: set filetype=vim:
