@@ -1,0 +1,13 @@
+" see `https://github.com/derekwyatt/vim-scala/blob/master/syntax/scala.vim'
+" for the full list of Scala syntax definitions
+
+" remove highlighting of scaladoc code blocks
+  highlight link scalaCommentCodeBlock scalaMultilineComment
+
+" remove highlighting of scaladoc links
+  highlight link scalaDocLinks scalaMultilineComment
+
+" remove highlighting of scaladoc code block markers
+  syntax region scalaCommentCodeBlock start="{{{" end="}}}"
+
+" vim: set filetype=vim:
