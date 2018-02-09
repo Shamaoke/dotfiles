@@ -38,5 +38,8 @@ source ~/.dotfiles/vim/rcs/keybindings-russian
 " load omni-completion settings
 source ~/.dotfiles/vim/rcs/omni-completion
 
+" load the status line configuration
+source ~/.dotfiles/vim/rcs/statusline
+
 " load general settings
 source ~/.dotfiles/vim/rcs/general
