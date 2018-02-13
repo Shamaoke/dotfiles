@@ -1,0 +1,16 @@
+name: <%= @args[0] || (File.basename Dir.pwd) %>
+
+# startup_window: git
+
+startup_pane: 1
+
+windows:
+  - work:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - fm_a: vifm
+  - fm_b: vifm
+  - fm_c: vifm
+  - fm_d: vifm
