@@ -1,0 +1,8 @@
+name: <%= @args[0] || (File.basename Dir.pwd) %>
+
+startup_pane: 1
+
+windows:
+  - editor: vim
+  - work:
+  - fm: vifm
