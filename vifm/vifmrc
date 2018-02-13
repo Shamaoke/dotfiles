@@ -157,7 +157,7 @@ filetype *.chm xchm %f &> /dev/null &
 filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf mpv %f &> /dev/null &
 
 " AUDIO
-filetype *.wav mplayer -endpos 10 %f &> /dev/null &
+filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
 
 " For automated FUSE mounts, you must register an extension with FILETYPE=..
 " in one of following formats:
