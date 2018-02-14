@@ -130,7 +130,8 @@ filetype *.o nm %f | less
 
 " Image
 " filetype *.jpg,*.jpeg,*.png,*.gif eog,xv,gimp
-filetype *.jpg,*.jpeg,*.png,*.gif eog %f &> /dev/null &
+" filetype *.jpg,*.jpeg,*.png,*.gif eog %f &> /dev/null &
+filetype *.jpg,*.jpeg,*.png,*.gif feh %f &> /dev/null &
 
 " Archive
 filetype *.tar.gz,*.tgz tar -tzf %f | less,tar -zxvf %f
