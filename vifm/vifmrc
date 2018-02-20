@@ -21,6 +21,9 @@ set vicmd=vim
 
 set trash
 
+" Set location of the trash directory
+set trashdir=~/.local/share/vifm_trash
+
 " This is how many directories to store in the directory history.
 
 set history=15
