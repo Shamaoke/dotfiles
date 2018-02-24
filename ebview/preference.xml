@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="euc-jp"?>
+<preference>
+  <log_level>32</log_level>
+  <max_search>500</max_search>
+  <max_heading>50</max_heading>
+  <max_remember_words>10</max_remember_words>
+  <dict_button_length>30</dict_button_length>
+  <auto_interval>1000</auto_interval>
+  <auto_minchar>3</auto_minchar>
+  <auto_maxchar>64</auto_maxchar>
+  <show_menu_bar>0</show_menu_bar>
+  <show_status_bar>0</show_status_bar>
+  <show_dict_bar>1</show_dict_bar>
+  <show_tree_tab>0</show_tree_tab>
+  <beep_on_nohit>0</beep_on_nohit>
+  <ignore_locks>1</ignore_locks>
+  <ignore_case>1</ignore_case>
+  <suppress_hidden_files>1</suppress_hidden_files>
+  <show_popup_title>1</show_popup_title>
+  <ending_correction>1</ending_correction>
+  <ending_only_nohit>1</ending_only_nohit>
+  <popup_width>1024</popup_width>
+  <popup_height>1024</popup_height>
+  <window_x>0</window_x>
+  <window_y>26</window_y>
+  <window_width>1600</window_width>
+  <window_height>874</window_height>
+  <tree_width>700</tree_width>
+  <tree_height>803</tree_height>
+  <pane_direction>0</pane_direction>
+  <tab_position>2</tab_position>
+  <wave_template>mplayer %f</wave_template>
+  <mpeg_template>mplayer %f</mpeg_template>
+  <font_normal></font_normal>
+  <font_bold></font_bold>
+  <font_italic></font_italic>
+  <font_superscript></font_superscript>
+  <color_link>#0000c0</color_link>
+  <color_keyword>#c00000</color_keyword>
+  <color_sound>#00c000</color_sound>
+  <color_movie>#00c000</color_movie>
+  <color_emphasis>#ff0000</color_emphasis>
+  <color_reverse_bg>#c0c0c0</color_reverse_bg>
+  <browser_template>firefox -P old %f</browser_template>
+  <open_template>vim %f</open_template>
+  <line_space>3</line_space>
+  <smooth_scroll>0</smooth_scroll>
+  <scroll_step>100</scroll_step>
+  <scroll_time>100000</scroll_time>
+  <scroll_margin>1</scroll_margin>
+  <sort_by_dictionary>0</sort_by_dictionary>
+  <emphasize_keyword>1</emphasize_keyword>
+  <show_image>1</show_image>
+  <show_splash>0</show_splash>
+  <show_filename>1</show_filename>
+  <heading_auto_calc>0</heading_auto_calc>
+  <enable_button_color>1</enable_button_color>
+  <word_search_automatic>1</word_search_automatic>
+  <additional_lines>10</additional_lines>
+  <additional_chars>12</additional_chars>
+  <cache_size>50</cache_size>
+  <max_bytes_to_guess>5000</max_bytes_to_guess>
+</preference>

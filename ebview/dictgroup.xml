@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="euc-jp"?>
+<dictgroup>
+  <group name="english-japanese" active="0">
+    <dict>
+      <name>英辞郎 [eijiro]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese/eijiro</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#68005A</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>研究社　新英和中辞典 [eiwatyuu]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese/eiwachu</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#008F8F</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>ジーニアス英和大辞典 [genius]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese/genius</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>0</active>
+      <bg>#663300</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>研究社　新英和大辞典　第６版 [keneiwa]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese/kenkyusha_eiwa_daijiten_v6</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#DC7A16</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>研究社リーダーズ＋プラスＶ２ [readers]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese/readers</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#9FCC51</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>ビジネス技術実用英語大辞典第４版 [business]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/business</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#073847</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>三省堂　スーパー大辞林 [daijirin]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#C60087</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>用例ファイル [business yourei]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/business</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#073847</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="english-japanese biology" active="0">
+    <dict>
+      <name>医学用語大辞典 [igaku]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese biology/nichigai_igaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#5C3800</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="english-japanese engineering" active="0">
+    <dict>
+      <name>日外３５万語科学技術用語大辞典 [kagaku]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese engineering/nichigai_kagaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#4F4F4F</bg>
+      <fg>#BFBFBF</fg>
+    </dict>
+  </group>
+  <group name="english-japanese grammar" active="0">
+    <dict>
+      <name>ロイヤル英文法改訂新版 [royal]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese grammar/royal</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#3FBCC5</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="english-japanese science" active="0">
+    <dict>
+      <name>自然科学系英和大辞典 [shizen]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese science/shizenkei</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#802A45</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese biology" active="0">
+    <dict>
+      <name>南山堂医学大辞典第１８版 [nanzan]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/nanzando_igaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#30CD32</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>最新医学大辞典　第２版 [saishin]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/saishini</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#3079CD</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>岩波　生物学辞典　第４版 [seibutsu]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/seibutu</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#CDC830</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>ウイルス分類表／生物分類表 [seibutsu bunrui-hyō]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/seibutu</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#CDC830</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>心理学辞典 [shinrigaku]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/shinrigaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#545497</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>文献リスト・付録 [shinrigaku bunken]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese biology/shinrigaku</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#545497</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese economics" active="0">
+    <dict>
+      <name>経済・ビジネス用語辞典　２００２年版 [keizai]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese economics/keizaiyougo</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#FFFFFF</bg>
+      <fg>#000000</fg>
+    </dict>
+  </group>
+  <group name="japanese encyclopedia" active="0">
+    <dict>
+      <name>学研新世紀ビジュアル百科辞典 [gakken]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese encyclopedia/gakken_hyakka</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#302D79</bg>
+      <fg>#BFBFBF</fg>
+    </dict>
+    <dict>
+      <name>世界大百科事典 [heibon]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese encyclopedia/heibon_hyakka</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#0E4C15</bg>
+      <fg>#CFCF23</fg>
+    </dict>
+  </group>
+  <group name="japanese engineering" active="0">
+    <dict>
+      <name>建築学用語辞典第２版　日本建築学会 [kenchiku]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese engineering/kenchiku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#5E9400</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese explanatory" active="0">
+    <dict>
+      <name>広辞苑第六版 [kojien]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/kojien</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#0000FF</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>三省堂　スーパー大辞林 [daijirin]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#C60087</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>新明解国語辞典　第五版 [shinmeikai]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/shinmeikai</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#008216</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>明鏡国語辞典 [meikyou]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/meikyou</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#790070</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>大辞泉 [daijisen]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijisen</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#D14F00</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>ハイブリッド新辞林 [shinjirin]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/shinjirin</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#B700B7</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese grammar" active="0">
+    <dict>
+      <name>日本語表現活用辞典 [hyougen]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese grammar/hyogen</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#4E1B06</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>日本語表現文型辞典 [hyoubun]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese grammar/hyobun</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#1B4900</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>故事ことわざの辞典 [kotowaza]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/kotowaza_kogo</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#933077</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>類義語使い分け辞典 [ruigigo]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese grammar/ruigigo</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#DACC25</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>手紙実用文辞典 [tegami I]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/tegami</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#676027</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>日本語辞典（現代国語、外来語）[tegami II]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/tegami</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#B63A15</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese history" active="0">
+    <dict>
+      <name>岩波日本史辞典ＣＤ‐ＲＯＭ版 [nihonsi]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese history/nihonsi</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#C79E09</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>歴史ＤＢ[rekishi]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese history/rekisi</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#781F3B</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>岩波＝ケンブリッジ　世界人名辞典 [sejinmei]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese history/sejinmei</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#301B3A</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese kanji" active="0">
+    <dict>
+      <name>漢英字典 [kan'ei]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese kanji/kanjidic</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#0072AF</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>広辞苑第六版 [kojien]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/kojien</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#0000FF</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>大辞泉 [daijisen]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijisen</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#D14F00</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese law" active="0">
+    <dict>
+      <name>自由国民社　法律用語辞典 [houritsu]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese law/jiyuhouritu</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#12475C</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese pronunciation" active="0">
+    <dict>
+      <name>ＮＨＫ　日本語発音アクセント辞典 [NHK nihongo hatsuon akusento jiten]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese pronunciation/nhk_nihongo_hatsuon_jiten</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#A48908</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese science" active="0">
+    <dict>
+      <name>理化学辞典第５版 [rikagaku]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese science/rikagaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#D99F00</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese-english" active="1">
+    <dict>
+      <name>ビジネス技術実用英語大辞典第４版 [business]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/business</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#073847</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>研究社　新和英大辞典　第５版 [kenwaei]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/kenkyusha_waei_daijiten_v5</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#803338</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>ＮＥＷ斎藤和英大辞典 [saitou]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/saitou</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#663B28</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>三省堂　スーパー大辞林 [daijirin]</name>
+      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#C60087</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>用例ファイル [business yourei]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/business</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#073847</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+    <dict>
+      <name>用例ファイル [saitou yourei]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/saitou</path>
+      <subbook>1</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#663B28</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese-english biology" active="0">
+    <dict>
+      <name>医学用語大辞典 [igaku]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/english-japanese biology/nichigai_igaku</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#5C3800</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese-english engineering" active="0">
+    <dict>
+      <name>和英自動車用語集 [jidousya]</name>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-english engineering/jidousya</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#B32BA0</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="japanese-russian" active="0">
+    <dict>
+      <name>和露大辞典 [warodai]</name>
+      <path>/home/user/.ebview/dict/japanese-russian/warodai</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#A35700</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+  <group name="russian-japanese" active="0">
+    <dict>
+      <name>露和辞典 [zrjiten]</name>
+      <path>/home/user/.ebview/dict/russian-japanese/zrjiten</path>
+      <subbook>0</subbook>
+      <appendix_path></appendix_path>
+      <appendix_subbook>0</appendix_subbook>
+      <active>1</active>
+      <bg>#EE486F</bg>
+      <fg>#FFFFFF</fg>
+    </dict>
+  </group>
+</dictgroup>
