@@ -63,7 +63,7 @@
     </dict>
     <dict>
       <name>»°¾ÊÆ²¡¡¥¹¡¼¥Ñ¡¼Âç¼­ÎÓ [daijirin]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/daijirin</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -195,7 +195,7 @@
   <group name="japanese economics" active="0">
     <dict>
       <name>·ÐºÑ¡¦¥Ó¥¸¥Í¥¹ÍÑ¸ì¼­Åµ¡¡£²£°£°£²Ç¯ÈÇ [keizai]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese economics/keizaiyougo</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese economics/keizaiyougo</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -229,7 +229,7 @@
   <group name="japanese engineering" active="0">
     <dict>
       <name>·úÃÛ³ØÍÑ¸ì¼­ÅµÂè£²ÈÇ¡¡ÆüËÜ·úÃÛ³Ø²ñ [kenchiku]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese engineering/kenchiku</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese engineering/kenchiku</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -241,7 +241,7 @@
   <group name="japanese explanatory" active="0">
     <dict>
       <name>¹­¼­±ñÂèÏ»ÈÇ [kojien]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/kojien</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/kojien</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -251,7 +251,7 @@
     </dict>
     <dict>
       <name>»°¾ÊÆ²¡¡¥¹¡¼¥Ñ¡¼Âç¼­ÎÓ [daijirin]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/daijirin</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -261,7 +261,7 @@
     </dict>
     <dict>
       <name>¿·ÌÀ²ò¹ñ¸ì¼­Åµ¡¡Âè¸ÞÈÇ [shinmeikai]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/shinmeikai</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/shinmeikai</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -271,7 +271,7 @@
     </dict>
     <dict>
       <name>ÌÀ¶À¹ñ¸ì¼­Åµ [meikyou]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/meikyou</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/meikyou</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -281,7 +281,7 @@
     </dict>
     <dict>
       <name>Âç¼­Àô [daijisen]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijisen</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/daijisen</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -291,7 +291,7 @@
     </dict>
     <dict>
       <name>¥Ï¥¤¥Ö¥ê¥Ã¥É¿·¼­ÎÓ [shinjirin]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/shinjirin</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/shinjirin</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -303,7 +303,7 @@
   <group name="japanese grammar" active="0">
     <dict>
       <name>ÆüËÜ¸ìÉ½¸½³èÍÑ¼­Åµ [hyougen]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese grammar/hyogen</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/hyogen</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -313,7 +313,7 @@
     </dict>
     <dict>
       <name>ÆüËÜ¸ìÉ½¸½Ê¸·¿¼­Åµ [hyoubun]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese grammar/hyobun</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/hyobun</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -333,7 +333,7 @@
     </dict>
     <dict>
       <name>ÎàµÁ¸ì»È¤¤Ê¬¤±¼­Åµ [ruigigo]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese grammar/ruigigo</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese grammar/ruigigo</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -397,7 +397,7 @@
   <group name="japanese kanji" active="0">
     <dict>
       <name>´Á±Ñ»úÅµ [kan'ei]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese kanji/kanjidic</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese kanji/kanjidic</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -407,7 +407,7 @@
     </dict>
     <dict>
       <name>¹­¼­±ñÂèÏ»ÈÇ [kojien]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/kojien</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/kojien</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -417,7 +417,7 @@
     </dict>
     <dict>
       <name>Âç¼­Àô [daijisen]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijisen</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/daijisen</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -441,7 +441,7 @@
   <group name="japanese pronunciation" active="0">
     <dict>
       <name>£Î£È£Ë¡¡ÆüËÜ¸ìÈ¯²»¥¢¥¯¥»¥ó¥È¼­Åµ [NHK nihongo hatsuon akusento jiten]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese pronunciation/nhk_nihongo_hatsuon_jiten</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese pronunciation/nhk_nihongo_hatsuon_jiten</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -462,7 +462,7 @@
       <fg>#FFFFFF</fg>
     </dict>
   </group>
-  <group name="japanese-english" active="1">
+  <group name="japanese-english" active="0">
     <dict>
       <name>¥Ó¥¸¥Í¥¹µ»½Ñ¼ÂÍÑ±Ñ¸ìÂç¼­ÅµÂè£´ÈÇ [business]</name>
       <path>/home/user/.data-upper/dictionaries/ebview/japanese-english/business</path>
@@ -495,7 +495,7 @@
     </dict>
     <dict>
       <name>»°¾ÊÆ²¡¡¥¹¡¼¥Ñ¡¼Âç¼­ÎÓ [daijirin]</name>
-      <path>/home/user/.data/dictionaries/ebview/japanese explanatory/daijirin</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese explanatory/daijirin</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -551,7 +551,7 @@
   <group name="japanese-russian" active="0">
     <dict>
       <name>ÏÂÏªÂç¼­Åµ [warodai]</name>
-      <path>/home/user/.ebview/dict/japanese-russian/warodai</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/japanese-russian/warodai</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
@@ -560,10 +560,10 @@
       <fg>#FFFFFF</fg>
     </dict>
   </group>
-  <group name="russian-japanese" active="0">
+  <group name="russian-japanese" active="1">
     <dict>
       <name>ÏªÏÂ¼­Åµ [zrjiten]</name>
-      <path>/home/user/.ebview/dict/russian-japanese/zrjiten</path>
+      <path>/home/user/.data-upper/dictionaries/ebview/russian-japanese/zrjiten</path>
       <subbook>0</subbook>
       <appendix_path></appendix_path>
       <appendix_subbook>0</appendix_subbook>
