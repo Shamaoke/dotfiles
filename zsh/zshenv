@@ -1,0 +1,17 @@
+#
+# ZSH prompt
+#
+
+export PS1="%~ %F{green}$%f "
+
+#
+# Rubygems
+#
+
+export GEM_HOME=$HOME/.gem/ruby/2.5.0
+
+#
+# Less
+#
+
+export LESS='-R'
