@@ -1,0 +1,4 @@
+#! /usr/bin/env zsh
+
+startx -- :1 vt2 >&- 2>&-
+# startx -- :1 vt2 >~/ob.info 2>ob.error

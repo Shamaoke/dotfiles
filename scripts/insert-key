@@ -1,0 +1,3 @@
+#! /usr/bin/env zsh
+
+printf "%s" $1 | ecryptfs-insert-wrapped-passphrase-into-keyring $HOME/.ecryptfs/wrapped_passphrase -

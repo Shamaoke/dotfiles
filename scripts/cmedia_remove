@@ -1,0 +1,8 @@
+#! /usr/bin/env zsh
+
+# /usr/lib/udev
+
+echo defaults.pcm.card 0 >  $HOME/.asoundrc
+echo defaults.ctl.card 0 >> $HOME/.asoundrc
+sed -i --follow-symlinks 's/\(master-soundcard = hw:\)[0,2]/\10/' $HOME/.config/polybar/config
+# sed -i 's/\(master-soundcard = hw:\)[0,2]/\10/' $HOME/.config/polybar/master-soundcard

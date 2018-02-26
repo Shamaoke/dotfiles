@@ -1,0 +1,7 @@
+#! /usr/bin/env zsh
+
+. ~/.zshrc
+
+vim $1
+
+exit 0
