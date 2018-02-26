@@ -1,0 +1,8 @@
+(begin
+  (if (is (application_name) "sunvox")
+    (begin
+      (undecorate)
+      (maximize)
+    )
+  )
+)

@@ -1,0 +1,126 @@
+(begin
+  ;(center)
+
+  ;(if (contains (application_name) "qBittorrent")
+  ;  (begin (set_workspace 1)))
+
+  ;(if (is (application_name) "Gnome-tweak-tool")
+  ;  (maximize))
+
+  (if (is (window_class) "Gnome-tweak-tool")
+    (maximize))
+
+  (if (is (application_name) "gnome-disks")
+    (maximize))
+
+  (if (is (application_name) "nvidia-settings")
+    (maximize))
+
+  (if (is (application_name) "gnome-font-viewer")
+    (maximize))
+
+  (if (is (application_name) "staruml")
+    (maximize))
+
+  (if (is (window_class) "Evince")
+    (maximize))
+
+  (if (is (window_class) "Eog")
+    (maximize))
+
+  (if (is (window_class) "Gimp-2.8")
+    (maximize))
+
+  (if (is (window_class) "Org.gnome.SoundRecorder")
+    (maximize))
+
+  ;(if (is (application_name) "Firefox")
+  ;  (begin
+  ;    (if (and
+  ;          (contains (window_property "_NET_WM_STATE") "_NET_WM_STATE_MAXIMIZED_HORZ")
+  ;          (contains (window_property "_NET_WM_STATE") "_NET_WM_STATE_MAXIMIZED_VERT"))
+  ;      (undecorate)
+  ;    )
+  ;  )
+  ;)
+
+  (if (is (application_name) "Firefox") (undecorate))
+
+  (if (is (application_name) "projectM")
+    (undecorate))
+
+  (if (is (application_name) "Ardour")
+    (begin
+      (undecorate)
+      (wintype "normal")
+
+      (if (is (window_name) "Add Existing Media") (maximize))
+      (if (is (window_name) "Plugin Manager") (maximize))
+      (if (contains (window_name) "Calf") (above))
+    )
+  )
+
+  ;(if (is (window_class) "URxvt") (fullscreen))
+  (if (is (window_class) "URxvt")
+    (begin
+      (undecorate)
+      (maximize)
+    )
+  )
+
+  ;(if (and (is (window_class) "Mixxx")
+  ;         (is (window_property) "_NET_WM_WINDOW_TYPE_NORMAL"))
+  ;  (undecorate)
+  ;)
+
+  (if (is (window_class) "Mixxx")
+    (begin
+      (maximize)
+      (undecorate)
+    )
+  )
+
+  (if (is (application_name) "Patchage")
+    (begin
+      (maximize)
+      (undecorate)
+    )
+  )
+
+  (if (is (application_name) "zathura")
+    (undecorate)
+  )
+
+  ;(if (is (application_name) "calfjackhost")
+  ;  (undecorate)
+  ;)
+
+  (if (is (window_class) "Non-Mixer") (undecorate))
+
+  (if (is (application_name) "Non Mixer") (geometry "800x437+0+0"))
+
+  (if (and (is (window_class) "Non-Mixer")
+           (is (window_name) "Open Project"))
+    (begin
+      (geometry "800x600+400+137")
+      ;(geometry "800x600+400+181")
+    )
+  )
+
+  ;(if (and (is (window_class) "Mixxx")
+  ;         (is (window_name) "Preferences"))
+  ;  (decorate)
+  ;)
+
+  ;(if (is (application_name) "GoldenDict")
+  ;  (begin (set_workspace 1)))
+
+  ;(if (is (application_name) "Firefox")
+  ;  (fullscreen))
+
+  ;(if (is (application_name) "Firefox")
+  ;  (begin (set_workspace 2)))
+
+  ;(if (is (application_name) "Thunderbird")
+  ;  (begin (set_workspace 2)))
+)

@@ -1,0 +1,62 @@
+  ;;;;;;;;;;;;;;;;;;;;
+  ;;; Cinelerra-GG ;;;
+  ;;;;;;;;;;;;;;;;;;;;
+
+(begin
+
+  (if (is (window_name) "Cinelerra: Loading")
+    (center)
+  )
+
+  (if (contains (application_name) "Cinelerra")
+    (undecorate)
+  )
+
+  (if (is (window_name) "Cinelerra: Program")
+    (geometry "1600x436+0+464")
+  )
+
+  (if (is (window_name) "Cinelerra: Viewer")
+    (geometry "800x438+0+0")
+  )
+
+  (if (is (window_name) "Cinelerra: Compositor")
+    (geometry "800x438+800+0")
+  )
+
+  (if (is (window_name) "Cinelerra: Resources")
+    (geometry "800x438+800+0")
+  )
+
+  (if (is (window_name) "Cinelerra: Load")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra: Save")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra: File Exists")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra: Errors")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra: Render")
+    (geometry "+580+235")
+  )
+
+  (if (contains (application_name) "Sharpen")
+    (undecorate)
+  )
+
+  (if (contains (application_name) "Color 3 Way")
+    (undecorate)
+  )
+
+  (if (contains (application_name) "Flip")
+    (undecorate)
+  )
+)

@@ -1,0 +1,48 @@
+
+  ;;;;;;;;;;;;;;;;;;;;
+  ;;; Cinelerra-CV ;;;
+  ;;;;;;;;;;;;;;;;;;;;
+
+(begin
+
+  (if (is (window_name) "Cinelerra-CV: Program")
+    (geometry "1600x436+0+464")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Viewer")
+    (geometry "800x438+0+0")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Compositor")
+    (geometry "800x438+800+0")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Resources")
+    (geometry "800x438+800+0")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: New Project")
+    (geometry "+500+263")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Load")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Save")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: File Exists")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: Errors")
+    (geometry "800x800+400+63")
+  )
+
+  (if (is (window_name) "Cinelerra-CV: File Format")
+    (geometry "450x350+575+288")
+  )
+
+)
