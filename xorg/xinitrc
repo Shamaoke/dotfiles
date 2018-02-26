@@ -1,0 +1,11 @@
+userresources=$HOME/.Xresources
+
+if [ -f "$userresources" ]; then
+  xrdb -merge "$userresources"
+fi
+
+# xrandr --mode 1600x900 &
+
+# compton -r 5 -o .5 -l -7 -t -7 &
+
+exec openbox-session

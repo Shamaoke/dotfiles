@@ -1,0 +1,126 @@
+!run `xrdb -merge ~/.Xresources` in order to reload the config
+
+!-------------!
+!    URxvt    !
+!-------------!
+
+!set geometry
+!URxvt.geometry: 164x40
+!URxvt.geometry: 170x42
+!URxvt.geometry: 170x43
+!URxvt.geometry: 200x50
+
+!set a font and its size
+!URxvt.font: xft:Dejavu Sans Mono:size=8
+!URxvt.font: xft:Dejavu Sans Mono:size=12
+URxvt.font: xft:Dejavu Sans Mono:size=11
+!URxvt.font: xft:Hack:size=13
+
+!do not use a bold font
+!URxvt.boldFont: xft:Dejavu Sans Mono:size=8
+!URxvt.boldFont: xft:Dejavu Sans Mono:size=12
+URxvt.boldFont: xft:Dejavu Sans Mono:size=11
+!URxvt.boldFont: xft:Hack:size=13
+
+!decrease a space between letters for a better look
+URxvt.letterSpace: 0
+
+!increase the line space in order to remove padding around the text area
+!URxvt.lineSpace: 0
+URxvt.lineSpace: 0
+
+!do not show a scrollbar
+URxvt.scrollBar: false
+
+!remove borders around the text area
+!URxvt.internalBorder: 8
+URxvt.internalBorder: 6
+
+!set the color of borders around the text area
+!in order to see that borders are present
+!URxvt.borderColor: #ffffff
+!URxvt.borderColor: #ffcc00
+!URxvt.borderColor: #0000ff
+!URxvt.borderColor: #272822
+!URxvt.borderColor: #383830
+
+!blink the cursor
+URxvt.cursorBlink: true
+
+!hide the mouse pointer when a key is pressed or after a set number of seconds of inactivity
+!the number of seconds is determined by the pointerBlankDelay preference (default: 2)
+URxvt.pointerBlank: true
+
+!set a number of seconds of inactivity before the mouse pointer will be hidden
+!URxvt.pointerBlankDelay: 10
+
+!turn off the Unicode input mode (which is available by pressing Ctrl+Shift)
+URxvt.iso14755: false
+
+!set the number of lines in the viewing buffer
+URxvt.saveLines: 10000
+
+!move the viewing buffer up and down by 1 line by pressing Ctrl+j/k
+!URxvt.keysym.C-k: command:\033]720;1\007
+!URxvt.keysym.C-j: command:\033]721;1\007
+
+!move the viewing buffer up and down by 10 lines by pressing Ctrl+Shift+j/k
+!URxvt.keysym.C-S-K: command:\033]720;10\007
+!URxvt.keysym.C-S-J: command:\033]721;10\007
+
+!disable sending the scrolling controll sequences when pressing Shift+PgUp/PgDown
+!send keycodes for Shift+PgUp/PgDown instead
+URxvt.keysym.S-Prior: \033[5$
+URxvt.keysym.S-Next: \033[6$
+
+!forbid adding lines to viewing buffer when scrolling in
+!console applications (e. g. vim)
+URxvt.secondaryScroll: false
+
+!do not initialize the perl interpreter
+URxvt.perl-ext-common:
+URxvt.perl-ext:
+
+!send the following inner command to urxvt when pressing Ctrl+Shift+f
+!see the list of available terminal commands at man 7 urxvt
+!URxvt.keysym.C-S-F: command:\033]50;xft:Dejavu Sans Mono:size=12\007
+
+!--------------------!
+!    Rofi Monokai    !
+!--------------------!
+!use extendent color scheme
+!rofi.color.enabled: true
+
+!color             bg       border   sep
+!rofi.color-window: #272822, #fd971f, #fd971f
+
+!color             bg       fg       bgalt    hlbg     hlfg
+!rofi.color-normal: #272822, #ffffff, #272822, #49483e, #ffffff
+
+!rofi.font: Dejavu\ Sans\ Mono\ 10
+
+!rofi.separator-style: dashed
+!rofi.separator-style: solid
+
+!rofi.modi: run
+
+!-------------------------------!
+!    Rofi Black Lace & Pears    !
+!-------------------------------!
+
+!use extendent color scheme
+!rofi.color.enabled: true
+
+!window color      bg       border   sep
+!rofi.color-window: #211d2f, #baa6ff, #baa6ff
+
+!record color      bg       fg       bgalt    hlbg     hlfg
+!rofi.color-normal: #211d2f, #ffffff, #211d2f, #423b59, #ffffff
+
+!rofi.font: Dejavu\ Sans\ Mono\ 10
+!rofi.font: PT\ Sans\ 12
+
+!separator style: none, solid, dash
+!rofi.separator-style: solid
+
+!rofi.modi: run
