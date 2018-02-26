@@ -1,0 +1,10 @@
+# /etc/systemd/system
+
+[Unit]
+Description=Add hotkeys for console
+
+[Service]
+ExecStart=/usr/local/bin/add-hotkeys-for-console
+
+[Install]
+WantedBy=default.target

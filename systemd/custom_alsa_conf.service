@@ -1,0 +1,10 @@
+# /etc/systemd/system
+
+[Unit]
+Description=Custom ALSA Configuration
+
+[Service]
+ExecStart=/usr/bin/custom_alsa_conf_2
+
+[Install]
+WantedBy=multi-user.target

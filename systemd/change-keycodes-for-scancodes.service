@@ -1,0 +1,10 @@
+# /etc/systemd/system
+
+[Unit]
+Description=Change keycodes for scancodes
+
+[Service]
+ExecStart=/usr/local/bin/change-keycodes-for-scancodes
+
+[Install]
+WantedBy=default.target

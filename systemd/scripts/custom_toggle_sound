@@ -1,0 +1,42 @@
+#! /usr/bin/env sh
+
+if [[ "${UID}" -ne "0" ]]; then
+  echo "Must be root!"
+  exit 1
+fi
+
+# Change hda_verb to the path of hda-verb on your system
+hda_verb=hda-verb
+
+# Change these to the pins of the headphones and speakers, can be found using hda analyzer
+# pin_headphones="0x19"
+pin_headphones="0x1b"
+pin_speakers="0x1f"
+hwdep_device="hwC0D0"
+
+case "$1" in
+  [Hh]*) # headphones
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_headphones}" \
+       set_pin_wid 0xc0
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_speakers}" \
+       set_pin_wid 0x00
+    ;;
+  [Ss]*) # speakers
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_headphones}" \
+       set_pin_wid 0x00
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_speakers}" \
+       set_pin_wid 0x40
+    ;;
+  [Bb]*) # both
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_headphones}" \
+       set_pin_wid 0xc0
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_speakers}" \
+       set_pin_wid 0x40
+    ;;
+  [Mm]*) # mute
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_headphones}" \
+       set_pin_wid 0x00
+    ${hda_verb} /dev/snd/${hwdep_device} "${pin_speakers}" \
+       set_pin_wid 0x00
+    ;;
+esac
