@@ -173,6 +173,13 @@ filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
 filetype *.zip,*.jar,*.war,*.ear,*.ja,*.xpi FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
 
 filetype *.rar FUSE_MOUNT|unrar x %SOURCE_FILE %DESTINATION_DIR >&- 2>&-
+
+" mount the ISO 9660 file system
+filetype *.iso FUSE_MOUNT|fuseiso %SOURCE_FILE %DESTINATION_DIR
+" This command only mounts CD images in the ISO 9660 file system.
+" It can't mount DVD images, which are usually formatted in the UDF file system.
+" Mount them manually with the command: `mount -t udf,iso9660 <image> <mountpoint>'.
+
 "
 " :filetype extensions FUSE_MOUNT2|some_mount_command using %PARAM and %DESTINATION_DIR variables
 " %PARAM and %DESTINATION_DIR are filled in by vifm at runtime.
