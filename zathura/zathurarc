@@ -1,0 +1,11 @@
+" turn off the status bar
+set guioptions ''
+
+" set the background color
+set default-bg '#211d2f'
+
+set font 'PT Sans 12'
+
+set window-title-basename true
+
+" set window-title-page true
