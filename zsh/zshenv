@@ -2,7 +2,7 @@
 # ZSH prompt
 #
 
-export PS1="%~ %F{green}$%f "
+export PS1="%~ %F{10}$%f "
 
 #
 # Rubygems
@@ -15,3 +15,9 @@ export GEM_HOME=$HOME/.gem/ruby/2.5.0
 #
 
 export LESS='-F -g -i -M -R -S -w -X -z-4 -#1'
+
+#
+# Vim
+#
+
+export EDITOR='vim'
