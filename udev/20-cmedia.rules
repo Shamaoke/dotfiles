@@ -1,7 +1,2 @@
-KERNEL=="card2", ENV{HOME}="/home/user", RUN{program}="cmedia add", GOTO="cmedia_end"
-KERNEL!="card2", ENV{HOME}="/home/user", RUN{program}="cmedia remove", GOTO="cmedia_end"
-
 KERNEL=="card2", ACTION=="add",    ENV{HOME}="/home/user", RUN{program}="cmedia add"
 KERNEL=="card2", ACTION=="remove", ENV{HOME}="/home/user", RUN{program}="cmedia remove"
-
-LABEL="cmedia_end"
