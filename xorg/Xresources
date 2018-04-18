@@ -4,6 +4,9 @@
 !    URxvt    !
 !-------------!
 
+!#include ".Xresources.d/default-dark"
+#include ".Xresources.d/zucchini-2"
+
 !set geometry
 !URxvt.geometry: 164x40
 !URxvt.geometry: 170x42
@@ -13,36 +16,47 @@
 !set a font and its size
 !URxvt.font: xft:Dejavu Sans Mono:size=8
 !URxvt.font: xft:Dejavu Sans Mono:size=12
-URxvt.font: xft:Dejavu Sans Mono:size=11
-!URxvt.font: xft:Hack:size=13
+!URxvt.font: xft:Dejavu Sans Mono:size=10
+!URxvt.font: xft:Hack:size=10
+!URxvt.font: xft:InputMonoCompressed Medium:size=12
+!URxvt.font: xft:InputMonoNarrow Light:size=12
+!URxvt.font: xft:InputMono Light:size=12
+
+URxvt.font: \
+  xft:InputMonoCondensed Light:size=12, \
+  xft:Noto Sans Mono CJK JP
+
+URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
+
+!disable high intensity colors for bold text
+URxvt.intensityStyles: false
 
 !do not use a bold font
 !URxvt.boldFont: xft:Dejavu Sans Mono:size=8
 !URxvt.boldFont: xft:Dejavu Sans Mono:size=12
-URxvt.boldFont: xft:Dejavu Sans Mono:size=11
+!URxvt.boldFont: xft:Dejavu Sans Mono:size=11
 !URxvt.boldFont: xft:Hack:size=13
 
 !decrease a space between letters for a better look
 URxvt.letterSpace: 0
 
 !increase the line space in order to remove padding around the text area
-!URxvt.lineSpace: 0
 URxvt.lineSpace: 0
 
 !do not show a scrollbar
 URxvt.scrollBar: false
 
 !remove borders around the text area
-!URxvt.internalBorder: 8
-URxvt.internalBorder: 6
+URxvt.internalBorder: 0
 
 !set the color of borders around the text area
 !in order to see that borders are present
 !URxvt.borderColor: #ffffff
-!URxvt.borderColor: #ffcc00
+URxvt.borderColor: #ffcc00
 !URxvt.borderColor: #0000ff
 !URxvt.borderColor: #272822
 !URxvt.borderColor: #383830
+!URxvt.borderColor: #0b0f0a
 
 !blink the cursor
 URxvt.cursorBlink: true
