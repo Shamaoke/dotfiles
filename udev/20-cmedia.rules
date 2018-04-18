@@ -1,2 +1,2 @@
-KERNEL=="card2", ACTION=="add",    ENV{HOME}="/home/user", RUN{program}="cmedia add"
+KERNEL=="card2", ACTION=="add", ENV{HOME}="/home/user", RUN{program}="cmedia add"
 KERNEL=="card2", ACTION=="remove", ENV{HOME}="/home/user", RUN{program}="cmedia remove"
