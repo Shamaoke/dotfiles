@@ -1,5 +1,8 @@
 " unite settings
 
+" do not overwrite the status line
+" let g:unite_force_overwrite_statusline=0
+
 " unmpap Ctrl-F, since it's used internally for forward scrolling
 map <C-f> <Nop>
 
