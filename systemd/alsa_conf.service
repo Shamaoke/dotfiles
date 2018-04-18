@@ -1,0 +1,14 @@
+# /etc/systemd/system
+
+[Unit]
+Description=ALSA Configuration
+Wants=dev-soundcard.device
+After=dev-soundcard.device
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/alsa_conf
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
