@@ -134,15 +134,29 @@
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
-      %width 1200
-      %height 800
+      %width 1280
+      %height 720
 
   %keybind{ :key => 'W-2' }
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
+      %width 1200
+      %height 800
+
+  %keybind{ :key => 'W-3' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
       %width 800
       %height 600
+
+  %keybind{ :key => 'W-4' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
+      %width 800
+      %height 800
 
   -# Keybindings related to window states and positions
   %keybind{ :key => 'W-d' }
@@ -180,7 +194,7 @@
 
   %keybind{ :key => 'C-A-m' }
     %action{ :name => 'Execute' }
-      %command urxvt -e vifm_run
+      %command urxvt -e vifm
 
   %keybind{ :key => 'C-A-v' }
     %action{ :name => 'Execute' }
@@ -200,13 +214,25 @@
       %command rofi -show window
 
   -# Keybindings for changing a keyboard layout
-  %keybind{ :key => 'W-j' }
-    %action{ :name => 'Execute' }
-      %command xkb-switch -s us
+  -# %keybind{ :key => 'W-j' }
+  -#   %action{ :name => 'Execute' }
+  -#     %command xkb-switch -s us
 
-  %keybind{ :key => 'W-k' }
+  -# %keybind{ :key => 'W-k' }
+  -#   %action{ :name => 'Execute' }
+  -#     %command xkb-switch -s ru
+
+  %keybind{ :key => 'W-j W-Cyrillic_o' }
     %action{ :name => 'Execute' }
-      %command xkb-switch -s ru
+      %command ibus engine xkb:us::eng
+
+  %keybind{ :key => 'W-k W-Cyrillic_el' }
+    %action{ :name => 'Execute' }
+      %command ibus engine xkb:ru::rus
+
+  %keybind{ :key => 'W-l W-Cyrillic_de' }
+    %action{ :name => 'Execute' }
+      %command ibus engine anthy
 
   -# Keybindings for controlling the mouse pointer and a touchpad
   %keybind{ :key => 'W-x' }
