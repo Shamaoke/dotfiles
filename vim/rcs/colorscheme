@@ -1,56 +1,16 @@
-" colorscheme settings
+" color scheme settings
 
-" allow Base16 to use colors from a broad color set
-" that way the selected color scheme uses colors
-" that fit well to each other
-  let g:base16colorspace=256
+" enable 256 colors
+" set t_Co=256
 
-" set a color scheme
-  colorscheme base16-monokai
+" set background
+  set background=dark
 
-" подсвечивать синтаксис
+" enable syntax highlighting
+" must be set before `colorscheme'
   syntax on
 
-" задать стиль для текстовой области
-  highlight Normal ctermbg=none
-
-" задать стиль для номеров строк
-  highlight LineNr ctermbg=none
-
-" задать стиль для номера текущей строки
-" highlight CursorLineNR ctermbg=19
-  highlight CursorLineNR ctermfg=16 ctermbg=none
-
-" задать стиль для статусной строки текущей панели
-" highlight StatusLine ctermbg=18
-  highlight StatusLine ctermfg=17 ctermbg=none
-
-" задать стиль для статусной строки панелей, отличных от текущей
-" highlight StatusLineNC ctermfg=20
-  highlight StatusLineNC ctermfg=19 ctermbg=none
-
-" задать стиль для выделенной линии
-  highlight CursorLine ctermbg=19
-
-" задать стиль для разделителей панелей
-  highlight VertSplit ctermbg=none
-
-" задать стиль для выделенной колонки
-" highlight CursorColumn cterm=bold ctermfg=white ctermbg=darkblue
-
-" задать стиль для слова, выделенного средством проверки правописания
-  highlight SpellBad ctermbg=1
-
-" set style for the tab bar
-  highlight TabLineFill ctermfg=none ctermbg=19
-
-" set style for a foreground tab
-  highlight TabLineSel ctermfg=17 ctermbg=none
-
-" set style for a background tab
-  highlight TabLine ctermfg=20  ctermbg=18
-
-" set style for a visual selection
-" highlight Visual ctermbg=19
+" set color scheme
+  colorscheme zucchini
 
 " vim: set filetype=vim:
