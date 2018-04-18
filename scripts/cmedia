@@ -1,0 +1,22 @@
+#! /usr/bin/env zsh
+
+# /usr/lib/udev
+
+case $1 in
+  'remove')
+    echo defaults.pcm.card 0 >  $HOME/.asoundrc
+    echo defaults.ctl.card 0 >> $HOME/.asoundrc
+    echo master-soundcard = hw:0 > $HOME/.config/polybar/soundcard.conf
+    polybar-msg cmd restart
+  ;;
+
+  'add')
+    echo defaults.pcm.card 2 >  $HOME/.asoundrc
+    echo defaults.ctl.card 2 >> $HOME/.asoundrc
+    echo master-soundcard = hw:2 > $HOME/.config/polybar/soundcard.conf
+    polybar-msg cmd restart
+  ;;
+
+  *) echo "ERROR: \`cmedia was called with no arguments!\nUsage: cmedia {add|remove}."
+esac
+
