@@ -24,7 +24,7 @@ alias mux="tmuxinator"
 hash -d openbox=$HOME/.config/openbox
 hash -d polybar=$HOME/.config/polybar
 hash -d pm=$HOME/.data-upper/pm
+hash -d df=$HOME/.dotfiles
 
-# Load the Base16 shell configuration
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+# Load tmuxinator completions
+source ~/.gem/ruby/2.5.0/gems/tmuxinator-0.11.1/completion/tmuxinator.zsh
