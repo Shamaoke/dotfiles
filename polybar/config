@@ -26,12 +26,13 @@ border-bottom-size = 2
 border-color       = ${colors.border-color}
 # font-0             = Afiado:pixelsize=11;2
 font-0             = Dejavu Sans Mono:size=10;1
-# font-0             = PT Sans:size=11;2
-# font-0             = PT Mono:size=10;1
+# font-0             = PT Sans:size=11;1
+# font-0             = PT Mono:size=11;1
 separator          = "  "
 modules-left       = ewmh
 modules-center     = date
 modules-right      = xkeyboard wired-network wireless-network battery volume
+enable-ipc         = true
 
 [module/ewmh]
 type = internal/xworkspaces
@@ -106,16 +107,14 @@ label-discharging = bat %percentage%%
 # ramp-capacity-4 = 
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 master-mixer = Speaker
 
 label-volume = vol %percentage%%
 label-muted  = vol %percentage%%
 
-# include-file = /home/user/.config/polybar/master-soundcard
-
-master-soundcard = hw:0
+include-file = /home/user/.config/polybar/soundcard.conf
 
 # master-soundcard = hw:0
 # master-mixer     = Master # default
