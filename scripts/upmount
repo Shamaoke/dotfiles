@@ -1,0 +1,5 @@
+#! /usr/bin/env zsh
+
+ecryptfs-insert-wrapped-passphrase-into-keyring $HOME/.ecryptfs/wrapped_passphrase $1
+
+mount -i $HOME/.data-upper
