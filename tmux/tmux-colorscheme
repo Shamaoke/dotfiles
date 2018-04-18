@@ -1,13 +1,13 @@
 # установить стиль статусной строки
-set -g status-style      'bg=colour18'
-set -g status-left-style 'fg=colour08,bold'
+# set -g status-style      'bg=colour18'
+# set -g status-left-style 'fg=colour08,bold'
 
 # установить стиль разделителей панелей
-set -g pane-active-border-style 'fg=colour18'
-set -g pane-border-style        'fg=colour18'
+# set -g pane-active-border-style 'fg=colour18'
+# set -g pane-border-style        'fg=colour18'
 
 # установить стиль командной строки
-set -g message-style 'bg=colour18'
+# set -g message-style 'bg=colour18'
 
 # установить стиль „модальной строки“ (индикатор режима копирования)
-set -g mode-style 'bg=colour08'
+# set -g mode-style 'bg=colour08'
