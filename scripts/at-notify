@@ -1,3 +1,0 @@
-#! /usr/bin/env zsh
-
-echo "notify-send --app-name=at '$1 minutes passed!' 'Take a break!'" | at now + $1 minute
