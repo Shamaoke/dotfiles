@@ -62,7 +62,7 @@ set noiec
 
 " Selected color scheme
 
-colorscheme custom_dark.vifm
+colorscheme custom
 
 " The FUSE_HOME directory will be used as a root dir for all FUSE mounts.
 " Unless it exists with write/exec permissions set, vifm will attempt to
@@ -134,7 +134,7 @@ filetype *.o nm %f | less
 " Image
 " filetype *.jpg,*.jpeg,*.png,*.gif eog,xv,gimp
 " filetype *.jpg,*.jpeg,*.png,*.gif eog %f &> /dev/null &
-filetype *.jpg,*.jpeg,*.png,*.gif feh %f &> /dev/null &
+filetype *.jpg,*.jpeg,*.png,*.gif feh --geometry=1276x720 %f &> /dev/null &
 
 " Archive
 filetype *.tar.gz,*.tgz tar -tzf %f | less,tar -zxvf %f
