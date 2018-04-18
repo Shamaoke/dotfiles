@@ -291,9 +291,9 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
 
-[at]
-    appname = at
-    script  = alert.sh
+# [at]
+#     appname = at
+#     script  = alert.sh
 
 # [usb-stick]
 #     appname = usb-stick
