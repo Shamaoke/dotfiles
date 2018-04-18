@@ -1,0 +1,1 @@
+ATTR{product}=="C-Media USB Audio Device", ENV{HOME}="/home/user", RUN{program}="cmedia-debug add"
