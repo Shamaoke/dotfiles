@@ -4,7 +4,7 @@
   set encoding=utf-8
 
 " установить используемый набор кодировок
-  set fileencodings=utf-8,cp1251,euc-jp
+  set fileencodings=utf-8,euc-jp,cp1251
 " значения из данного файла будут последовательно использованы
 " в процессе распознания кодировки открываемого файла
 
@@ -48,11 +48,16 @@
   set list
 
 " установить спец-символы
-  set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
+" set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
+  set listchars=eol:¶,tab:∙►,trail:∙,precedes:←,extends:→,nbsp:↔
 
 " использовать символ пробела в качестве заполнителя разделителей панелей
 " (т. е. фактически, не использовать никаких видимых символов)
   set fillchars+=vert:\ 
+
+" use the plus and minus signs to fill the status lines of active and inctive
+" windows if StatusLine and StatusLineNC have the same highlighting
+" set fillchars+=stl:+,stlnc:-
 
 " настройка фолдинга
   set nofoldenable
