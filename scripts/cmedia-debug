@@ -1,0 +1,16 @@
+#! /usr/bin/env zsh
+
+# /usr/lib/udev
+
+case $1 in
+  'remove')
+    echo remove >> $HOME/cmedia-debug-remove
+  ;;
+
+  'add')
+    echo ad >> $HOME/cmedia-debug-add
+  ;;
+
+  *) echo "ERROR: \`cmedia was called with no arguments!\nUsage: cmedia {add|remove}."
+esac
+
