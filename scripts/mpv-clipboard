@@ -1,3 +1,6 @@
 #! /usr/bin/env zsh
 
-mpv `xclip -selection 'clipboard' -o`
+
+url=`xclip -selection 'clipboard' -o`
+title=`youtube-dl --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
+mpv --geometry=1276x720 --title=$title $url
