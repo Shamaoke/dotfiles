@@ -1,0 +1,22 @@
+# /etc/udev/rules.d/10-alsa.conf
+
+# Get the name assigned by the Linux Kernel to the sound device
+# by using the command: `udevadm info -a /dev/snd/hwC0D0 | grep KERNEL=='.
+# 
+# Adding the "soundcard" symlink and the "systemd" tag will result in
+# the .device unit will be created by System D with a name "soundcard"
+# when the device is available.
+#
+# After that the following can be added to the [Unit] section
+# of a service:
+#
+# [Unit]
+# Wants=dev-soundcard.device # Requires, BindsTo
+# After=dev-soundcard.device
+#
+# That way the service will be executed after the device will be
+# available.
+
+# KERNEL=="hwC0D0" TAG+="systemd"
+
+KERNEL=="hwC0D0" SYMLINK="soundcard" TAG+="systemd"

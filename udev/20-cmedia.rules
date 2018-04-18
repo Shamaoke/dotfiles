@@ -1,0 +1,5 @@
+# KERNEL=="card2", ACTION=="add",    ENV{DISPLAY}=":1", ENV{HOME}="/home/user", RUN{program}="cmedia_add.sh"
+# KERNEL=="card2", ACTION=="remove", ENV{DISPLAY}=":1", ENV{HOME}="/home/user", RUN{program}="cmedia_remove.sh"
+
+KERNEL=="card2", ACTION=="add",    ENV{HOME}="/home/user", RUN{program}="cmedia add"
+KERNEL=="card2", ACTION=="remove", ENV{HOME}="/home/user", RUN{program}="cmedia remove"
