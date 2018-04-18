@@ -21,6 +21,11 @@ window.*.label.bg: solid flat
 window.*.label.bg.color: #211d2f
 window.*.label.text.color: #ecebe1
 
+# Buttons
+window.*.button.*.bg: solid flat
+window.*.button.*.image.color: #211d2f
+window.*.button.*.bg.color: #ecebe1
+
 # Title separator (the separator between the title bar and the client)
 window.*.title.separator.color: #baa6ff
 
