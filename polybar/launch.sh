@@ -10,6 +10,7 @@ while pgrep -x polybar > /dev/null; do sleep 1; done
 
 # Launch example
 
-polybar --reload sample &
+# polybar --reload sample &
+polybar sample &
 
 echo "Bars launched..."
