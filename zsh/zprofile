@@ -11,3 +11,5 @@ path=(
   ~/.config/base16-shell
   $path
 )
+
+ecryptfs-auto-mount
