@@ -1,5 +1,6 @@
 #! /usr/bin/env zsh
 
+# /usr/local/bin
 # /usr/lib/udev
 
 case $1 in
@@ -17,6 +18,12 @@ case $1 in
     polybar-msg cmd restart
   ;;
 
-  *) echo "ERROR: \`cmedia was called with no arguments!\nUsage: cmedia {add|remove}."
+  'reset')
+    echo defaults.pcm.card 0 >  $HOME/.asoundrc
+    echo defaults.ctl.card 0 >> $HOME/.asoundrc
+    echo master-soundcard = hw:0 > $HOME/.config/polybar/soundcard.conf
+  ;;
+
+  *) echo "ERROR: cmedia was called with no arguments!\nUsage: cmedia {add|remove|reset}."
 esac
 
