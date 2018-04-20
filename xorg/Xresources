@@ -5,7 +5,7 @@
 !-------------!
 
 !#include ".Xresources.d/default-dark"
-#include ".Xresources.d/zucchini-2"
+#include ".Xresources.d/zucchini"
 
 !set geometry
 !URxvt.geometry: 164x40
