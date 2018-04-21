@@ -22,9 +22,11 @@
 !URxvt.font: xft:InputMonoNarrow Light:size=12
 !URxvt.font: xft:InputMono Light:size=12
 
-URxvt.font: \
-  xft:InputMonoCondensed Light:size=12, \
-  xft:Noto Sans Mono CJK JP
+URxvt.font: xft:InputMonoCondensed:size=12
+
+!URxvt.font: \
+!  xft:InputMonoCondensed Light:size=12, \
+!  xft:Noto Sans Mono CJK JP
 
 URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
 
@@ -47,7 +49,7 @@ URxvt.lineSpace: 0
 URxvt.scrollBar: false
 
 !remove borders around the text area
-URxvt.internalBorder: 0
+!URxvt.internalBorder: 0
 
 !set the color of borders around the text area
 !in order to see that borders are present
