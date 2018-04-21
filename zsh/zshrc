@@ -28,3 +28,8 @@ hash -d df=$HOME/.dotfiles
 
 # Load tmuxinator completions
 source ~/.gem/ruby/2.5.0/gems/tmuxinator-0.11.1/completion/tmuxinator.zsh
+
+# Change the standard colors by using terminal control sequences
+# Run either of the following to set  the value of color17
+# printf "\x1b]4;17;#471009\x7"
+# printf "\033]4;17;#471009\007"
