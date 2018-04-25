@@ -22,13 +22,13 @@
 !URxvt.font: xft:InputMonoNarrow Light:size=12
 !URxvt.font: xft:InputMono Light:size=12
 
-URxvt.font: xft:InputMonoCondensed:size=12
+!URxvt.font: xft:InputMonoCondensed:size=12
 
 !URxvt.font: \
 !  xft:InputMonoCondensed Light:size=12, \
 !  xft:Noto Sans Mono CJK JP
 
-URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
+!URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
 
 !disable high intensity colors for bold text
 URxvt.intensityStyles: false
@@ -39,17 +39,20 @@ URxvt.intensityStyles: false
 !URxvt.boldFont: xft:Dejavu Sans Mono:size=11
 !URxvt.boldFont: xft:Hack:size=13
 
-!decrease a space between letters for a better look
-URxvt.letterSpace: 0
+! URxvt.font: xft:InputMono:size=11 {{{
+! decrease a space between letters for a better look
+! increase the line space in order to remove padding around the text area
+! remove borders around the text area
+  URxvt.font:     xft:InputMono:size=11
+  URxvt.boldFont: xft:InputMono Medium:size=11
 
-!increase the line space in order to remove padding around the text area
-URxvt.lineSpace: 0
+  URxvt.letterSpace:    -1
+  URxvt.lineSpace:       1
+  URxvt.internalBorder:  0
+! }}}
 
 !do not show a scrollbar
 URxvt.scrollBar: false
-
-!remove borders around the text area
-!URxvt.internalBorder: 0
 
 !set the color of borders around the text area
 !in order to see that borders are present
