@@ -57,7 +57,7 @@ URxvt.scrollBar: false
 !set the color of borders around the text area
 !in order to see that borders are present
 !URxvt.borderColor: #ffffff
-URxvt.borderColor: #ffcc00
+!URxvt.borderColor: #ffcc00
 !URxvt.borderColor: #0000ff
 !URxvt.borderColor: #272822
 !URxvt.borderColor: #383830
