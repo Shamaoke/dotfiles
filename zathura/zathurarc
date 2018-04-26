@@ -1,11 +1,20 @@
-" turn off the status bar
-set guioptions ''
+" do not display the status bar
+  set guioptions ''
 
 " set the background color
-set default-bg '#211d2f'
+  set default-bg '#241704'
 
-set font 'PT Sans 12'
+" define the font will be used
+  set font 'InputMonoNarrow 11'
 
-set window-title-basename true
+" use basenames of opened files in window title (instead of full paths)
+  set window-title-basename true
 
+" display page number in window title
 " set window-title-page true
+
+" the number of recent files shown in completion
+  set show-recent 5
+
+" show hidden files in completion
+  set show-hidden true
