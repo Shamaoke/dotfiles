@@ -190,15 +190,15 @@
   -# Keybindings for starting applications
   %keybind{ :key => 'C-A-t' }
     %action{ :name => 'Execute' }
-      %command kitty
-
-  %keybind{ :key => 'C-A-m' }
-    %action{ :name => 'Execute' }
-      %command kitty vifm
+      %command urxvtt
 
   %keybind{ :key => 'C-A-v' }
     %action{ :name => 'Execute' }
-      %command kitty vim
+      %command urxvt -e vim
+
+  %keybind{ :key => 'C-A-m' }
+    %action{ :name => 'Execute' }
+      %command urxvt -e vifm
 
   -# Keybindings for controlling an application launcher
   %keybind{ :key => 'W-r' }
