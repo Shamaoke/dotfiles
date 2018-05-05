@@ -20,6 +20,8 @@ set vicmd=vim
 " This probably shouldn't be an option.
 set trash
 
+set title
+
 " Set location of the trash directory
 set trashdir=~/.local/share/vifm/trash
 
