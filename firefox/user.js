@@ -37,3 +37,6 @@ user_pref('media.autoplay.enabled', false);
 
 // set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/304it05e.default/proxy.pac');
+
+// show URL scheme in address bar
+user_pref('browser.urlbar.trimURLs', false);
