@@ -7,7 +7,11 @@
 
     %item{ :label => 'Firefox' }
       %action{ :name => 'Execute' }
-        %command firefox -P old
+        %command firefox
+
+    %item{ :label => 'Thunderbird' }
+      %action{ :name => 'Execute' }
+        %command thunderbird
 
     %item{ :label => 'Goldendict' }
       %action{ :name => 'Execute' }
@@ -17,9 +21,9 @@
       %action{ :name => 'Execute' }
         %command qbittorrent
 
-    %item{ :label => 'Non-Mixer' }
-      %action{ :name => 'Execute' }
-        %command non-mixer
+    -# %item{ :label => 'Non-Mixer' }
+    -#   %action{ :name => 'Execute' }
+    -#     %command non-mixer
 
     %item{ :label => 'MPV (Clipboard)' }
       %action{ :name => 'Execute' }
