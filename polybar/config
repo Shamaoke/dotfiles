@@ -16,7 +16,7 @@ margin-bottom = 0
 monitor            = LVDS-0
 width              = 100%
 # width              = 1600
-height             = 17
+height             = 24
 # padding-right      = 2
 # padding-left       = 2
   padding-right      = 2
@@ -24,14 +24,14 @@ height             = 17
 fixed-center       = true
 background         = ${colors.background-color}
 foreground         = ${colors.foreground-color}
-border-bottom-size = 1
+border-bottom-size = 2
 border-color       = ${colors.border-color}
 # font-0             = Afiado:pixelsize=11;2
 # font-0             = Dejavu Sans Mono:size=10;1
-# font-0             = PT Sans:size=11;1
+  font-0             = PT Sans:pixelsize=11;0
 # font-0             = PT Mono:size=10;1
 # font-0             = InputMono Medium:size=10;2
-  font-0             = InputMonoCondensed:pixelsize=10;2
+# font-0             = InputMonoCondensed:pixelsize=11;2
 separator          = "  "
 modules-left       = ewmh
 modules-center     = date
@@ -41,8 +41,8 @@ enable-ipc         = true
 [module/ewmh]
 type = internal/xworkspaces
 
-label-active-padding-right = 1
-label-empty-padding-right  = 1
+label-active-padding-right = 2
+label-empty-padding-right  = 2
 
 label-active-foreground = ${colors.foreground-color}
 label-empty-foreground  = ${colors.foreground-alt-color}
