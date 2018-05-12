@@ -47,7 +47,7 @@ URxvt.intensityStyles: false
   URxvt.boldFont: xft:InputMono Medium:size=11
 
   URxvt.letterSpace:    -1
-  URxvt.lineSpace:       1
+  URxvt.lineSpace:       0
   URxvt.internalBorder:  0
 ! }}}
 
