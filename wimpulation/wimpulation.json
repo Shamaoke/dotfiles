@@ -14,6 +14,7 @@
       "I": "toInsertModeOnFirstElement",
       "A": "toInsertModeOnLastElement",
       "v": "toVisualMode",
+      "V": "compose|selectElement|toVisualMode",
       "<C-V>": "toCaretMode",
       ":": "toConsoleMode",
       "s": "toConsoleMode|open",
@@ -198,6 +199,10 @@
       "G": "extendSelection|forward|documentboundary",
       "B": "extendSelection|backward|block",
       "W": "extendSelection|forward|block",
+      "?": "extendSelection|backward|search",
+      "/": "extendSelection|forward|search",
+      "N": "extendSelection|backward|continueSearch",
+      "n": "extendSelection|forward|continueSearch",
       "_": "collapseSelectionToStart",
       "y": "compose|yankSelection|toNormalMode",
       "*": "compose|searchSelectionForward|toNormalMode",
@@ -216,6 +221,9 @@
       "zt": "moveTargetAtTop",
       "zz": "moveTargetAtCenter",
       "zb": "moveTargetAtBottom",
+      ":": "toConsoleModeWithSelection",
+      "s": "toConsoleModeWithSelection|open",
+      "S": "toConsoleModeWithSelection|tabopen",
       "v": "toVisualMode",
       "<C-V>": "toCaretMode",
       "<C-[>": "toNormalMode",
@@ -293,6 +301,9 @@
       "<C-E>": "endLine",
       "<C-F>": "charNext",
       "<C-B>": "charPrevious",
+      "<C-O>p": "pasteValue",
+      "<C-O><C-P>": "pasteValue",
+      "<C-X><C-L>": "showHistoryList",
       "<C-I>": "getCandidate",
       "<Tab>": "selectNextHistoryOrCandidate",
       "<S-Tab>": "selectPreviousHistoryOrCandidate",
@@ -338,7 +349,7 @@
     }
   },
   "searchEngine": {
-    "defaultEngine": "go",
+    "defaultEngine": "google",
     "engines": {
       "google": {
         "searchUrl": "https://www.google.co.jp/search?q=%s&ie=utf-8&oe=utf-8&hl=ja",
@@ -351,9 +362,6 @@
       },
       "twitter": {
         "searchUrl": "https://twitter.com/search?q=%s"
-      },
-      "go": {
-        "searchUrl": "https://www.google.ru/search?q=%s"
       }
     }
   },
@@ -377,7 +385,8 @@
     "autoKillHover": true,
     "onlyVisibility": false,
     "highlightSearch": true,
-    "overwriteErrorPage": true,
-    "activateNewTab": true
+    "overwriteErrorPage": false,
+    "activateNewTab": true,
+    "consoleAutocomplete": false
   }
 }
