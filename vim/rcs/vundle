@@ -42,6 +42,7 @@ Plugin 'gmarik/Vundle.vim'
   Plugin 'vifm/vifm.vim'
   Plugin 'derekwyatt/vim-scala'
   Plugin 'Shamaoke/zucchini.vim'
+  Plugin 'skywind3000/asyncrun.vim'
 
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'chriskempson/base16-vim'
