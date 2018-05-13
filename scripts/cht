@@ -1,0 +1,5 @@
+#! /usr/bin/env zsh
+
+# change terminal window title to $1
+# see `http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Operating-System-Commands' for more details
+printf '\x1b\x5d2;%s\x1b\x5c' $1
