@@ -85,4 +85,10 @@
 " не создавать swap-файлы
   set noswapfile
 
+" do not change the title of window
+  set notitle
+
+" set the title of window
+" set titlestring=vim
+
 " vim: set filetype=vim:
