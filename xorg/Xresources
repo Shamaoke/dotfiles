@@ -53,14 +53,9 @@ URxvt.intensityStyles: false
 !do not show a scrollbar
 URxvt.scrollBar: false
 
-!set the color of borders around the text area
-!in order to see that borders are present
-!URxvt.borderColor: #ffffff
-!URxvt.borderColor: #ffcc00
-!URxvt.borderColor: #0000ff
-!URxvt.borderColor: #272822
-!URxvt.borderColor: #383830
-!URxvt.borderColor: #0b0f0a
+! set the color of borders around the text area
+! in order to see that borders are present
+! URxvt.borderColor: #ffcc00
 
 !blink the cursor
 URxvt.cursorBlink: true
@@ -69,8 +64,8 @@ URxvt.cursorBlink: true
 !the number of seconds is determined by the pointerBlankDelay preference (default: 2)
 URxvt.pointerBlank: true
 
-!set a number of seconds of inactivity before the mouse pointer will be hidden
-!URxvt.pointerBlankDelay: 10
+! set a number of seconds of inactivity before the mouse pointer will be hidden
+! URxvt.pointerBlankDelay: 10
 
 !turn off the Unicode input mode (which is available by pressing Ctrl+Shift)
 URxvt.iso14755: false
