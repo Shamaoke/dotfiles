@@ -1,0 +1,35 @@
+#! /usr/bin/env zsh
+
+case $1 in
+  'mount')
+    mount /mnt/ratep
+
+    case $? in
+      0)
+        notify-send --app-name=usb-stick 'SUCCESS!' 'usb stick has been mounted' ;;
+      32)
+        notify-send --app-name=usb-stick 'FAIL!' "usb stick was already mounted\nerror code: $?" ;;
+      *)
+        notify-send --app-name=usb-stick 'FAIL!' "mount command returned $? error code"
+    esac
+
+    ;;
+
+  'umount')
+    umount /mnt/ratep
+
+    case $? in
+      0)
+        notify-send --app-name=usb-stick 'SUCCESS!' 'usb stick has been un-mounted' ;;
+      1)
+        notify-send --app-name=usb-stick 'FAIL!' "usb stick was not mounted\nerror code: $?" ;;
+      32)
+        notify-send --app-name=usb-stick 'FAIL!' "usb stick is busy\nerror code: $?" ;;
+      *)
+        notify-send --app-name=usb-stick 'FAIL!' "umount command returned $? error code"
+    esac
+
+    ;;
+
+  *) echo "ERROR: \`usb-stick' was called with no arguments!\nUsage: usb-stick {mount|umount}."
+esac
