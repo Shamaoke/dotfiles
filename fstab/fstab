@@ -1,0 +1,11 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+/home/user/.data-lower /home/user/.data-upper ecryptfs noauto,user,ecryptfs_sig=1bfa974051d4f83f,ecryptfs_fnek_sig=1bfa974051d4f83f,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_unlink_sigs 0 0
+
+# fmask is used to set file permissions, 133 is for -rw-r--r--
+# dmask is to set permissions for directories, 022 is for drwxr-xr-x
+# dump=0 is to specify that this FS doesn't need to be dumped by dump(8)
+# fsck=0 is to specify that this FS doesn't need to be checked by fsck(8)
+UUID=E4C5-1102 /mnt/ratep vfat noauto,rw,user,fmask=133,dmask=022 0 0
