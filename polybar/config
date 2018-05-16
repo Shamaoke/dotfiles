@@ -5,6 +5,8 @@
 background-color     = #ff211d2f
 foreground-color     = #ffecebe1
 foreground-alt-color = #ff423b59
+foreground-normal    = #00ff00
+foreground-alert     = #ff0000
 border-color         = #ffbaa6ff
 
 [global/wm]
@@ -28,136 +30,145 @@ border-bottom-size = 2
 border-color       = ${colors.border-color}
 # font-0             = Afiado:pixelsize=11;2
 # font-0             = Dejavu Sans Mono:size=10;1
-  font-0             = PT Sans:pixelsize=11;0
+  font-0             = PT Sans:pixelsize=11;1
 # font-0             = PT Mono:size=10;1
 # font-0             = InputMono Medium:size=10;2
 # font-0             = InputMonoCondensed:pixelsize=11;2
-separator          = "  "
+# separator          = "   "
 modules-left       = ewmh
 modules-center     = date
 modules-right      = xkeyboard wired-network wireless-network battery volume
 enable-ipc         = true
 
 [module/ewmh]
-type = internal/xworkspaces
+  type = internal/xworkspaces
 
-label-active-padding-right = 2
-label-empty-padding-right  = 2
+  label-active-padding-right = 1
+  label-empty-padding-right  = 1
 
-label-active-foreground = ${colors.foreground-color}
-label-empty-foreground  = ${colors.foreground-alt-color}
+  label-active-foreground = ${colors.foreground-color}
+  label-empty-foreground  = ${colors.foreground-alt-color}
 
 [module/date]
-type     = internal/date
-interval = 1
-date     = %Y-%m-%d
-# time     = %H:%M:%S
-time     = %H:%M
-label    = %date% %time%
+  type = internal/date
+
+  interval = 1
+  date     = %Y-%m-%d
+  time     = %H:%M
+
+  label = %date%  %time%
 
 [module/xkeyboard]
-type        = internal/xkeyboard
-blacklist-0 = num lock
-blacklist-1 = caps lock
+  type = internal/xkeyboard
+
+  blacklist-0 = num lock
+  blacklist-1 = caps lock
+
+  label-layout = %layout%
+
+  label-layout-padding-right = 3
 
 [module/wired-network]
-type               = internal/network
-interface          = enp19s0
+  type = internal/network
 
-label-connected    = ++
-label-disconnected = --
+  interface = enp19s0
 
-label-connected-foreground    = #00ff00
-label-disconnected-foreground = #ff0000
+  format-connected-prefix    = lan
+  format-disconnected-prefix = lan
+
+  format-connected    = <label-connected>
+  format-disconnected = <label-disconnected>
+
+  label-connected    = +
+  label-disconnected = ×
+
+  label-connected-padding-left    = 1
+  label-disconnected-padding-left = 1
+
+  label-connected-padding-right    = 3
+  label-disconnected-padding-right = 3
+
+  format-connected-prefix-foreground    = ${colors.foreground-alt-color}
+  format-disconnected-prefix-foreground = ${colors.foreground-alt-color}
+  format-connected-foreground           = ${colors.foreground-normal}
+  format-disconnected-foreground        = ${colors.foreground-alert}
 
 [module/wireless-network]
-type               = internal/network
-interface          = wlp7s0
+  type = internal/network
 
-label-connected    = **
-label-disconnected = --
+  interface = wlp7s0
 
-label-connected-foreground    = #00ff00
-label-disconnected-foreground = #ff0000
+  format-connected-prefix    = wlan
+  format-disconnected-prefix = wlan
+
+  format-connected    = <label-connected>
+  format-disconnected = <label-disconnected>
+
+  label-connected    = +
+  label-disconnected = ×
+
+  label-connected-padding-left    = 1
+  label-disconnected-padding-left = 1
+
+  label-connected-padding-right    = 3
+  label-disconnected-padding-right = 3
+
+  format-connected-prefix-foreground    = ${colors.foreground-alt-color}
+  format-disconnected-prefix-foreground = ${colors.foreground-alt-color}
+  format-connected-foreground           = ${colors.foreground-normal}
+  format-disconnected-foreground        = ${colors.foreground-alert}
 
 [module/battery]
-type = internal/battery
-full-at = 99
+  type = internal/battery
 
-label-full        = bat %percentage%%
-label-charging    = bat %percentage%%
-label-discharging = bat %percentage%%
+  full-at = 99
 
-# label-full        = xx %percentage%
-# label-charging    = ++ %percentage%
-# label-discharging = -- %percentage%
+  format-full-prefix        = bat
+  format-charging-prefix    = bat
+  format-discharging-prefix = bat
 
-# U+e91a
-# format-discharging-prefix = 
-# U+e91a
-# format-full-prefix = 
-# U+e91a
-# format-charging-prefix = 
+# format-full-suffix        = %
+# format-charging-suffix    = %
+# format-discharging-suffix = %
 
+  label-full        = %percentage%%
+  label-charging    = %percentage%%
+  label-discharging = %percentage%%
 
-# format-full        = <ramp-capacity> <label-full>
-# format-charging    = <ramp-capacity> <label-charging>
-# format-discharging = <ramp-capacity> <label-discharging>
+  label-full-padding-left        = 1
+  label-charging-padding-left    = 1
+  label-discharging-padding-left = 1
 
-# ramp-capacity-0 = 
-# ramp-capacity-1 = 
-# ramp-capacity-2 = 
-# ramp-capacity-3 = 
-# ramp-capacity-4 = 
+  label-full-padding-right        = 3
+  label-charging-padding-right    = 3
+  label-discharging-padding-right = 3
+
+  format-full-prefix-foreground        = ${colors.foreground-alt-color}
+  format-charging-prefix-foreground    = ${colors.foreground-alt-color}
+  format-discharging-prefix-foreground = ${colors.foreground-alt-color}
 
 [module/volume]
-type = internal/alsa
+  type = internal/alsa
 
-master-mixer = Speaker
+# master-mixer = Master
+  master-mixer = Speaker
 
-label-volume = vol %percentage%%
-label-muted  = vol %percentage%%
+  format-volume-prefix = vol
+  format-muted-prefix  = vol
 
-include-file = /home/user/.config/polybar/soundcard.conf
+  format-volume-suffix = %
+  format-muted-suffix  = %
 
-# master-soundcard = hw:0
-# master-mixer     = Master # default
+  label-volume = %percentage%
+  label-muted  = %percentage%
 
-# label-volume            = %percentage%
+  label-volume-padding-left = 1
+  label-muted-padding-left  = 1
 
-# format-volume = <ramp-volume> <label-volume>
-# format-muted  = <ramp-volume> <label-muted>
+  format-volume-prefix-foreground = ${colors.foreground-alt-color}
+  format-muted-prefix-foreground  = ${colors.foreground-alt-color}
+  format-muted-foreground         = ${colors.foreground-alert}
 
-# ramp-volume-0 = 
-# ramp-volume-1 = 
-# ramp-volume-2 = 
-
-# U+e989
-# format-volume-prefix    = 
-# format-volume-suffix    = %
-# label-muted             = %percentage%
-# U+e989
-# format-muted-prefix     = 
-# format-muted-suffix     = %
-format-muted-foreground = #ff0000
-
-# [module/pavolume]
-# type     = custom/script
-# interval = 0.01
-# label    = %output%
-# exec     = ~/.config/polybar/pavolume.sh
-
-# click-right = exec pavucontrol
-# click-left  = ~/.config/polybar/pavolume.sh --togmute
-# scroll-up   = ~/.config/polybar/pavolume.sh --up
-# scroll-down = ~/.config/polybar/pavolume.sh --down
-
-# [module/volume-2]
-# type = internal/volume
-
-# master-soundcard = hw:0
-# master-mixer     = Speaker
-
-# format-muted-foreground = #ff0000
+  include-file = /home/user/.config/polybar/soundcard.conf
 
 # vim: ft=dosini:
