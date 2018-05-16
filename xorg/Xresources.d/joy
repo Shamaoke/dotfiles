@@ -1,36 +1,44 @@
 !special
-*.foreground:  #ffffff
-*.background:  #060a00
-*.cursorColor: #ffffff
-
-!black
-*.color0:      #060a00
-*.color8:      #335202
-
-!red
-*.color1:      #7f0033
-*.color9:      #e70033
-
-!green
-*.color2:      #337f00
-*.color10:     #33e700
-
-!yellow
-*.color3:      #da7f00
-*.color11:     #e7da00
-
-!blue
-*.color4:      #0033da
-*.color12:     #007fe7
-
-!magenta
-*.color5:      #7f007f
-*.color13:     #b400e7
-
-!cyan
-*.color6:      #007f7f
-*.color14:     #00e7e7
-
-!white
-*.color7:      #467002
-*.color15:     #ffffff
+URxvt.foreground:  rgb:ff/ff/ff
+URxvt.background:  rgb:06/0a/00
+URxvt.cursorColor: rgb:ff/ff/ff
+URxvt.color0:      rgb:06/0a/00
+URxvt.color1:      rgb:7f/00/33
+URxvt.color2:      rgb:33/7f/00
+URxvt.color3:      rgb:da/7f/00
+URxvt.color4:      rgb:00/33/da
+URxvt.color5:      rgb:7f/00/7f
+URxvt.color6:      rgb:00/7f/7f
+URxvt.color7:      rgb:46/70/02
+URxvt.color8:      rgb:33/52/02
+URxvt.color9:      rgb:e7/00/33
+URxvt.color10:     rgb:33/e7/00
+URxvt.color11:     rgb:e7/da/00
+URxvt.color12:     rgb:00/7f/e7
+URxvt.color13:     rgb:b4/00/e7
+URxvt.color14:     rgb:00/e7/e7
+URxvt.color15:     rgb:ff/ff/ff
+URxvt.color232:    rgb:06/0a/00
+URxvt.color233:    rgb:0d/14/00
+URxvt.color234:    rgb:13/1f/01
+URxvt.color235:    rgb:19/29/01
+URxvt.color236:    rgb:20/33/01
+URxvt.color237:    rgb:26/3d/01
+URxvt.color238:    rgb:2d/47/01
+URxvt.color239:    rgb:33/52/02
+URxvt.color240:    rgb:39/5c/02
+URxvt.color241:    rgb:40/66/02
+URxvt.color242:    rgb:46/70/02
+URxvt.color243:    rgb:4c/7a/02
+URxvt.color244:    rgb:53/85/03
+URxvt.color245:    rgb:59/8f/03
+URxvt.color246:    rgb:60/99/03
+URxvt.color247:    rgb:66/a3/03
+URxvt.color248:    rgb:6c/ad/03
+URxvt.color249:    rgb:73/b8/04
+URxvt.color250:    rgb:79/c2/04
+URxvt.color251:    rgb:7f/cc/04
+URxvt.color252:    rgb:86/d6/04
+URxvt.color253:    rgb:8c/e0/04
+URxvt.color254:    rgb:92/eb/05
+URxvt.color255:    rgb:99/f5/05
