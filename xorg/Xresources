@@ -90,9 +90,35 @@ URxvt.keysym.S-Next: \033[6$
 !console applications (e. g. vim)
 URxvt.secondaryScroll: false
 
-!do not initialize the perl interpreter
-URxvt.perl-ext-common:
-URxvt.perl-ext:
+! do not initialize the perl interpreter
+! URxvt.perl-ext:
+! URxvt.perl-ext-common:
+
+  URxvt.per-ext-common: colorize
+
+! URxvt.perl-ext-common: rabbit
+
+! URxvt.rabbit: notify-send 'catch me if you can'
+
+! URxvt.perl-ext-common: decolorize,rabbit
+! URxvt.perl-ext-common: emit
+
+! URxvt.color232: rgb:06/0a/00
+! URxvt.color233: rgb:0d/14/00
+! URxvt.color234: rgb:13/1f/01
+! URxvt.color235: rgb:19/29/01
+! URxvt.color236: rgb:20/33/01
+! URxvt.color237: rgb:26/3d/01
+! URxvt.color238: rgb:2d/47/01
+! URxvt.color239: rgb:33/52/02
+
+! URxvt.perl-ext-common: clock
+
+! URxvt.perl-ext-common: colorize
+
+! URxvt.color253: #ff8800
+! URxvt.color254: #ff9900
+! URxvt.color255: #ffcc00
 
 !send the following inner command to urxvt when pressing Ctrl+Shift+f
 !see the list of available terminal commands at man 7 urxvt
