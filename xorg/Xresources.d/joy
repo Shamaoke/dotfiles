@@ -1,4 +1,3 @@
-!special
 URxvt.foreground:  rgb:ff/ff/ff
 URxvt.background:  rgb:06/0a/00
 URxvt.cursorColor: rgb:ff/ff/ff
