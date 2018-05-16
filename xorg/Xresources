@@ -94,7 +94,7 @@ URxvt.secondaryScroll: false
 ! URxvt.perl-ext:
 ! URxvt.perl-ext-common:
 
-  URxvt.per-ext-common: colorize
+  URxvt.perl-ext-common: colorize
 
 ! URxvt.perl-ext-common: rabbit
 
