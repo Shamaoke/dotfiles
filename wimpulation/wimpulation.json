@@ -273,7 +273,7 @@
       "gf": "invokeCommand|0|openSource",
       "wgf": "invokeCommand|0|openSourceInTab",
       "wf": "invokeCommand|0|openSourceInFrame",
-      "yy": "invokeCommand|0|yankLink",
+      "yy": "invokeCommand|0|compose|yankLink|toNormalMode",
       "yit": "invokeCommand|0|yankInnerHTML",
       "yat": "invokeCommand|0|yankOuterHTML",
       "ye": "invokeCommand|0|yankInnerText",
