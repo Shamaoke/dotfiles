@@ -89,7 +89,7 @@
     -# “Horizontal”, “Vertical” or boolean (yes/no)
 
   %application{ :class => '*' }
-    %position{ :force => 'yes' }
+    %position{ :force => 'no' }
       %x center
       %y center
 
@@ -105,13 +105,45 @@
     %decor no
     %maximized yes
 
-  %application{ :class => 'Gimp-2.8', :type => 'normal' }
+  %application{ :class => 'Gimp-2.10', :type => 'normal' }
     %decor no
     %maximized yes
 
-  %application{ :class => 'Inkscape', :title => '*- Inkscape' }
+  %application{ :class => 'Inkscape', :type => 'normal' }
     %decor no
     %maximized yes
+
+  %application{ :class => 'Inkscape', :type => 'dialog', :title => 'Objects' }
+    %position{ :force => 'no' }
+      %x 1240
+      %y 20
+    %size
+      %width  350
+      %height 780
+
+  %application{ :class => 'Inkscape', :type => 'dialog', :title => 'Arrange' }
+    %position{ :force => 'no' }
+      %x 1200
+      %y 60
+    %size
+      %width  350
+      %height 500
+
+  %application{ :class => 'Inkscape', :type => 'dialog', :title => 'Align and Distribute*' }
+    %position{ :force => 'no' }
+      %x 1160
+      %y 100
+    %size
+      %width  350
+      %height 500
+
+  %application{ :class => 'Inkscape', :type => 'dialog', :title => 'Fill and Stroke*' }
+    %position{ :force => 'no' }
+      %x 1120
+      %y 140
+    %size
+      %width  350
+      %height 500
 
   %application{ :class => 'Mixxx', :type => 'normal' }
     %decor no
