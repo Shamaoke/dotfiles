@@ -11,6 +11,6 @@
   syntax on
 
 " set color scheme
-  colorscheme zucchini
+  colorscheme undina
 
 " vim: set filetype=vim:
