@@ -2,12 +2,12 @@
 # background   = #ff272822
 # border-color = #fffd971f
 
-background-color     = #ff211d2f
-foreground-color     = #ffecebe1
-foreground-alt-color = #ff423b59
-foreground-normal    = #00ff00
-foreground-alert     = #ff0000
-border-color         = #ffbaa6ff
+background-color     = #ff0d1400
+foreground-color     = #ffffffff
+foreground-alt-color = #ff467002
+foreground-normal    = #ff33e700
+foreground-alert     = #ffe70033
+border-color         = #ff335202
 
 [global/wm]
 margin-top    = 0
