@@ -18,4 +18,9 @@ windows:
         - watch -ctn 1 git\ st
         -
         -
+  - man:
+      layout: even-horizontal
+      panes:
+        -
+        -
   - fm: vifm
