@@ -96,6 +96,11 @@ URxvt.secondaryScroll: false
 
   URxvt.perl-ext-common: colorize
 
+! set the urgency hint for the WM on receipt of a bell character (\x07)
+! this allows to highlight the urgent tab in the suckless tabbed utility
+! when this event occurs
+  URxvt.urgentOnBell: true
+
 ! URxvt.perl-ext-common: rabbit
 
 ! URxvt.rabbit: notify-send 'catch me if you can'
