@@ -1,11 +1,22 @@
-# Static information about the filesystems.
-# See fstab(5) for details.
+## static information about the file systems
+#  see fstab(5) for details
 
-# <file system> <dir> <type> <options> <dump> <pass>
+## get the information about available storage devices by using `lsblk -f'
+
+## <file system identifier> <mount directory> <file system type> <options> <dump> <fsck>
+
+## ecryptfs
 /home/user/.data-lower /home/user/.data-upper ecryptfs noauto,user,ecryptfs_sig=1bfa974051d4f83f,ecryptfs_fnek_sig=1bfa974051d4f83f,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_unlink_sigs 0 0
 
-# fmask is used to set file permissions, 133 is for -rw-r--r--
-# dmask is to set permissions for directories, 022 is for drwxr-xr-x
-# dump=0 is to specify that this FS doesn't need to be dumped by dump(8)
-# fsck=0 is to specify that this FS doesn't need to be checked by fsck(8)
+## flash card with backups
+#  fmask is used to set file permissions, 133 is for -rw-r--r--;
+#  dmask is to set permissions for directories, 022 is for drwxr-xr-x;
+#  these options is used only for the FAT and NTFS file systems,
+#  for the EXTN file systems, change permissions directly by using `chown' utility;
+#  dump=0 is to specify that this FS doesn't need to be dumped by dump(8)
+#  fsck=0 is to specify that this FS doesn't need to be checked by fsck(8)
 UUID=E4C5-1102 /mnt/ratep vfat noauto,rw,user,fmask=133,dmask=022 0 0
+
+## old internal HDD (linux and windows partitions)
+UUID=6ce1b748-006b-4f20-adf5-56498ba456e0 /mnt/internal/linux   ext4 noauto,rw,user                     0 0
+UUID=8090C51690C51416                     /mnt/internal/windows ntfs noauto,rw,user,fmask=133,dmask=022 0 0
