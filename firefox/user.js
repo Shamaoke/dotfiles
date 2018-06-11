@@ -14,7 +14,7 @@ user_pref('extensions.pocket.enabled', false);
 user_pref('layers.acceleration.force-enabled', true);
 
 // disable the reader mode
-user_pref('reader.parse-on-load.enabled', false);
+// user_pref('reader.parse-on-load.enabled', false);
 
 // disable showing the menu by pressing Alt
 // user_pref('ui.key.menuAccessKey', 0);
