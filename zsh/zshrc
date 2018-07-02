@@ -27,7 +27,7 @@ hash -d pm=$HOME/.data-upper/pm
 hash -d df=$HOME/.dotfiles
 
 # Load tmuxinator completions
-source ~/.gem/ruby/2.5.0/gems/tmuxinator-0.11.1/completion/tmuxinator.zsh
+source ~/.gem/ruby/2.5.0/gems/tmuxinator-0.11.3/completion/tmuxinator.zsh
 
 # Change the standard colors by using terminal control sequences
 # Run either of the following to set  the value of color17
