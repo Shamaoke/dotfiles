@@ -7,7 +7,6 @@ path=(
   ~/.bin
   ~/.local/bin
   ~/.gem/ruby/2.5.0/bin
-  ~/.rvm/bin
   $path
 )
 
