@@ -2,7 +2,7 @@
 Description=A Personal Wiki
 
 [Service]
-ExecStart=/home/pavel/.webapps/instiki/instiki
+ExecStart=/home/user/.local/srv/instiki/instiki
 
 [Install]
 WantedBy=default.target
