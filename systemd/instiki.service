@@ -1,0 +1,8 @@
+[Unit]
+Description=A Personal Wiki
+
+[Service]
+ExecStart=/home/pavel/.webapps/instiki/instiki
+
+[Install]
+WantedBy=default.target

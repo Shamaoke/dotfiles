@@ -1,0 +1,8 @@
+[Unit]
+Description=Set the NVIDIA Powermizer mode to 'Performance'
+
+[Service]
+ExecStart=/usr/bin/nvidia-settings --assign GPUPowerMizerMode=1
+
+[Install]
+WantedBy=default.target
