@@ -1,0 +1,51 @@
+// do not close the browser window when closing the last tab
+user_pref('browser.tabs.closeWindowWithLastTab', false);
+
+// eliminate tearing when scrolling a page
+user_pref('layers.acceleration.force-enabled', true);
+
+// set the Alt key to show menu
+user_pref('ui.key.menuAccessKey', 18);
+
+// do not show menu by pressing the Alt key alone
+// use the key accelerators along with the Alt key instead
+user_pref('ui.key.menuAccessKeyFocuses', false);
+
+// disable add-ons compatibility warning at about:addons
+user_pref('extensions.checkCompatibility.56.2', true);
+
+// save windows and tabs from the last session
+user_pref('browser.startup.page', 3);
+
+
+/// VimFx ///
+
+/// Scrolling
+
+// tune the VimFx smooth scrolling
+// see: https://github.com/akhodakivskiy/VimFx/blob/master/documentation/options.md#scrolling-options
+user_pref('extensions.VimFx.smoothScroll.lines.spring-constant', '500');
+
+user_pref('extensions.VimFx.scroll.repeat_timeout', 10);
+
+user_pref('extensions.VimFx.scroll.vertical_boost', 2);
+
+/// Keybindings
+
+// go back in history
+user_pref('extensions.VimFx.mode.normal.history_back', '<');
+
+// go forward in history
+user_pref('extensions.VimFx.mode.normal.history_forward', '>');
+
+// previous tab
+user_pref('extensions.VimFx.mode.normal.tab_select_previous', 'h');
+
+// next tab
+user_pref('extensions.VimFx.mode.normal.tab_select_next', 'l');
+
+// scroll left
+user_pref('extensions.VimFx.mode.normal.scroll_left', '');
+
+// scroll right
+user_pref('extensions.VimFx.mode.normal.scroll_right', '');
