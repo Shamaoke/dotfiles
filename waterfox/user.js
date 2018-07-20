@@ -1,3 +1,5 @@
+/// General ///
+
 // do not close the browser window when closing the last tab
 user_pref('browser.tabs.closeWindowWithLastTab', false);
 
@@ -17,6 +19,17 @@ user_pref('extensions.checkCompatibility.56.2', true);
 // save windows and tabs from the last session
 user_pref('browser.startup.page', 3);
 
+// disable the reader mode
+user_pref('reader.parse-on-load.enabled', false);
+
+// suppress web notifications requests for all sites
+user_pref('dom.webnotifications.enabled', false);
+
+// use a configuration file for proxy settings
+user_pref('network.proxy.type', 2);
+
+// set a configuration file for proxy server settings
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.waterfox/7qbwcag5.default/proxy.pac');
 
 /// VimFx ///
 
