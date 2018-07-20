@@ -32,6 +32,15 @@ user_pref('extensions.VimFx.scroll.vertical_boost', 2);
 
 /// Keybindings
 
+// follow link, focus text input or click button
+user_pref('extensions.VimFx.mode.normal.follow', 'f');
+
+// follow link in a new foreground tab
+user_pref('extensions.VimFx.mode.normal.follow_in_focused_tab', 'F');
+
+// follow link in a new background tab
+user_pref('extensions.VimFx.mode.normal.follow_in_tab', 'et');
+
 // go back in history
 user_pref('extensions.VimFx.mode.normal.history_back', '<');
 
