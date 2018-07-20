@@ -35,6 +35,9 @@ user_pref('browser.urlbar.maxRichResults', 20);
 // disable video autoplay
 user_pref('media.autoplay.enabled', false);
 
+// use a configuration file for proxy settings
+user_pref('network.proxy.type', 2);
+
 // set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/304it05e.default/proxy.pac');
 
