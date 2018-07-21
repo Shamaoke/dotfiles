@@ -31,6 +31,9 @@ user_pref('network.proxy.type', 2);
 // set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.waterfox/7qbwcag5.default/proxy.pac');
 
+// specify a number of entries in the address bar drop-down list
+user_pref('browser.urlbar.maxRichResults', 20);
+
 /// VimFx ///
 
 /// General
