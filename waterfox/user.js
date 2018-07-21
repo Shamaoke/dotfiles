@@ -33,6 +33,11 @@ user_pref('network.proxy.autoconfig_url', 'file:///home/user/.waterfox/7qbwcag5.
 
 /// VimFx ///
 
+/// General
+
+// pretend that en-us layout is always used
+user_pref('extensions.VimFx.ignore_keyboard_layout', true);
+
 /// Scrolling
 
 // tune the VimFx smooth scrolling
