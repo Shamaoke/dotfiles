@@ -34,6 +34,9 @@ user_pref('network.proxy.autoconfig_url', 'file:///home/user/.waterfox/7qbwcag5.
 // specify a number of entries in the address bar drop-down list
 user_pref('browser.urlbar.maxRichResults', 20);
 
+// disable the save passwords feature
+user_pref('signon.rememberSignons', false);
+
 /// VimFx ///
 
 /// General
