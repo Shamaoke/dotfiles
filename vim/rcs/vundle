@@ -44,6 +44,8 @@ Plugin 'gmarik/Vundle.vim'
   Plugin 'Shamaoke/zucchini.vim'
   Plugin 'skywind3000/asyncrun.vim'
   Plugin 'Shamaoke/undina'
+  Plugin 'jiangmiao/auto-pairs'
+  Plugin 'thaerkh/vim-indentguides'
 
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'chriskempson/base16-vim'
