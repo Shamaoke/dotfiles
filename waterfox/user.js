@@ -40,6 +40,9 @@ user_pref('signon.rememberSignons', false);
 // disable middle-click load clipboard URL behavior
 user_pref('middlemouse.contentLoadURL', false);
 
+// disable video autoplay
+user_pref('media.autoplay.enabled', false);
+
 /// VimFx ///
 
 /// General
