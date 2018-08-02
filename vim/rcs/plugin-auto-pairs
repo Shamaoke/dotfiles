@@ -1,0 +1,24 @@
+" Because of technical peculiarities alt-hotkeys doesn't work
+" in Vim running inside URxvt if the hotkeys is set directly, e. g <M-n>.
+
+" In order to force Vim to use alt-hotkeys, it needs to specify the binary
+" code of the Alt key in the configuration file. It can be done by using
+" the `ctrl-v ctrl-[' hotkey in the insert mode. See `:help i_CTRL-V' for
+" more details.
+
+" toggle AutoPairs
+let g:AutoPairsShortcutToggle = 'p'
+
+" wrap the next word with brackets
+let g:AutoPairsShortcutFastWrap = 'e'
+
+" jump to the next closed pair
+let g:AutoPairsShortcutJump = 'n'
+
+" insert a bracket in Fly Mode instead of jumping to a closed pair
+let g:AutoPairsShortcutBackInsert = 'b'
+
+" enable Fly Mode
+let g:AutoPairsFlyMode = 1
+
+" vim: set filetype=vim:
