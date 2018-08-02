@@ -8,7 +8,10 @@ source ~/.dotfiles/vim/rcs/plugin-markdown
 source ~/.dotfiles/vim/rcs/plugin-matchparen
 
 " load NERDTree settings
-source ~/.dotfiles/vim/rcs/plugin-nerdtree
+" source ~/.dotfiles/vim/rcs/plugin-nerdtree
+
+" load AutoPairs settings
+" source ~/.dotfiles/vim/rcs/plugin-auto-pairs
 
 " load Rust settings
 source ~/.dotfiles/vim/rcs/plugin-rust
@@ -20,7 +23,7 @@ source ~/.dotfiles/vim/rcs/plugin-tagbar
 source ~/.dotfiles/vim/rcs/plugin-unite
 
 " load Vimfiler settings
-source ~/.dotfiles/vim/rcs/plugin-vimfiler
+" source ~/.dotfiles/vim/rcs/plugin-vimfiler
 
 " load a colorscheme
 source ~/.dotfiles/vim/rcs/colorscheme
