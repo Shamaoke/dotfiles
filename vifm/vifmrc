@@ -138,7 +138,7 @@ filetype *.ps zathura %f &> /dev/null &
 filetype *.djvu zathura %f &> /dev/null &
 
 " CHM
-filetype *.chm xchm %f &> /dev/null &
+filetype *.chm kchmviewer %f &> /dev/null &
 
 " TORRENT
 " filetype *.torrent dbus-launch flush %f &> /dev/null &
