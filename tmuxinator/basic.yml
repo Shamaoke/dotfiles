@@ -10,5 +10,9 @@ windows:
       panes:
         -
         -
-  - console:
+  - console|man:
+      layout: even-horizontal
+      panes:
+        -
+        -
   - fm: vifm
