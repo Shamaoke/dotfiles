@@ -43,6 +43,9 @@ user_pref('middlemouse.contentLoadURL', false);
 // disable video autoplay
 user_pref('media.autoplay.enabled', false);
 
+// suppress web notifications requests for all sites
+user_pref('dom.webnotifications.enabled', false);
+
 /// VimFx ///
 
 /// General
