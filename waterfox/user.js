@@ -23,7 +23,8 @@ user_pref('browser.startup.page', 3);
 user_pref('reader.parse-on-load.enabled', false);
 
 // suppress web notifications requests for all sites
-user_pref('dom.webnotifications.enabled', false);
+// user_pref('dom.webnotifications.enabled', false); // <- for some reason this doesn't work
+user_pref('dom.push.enabled', false);
 
 // use a configuration file for proxy settings
 user_pref('network.proxy.type', 2);
