@@ -42,8 +42,9 @@ URxvt.intensityStyles: false
 ! decrease a space between letters for a better look
 ! increase the line space in order to remove padding around the text area
 ! remove borders around the text area
-  URxvt.font:     xft:InputMono:size=11
-  URxvt.boldFont: xft:InputMono Medium:size=11
+  URxvt.font: xft:Input Mono:size=11, xft:Noto Sans Mono CJK JP
+
+  URxvt.boldFont: xft:Input Mono Medium:size=11
 
   URxvt.letterSpace:    -1
   URxvt.lineSpace:       0
