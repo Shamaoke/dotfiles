@@ -13,8 +13,8 @@ border.width: 2
 # Window title bar
 window.*.title.bg: solid flat
 window.*.title.bg.color: #211d2f
-padding.width: 5
-padding.height: 5
+padding.width: 3
+padding.height: 3
 
 # Window label
 window.*.label.bg: solid flat
