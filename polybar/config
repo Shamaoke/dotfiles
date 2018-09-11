@@ -2,10 +2,10 @@
 # background   = #ff272822
 # border-color = #fffd971f
 
-# background-color     = #ff0d1400
-# border-color         = #ff335202
-  background-color     = #ffc2b795
-  border-color         = #ff89b39e
+  background-color     = #ff0d1400
+  border-color         = #ff335202
+# background-color     = #ffc2b795
+# border-color         = #ff89b39e
   foreground-color     = #ffffffff
   foreground-alt-color = #ff467002
   foreground-normal    = #ff33e700
@@ -21,7 +21,7 @@
   width              = 100%
 # width              = 1600
 # height             = 24
-  height             = 16
+  height             = 18
 # padding-right      = 2
 # padding-left       = 2
 # padding-right      = 2
@@ -31,7 +31,7 @@
   fixed-center       = true
   background         = ${colors.background-color}
   foreground         = ${colors.foreground-color}
-  border-bottom-size = 2
+  border-bottom-size = 0
   border-color       = ${colors.border-color}
 # font-0             = Afiado:pixelsize=11;2
 # font-0             = Dejavu Sans Mono:size=10;1
@@ -42,7 +42,7 @@
 # font-0             = InputMono Medium:size=10;2
 # font-0             = InputMonoCondensed:pixelsize=11;2
 # font-0             = InputMonoNarrow:pixelsize=13;4
-  font-0             = InputMonoNarrow:pixelsize=10;3
+  font-0             = InputMonoNarrow:pixelsize=10;1
 # separator          = "|"
 # module-margin      = 2
   module-margin      = 1
