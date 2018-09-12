@@ -1,0 +1,7 @@
+" :::commands:::
+
+" toggle normal|tree view
+" command tree! :if getpanetype() == 'regular' | tree | else | ?command_to_normal_mode | endif
+  command tree! :tree
+
+" vim: set filetype=vifm:
