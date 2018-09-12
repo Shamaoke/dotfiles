@@ -1,0 +1,6 @@
+" :::keybindings:::
+
+" switch to the tree view
+  nmap <c-w>t :tree!<cr>
+
+" vim: set filetype=vifm:
