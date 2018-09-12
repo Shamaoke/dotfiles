@@ -7,6 +7,9 @@
 " If you would like to use another vi clone such Elvis or Vile
 " you will need to change this setting.
 
+source ~/.dotfiles/vifm/_/00_commands
+source ~/.dotfiles/vifm/_/01_keybindings
+
 set vicmd=vim
 
 " set vicmd=elvis\ -G\ termcap
@@ -70,7 +73,7 @@ set timefmt=\ %m/%d\ %H:%M
 " :mark mark /full/directory/path [filename]
 
 " mark L /usr/local ../
-" mark R / 
+" mark R /
 " mark S /usr/local/share ../
 " mark U /usr ../
 
