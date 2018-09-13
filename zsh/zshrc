@@ -18,7 +18,10 @@ setopt NO_BEEP
 alias pacman='pacman --color=always'
 alias xi="xclip -selection 'clipboard' -i"
 alias xo="xclip -selection 'clipboard' -o"
-alias mux="tmuxinator"
+alias mux='tmuxinator'
+alias msb="mux start basic $1"
+alias mss="mux start simple $1"
+alias mdf='cd ~df && mss dotfiles'
 
 # Set the named directories
 hash -d openbox=$HOME/.config/openbox
