@@ -1,6 +1,12 @@
 " :::keybindings:::
 
-" toggle normal|tree view
-  nmap <c-w>t :tree!<cr>
+" switch to normal view
+  nmap <c-v>r :regular<cr>
+
+" switch to tree view
+  nmap <c-v>t :tree<cr>
+
+" toggle normal-tree view
+  nmap <c-v>tt :tree!<cr>
 
 " vim: set filetype=vifm:
