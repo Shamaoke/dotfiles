@@ -24,10 +24,9 @@ alias mss="mux start simple $1"
 alias mdf='cd ~df && mss dotfiles'
 
 # Set the named directories
-hash -d openbox=$HOME/.config/openbox
-hash -d polybar=$HOME/.config/polybar
 hash -d pm=$HOME/.data-upper/pm
 hash -d df=$HOME/.dotfiles
+hash -d dv=$HOME/.development
 hash -d pg=$HOME/.development/playground
 
 # Load tmuxinator completions
