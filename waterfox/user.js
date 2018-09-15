@@ -1,4 +1,4 @@
-/// General ///
+/* :::General::: */
 
 // do not close the browser window when closing the last tab
 user_pref('browser.tabs.closeWindowWithLastTab', false);
@@ -48,14 +48,67 @@ user_pref('media.autoplay.enabled', false);
 // suppress web notifications requests for all sites
 user_pref('dom.webnotifications.enabled', false);
 
-/// VimFx ///
+/* :::Fonts::: */
 
-/// General
+// set a type for the Latin proportional fonts
+user_pref('font.default.x-western', 'sans-serif');
+
+// set a type for the Cyrillic proportional fonts
+user_pref('font.default.x-cyrillic', 'sans-serif');
+
+// set a font family for the Latin serif type
+user_pref('font.name.serif.x-western', 'PT Serif');
+
+// set a font family for the Cyrillic serif type
+user_pref('font.name.serif.x-cyrillic', 'PT Serif');
+
+// set a font family for the Japanese serif type
+user_pref('font.name.serif.ja', 'Kozuka Mincho Pro');
+
+// set a font family for the Latin sans-serif type
+user_pref('font.name.sans-serif.x-western', 'PT Sans');
+
+// set a font family for the Cyrillic sans-serif type
+user_pref('font.name.sans-serif.x-cyrillic', 'PT Sans');
+
+// set a font family for the Japanese sans-serif type
+user_pref('font.name.sans-serif.ja', 'Kozuka Gothic Pro');
+
+// set a font family for the Latin monospace type
+user_pref('font.name.monospace.x-western', 'Input Mono Narrow');
+
+// set a font family for the Cyrillic monospace type
+user_pref('font.name.monospace.x-cyrillic', 'Input Mono Narrow');
+
+// set a font family for the Japanese monospace type
+user_pref('font.name.monospace.ja', 'Input Mono Narrow');
+
+// set a size for the Latin proportional fonts
+user_pref('font.size.variable.x-western', 16);
+
+// set a size for the Cyrillic proportional fonts
+user_pref('font.size.variable.x-cyrillic', 16);
+
+// set a size for the Japanese proportional fonts
+user_pref('font.size.variable.ja', 16);
+
+// set a size for the Latin monospace fonts
+user_pref('font.size.fixed.x-western', 14);
+
+// set a size for the Cyrillic monospace fonts
+user_pref('font.size.fixed.x-cyrillic', 14);
+
+// set a size for the Japanese monospace fonts
+user_pref('font.size.fixed.ja', 14);
+
+/* :::VimFx::: */
+
+/* ::VimFx | General:: */
 
 // pretend that en-us layout is always used
 user_pref('extensions.VimFx.ignore_keyboard_layout', true);
 
-/// Scrolling
+/* ::VimFx | Scrolling:: */
 
 // tune the VimFx smooth scrolling
 // see: https://github.com/akhodakivskiy/VimFx/blob/master/documentation/options.md#scrolling-options
@@ -65,7 +118,7 @@ user_pref('extensions.VimFx.scroll.repeat_timeout', 10);
 
 user_pref('extensions.VimFx.scroll.vertical_boost', 2);
 
-/// Keybindings
+/* ::VimFx | Keybindings:: */
 
 // follow link, focus text input or click button
 user_pref('extensions.VimFx.mode.normal.follow', 'f');
