@@ -7,27 +7,27 @@
 # Read `http://openbox.org/wiki/Help:Themes' for details
 
 # Window borders
-window.*.border.color: #211d2f
+window.*.border.color: #4f2624
 border.width: 2
 
 # Window title bar
 window.*.title.bg: solid flat
-window.*.title.bg.color: #211d2f
+window.*.title.bg.color: #4f2624
 padding.width: 3
 padding.height: 3
 
 # Window label
 window.*.label.bg: solid flat
-window.*.label.bg.color: #211d2f
-window.*.label.text.color: #ecebe1
+window.*.label.bg.color: #4f2624
+window.*.label.text.color: #ffffff
 
 # Buttons
 window.*.button.*.bg: solid flat
-window.*.button.*.image.color: #211d2f
-window.*.button.*.bg.color: #ecebe1
+window.*.button.*.image.color: #ffffff
+window.*.button.*.bg.color: #4f2624
 
 # Title separator (the separator between the title bar and the client)
-window.*.title.separator.color: #baa6ff
+window.*.title.separator.color: #d68051
 
 # Window content (client)
 window.*.client.color: #fd971f
