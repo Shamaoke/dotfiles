@@ -131,13 +131,15 @@
 
   -# Keybindings for setting window sizes
   %keybind{ :key => 'W-1' }
+    %action{ :name => 'Unmaximize' }
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
-      %width 1280
-      %height 720
+      %width 1564
+      %height 840
 
   %keybind{ :key => 'W-2' }
+    %action{ :name => 'Unmaximize' }
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
@@ -145,6 +147,7 @@
       %height 800
 
   %keybind{ :key => 'W-3' }
+    %action{ :name => 'Unmaximize' }
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
@@ -152,11 +155,20 @@
       %height 600
 
   %keybind{ :key => 'W-4' }
+    %action{ :name => 'Unmaximize' }
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
       %width 800
-      %height 800
+      %height 874
+
+  %keybind{ :key => 'W-5' }
+    %action{ :name => 'Unmaximize' }
+    %action{ :name => 'MoveResizeTo' }
+      %x center
+      %y center
+      %width 1280
+      %height 720
 
   -# Keybindings related to window states and positions
   %keybind{ :key => 'W-d' }
@@ -179,6 +191,22 @@
   %keybind{ :key => 'A-space' }
     %action{ :name => 'ShowMenu' }
       %menu client-menu
+
+  %keybind{ :key => 'W-comma' }
+    %action{ :name => 'Unmaximize' }
+    %action{ :name => 'MoveResizeTo' }
+      %x 0
+      %y 0
+      %width 801
+      %height 874
+
+  %keybind{ :key => 'W-period' }
+    %action{ :name => 'Unmaximize' }
+    %action{ :name => 'MoveResizeTo' }
+      %x 799
+      %y 0
+      %width 801
+      %height 874
 
   -# Alternate keybindings for changing window states
   %chainQuitKey C-g
