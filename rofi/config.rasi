@@ -49,10 +49,10 @@ configuration {
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
 /*	theme: "sample_theme"; */
-	color-normal: "#211d2f, #ffffff, #211d2f, #423b59, #ffffff";
+	color-normal: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff";
 /*	color-urgent: ;*/
 /*	color-active: ;*/
-	color-window: "#211d2f, #baa6ff, #baa6ff";
+	color-window: "#4f2624, #d68051, #d68051";
 /*	plugin-path: "/usr/lib/rofi";*/
 /*	pid: "/run/user/1001/rofi.pid";*/
 /*	display-window: ;*/
