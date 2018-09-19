@@ -16,7 +16,7 @@
   window.inactive.title.bg:       solid flat
   window.active.title.bg.color:   #4f2624
   window.inactive.title.bg.color: #714d35
-  padding.width:  6
+  padding.width:  5
   padding.height: 2
 
 # Window label
