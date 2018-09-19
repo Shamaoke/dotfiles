@@ -1,0 +1,10 @@
+# /etc/systemd/system
+
+[Unit]
+Description=Change TTY after boot
+
+[Service]
+ExecStart=/usr/bin/chvt 2
+
+[Install]
+WantedBy=default.target
