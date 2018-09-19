@@ -22,8 +22,7 @@
   monitor            = LVDS-0
   width              = 100%
 # width              = 1600
-# height             = 24
-  height             = 26
+  height             = 24
 # padding-right      = 2
 # padding-left       = 2
 # padding-right      = 2
