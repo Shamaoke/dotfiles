@@ -7,70 +7,93 @@
 # Read `http://openbox.org/wiki/Help:Themes' for details
 
 # Window borders
-window.*.border.color: #4f2624
-border.width: 2
+  window.active.border.color:   #4f2624
+  window.inactive.border.color: #714d35
+  border.width: 2
 
 # Window title bar
-window.*.title.bg: solid flat
-window.*.title.bg.color: #4f2624
-padding.width: 3
-padding.height: 3
+  window.active.title.bg:         solid flat
+  window.inactive.title.bg:       solid flat
+  window.active.title.bg.color:   #4f2624
+  window.inactive.title.bg.color: #714d35
+  padding.width:  6
+  padding.height: 2
 
 # Window label
-window.*.label.bg: solid flat
-window.*.label.bg.color: #4f2624
-window.*.label.text.color: #ffffff
+  window.active.label.bg:         solid flat
+  window.inactive.label.bg:       solid flat
+  window.*.label.text.color:      #ffffff
+  window.active.label.bg.color:   #4f2624
+  window.inactive.label.bg.color: #714d35
 
 # Buttons
-window.*.button.*.bg: solid flat
-window.*.button.*.image.color: #ffffff
-window.*.button.*.bg.color: #4f2624
+  window.*.button.*.bg:              solid flat
+  window.*.button.*.image.color:     #ffffff
+  window.active.button.*.bg.color:   #4f2624
+  window.inactive.button.*.bg.color: #714d35
 
 # Title separator (the separator between the title bar and the client)
-window.*.title.separator.color: #d68051
+  window.*.title.separator.color: #d68051
 
 # Window content (client)
-window.*.client.color: #fd971f
-window.client.padding.width: 0
-window.client.padding.height: 0
+  window.*.client.color:        #ffccff
+  window.client.padding.width:  0
+  window.client.padding.height: 0
 
 # Window handle
-# window.*.handle.bg: solid flat
+# window.*.handle.bg:       solid flat
 # window.*.handle.bg.color: #ff0000
-# window.*.handle.width: 0
-window.*.handle.width: 0
+  window.*.handle.width: 0
 
 # Window grips
-# window.*.grip.bg: solid flat
+# window.*.grip.bg:       solid flat
 # window.*.grip.bg.color: #665544
 
-# On-screen display content
-# osd.bg: solid flat
-# osd.bg.color: #0000ff
-osd.border.width: 1
-osd.border.color: #baa6ff
+# On-screen display
+#
+# OSD border
+  osd.border.width: 1
+  osd.border.color: #d68051
+#
+# OSD desktop switcher and
+# window switcher backgrounds
+# osd.bg:       solid flat
+# osd.bg.color: #5b1e51
+#
+# OSD desktop switcher label,
+# window switcher highlights,
+# text and selected icon
+# osd.label.bg:         solid flat
+# osd.label.bg.color:   #ffcc00
+# osd.label.text.color: #000000
+#
+# OSD selected desktop
+# osd.hilight.bg:       solid flat
+# osd.hilight.bg.color: #000000
+#
+# OSD unselected desktops
+# osd.unhilight.bg:       solid flat
+# osd.unhilight.bg.color: #e6020a
 
-# On-screen display label
-# osd.label.bg: solid flat
-# osd.label.text.color: #00ff00
-
+# Menu
+#
 # Menu header
-menu.title.bg: solid flat
-menu.title.bg.color: #211d2f
-menu.title.text.color: #baa6ff
-
+  menu.title.bg:         solid flat
+  menu.title.text.color: #d68051
+  menu.title.bg.color:   #4f2624
+#
 # Menu element
-menu.items.bg: solid flat
-menu.items.bg.color: #211d2f
-menu.items.text.color: #423b59
-
+  menu.items.bg:         solid flat
+  menu.items.text.color: #ffffff
+  menu.items.bg.color:   #4f2624
+#
 # Selected menu element
-menu.items.active.bg: solid flat
-menu.items.active.bg.color: #211d2f
-menu.items.active.text.color: #ecebe1
-
+  menu.items.active.bg:         solid flat
+  menu.items.active.text.color: #ffffff
+  menu.items.active.bg.color:   #714d35
+#
 # Disabled menu element
-menu.items.disabled.text.color: #423b59
-
+  menu.items.disabled.text.color: #d68051
+#
 # Menu separator
-menu.separator.color: #423b59
+  menu.separator.color: #d68051
