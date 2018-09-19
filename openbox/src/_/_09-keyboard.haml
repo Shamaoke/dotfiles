@@ -136,7 +136,7 @@
       %x center
       %y center
       %width 1564
-      %height 840
+      %height 844
 
   %keybind{ :key => 'W-2' }
     %action{ :name => 'Unmaximize' }
@@ -198,7 +198,7 @@
       %x 0
       %y 0
       %width 801
-      %height 874
+      %height 876
 
   %keybind{ :key => 'W-period' }
     %action{ :name => 'Unmaximize' }
@@ -206,7 +206,7 @@
       %x 799
       %y 0
       %width 801
-      %height 874
+      %height 876
 
   -# Alternate keybindings for changing window states
   %chainQuitKey C-g
@@ -216,7 +216,19 @@
       %action{ :name => 'Close' }
 
     %keybind{ :key => 's' }
-      %action{ :name => 'ToggleMaximizeFull' }
+      %action{ :name => 'If'}
+        %query
+          %maximized no
+        %then
+          %action{ :name => 'Undecorate' }
+          %action{ :name => 'Maximize' }
+        %else
+          %action{ :name => 'If'}
+            %query
+              %maximized yes
+            %then
+              %action{ :name => 'Decorate' }
+              %action{ :name => 'Unmaximize' }
 
     %keybind{ :key => 'f' }
       %action{ :name => 'ToggleFullscreen' }
