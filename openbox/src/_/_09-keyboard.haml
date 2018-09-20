@@ -106,6 +106,7 @@
       %to 10
 
   -# Keybindings for window switching
+  -# Cycle windows on all desktops
   %keybind{ :key => 'A-Tab' }
     %action{ :name => 'NextWindow' }
       %allDesktops yes
@@ -124,10 +125,22 @@
         %action{ :name => 'Raise' }
         %action{ :name => 'Unshade' }
 
+  -# Cycle windows on the current desktop
   %keybind{ :key => 'A-Escape' }
-    %action{ :name => 'Lower' }
-    %action{ :name => 'FocusToBottom' }
-    %action{ :name => 'Unfocus' }
+    %action{ :name => 'NextWindow' }
+      %dialog none
+      %bar no
+      %interactive no
+      %linear yes
+      %allDesktops no
+
+  %keybind{ :key => 'A-S-Escape' }
+    %action{ :name => 'PreviousWindow' }
+      %dialog none
+      %bar no
+      %interactive no
+      %linear yes
+      %allDesktops no
 
   -# Keybindings for setting window sizes
   %keybind{ :key => 'W-1' }
@@ -160,7 +173,7 @@
       %x center
       %y center
       %width 800
-      %height 874
+      %height 876
 
   %keybind{ :key => 'W-5' }
     %action{ :name => 'Unmaximize' }
