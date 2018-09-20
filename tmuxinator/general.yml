@@ -12,11 +12,10 @@ windows:
   - build:
   - install:
   - git:
-      layout: tiled
+      layout: 28ed,157x45,0,0{78x45,0,0,52,78x45,79,0[78x22,79,0,57,78x22,79,23,58]}
       panes:
         - watch -ctn 1 git\ godlog
         - watch -ctn 1 git\ st
-        -
         -
   - console:
   - dbconsole:
