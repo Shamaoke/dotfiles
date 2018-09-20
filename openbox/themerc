@@ -27,8 +27,20 @@
   window.inactive.label.bg.color: #714d35
 
 # Buttons
-  window.*.button.*.bg:              solid flat
-  window.*.button.*.image.color:     #ffffff
+# window.*.button.*.bg:              solid flat
+# window.*.button.*.image.color:     #ffffff
+# window.active.button.*.bg.color:   #4f2624
+# window.inactive.button.*.bg.color: #714d35
+
+  window.*.button.unpressed.bg:          solid flat
+  window.*.button.unpressed.image.color: #ffffff
+
+  window.*.button.pressed.bg:          solid flat
+  window.*.button.pressed.image.color: #d68051
+
+  window.*.button.hover.bg:          solid flat
+  window.*.button.hover.image.color: #d68051
+
   window.active.button.*.bg.color:   #4f2624
   window.inactive.button.*.bg.color: #714d35
 
