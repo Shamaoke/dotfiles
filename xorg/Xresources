@@ -7,7 +7,7 @@
 #include ".Xresources.d/joy"
 
 !set geometry
-  URxvt.geometry: 156x45
+  URxvt.geometry: 157x46
 
 !URxvt.geometry: 164x40
 !URxvt.geometry: 170x42
