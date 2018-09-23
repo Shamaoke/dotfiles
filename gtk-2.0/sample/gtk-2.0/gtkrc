@@ -1,0 +1,53 @@
+# gtk-icon-theme-jame = "sample"
+# gtk-theme-name      = "sample"
+# gtk-font-name       = "PT Sans 10"
+
+# style "sample-default"
+#   { GtkMenu::horizontal-padding      = 44
+#     GtkMenu::vertical-padding        = 80
+#     GtkMenu::horizontal-offset       = 34
+#     GtkMenuBar::internal-padding     = 40
+#     GtkCheckMenuItem::indicator-size = 80 }
+
+# main
+  style "sample-main"
+    { font_name = "PT Sans 10" }
+
+# menu bar
+  style "sample-menubar" = "sample-default"
+    { bg[NORMAL] = { 0.43, 0.3, 0.2 }
+
+      xthickness = 0
+      ythickness = 0 }
+
+# dropdown menu
+  style "sample-menu" = "sample-default"
+    { bg[NORMAL] = { 0.43, 0.3, 0.2 } }
+
+# menubar and menus text
+  style "sample-accel" = "sample-default"
+    { fg[NORMAL] = { 1.0, 1.0, 1.0 } }
+
+# menubar and menu items
+  style "sample-menuitem" = "sample-default"
+    { bg[PRELIGHT] = { 0.83, 0.50, 0.31 }
+      fg[NORMAL]   = { 1.0, 1.0, 1.0 } }
+
+# labels at different elements
+  style "sample-label" = "sample-default"
+    { fg[NORMAL] = { 1.0, 1.0, 1.0 } }
+
+# separator of menu entries
+  style "sample-separator" = "sample-default"
+    { bg[NORMAL] = { 1.00, 1.00, 1.00 }
+
+      xthickness = 2
+      ythickness = 2 }
+
+  class "*"                    style "sample-main"
+  class "GtkMenuBar"           style "sample-menubar"
+  class "GtkMenu"              style "sample-menu"
+# class "GtkLabel"             style "sample-label"
+  class "GtkMenuItem"          style "sample-menuitem"
+  class "GtkSeparatorMenuItem" style "sample-separator"
+  class "GtkAccelLabel"        style "sample-accel"
