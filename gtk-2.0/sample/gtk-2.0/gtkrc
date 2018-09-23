@@ -1,3 +1,6 @@
+# use the `GTK2_RC_FILES=/path/to/rc/file application' command to run
+# an application with the specific rc-file
+
 # gtk-icon-theme-jame = "sample"
 # gtk-theme-name      = "sample"
 # gtk-font-name       = "PT Sans 10"
@@ -53,3 +56,5 @@
   class "GtkMenuItem"          style "sample-menuitem"
   class "GtkSeparatorMenuItem" style "sample-separator"
   class "GtkAccelLabel"        style "sample-accel"
+
+# vim: set textwidth=70 colorcolumn=70:
