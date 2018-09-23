@@ -31,7 +31,9 @@
 # menubar and menu items
   style "sample-menuitem" = "sample-default"
     { bg[PRELIGHT] = { 0.83, 0.50, 0.31 }
-      fg[NORMAL]   = { 1.0, 1.0, 1.0 } }
+      fg[NORMAL]   = { 1.0, 1.0, 1.0 }
+
+      GtkMenuItem::arrow-scaling = 0.5 }
 
 # labels at different elements
   style "sample-label" = "sample-default"
