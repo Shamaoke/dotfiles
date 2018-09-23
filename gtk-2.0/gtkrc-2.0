@@ -1,1 +1,2 @@
 include "/home/user/.local/share/themes/sample/gtk-2.0/gtkrc"
+include "/home/user/.local/share/themes/sample/gtk-2.0/gtkrc-bindings"

@@ -1,0 +1,10 @@
+#
+# Bindings for menus
+#
+binding "sample-menu"
+  { bind "j" { "move-current" (next)   }
+    bind "k" { "move-current" (prev)   }
+    bind "l" { "move-current" (child)  }
+    bind "h" { "move-current" (parent) } }
+
+class "GtkMenuShell" binding "sample-menu"
