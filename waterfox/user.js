@@ -135,6 +135,12 @@ user_pref('extensions.VimFx.mode.normal.history_back', '<');
 // go forward in history
 user_pref('extensions.VimFx.mode.normal.history_forward', '>');
 
+// move tab to the left
+user_pref('extensions.VimFx.mode.normal.tab_move_backward', 'H');
+
+// move tab to the right
+user_pref('extensions.VimFx.mode.normal.tab_move_forward', 'L');
+
 // previous tab
 user_pref('extensions.VimFx.mode.normal.tab_select_previous', 'h');
 
