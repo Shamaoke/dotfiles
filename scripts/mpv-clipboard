@@ -4,3 +4,7 @@
 url=`xclip -selection 'clipboard' -o`
 title=`youtube-dl --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
 mpv --geometry=1276x718 --title=$title $url
+
+if [[ error_code=$? -ne 0 ]]; then
+  notify-send --app-name=MClip 'MClip' "Cannot play a video file from URL:\n`echo $url | cut -c -40`...\nError: $error_code"
+fi
