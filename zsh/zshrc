@@ -36,3 +36,11 @@ source ~/.gem/ruby/2.5.0/gems/tmuxinator-0.12.0/completion/tmuxinator.zsh
 # Run either of the following to set  the value of color17
 # printf "\x1b]4;17;#471009\x7"
 # printf "\033]4;17;#471009\007"
+
+# autoload user functions
+autoload zle-keymap-select
+autoload zle-line-init
+
+# define user widgets
+zle -N zle-keymap-select
+zle -N zle-line-init
