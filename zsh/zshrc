@@ -22,6 +22,7 @@ alias mux='tmuxinator'
 alias msb="mux start basic $1"
 alias mss="mux start simple $1"
 alias mdf='cd ~df && mss dotfiles'
+alias mch='cd ~dv/chrome && mss chrome'
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
