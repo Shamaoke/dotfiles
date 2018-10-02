@@ -48,10 +48,16 @@
 # separator          = "|"
 # module-margin      = 2
   module-margin      = 1
+# modules-left       = menu ewmh
   modules-left       = ewmh
   modules-center     = date
   modules-right      = xkeyboard wired-network wireless-network battery volume
   enable-ipc         = true
+
+# [module/menu]
+#   type       = custom/text
+#   content    = openbox
+#   click-left = sleep 0.13; xdotool key F1
 
 [module/ewmh]
   type = internal/xworkspaces
