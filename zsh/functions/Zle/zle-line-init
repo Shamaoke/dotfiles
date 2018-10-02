@@ -1,0 +1,6 @@
+# reset prompt to the default value
+PS1="%~ %F{10}%B>_%b%f "
+
+zle reset-prompt
+
+# vim: set filetype=zsh textwidth=80 colorcolumn=80
