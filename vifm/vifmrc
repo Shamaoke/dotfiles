@@ -143,6 +143,9 @@ filetype *.djvu zathura %f &> /dev/null &
 " CHM
 filetype *.chm kchmviewer %f &> /dev/null &
 
+" Comic Book Reader (CDR)
+filetype *.cbr zathura %f &> /dev/null &
+
 " TORRENT
 " filetype *.torrent dbus-launch flush %f &> /dev/null &
 
