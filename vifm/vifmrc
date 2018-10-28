@@ -144,7 +144,7 @@ filetype *.djvu zathura %f &> /dev/null &
 filetype *.chm kchmviewer %f &> /dev/null &
 
 " Comic Book Reader (CDR)
-filetype *.cbr zathura %f &> /dev/null &
+" filetype *.cbr zathura %f &> /dev/null &
 
 " TORRENT
 " filetype *.torrent dbus-launch flush %f &> /dev/null &
@@ -166,9 +166,9 @@ filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
 
 " filetype *.tar.gz,*.tgz FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR
 
-filetype *.zip,*.jar,*.war,*.ear,*.ja,*.xpi FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
+filetype *.zip,*.jar,*.war,*.ear,*.ja,*.xpi,*.cbz FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
 
-filetype *.rar FUSE_MOUNT|unrar x %SOURCE_FILE %DESTINATION_DIR
+filetype *.rar,*.cbr FUSE_MOUNT|unrar x %SOURCE_FILE %DESTINATION_DIR
 
 filetype *.7z FUSE_MOUNT|7z x -o%DESTINATION_DIR %SOURCE_FILE
 
