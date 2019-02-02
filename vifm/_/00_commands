@@ -1,9 +1,10 @@
 " :::commands:::
 
+" the following two commands was natively added to vifm, so they no more needed
 " switch to normal mode
-  command regular :cd .
+" command regular :cd .
 
 " toggle normal|tree view
-  command tree! :if getpanetype() == 'tree' | regular | else | tree | endif
+" command tree! :if getpanetype() == 'tree' | regular | else | tree | endif
 
-" vim: set filetype=vifm:
+" vim: set filetype=vifm textwidth=80 colorcolumn=80:
