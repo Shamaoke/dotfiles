@@ -151,7 +151,7 @@ filetype *.chm kchmviewer %f &> /dev/null &
 
 " VIDEO
 " filetype *.mp4,*.avi,*.wmv,*.flv vlc %f &> /dev/null &
-filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf mpv %f &> /dev/null &
+filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf mpv --audio-file-auto=fuzzy %f &> /dev/null &
 
 " AUDIO
 filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
