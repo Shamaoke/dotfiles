@@ -48,6 +48,9 @@ user_pref('media.autoplay.enabled', false);
 // suppress web notifications requests for all sites
 user_pref('dom.webnotifications.enabled', false);
 
+// suppress location prompts
+user_pref('geo.enabled', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
