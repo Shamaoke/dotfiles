@@ -91,4 +91,10 @@
 " set the title of window
 " set titlestring=vim
 
+" open new panel below the current one when splitting horizontally
+  set splitbelow
+
+" open new panel to the right of the current one when splitting vertically
+  set splitright
+
 " vim: set filetype=vim:
