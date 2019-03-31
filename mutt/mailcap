@@ -1,1 +1,3 @@
+text/html; /usr/bin/waterfox %s 1>/dev/null 2>&1 & sleep 3
+
 text/html; w3m -T %t -I %{charset}; copiousoutput
