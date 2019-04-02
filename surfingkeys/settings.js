@@ -1,9 +1,8 @@
 settings.hintAlign = 'left'
 
-settings.theme = `
+Hints.style(`
 
-  #sk_hints > div {
-    background-color: #ff6c00 !important;
-  }
+  font-family: Input Mono Narrow;
+  font-weight: normal;
 
-`
+`)
