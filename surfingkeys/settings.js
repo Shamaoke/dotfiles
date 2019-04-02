@@ -2,9 +2,9 @@ settings.hintAlign = 'left'
 
 Hints.style(`
 
-  background: unset;
-  border:     unset;
-  font:       unset;
+  background: unset !important;
+  border:     unset !important;
+  font:       unset !important;
 
   background-color: #ff6c00;
   font-family:      Input Mono Narrow;
@@ -15,9 +15,9 @@ Hints.style(`
 
 Hints.style(`
 
-  background: unset;
-  border:     unset;
-  font:       unset;
+  background: unset !important;
+  border:     unset !important;
+  font:       unset !important;
 
   background-color: #008844;
   font-family:      Input Mono Narrow;
