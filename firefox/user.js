@@ -74,6 +74,9 @@ user_pref('browser.search.update', false);
 // set the minimum width for tabs
 user_pref('browser.tabs.tabMinWidth', 100);
 
+// set the number of entries in the url bar drop-down list
+user_pref('browser.urlbar.maxRichResults', 15);
+
 // disable personalized extension recommendations
 // user_pref('browser.newtabpage.activity-stream.asrouter.userprefs.cfr', false);
 
