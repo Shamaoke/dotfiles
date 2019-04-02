@@ -1,5 +1,16 @@
 settings.hintAlign = 'left'
 
-Hints.style('background-color: #ff6c00')
+Hints.style(`
 
-Hints.style('background-color: #008844', 'text')
+  font-family:      Input Mono Narrow;
+  font-weight:      normal;
+  background-color: #ff6c00;
+
+`)
+
+Hints.style(`
+
+  background-color: #008844;
+  border-radius:    unset;
+
+`, 'text')
