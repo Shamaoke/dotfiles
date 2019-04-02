@@ -6,10 +6,10 @@ Hints.style(`
   border:     unset !important;
   font:       unset !important;
 
-  background-color: #ff6c00;
-  font-family:      Input Mono Narrow;
-  font-weight:      normal;
-  border-width:     2px;
+  background-color: #ff6c00           !important;
+  font-family:      Input Mono Narrow !important;
+  font-weight:      normal            !important;
+  border-width:     2px               !important;
 
 `)
 
@@ -19,9 +19,9 @@ Hints.style(`
   border:     unset !important;
   font:       unset !important;
 
-  background-color: #008844;
-  font-family:      Input Mono Narrow;
-  font-weight:      normal;
-  border-width:     2px;
+  background-color: #008844           !important;
+  font-family:      Input Mono Narrow !important;
+  font-weight:      normal            !important;
+  border-width:     2px               !important;
 
 `, 'text')
