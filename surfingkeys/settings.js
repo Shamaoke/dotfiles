@@ -1,7 +1,4 @@
-// set theme
-settings.theme = `
-#sk_hints > div {
-  font-size: 1em;
-  padding:   0px 20px 0px 20px;
-  color:     #000;
-}`
+// an example to create a new mapping `ctrl-y`
+mapkey('<Ctrl-y>', 'Show me the money', function() {
+  Front.showPopup('Hello, I\'m a rabbit. Catch me if you can!')
+})
