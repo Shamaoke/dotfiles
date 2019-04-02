@@ -71,6 +71,9 @@ user_pref('browser.search.suggest.enabled', false);
 // don't update search engines
 user_pref('browser.search.update', false);
 
+// set the minimum width for tabs
+user_pref('browser.tabs.tabMinWidth', 100);
+
 // disable personalized extension recommendations
 // user_pref('browser.newtabpage.activity-stream.asrouter.userprefs.cfr', false);
 
