@@ -3,7 +3,7 @@ settings.hintAlign = 'left'
 settings.theme = `
 
   #sk_hints > div {
-    background-color: #ff6c00;
+    background-color: #ff6c00 !important;
   }
 
 `
