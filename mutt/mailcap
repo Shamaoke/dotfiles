@@ -8,7 +8,7 @@
 # viewer in order to be able to work with it without the aforementioned
 # problems.
 #
-text/html; mkdir -p /tmp/mutt\; cp %s /tmp/mutt\; waterfox -P default /tmp/mutt/`basename %s` &
+text/html; mkdir -p /tmp/mutt\; cp %s /tmp/mutt\; firefox -P default /tmp/mutt/`basename %s` &
 
 # render html files automatically by the external program when opening a message in pager
 #
