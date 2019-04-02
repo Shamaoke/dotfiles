@@ -1,5 +1,5 @@
 settings.hintAlign = 'left'
 
-Hints.style("border: solid 4px #552a48 !important")
+Hints.style('background-color: #ff6c00')
 
-Hints.style('border: solid 8px #c38a22 !important', 'text')
+Hints.style('background-color: #008844', 'text')
