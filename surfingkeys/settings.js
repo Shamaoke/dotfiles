@@ -2,15 +2,26 @@ settings.hintAlign = 'left'
 
 Hints.style(`
 
+  background: unset;
+  border:     unset;
+  font:       unset;
+
+  background-color: #ff6c00;
   font-family:      Input Mono Narrow;
   font-weight:      normal;
-  background-color: #ff6c00;
+  border-width:     2px;
 
 `)
 
 Hints.style(`
 
+  background: unset;
+  border:     unset;
+  font:       unset;
+
   background-color: #008844;
-  border-radius:    unset;
+  font-family:      Input Mono Narrow;
+  font-weight:      normal;
+  border-width:     2px;
 
 `, 'text')
