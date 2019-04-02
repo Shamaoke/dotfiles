@@ -1,4 +1,6 @@
 %applications
+  -# Use the `xprop' command to query window properties.
+
   -# This is an example with comments through out. Use these to make your
   -# own rules, but without the comments of course.
 
@@ -93,13 +95,17 @@
       %x center
       %y center
 
-  -# %application{ :class => 'Firefox', :role => 'browser' }
-  -#   %decor no
-  -#   %maximized yes
+  %application{ :class => 'Firefox', :role => 'browser' }
+    %decor no
 
-  -# %application{ :class => 'Waterfox', :role => 'browser' }
-  -#   %decor no
-  -#   %maximized yes
+  %application{ :class => 'Firefox', :role => 'toolbox' }
+    %decor no
+
+  %application{ :class => 'Waterfox', :role => 'browser' }
+    %decor no
+
+  %application{ :class => 'Waterfox', :role => 'toolbox' }
+    %decor no
 
   %application{ :class => 'qBittorrent', :type => 'dialog' }
     %position{ :force => 'yes' }
@@ -118,9 +124,6 @@
     %size
       %width default
       %height default
-
-  %application{ :class => 'Firefox', :role => 'browser' }
-    %decor no
 
   -# %application{ :class => 'Firefox Developer Edition', :role => 'browser' }
   -#   %decor no
