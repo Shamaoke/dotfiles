@@ -62,6 +62,15 @@ user_pref('browser.urlbar.oneOffSearches', false);
 // don't install "studies" see: https://support.mozilla.org/en-US/kb/shield
 user_pref('app.shield.optoutstudies.enabled', false);
 
+// don't show buttons of the following search providers in the url bar drop-down list
+user_pref('browser.search.hiddenOneOffs', 'Yandex,Google,Bing,Amazon.com,DuckDuckGo,Twitter,Wikipedia (en)');
+
+// don't show search suggestions when typing in the address bar
+user_pref('browser.search.suggest.enabled', false);
+
+// don't update search engines
+user_pref('browser.search.update', false);
+
 // disable personalized extension recommendations
 // user_pref('browser.newtabpage.activity-stream.asrouter.userprefs.cfr', false);
 
