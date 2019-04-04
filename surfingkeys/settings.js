@@ -16,7 +16,7 @@ mapkey('f', '#1Open a link in the current tab; press Shift to flip hints if they
 })
 
 // unmap a key for opening a new window with the current tab
-unmapkey('W')
+unmap('W')
 
 // Hints.style(`
 //
