@@ -1,4 +1,19 @@
+// :::settings:::
+
+// align hints on their target elements
 settings.hintAlign = 'left'
+
+// :::bindings:::
+
+// open a link in a new tab
+mapkey('f', '#1Open a link in new tab', function() {
+  Hints.create('f was pressed', Hints.dispatchMouseClick, {tabbed: true})
+})
+
+// open a link in a current tab
+mapkey('F', '#1Open a link in the current tab; press Shift to flip hints if they are overlapped', function() {
+  Hints.create('F was pressed', Hints.dispatchMouseClick)
+})
 
 // Hints.style(`
 //
