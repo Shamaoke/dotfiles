@@ -9,7 +9,7 @@ settings.hintAlign = 'left'
 mapkey( 'F', '#1Open a link in a new tab', ( ) => Hints.create('', Hints.dispatchMouseClick, {tabbed: true}) )
 
 // open a link in a current tab
-mapkey( 'f', '#1Open a link in the current tab; press Shift to flip hints if the are overlapped', ( ) => Hints.create('', Hints.dispatchMouseClick) )
+mapkey( 'f', "#1Open a link in the current tab;\n press Shift to flip hints if the are overlapped", ( ) => Hints.create('', Hints.dispatchMouseClick) )
 
 // unmap a key for opening a new window with the current tab
 unmap('W')
