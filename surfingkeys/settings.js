@@ -29,8 +29,23 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 // move the current tab to the right
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
+// unmap a key for opening a link in a new tab
+unmap('af')
+
 // unmap a key for opening a new window with the current tab
 unmap('W')
+
+// unmap a key for going one tab left
+unmap('E')
+
+// unmap a key for going one tab right
+unmap('R')
+
+// unmap a key for going back in history
+unmap('S')
+
+// unmap a key for going forward in history
+unmap('D')
 
 // Hints.style(`
 //
