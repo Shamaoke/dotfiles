@@ -32,6 +32,9 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 // move the current tab to the right
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
+// close the current tab
+mapkey( 'dd', '#3Close the current tab', ( ) => RUNTIME('closeTab') )
+
 // unmap a key for opening a link in a new tab
 unmap('af')
 
@@ -49,6 +52,9 @@ unmap('S')
 
 // unmap a key for going forward in history
 unmap('D')
+
+// unmap a key for scrolling a page down
+unmap('d')
 
 // Hints.style(`
 //
