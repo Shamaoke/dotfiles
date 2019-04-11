@@ -32,8 +32,23 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 // move the current tab to the right
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
+// unmap a key for scrolling a page down
+unmap('d')
+
 // close the current tab
 mapkey( 'dd', '#3Close the current tab', ( ) => RUNTIME('closeTab') )
+
+// unmap going to the first activated tab
+// unmap('gT')
+
+// unmap going to the last activated tab
+// unmap('gt')
+
+// go one tab left
+mapkey( 'gT', '#Go one tab left', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
+
+// go one tab right
+mapkey( 'gt', '#Go one tab right', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
 
 // unmap a key for opening a link in a new tab
 unmap('af')
@@ -52,9 +67,6 @@ unmap('S')
 
 // unmap a key for going forward in history
 unmap('D')
-
-// unmap a key for scrolling a page down
-unmap('d')
 
 // Hints.style(`
 //
