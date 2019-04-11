@@ -21,10 +21,10 @@ mapkey( '<', '#Go back in history', ( ) => history.go(-1), {repeatIgnore: true} 
 mapkey( '>', '#4Go forward in history', ( ) => history.go(1), {repeatIgnore: true} )
 
 // go one tab left
-mapkey( 'h', '#Go one tab left', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
+mapkey( 'h', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
 
 // go one tab right
-mapkey( 'l', '#Go one tab right', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
+mapkey( 'l', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
 
 // move the current tab to the left
 mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {step: -1}) )
@@ -32,23 +32,17 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 // move the current tab to the right
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
-// unmap a key for scrolling a page down
+// unmap the key for scrolling a page down (should go before any binding with this key)
 unmap('d')
 
 // close the current tab
 mapkey( 'dd', '#3Close the current tab', ( ) => RUNTIME('closeTab') )
 
-// unmap going to the first activated tab
-// unmap('gT')
+// go left on {count} tabs
+mapkey( 'gT', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
 
-// unmap going to the last activated tab
-// unmap('gt')
-
-// go one tab left
-mapkey( 'gT', '#Go one tab left', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
-
-// go one tab right
-mapkey( 'gt', '#Go one tab right', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
+// go right on {count} tabs
+mapkey( 'gt', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
 
 // unmap a key for opening a link in a new tab
 unmap('af')
