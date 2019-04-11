@@ -77,8 +77,8 @@ user_pref('browser.tabs.tabMinWidth', 100);
 // set the number of entries in the url bar drop-down list
 user_pref('browser.urlbar.maxRichResults', 15);
 
-// set the location for the new opened tab
-user_pref('browser.tabs.insertAfterCurrent', false);
+// whether a new tab should be opened after the current or at the end of all tabs
+user_pref('browser.tabs.insertAfterCurrent', true);
 
 // disable personalized extension recommendations
 // user_pref('browser.newtabpage.activity-stream.asrouter.userprefs.cfr', false);
