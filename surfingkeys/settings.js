@@ -4,7 +4,7 @@
 settings.hintAlign = 'left'
 
 // where a new tab should be opened: “first“, “last“, “left“, “right“, “default“
-settings.newTabPosition = 'first'
+settings.newTabPosition = 'right'
 
 // :::bindings:::
 
