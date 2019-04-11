@@ -3,6 +3,9 @@
 // align hints on their target elements
 settings.hintAlign = 'left'
 
+// where a new tab should be opened: “first“, “last“, “left“, “right“, “default“
+settings.newTabPosition = 'first'
+
 // :::bindings:::
 
 // open a link in a new tab
