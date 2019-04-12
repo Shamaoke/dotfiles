@@ -32,18 +32,6 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 // move the current tab to the right
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
-// unmap the key for scrolling a page down (should go before any binding with this key)
-unmap('d')
-
-// close the current tab
-mapkey( 'dd', '#3Close the current tab', ( ) => RUNTIME('closeTab') )
-
-// go left on {count} tabs
-mapkey( 'gT', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
-
-// go right on {count} tabs
-mapkey( 'gt', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
-
 // unmap a key for opening a link in a new tab
 unmap('af')
 
