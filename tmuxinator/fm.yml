@@ -2,7 +2,7 @@ name: <%= @args[0] || (File.basename Dir.pwd) %>
 
 # startup_window: git
 
-startup_pane: 1
+startup_window: 1
 
 windows:
   - work:
