@@ -45,3 +45,8 @@ autoload zle-line-init
 # define user widgets
 zle -N zle-keymap-select
 zle -N zle-line-init
+
+# Use an external editor to edit the command line by pressing the `v' key at the edit mode
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
