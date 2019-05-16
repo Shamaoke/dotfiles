@@ -195,5 +195,46 @@ filetype *.iso FUSE_MOUNT|fuseiso %SOURCE_FILE %DESTINATION_DIR
 " Like in vi
 set vifminfo=bookmarks,chistory,shistory,phistory
 
-" show complete suggestions
-  set wildmenu
+""
+" `wildmenu', `wmnu'
+"
+" type:    boolean
+" default: false
+"
+" Controls whether possible matches of completion will be shown above the command line.
+"
+set wildmenu
+
+""
+" `showtabline', `stal'
+"
+" type:    enumeration
+" default: multiple
+"
+" Specifies when tab line should be displayed.
+"
+" Possible values:
+"   `never'    — never display the tab line;
+"   `multiple' — show the tab line only when there are at least two tabs;
+"   `always'   — always display the tab line.
+"
+" Alternatively 0, 1 and 2 vim-like values are also accepted and correspond to
+" `never', `multiple' and `always' respectively.
+"
+set showtabline=always
+
+""
+" `tabscope'
+"
+" type:    enumeration
+" default: global
+"
+" Picks style of tabs, which defines what a single tab contains.
+"
+" Possible values:
+"   `global' — a tab describes complete UI of two views and how they are arranged;
+"   `pane'   — a tab is located inside a pane and manages it and the quick view.
+"
+set tabscope=global
+
+" vim: set textwidth=80 colorcolumn=80:
