@@ -51,7 +51,7 @@
 # modules-left       = menu ewmh
   modules-left       = ewmh
   modules-center     = date
-  modules-right      = xkeyboard wired-network wireless-network battery volume
+  modules-right      = xkeyboard filesystem wired-network wireless-network battery volume
   enable-ipc         = true
 
 # [module/menu]
@@ -88,6 +88,32 @@
   label-layout = %layout%
 
 # label-layout-padding-right = 3
+
+[module/filesystem]
+  type = internal/fs
+
+  interval     = 10
+# fixed-values = true
+# spacing      = 10
+
+  mount-0 = /
+
+  format-mounted-prefix = fsys
+
+  format-mounted = <label-mounted>
+
+  label-mounted = %free% of %total%
+
+  label-mounted-padding-left = 1
+
+  format-mounted-prefix-foreground = ${colors.foreground-alt-color}
+
+# format-mounted = <label-mounted> <bar-free>
+
+# bar-free-width     = 10
+# bar-free-empty     = -
+# bar-free-fill      = +
+# bar-free-indicator = |
 
 [module/wired-network]
   type = internal/network
