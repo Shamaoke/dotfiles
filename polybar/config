@@ -100,20 +100,24 @@
 
   format-mounted-prefix = fsys
 
+# format-mounted = <label-mounted> <bar-free>
   format-mounted = <label-mounted>
 
-  label-mounted = %free% of %total%
+# label-mounted = %free%%{F#ff4f2624}/%{F-}%total%
+  label-mounted = %free% / %total%
+# label-mounted =
 
   label-mounted-padding-left = 1
 
   format-mounted-prefix-foreground = ${colors.foreground-alt-color}
 
-# format-mounted = <label-mounted> <bar-free>
 
+# bar-free-format    = %fill%%indicator%%empty%
+# bar-free-format    = [%{F#ff33e700}%fill%%{F-}%{F#ffe70033}%empty%%{F-}]
 # bar-free-width     = 10
 # bar-free-empty     = -
-# bar-free-fill      = +
-# bar-free-indicator = |
+# bar-free-fill      = |
+# bar-free-indicator = >
 
 [module/wired-network]
   type = internal/network
