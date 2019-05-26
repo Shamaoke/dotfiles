@@ -111,7 +111,6 @@
 
   format-mounted-prefix-foreground = ${colors.foreground-alt-color}
 
-
 # bar-free-format    = %fill%%indicator%%empty%
 # bar-free-format    = [%{F#ff33e700}%fill%%{F-}%{F#ffe70033}%empty%%{F-}]
 # bar-free-width     = 10
