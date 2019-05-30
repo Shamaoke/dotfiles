@@ -72,10 +72,12 @@
   type = internal/date
 
   interval = 1
-  date     = %Y-%m-%d
-  time     = %H:%M
 
-# label = %date%  %time%
+# see man 3 strftime for format details
+  date = %Y-%m-%d
+# time = %H:%M %A
+  time = %H:%M
+
   label = %date% %time%
 
 [module/xkeyboard]
