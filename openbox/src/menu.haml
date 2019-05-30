@@ -5,9 +5,13 @@
 
     %separator{ :label => 'Applications' }
 
-    %item{ :label => 'Waterfox' }
+    -# %item{ :label => 'Waterfox' }
+    -#   %action{ :name => 'Execute' }
+    -#     %command waterfox -P default
+
+    %item{ :label => 'Firefox' }
       %action{ :name => 'Execute' }
-        %command waterfox -P default
+        %command firefox -P default
 
     %item{ :label => 'Goldendict' }
       %action{ :name => 'Execute' }
