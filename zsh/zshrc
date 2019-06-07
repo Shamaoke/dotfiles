@@ -26,6 +26,7 @@ alias mch='cd ~dv/chrome && mss chrome'
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
+hash -d af=$HOME/.data-upper/artifacts
 hash -d df=$HOME/.dotfiles
 hash -d dv=$HOME/.development
 hash -d pg=$HOME/.development/playground
