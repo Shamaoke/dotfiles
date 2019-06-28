@@ -25,9 +25,13 @@
     -#   %action{ :name => 'Execute' }
     -#     %command non-mixer
 
-    %item{ :label => 'MClip' }
+    %item{ :label => 'MClip (ALSA)' }
       %action{ :name => 'Execute' }
-        %command mclip
+        %command mclip alsa
+
+    %item{ :label => 'MClip (JACK)' }
+      %action{ :name => 'Execute' }
+        %command mclip jack
 
     %separator
 
