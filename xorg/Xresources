@@ -32,7 +32,7 @@
 !URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
 
 !disable high intensity colors for bold text
-URxvt.intensityStyles: false
+  URxvt.intensityStyles: false
 
 !do not use a bold font
 !URxvt.boldFont: xft:Dejavu Sans Mono:size=8
@@ -48,7 +48,7 @@ URxvt.intensityStyles: false
   URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:Noto Sans Mono CJK JP
 
 ! URxvt.boldFont: xft:Input Mono Medium:size=11
-  URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16
+  URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:Noto Sans Mono CJK JP
 
 ! URxvt.letterSpace:    -1
   URxvt.letterSpace:     0
