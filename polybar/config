@@ -203,7 +203,7 @@
   type = internal/alsa
 
 # master-mixer = Master
-  master-mixer = Speaker
+# master-mixer = Speaker
 
   format-volume-prefix = vol
   format-muted-prefix  = vol
