@@ -1,0 +1,31 @@
+#! /usr/bin/env zsh
+
+# Place this script to `/usr/local/bin'.
+# Create a link to this script in `/usr/lib/udev' in order to be able to refer
+# to it by the name in the `RUN{program}' udev attribute.
+
+case $1 in
+  'remove')
+    echo defaults.pcm.card 0 >  $HOME/.asoundrc
+    echo defaults.ctl.card 0 >> $HOME/.asoundrc
+    echo "master-soundcard = hw:0\nmaster-mixer = Master" > $HOME/.config/polybar/soundcard.conf
+    polybar-msg cmd restart
+  ;;
+
+  'add')
+    echo defaults.pcm.card 2 >  $HOME/.asoundrc
+    echo defaults.ctl.card 2 >> $HOME/.asoundrc
+    echo "master-soundcard = hw:2\nmaster-mixer = PCM" > $HOME/.config/polybar/soundcard.conf
+    polybar-msg cmd restart
+  ;;
+
+  'reset')
+    echo defaults.pcm.card 0 >  $HOME/.asoundrc
+    echo defaults.ctl.card 0 >> $HOME/.asoundrc
+    echo "master-soundcard = hw:0\nmaster-mixer = Master" > $HOME/.config/polybar/soundcard.conf
+  ;;
+
+  *) echo "ERROR: the script was run with no arguments!\nUsage: soundblaster {add|remove|reset}."
+esac
+
+# vim: set textwidth=80 colorcolumn=80:
