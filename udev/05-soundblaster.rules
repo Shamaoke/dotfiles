@@ -1,0 +1,2 @@
+ATTRS{product}=="Sound Blaster X-Fi Go! Pro", ACTION=="add",    ENV{HOME}="/home/user", RUN{program}="soundblaster add"
+ATTRS{product}=="Sound Blaster X-Fi Go! Pro", ACTION=="remove", ENV{HOME}="/home/user", RUN{program}="soundblaster remove"
