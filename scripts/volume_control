@@ -1,0 +1,11 @@
+#! /usr/bin/env zsh
+
+case `head -1 ~/.asoundrc` in
+  'defaults.pcm.card 0')
+    amixer set Master $1
+  ;;
+
+  'defaults.pcm.card 2')
+    amixer set PCM $1
+  ;;
+esac
