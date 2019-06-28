@@ -154,6 +154,10 @@
 #
 #def_key "up"
 #  scroll_up
+
+def_key "k"
+  scroll_up
+
 #
 #def_key "shift-up"
 #  select_item
@@ -161,6 +165,10 @@
 #
 #def_key "down"
 #  scroll_down
+
+def_key "j"
+  scroll_down
+
 #
 #def_key "shift-down"
 #  select_item
@@ -192,6 +200,10 @@
 #
 #def_key "insert"
 #  select_item
+
+def_key "t"
+  select_item
+
 #
 #def_key "enter"
 #  enter_directory
@@ -216,12 +228,24 @@
 #
 #def_key "delete"
 #  delete_playlist_items
+
+def_key "d"
+  delete_playlist_items
+
 #
 #def_key "delete"
 #  delete_browser_items
+
+def_key "d"
+  delete_browser_items
+
 #
 #def_key "delete"
 #  delete_stored_playlist
+
+def_key "d"
+  delete_stored_playlist
+
 #
 #def_key "right"
 #  next_column
