@@ -47,9 +47,9 @@ keymap  .       RIGHT
 keymap  /       SEARCH
 keymap  :       MARK_URL
 keymap  ";"     MARK_WORD
-keymap  <       SHIFT_LEFT
+# keymap  <       SHIFT_LEFT
 keymap  =       INFO
-keymap  >       SHIFT_RIGHT
+# keymap  >       SHIFT_RIGHT
 keymap  ?       SEARCH_BACK
 keymap  @       READ_SHELL
 keymap  B       BACK
@@ -140,3 +140,7 @@ keymap  M-[4~   END
 keymap  M-[5~   PREV_PAGE
 keymap  M-[6~   NEXT_PAGE
 keymap  M-[28~  MENU
+
+# User defined bindings
+keymap < PREV
+keymap > NEXT
