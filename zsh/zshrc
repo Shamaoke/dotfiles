@@ -23,6 +23,7 @@ alias msb="mux start basic $1"
 alias mss="mux start simple $1"
 alias mdf='cd ~df && mss dotfiles'
 alias mch='cd ~dv/chrome && mss chrome'
+alias w3m='w3m -B -title'
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
