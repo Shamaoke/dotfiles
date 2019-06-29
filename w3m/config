@@ -1,154 +1,210 @@
-tabstop 8
-indent_incr 4
-pixel_per_char 10
-pixel_per_line 18
-frame 0
-target_self 0
-open_tab_blank 0
-open_tab_dl_list 0
-display_link 0
-display_link_number 0
-decode_url 0
-display_lineinfo 1
-ext_dirlist 1
-dirlist_cmd file:///$LIB/dirlist.cgi
-use_dictcommand 1
-dictcommand file:///$LIB/w3mdict.cgi
-multicol 0
-alt_entity 0
-graphic_char 0
-display_borders 0
-fold_textarea 0
-display_ins_del 1
-ignore_null_img_alt 1
-view_unseenobject 0
-display_image 1
-pseudo_inlines 1
-auto_image 1
-max_load_image 4
-ext_image_viewer 1
-image_scale 100
-imgdisplay w3mimgdisplay
-image_map_list 1
-fold_line 0
-show_lnum 0
-show_srch_str 1
-label_topline 0
-nextpage_topline 0
-color 1
-basic_color terminal
-anchor_color blue
-image_color green
-form_color red
-mark_color cyan
-bg_color terminal
-active_style 0
-active_color cyan
-visited_anchor 0
-visited_color magenta
-pagerline 10000
-use_history 1
-history 100
-save_hist 1
-confirm_qq 1
-close_tab_back 0
-mark 0
-emacs_like_lineedit 0
-vi_prec_num 0
-mark_all_pages 0
-wrap_search 0
-ignorecase_search 1
-use_mouse 1
-reverse_mouse 0
-relative_wheel_scroll 0
-relative_wheel_scroll_ratio 30
-fixed_wheel_scroll_count 5
-clear_buffer 1
-decode_cte 0
-auto_uncompress 0
-preserve_timestamp 1
-keymap_file keymap
-document_root 
-personal_document_root 
-cgi_bin 
-index_file 
-mime_types ~/.mime.types, /usr/etc/mime.types
-mailcap ~/.w3m/mailcap, /usr/etc/w3m/mailcap
-urimethodmap ~/.w3m/urimethodmap, /usr/etc/w3m/urimethodmap
-editor /usr/bin/vi
-mailto_options 1
-mailer /usr/bin/mail
-extbrowser /usr/bin/firefox
-extbrowser2 
-extbrowser3 
-extbrowser4 
-extbrowser5 
-extbrowser6 
-extbrowser7 
-extbrowser8 
-extbrowser9 
-bgextviewer 1
-use_lessopen 0
-passwd_file ~/.w3m/passwd
-disable_secret_security_check 0
-ftppasswd 
-ftppass_hostnamegen 1
-pre_form_file ~/.w3m/pre_form
-siteconf_file ~/.w3m/siteconf
-user_agent 
-no_referer 0
-accept_language en;q=1.0
-accept_encoding gzip, compress, bzip, bzip2, deflate
-accept_media text/html, text/*;q=0.5, image/*, audio/*, application/*
-argv_is_url 1
-retry_http 1
-default_url 1
-follow_redirection 10
-meta_refresh 0
-dns_order 0
-nntpserver 
-nntpmode 
-max_news 50
-use_proxy 1
-http_proxy 
-https_proxy 
-ftp_proxy 
-no_proxy 
-noproxy_netaddr 1
-no_cache 0
-ssl_forbid_method 2, 3
-ssl_verify_server 1
-ssl_cert_file 
-ssl_key_file 
-ssl_ca_path 
-ssl_ca_file 
-use_cookie 1
-show_cookie 0
-accept_cookie 1
-accept_bad_cookie 0
-cookie_reject_domains 
-cookie_accept_domains 
-cookie_avoid_wrong_number_of_dots 
-display_charset UTF-8
-document_charset UTF-8
-auto_detect 2
-system_charset UTF-8
-follow_locale 1
-ext_halfdump 0
-use_wide 1
-use_combining 1
-east_asian_width 0
-use_language_tag 1
-ucs_conv 1
-pre_conv 0
-search_conv 1
-fix_width_conv 1
-use_gb12345_map 0
-use_jisx0201 0
-use_jisc6226 0
-use_jisx0201k 0
-use_jisx0212 0
-use_jisx0213 0
-strict_iso2022 1
-gb18030_as_ucs 0
-simple_preserve_space 0
+# :::configuration parameters:::
+#
+# :::table of contents:::
+#
+# section[0]: Display Settings
+# section[1]: Color Settings
+# section[2]: Miscellaneous Settings
+# section[3]: Directory Settings
+# section[4]: External Program Settings
+# section[5]: Network Settings
+# section[6]: Proxy Settings
+# section[7]: SSL Settings
+# section[8]: Cookie Settings
+# section[9]: Charset Settings
+
+
+# :::section[0]: Display Settings:::
+
+tabstop                         8 # Tab width in characters
+indent_incr                     4 # Indent for HTML rendering
+pixel_per_char                 10 # Number of pixels per character (4.0...32.0)
+pixel_per_line                 18 # Number of pixels per line (4.0...64.0)
+frame                           0 # Render frames automatically
+target_self                     0 # Use _self as default target
+open_tab_blank                  0 # Open link on new tab if target is _blank or _new
+open_tab_dl_list                0 # Open download list panel on new tab
+display_link                    0 # Display link URL automatically
+display_link_number             0 # Display link numbers
+decode_url                      0 # Display decoded URL
+display_lineinfo                1 # Display current line number
+ext_dirlist                     1 # Use external program for directory listing
+use_dictcommand                 1 # Enable dictionary lookup through CGI
+multicol                        0 # Display file names in multi-column format
+alt_entity                      0 # Use ASCII equivalents to display entities
+graphic_char                    0 # Character type for border of table and menu
+display_borders                 0 # Display table borders, ignore value of BORDER
+fold_textarea                   0 # Fold lines in TEXTAREA
+display_ins_del                 1 # Display INS, DEL, S and STRIKE element
+ignore_null_img_alt             1 # Display link name for images lacking ALT
+view_unseenobject               0 # Display unseen objects (e.g. bgimage tag)
+display_image                   1 # Display inline images
+pseudo_inlines                  1 # Display pseudo-ALTs for inline images with no ALT or TITLE string
+auto_image                      1 # Load inline images automatically
+max_load_image                  4 # Maximum processes for parallel image loading
+ext_image_viewer                1 # Use external image viewer
+image_scale                   100 # Scale of image (%)
+imgdisplay          w3mimgdisplay # External command to display image
+image_map_list                  1 # Use link list of image map
+fold_line                       0 # Fold lines of plain text file
+show_lnum                       0 # Show line numbers
+show_srch_str                   1 # Show search string
+label_topline                   0 # Move cursor to top line when going to label
+nextpage_topline                0 # Move cursor to top line when moving to next page
+
+dirlist_cmd file:///$LIB/dirlist.cgi # URL of directory listing command
+dictcommand file:///$LIB/w3mdict.cgi # URL of dictionary lookup command
+
+
+# :::section[1]: Color Settings:::
+
+color                 1 # Display with color
+basic_color    terminal # Color of normal character
+anchor_color       blue # Color of anchor
+image_color       green # Color of image link
+form_color          red # Color of form
+mark_color         cyan # Color of mark
+bg_color       terminal # Color of background
+active_style          0 # Enable coloring of active link
+active_color       cyan # Color of currently active link
+visited_anchor        0 # Use visited link color
+visited_color   magenta # Color of visited link
+
+
+# :::section[2]: Miscellaneous Settings:::
+
+pagerline                    10000 # Number of remembered lines when used as a pager
+use_history                      1 # Use URL history
+history                        100 # Number of remembered URL
+save_hist                        1 # Save URL history
+confirm_qq                       1 # Confirm when quitting with q
+close_tab_back                   0 # Close tab if buffer is last when back
+mark                             0 # Enable mark operations
+emacs_like_lineedit              0 # Enable Emacs-style line editing
+vi_prec_num                      0 # Enable vi-like numeric prefix
+mark_all_pages                   0 # Treat URL-like strings as links in all pages
+wrap_search                      0 # Wrap search
+ignorecase_search                1 # Search case-insensitively
+use_mouse                        1 # Enable mouse
+reverse_mouse                    0 # Scroll in reverse direction of mouse drag
+relative_wheel_scroll            0 # Behavior of wheel scroll speed
+relative_wheel_scroll_ratio     30 # (A only)Scroll by # (%) of screen
+fixed_wheel_scroll_count         5 # (B only)Scroll by # lines
+clear_buffer                     1 # Free memory of undisplayed buffers
+decode_cte                       0 # Decode Content-Transfer-Encoding when saving
+auto_uncompress                  0 # Uncompress compressed data automatically when downloading
+preserve_timestamp               1 # Preserve timestamp when saving
+keymap_file                 keymap # keymap file
+
+
+# :::section[3]: Directory Settings:::
+
+document_root           # Directory corresponding to / (document root)
+personal_document_root  # Directory corresponding to /~user
+cgi_bin                 # Directory corresponding to /cgi-bin
+index_file              # Index file for directories
+
+
+# :::section[4]: External Program Settings:::
+
+mime_types                 ~/.mime.types, /usr/etc/mime.types # List of mime.types files
+mailcap                  ~/.w3m/mailcap, /usr/etc/w3m/mailcap # List of mailcap files
+urimethodmap   ~/.w3m/urimethodmap, /usr/etc/w3m/urimethodmap # List of urimethodmap files
+editor                                           /usr/bin/vim # Editor
+mailto_options                                              1 # How to call Mailer for mailto URLs with options
+mailer                                          /usr/bin/mail # Mailer
+extbrowser                                   /usr/bin/firefox # External browser
+extbrowser2                                                   # 2nd external browser
+extbrowser3                                                   # 3rd external browser
+extbrowser4                                                   # 4th external browser
+extbrowser5                                                   # 5th external browser
+extbrowser6                                                   # 6th external browser
+extbrowser7                                                   # 7th external browser
+extbrowser8                                                   # 8th external browser
+extbrowser9                                                   # 9th external browser
+bgextviewer                                                 1 # Run external viewer in the background
+use_lessopen                                                0 # Use LESSOPEN
+
+
+# :::section[5]: Network Settings:::
+
+passwd_file                                                              ~/.w3m/passwd # Password file
+disable_secret_security_check                                                        0 # Disable secret file security check
+ftppasswd                                                                              # Password for anonymous FTP (your mail address)
+ftppass_hostnamegen                                                                  1 # Generate domain part of password for FTP
+pre_form_file                                                          ~/.w3m/pre_form # File for setting form on loading
+siteconf_file                                                          ~/.w3m/siteconf # File for preferences for each site
+user_agent                                                                             # User-Agent identification string
+no_referer 0                                                                           # Suppress `Referer:' header
+accept_language                                                               en;q=1.0 # Accept-Language header
+accept_encoding                                   gzip, compress, bzip, bzip2, deflate # Accept-Encoding header
+accept_media                  text/html, text/*;q=0.5, image/*, audio/*, application/* # Accept header
+argv_is_url                                                                          1 # Treat argument without scheme as URL
+retry_http                                                                           1 # Prepend http:// to URL automatically
+default_url 1                                                                          # Default value for open-URL command
+follow_redirection                                                                  10 # Number of redirections to follow
+meta_refresh                                                                         0 # Enable processing of meta-refresh tag
+dns_order                                                                            0 # Order of name resolution
+nntpserver                                                                             # News server
+nntpmode                                                                               # Mode of news server
+max_news                                                                            50 # Number of news messages
+
+
+# :::section[6]: Proxy Settings:::
+
+use_proxy       1 # Use proxy
+http_proxy        # URL of HTTP proxy host
+https_proxy       # URL of HTTPS proxy host
+ftp_proxy         # URL of FTP proxy host
+no_proxy          # Domains to be accessed directly (no proxy)
+noproxy_netaddr 1 # Check noproxy by network address
+no_cache        0 # Disable cache
+
+
+# :::section[7]: SSL Settings:::
+
+ssl_forbid_method 2, 3 # List of forbidden SSL methods (2: SSLv2, 3: SSLv3, t: TLSv1.0, 5: TLSv1.1)
+ssl_verify_server    1 # Perform SSL server verification
+ssl_cert_file          # PEM encoded certificate file of client
+ssl_key_file           # PEM encoded private key file of client
+ssl_ca_path            # Path to directory for PEM encoded certificates of CAs
+ssl_ca_file            # File consisting of PEM encoded certificates of CAs
+
+
+# :::section[8]: Cookie Settings:::
+
+use_cookie                        1  # Enable cookie processing
+show_cookie                       0  # Print a message when receiving a cookie
+accept_cookie                     1  # Accept cookies
+accept_bad_cookie                 0  # Action to be taken on invalid cookie
+cookie_reject_domains                # Domains to reject cookies from
+cookie_accept_domains                # Domains to accept cookies from
+cookie_avoid_wrong_number_of_dots    # Domains to avoid [wrong number of dots]
+
+
+# :::section[9]: Charset Settings:::
+
+display_charset       UTF-8 # Display charset
+document_charset      UTF-8 # Default document charset
+auto_detect               2 # Automatic charset detect when loading
+system_charset        UTF-8 # System charset
+follow_locale             1 # System charset follows locale(LC_CTYPE)
+ext_halfdump              0 # Output halfdump with display charset
+use_wide                  1 # Use multi column characters
+use_combining             1 # Use combining characters
+east_asian_width          0 # Use double width for some Unicode characters
+use_language_tag          1 # Use Unicode language tags
+ucs_conv                  1 # Charset conversion using Unicode map
+pre_conv                  0 # Charset conversion when loading
+search_conv               1 # Adjust search string for document charset
+fix_width_conv            1 # Fix character width when conversion
+use_gb12345_map           0 # Use GB 12345 Unicode map instead of GB 2312's
+use_jisx0201              0 # Use JIS X 0201 Roman for ISO-2022-JP
+use_jisc6226              0 # Use JIS C 6226:1978 for ISO-2022-JP
+use_jisx0201k             0 # Use JIS X 0201 Katakana
+use_jisx0212              0 # Use JIS X 0212:1990 (Supplemental Kanji)
+use_jisx0213              0 # Use JIS X 0213:2000 (2000JIS)
+strict_iso2022            1 # Strict ISO-2022-JP/KR/CN
+gb18030_as_ucs            0 # Treat 4 bytes char. of GB18030 as Unicode
+simple_preserve_space     0 # Simple Preserve space
+
