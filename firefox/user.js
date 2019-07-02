@@ -119,19 +119,19 @@ user_pref('font.default.x-cyrillic', 'sans-serif');
 // user_pref('font.name.monospace.ja', 'Input Mono Narrow');
 
 // set a size for the Latin proportional fonts
-// user_pref('font.size.variable.x-western', 16);
+user_pref('font.size.variable.x-western', 18);
 
 // set a size for the Cyrillic proportional fonts
-// user_pref('font.size.variable.x-cyrillic', 16);
+user_pref('font.size.variable.x-cyrillic', 18);
 
 // set a size for the Japanese proportional fonts
-// user_pref('font.size.variable.ja', 16);
+user_pref('font.size.variable.ja', 18);
 
 // set a size for the Latin monospace fonts
-// user_pref('font.size.fixed.x-western', 14);
+user_pref('font.size.fixed.x-western', 14);
 
 // set a size for the Cyrillic monospace fonts
-// user_pref('font.size.fixed.x-cyrillic', 14);
+user_pref('font.size.fixed.x-cyrillic', 14);
 
 // set a size for the Japanese monospace fonts
-// user_pref('font.size.fixed.ja', 14);
+user_pref('font.size.fixed.ja', 14);
