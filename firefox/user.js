@@ -83,6 +83,9 @@ user_pref('browser.tabs.insertAfterCurrent', true);
 // disable personalized extension recommendations
 // user_pref('browser.newtabpage.activity-stream.asrouter.userprefs.cfr', false);
 
+// disallow extensions recommendations when browsing
+user_pref('browser.discovery.enabled', false);
+
 // disable extensions recommendations in Firefox 68+ add-ons manager
 user_pref('extensions.htmlaboutaddons.discover.enabled', false);
 user_pref('extensions.htmlaboutaddons.recommendations.enabled', false);
