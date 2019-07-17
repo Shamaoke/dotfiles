@@ -13,24 +13,24 @@
   map <C-a> "+p
 
 " установить клавиатурную комбинацию для смены режима переноса строк
-  map zw :set wrap!<CR>
+" map zw :set wrap!<CR>
 
 " установить клавиатурную комбинацию для смены режима проверки правописания
-  map zs :set spell! spelllang=en,ru spellcapcheck=<CR>
+" map zs :set spell! spelllang=en,ru spellcapcheck=<CR>
 
 " open a new tab
-  silent map t :tabnew<CR>
+" silent map t :tabnew<CR>
 
 " go to the next tab
-  silent map K :tabnext<CR>
+" silent map K :tabnext<CR>
 
 " go to the previous tab
-  silent map J :tabprevious<CR>
+" silent map J :tabprevious<CR>
 
 " move tab to the right
-  silent map <C-S-k> :tabmove +1<CR>
+" silent map <C-S-k> :tabmove +1<CR>
 
 " move tab to the left
-  silent map <C-S-j> :tabmove -1<CR>
+" silent map <C-S-j> :tabmove -1<CR>
 
 " vim: set filetype=vim:
