@@ -28,11 +28,17 @@ source ~/.dotfiles/vim/rcs/plugin-unite
 " load a colorscheme
 source ~/.dotfiles/vim/rcs/colorscheme
 
+" load markdown colorscheme edits
+source ~/.dotfiles/vim/rcs/colorscheme-markdown
+
 " load auto command settings
 source ~/.dotfiles/vim/rcs/autocmd
 
 " load cursor settings
 source ~/.dotfiles/vim/rcs/cursor
+
+" load commands
+source ~/.dotfiles/vim/rcs/commands
 
 " load kebindings
 source ~/.dotfiles/vim/rcs/keybindings
@@ -46,3 +52,5 @@ source ~/.dotfiles/vim/rcs/statusline
 
 " load general settings
 source ~/.dotfiles/vim/rcs/general
+
+" vim: textwidth=80 colorcolumn=80:
