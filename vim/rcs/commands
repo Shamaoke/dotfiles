@@ -1,0 +1,13 @@
+fun GetHighlightGroupName( )
+  let syntaxIdentifer = synID( line('.'), col('.'), 1 )
+  let syntaxName      = synIDattr(syntaxIdentifer, 'name')
+
+  return syntaxName
+endfun
+
+" display highlight group element under the cursor
+command GetHighlightGroupName echo GetHighlightGroupName( )
+
+map <F10> :GetHighlightGroupName<CR>
+
+" vim: set filetype=vim:
