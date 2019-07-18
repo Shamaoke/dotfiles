@@ -74,7 +74,7 @@
   interval = 1
 
 # see man 3 strftime for format details
-  date = %Y-%m-%d
+  date = %Y-%m-%d %a
 # time = %H:%M %A
   time = %H:%M
 
