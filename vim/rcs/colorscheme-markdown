@@ -2,7 +2,10 @@
 highlight      mkdItalic  ctermfg=4
 highlight link htmlItalic Normal
 
-highlight      mkdBold  ctermfg=4
+highlight      mkdBold  ctermfg=3
 highlight link htmlBold Normal
+
+" change highlighting for headings
+highlight htmlH1 ctermfg=12
 
 " vim: set filetype=vim:
