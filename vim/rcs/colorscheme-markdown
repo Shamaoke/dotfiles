@@ -1,0 +1,8 @@
+" change highlighting for emphasis elements (italic and bold)
+highlight      mkdItalic  ctermfg=4
+highlight link htmlItalic Normal
+
+highlight      mkdBold  ctermfg=4
+highlight link htmlBold Normal
+
+" vim: set filetype=vim:
