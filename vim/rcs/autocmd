@@ -13,4 +13,8 @@
   autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
 
-" vim: set filetype=vim:
+" save and load folding when close and open a file with folds
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * loadview
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
