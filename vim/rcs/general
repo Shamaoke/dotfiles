@@ -8,6 +8,10 @@
 " значения из данного файла будут последовательно использованы
 " в процессе распознания кодировки открываемого файла
 
+" map cyrillic characters with latin in order to be able to perform vim commands
+" without having to switch a keyboard layout
+set langmap=Ё~,ЙQ,ЦW,УE,КR,ЕT,НY,ГU,ШI,ЩO,ЗP,Х{,Ъ},ФA,ЫS,ВD,АF,ПG,РH,ОJ,ЛK,ДL,Ж:,Э\\",ЯZ,ЧX,СC,МV,ИB,ТN,ЬM,Б<,Ю>,ё`,йq,цw,уe,кr,еt,нy,гu,шi,щo,зp,x[,ъ],фa,ыs,вd,аf,пg,рh,оj,лk,дl,ж\\:,э',яz,чx,сc,мv,иb,тn,ьm,б\\,,ю.,цw
+
 " подсвечивать найденные слова
 " set hlsearch
 
@@ -97,4 +101,4 @@
 " open new panel to the right of the current one when splitting vertically
   set splitright
 
-" vim: set filetype=vim:
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
