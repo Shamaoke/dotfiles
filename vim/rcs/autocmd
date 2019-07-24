@@ -14,8 +14,10 @@
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
 
 " save and load folding when close and open a file with folds
-  autocmd BufWinLeave * mkview
+" autocmd BufWinLeave * if @% != '' | mkview   | endif
 " autocmd BufWinEnter * if @% != '' | loadview | endif
+
+  autocmd BufWinLeave * if expand('<afile>') != '' | mkview   | endif
   autocmd BufWinEnter * if expand('<afile>') != '' | loadview | endif
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
