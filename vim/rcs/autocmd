@@ -13,11 +13,13 @@
   autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
 
-" save and load folding when close and open a file with folds
+" save and load folding when closing and opening a file with folds
 " autocmd BufWinLeave * if @% != '' | mkview   | endif
 " autocmd BufWinEnter * if @% != '' | loadview | endif
 
-  autocmd BufWinLeave * if expand('<afile>') != '' | mkview   | endif
-  autocmd BufWinEnter * if expand('<afile>') != '' | loadview | endif
+" save folding when closing a file in a widnow (BufWinLeave) or a tab (BufLeave)
+" load folding when opening a file
+  autocmd BufWinLeave,BufLeave * if expand('<afile>') != '' | mkview   | endif
+  autocmd BufWinEnter          * if expand('<afile>') != '' | loadview | endif
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
