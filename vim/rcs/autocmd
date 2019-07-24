@@ -15,6 +15,6 @@
 
 " save and load folding when close and open a file with folds
   autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * loadview
+  autocmd BufWinEnter * if @% != '' | loadview | endif
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
