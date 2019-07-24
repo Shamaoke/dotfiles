@@ -2,7 +2,8 @@
 # ZSH prompt
 #
 
-export PS1="%~ %F{10}%B>_%b%f "
+export PROMPT="%F{10}%B>_%b%f "
+export RPROMPT=" %~"
 
 #
 # Rubygems
