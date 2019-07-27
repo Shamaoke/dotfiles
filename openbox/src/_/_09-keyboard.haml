@@ -238,6 +238,10 @@
   %keybind{ :key => 'C-A-0x29' }
     %action{ :name => 'ToggleFullscreen' }
 
+  -# 0x1b — `r'
+  %keybind{ :key => 'C-A-0x1b' }
+    %action{ :name => 'Iconify' }
+
   -# 0x36 — `c'
   %keybind{ :key => 'C-A-0x36' }
     %action{ :name => 'Close' }
@@ -269,8 +273,13 @@
   -# 0x2a — `g'
   %chainQuitKey C-0x2a
 
+
   -# 0x1f — `i'
   %keybind{ :key => 'W-0x1f' }
+    -# 0x1b — `r'
+    %keybind{ :key => '0x1b' }
+      %action{ :name => 'Iconify' }
+
     -# 0x36 — `c'
     %keybind{ :key => '0x36' }
       %action{ :name => 'Close' }
