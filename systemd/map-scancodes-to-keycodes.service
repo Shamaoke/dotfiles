@@ -1,10 +1,10 @@
 # /etc/systemd/system
 
 [Unit]
-Description=Change keycodes for scancodes
+Description=Map scancodes to keycodes
 
 [Service]
-ExecStart=/usr/local/bin/change-keycodes-for-scancodes
+ExecStart=/usr/local/bin/map-scancodes-to-keycodes
 
 [Install]
 WantedBy=default.target
