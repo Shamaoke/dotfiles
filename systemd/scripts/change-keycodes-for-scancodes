@@ -1,11 +1,15 @@
 #! /usr/bin/zsh
 
-# To get a scancode and a keycode, currently binded to the scancode,
-# run `evtest /dev/input/event0` and then press the corresponding
-# key.
+# To get a scancode and a keycode, currently binded to the scancode, run
+# `evtest /dev/input/eventN` and then press the corresponding key.
 #
-# For example, by running `evtest /dev/input/event0` and then
-# pressing the Escape key, you'll get the following output:
+# To get the event handler for the keyboard run `cat /dev/input/devices`, find a
+# name of the device at the Name field and check the Handler field in the same
+# info block. The handler field can contain several handler names. The required
+# handler should have the “event“ prefix.
+#
+# For example, by running `evtest /dev/input/event0` and then pressing the
+# Escape key, you'll get the following output:
 #
 # -------------- SYN_REPORT ------------
 # type 4 (EV_MSC), code 4 (MSC_SCAN), value 3a
@@ -14,12 +18,18 @@
 # type 4 (EV_MSC), code 4 (MSC_SCAN), value 3a
 # type 1 (EV_KEY), code 1 (KEY_ESC), value 0
 #
-# The `value' from the first line (3a) is the scancode and the `code' from
-# the second line (1) is the keycode.
+# The “value” filed from the first line (3a) is the scancode and the “code”
+# field from the second line (1) is the keycode.
 
-# Change keycodes for scancodes:
-#   dd (KEY_COMPOSE)  to 126 (KEY_RIGHTMETA);
-#   3a (KEY_CAPSLOCK) to 1   (KEY_ESC);
+# Map scancodes to keycodes:
+#   dd (KEY_COMPOSE)  to 126 (KEY_RIGHTMETA)
+#   `dd` is a scancode for the Menu key, but for some reason evtest reports it
+#   as `KEY_COMPOSE`
+#
+#   3a (KEY_CAPSLOCK) to 1   (KEY_ESC)
 #   1  (KEY_ESC)      to 58  (KEY_CAPSLOCK)
+#   b8 (KEY_RIGHTALT) to 56  (KEY_LEFTALT)
 
-/usr/bin/setkeycodes dd 126 3a 1 1 58
+/usr/bin/setkeycodes dd 126 3a 1 1 58 b8 56
+
+# vim: set textwidth=80 colorcolumn=80:
