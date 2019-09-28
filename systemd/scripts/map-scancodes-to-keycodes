@@ -1,12 +1,8 @@
 #! /usr/bin/zsh
 
 # To get a scancode and a keycode, currently binded to the scancode, run
-# `evtest /dev/input/eventN` and then press the corresponding key.
-#
-# To get the event handler for the keyboard run `cat /dev/input/devices`, find a
-# name of the device at the Name field and check the Handler field in the same
-# info block. The handler field can contain several handler names. The required
-# handler should have the “event“ prefix.
+# `evtest /dev/input/eventN`, where eventN is an event handler for the keyboard
+# (see below), and then press the corresponding key.
 #
 # For example, by running `evtest /dev/input/event0` and then pressing the
 # Escape key, you'll get the following output:
@@ -20,6 +16,11 @@
 #
 # The “value” filed from the first line (3a) is the scancode and the “code”
 # field from the second line (1) is the keycode.
+#
+# To get the event handler for the keyboard run `cat /dev/input/devices`, find a
+# name of the device at the Name field and check the Handler field in the same
+# info block. The handler field can contain several handler names. The required
+# handler should have the “event“ prefix.
 
 # Map scancodes to keycodes:
 #   dd (KEY_COMPOSE)  to 126 (KEY_RIGHTMETA)
