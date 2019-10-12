@@ -90,6 +90,9 @@ user_pref('browser.discovery.enabled', false);
 user_pref('extensions.htmlaboutaddons.discover.enabled', false);
 user_pref('extensions.htmlaboutaddons.recommendations.enabled', false);
 
+// disable internal PDF viewer
+user_pref('pdfjs.disabled', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
