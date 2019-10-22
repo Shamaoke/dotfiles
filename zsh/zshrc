@@ -34,7 +34,7 @@ hash -d dv=$HOME/.development
 hash -d pg=$HOME/.development/playground
 
 # Load tmuxinator completions
-source ~/.gem/ruby/2.5.0/gems/tmuxinator-1.1.0/completion/tmuxinator.zsh
+source ~/.gem/ruby/2.6.0/gems/tmuxinator-1.1.2/completion/tmuxinator.zsh
 
 # Change the standard colors by using terminal control sequences
 # Run either of the following to set  the value of color17
