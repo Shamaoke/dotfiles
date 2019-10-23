@@ -93,6 +93,10 @@ user_pref('extensions.htmlaboutaddons.recommendations.enabled', false);
 // disable internal PDF viewer
 user_pref('pdfjs.disabled', true);
 
+// disable addons restrictions for certain sites
+user_pref('privacy.resistFingerprinting.block_mozAddonManager', true);
+user_pref('extensions.webextensions.restrictedDomains', '');
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
