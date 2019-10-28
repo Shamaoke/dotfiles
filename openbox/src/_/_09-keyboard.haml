@@ -154,7 +154,28 @@
         %action{ :name => 'Raise' }
         %action{ :name => 'Unshade' }
 
-  -# Cycle windows on the current desktop
+  -# Cycle windows on the current desktop with showing the dialog
+  -# 0x17 — `Tab'
+  %keybind{ :key => 'C-A-0x17' }
+    %action{ :name => 'NextWindow' }
+      %allDesktops no
+      %bar no
+      %finalactions
+        %action{ :name => 'Focus' }
+        %action{ :name => 'Raise' }
+        %action{ :name => 'Unshade' }
+
+  -# 0x17 — `Tab'
+  %keybind{ :key => 'C-A-S-0x17' }
+    %action{ :name => 'PreviousWindow' }
+      %allDesktops no
+      %bar no
+      %finalactions
+        %action{ :name => 'Focus' }
+        %action{ :name => 'Raise' }
+        %action{ :name => 'Unshade' }
+
+  -# Cycle windows on the current desktop without showing the dialog
   -# 0x9 — `Escape'
   %keybind{ :key => 'A-0x9' }
     %action{ :name => 'NextWindow' }
