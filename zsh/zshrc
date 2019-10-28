@@ -24,6 +24,7 @@ alias mss="mux start simple $1"
 alias mdf='cd ~df && mss dotfiles'
 alias mch='cd ~dv/chrome && mss chrome'
 alias msc='cd ~ && msb console'
+alias mlg='cd ~lg && mux start lingo'
 alias w3m='w3m -B -title'
 
 # Set the named directories
@@ -32,6 +33,7 @@ hash -d af=$HOME/.data-upper/artifacts
 hash -d df=$HOME/.dotfiles
 hash -d dv=$HOME/.development
 hash -d pg=$HOME/.development/playground
+hash -d lg=$HOME/.documents/lingo
 
 # Load tmuxinator completions
 source ~/.gem/ruby/2.6.0/gems/tmuxinator-1.1.2/completion/tmuxinator.zsh
