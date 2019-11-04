@@ -325,6 +325,16 @@
     %keybind{ :key => '0x29' }
       %action{ :name => 'ToggleFullscreen' }
 
+    -# 0x26 — `a'
+    %keybind{ :key => '0x26' }
+      %action{ :name => 'Execute' }
+        %command tiler even
+
+    -# 0x38 — `b'
+    %keybind{ :key => '0x38' }
+      %action{ :name => 'Execute' }
+        %command tiler main
+
   -# Keybindings for starting applications
   -# 0x1c — `t'
   %keybind{ :key => 'C-A-0x1c' }
