@@ -49,6 +49,7 @@
 # module-margin      = 2
   module-margin      = 1
 # modules-left       = menu ewmh
+# modules-left       = ewmh tiler-even tiler-main chwn
   modules-left       = ewmh
   modules-center     = date
   modules-right      = xkeyboard filesystem wired-network wireless-network battery volume
@@ -67,6 +68,27 @@
 
   label-active-foreground = ${colors.foreground-color}
   label-empty-foreground  = ${colors.foreground-alt-color}
+
+# [module/tiler-even]
+#   type = custom/text
+#
+#   content = even
+#
+#   click-left = tiler even
+#
+# [module/tiler-main]
+#   type = custom/text
+#
+#   content = main
+#
+#   click-left = tiler main
+#
+# [module/chwn]
+#   type = custom/text
+#
+#   content = chwn
+#
+#   click-left = chwn
 
 [module/date]
   type = internal/date
