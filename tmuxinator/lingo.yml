@@ -13,13 +13,13 @@ windows:
       panes:
         - vim en-ja.md
         - echo en-ja.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -show-original no -show-languages no -show-alternatives no -show-prompt-message no -show-translation-phonetics yes en:ja | sed 's/\\\n/\n/g' | lolcat"
-  - ru-en:
-      layout: even-horizontal
-      panes:
-        - vim ru-en.md
-        - echo ru-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b ru:en | sed 's/\\\n/\n/g' | lolcat"
   - en-ru:
       layout: even-horizontal
       panes:
         - vim en-ru.md
         - echo en-ru.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b en:ru | sed 's/\\\n/\n/g' | lolcat"
+  - ru-en:
+      layout: even-horizontal
+      panes:
+        - vim ru-en.md
+        - echo ru-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b ru:en | sed 's/\\\n/\n/g' | lolcat"
