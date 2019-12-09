@@ -18,3 +18,6 @@
 
 " show hidden files in completion
   set show-hidden true
+
+" show pages count in the title bar
+  set window-title-page true
