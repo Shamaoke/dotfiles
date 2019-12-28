@@ -12,4 +12,7 @@ dunst &
 
 ~/.config/polybar/launch.sh &
 
+# start a jack session through cadence at startup
+cadence-session-start --start
+
 # vim: set filetype=zsh:
