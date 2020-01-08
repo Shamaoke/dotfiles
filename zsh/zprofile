@@ -6,7 +6,7 @@ path=(
   /usr/local/{bin,sbin}
   ~/.bin
   ~/.local/bin
-  ~/.gem/ruby/2.6.0/bin
+  ~/.gem/ruby/2.7.0/bin
   ~/.cargo/bin
   $path
 )
