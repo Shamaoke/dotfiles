@@ -1,0 +1,175 @@
+#! /usr/bin/env zsh
+
+# Soundswitcher
+# Switch sound devices.
+
+function configure_jack {
+  # set driver (ds — driver set); get a drivers list by `jack_control dl`
+  jack_control ds alsa
+
+  # set driver parameters (dps — driver parameter set); get a driver parameters list by `jack_control dp`
+  # set ALSA device name
+  jack_control dps device bluealsa
+
+  # set the sample rate
+  jack_control dps rate 48000
+
+  # set the frames per period between process( ) calls
+  # also known as `buffer size`
+  jack_control dps period 1024
+
+  # set the number of periods of playback latency
+  jack_control dps nperiods 2
+}
+
+function start_jack {
+  jack_control start
+}
+
+function stop_jack {
+  jack_control stop
+}
+
+function set_alsa {
+  case $1 in
+    (internal)
+cat <<HEREDOC > ~/.asoundrc
+# device: internal
+
+defaults.pcm.card 0
+defaults.ctl.card 0
+HEREDOC
+    ;;
+
+    (usb)
+cat <<HEREDOC > ~/.asoundrc
+# device: usb
+
+defaults.pcm.card 2
+defaults.ctl.card 2
+HEREDOC
+    ;;
+
+    (bluealsa)
+cat <<HEREDOC > ~/.asoundrc
+# device: bluealsa
+
+defaults.bluealsa.service "org.bluealsa"
+defaults.bluealsa.profile "a2dp"
+defaults.bluealsa.device  "40:ED:98:19:9C:33"
+defaults.bluealsa.delay   10000
+defaults.bluealsa.battery "yes"
+
+pcm.!default {
+ type plug
+ slave.pcm "bluealsa"
+}
+HEREDOC
+    ;;
+  esac
+}
+
+function set_polybar {
+  case $1 in
+    (internal)
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = hw:0
+master-mixer     = Master
+
+format-volume-prefix = int vol
+format-muted-prefix  = int vol
+HEREDOC
+    ;;
+
+    (usb)
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = hw:2
+master-mixer     = PCM
+
+format-volume-prefix = usb vol
+format-muted-prefix  = usb vol
+HEREDOC
+    ;;
+
+    (bluealsa)
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = bluealsa
+master-mixer     = FiiO BTR3 - A2DP
+
+format-volume-prefix = bt vol
+format-muted-prefix  = bt vol
+HEREDOC
+    ;;
+  esac
+}
+
+function restart_polybar {
+  polybar-msg cmd quit
+  polybar sample
+}
+
+function check_for_error {
+  if [[ error_code=$? -ne 0 ]]
+  then
+    notify-send --app-name=Soundswitcher 'Soundswitcher' "Cannot start JACK\nError: $error_code"
+  else
+    notify-send --app-name=Soundswitcher 'Soundswitcher' "JACK was started successfully\nCode: $error_code"
+  fi
+}
+
+function is_internal_exist {
+  cat /proc/asound/cards | [[ -n $(grep '0 \[PCH') ]]
+}
+
+function is_usb_exist {
+  cat /proc/asound/cards | [[ -n $(grep '2 \[BTR3') ]]
+}
+
+function is_bluealsa_exist {
+  bluetoothctl info '40:ED:98:19:9C:33' | [[ $(grep 'Connected:' | cut -d ' ' -f2) == 'yes' ]]
+}
+
+function switch_internal {
+  if is_internal_exist
+  then
+    stop_jack
+    set_alsa internal
+    set_polybar internal
+    restart_polybar
+  fi
+}
+
+function switch_usb {
+  if is_usb_exist
+  then
+    stop_jack
+    set_alsa usb
+    set_polybar usb
+    restart_polybar
+  fi
+}
+
+function switch_bluealsa {
+  if is_bluealsa_exist
+  then
+    set_alsa bluealsa
+    configure_jack
+    start_jack
+    set_polybar bluealsa
+    restart_polybar
+  fi
+}
+
+function main {
+  case $1 in
+    (switch_internal) switch_internal ;;
+
+    (switch_usb) switch_usb ;;
+
+    (switch_bluealsa) switch_bluealsa ;;
+  esac
+}
+
+main $1
+
+# vim: set textwidth=80 colorcolumn=80:
