@@ -227,8 +227,8 @@
 # master-mixer = Master
 # master-mixer = Speaker
 
-  format-volume-prefix = vol
-  format-muted-prefix  = vol
+# format-volume-prefix = vol
+# format-muted-prefix  = vol
 
   format-volume-suffix = %
   format-muted-suffix  = %
