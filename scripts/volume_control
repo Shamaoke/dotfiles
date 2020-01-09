@@ -1,11 +1,9 @@
 #! /usr/bin/env zsh
 
 case `head -1 ~/.asoundrc` in
-  'defaults.pcm.card 0')
-    amixer set Master $1
-  ;;
+  ('# device: internal') amixer set Master $1 ;;
 
-  'defaults.pcm.card 2')
-    amixer set PCM $1
-  ;;
+  ('# device: usb') amixer set PCM $1 ;;
+
+  ('# device: bluealsa') amixer -D bluealsa set 'FiiO BTR3 - A2DP' $1 ;;
 esac
