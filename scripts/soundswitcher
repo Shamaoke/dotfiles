@@ -104,17 +104,7 @@ HEREDOC
 }
 
 function restart_polybar {
-  polybar-msg cmd quit
-  polybar sample
-}
-
-function check_for_error {
-  if [[ error_code=$? -ne 0 ]]
-  then
-    notify-send --app-name=Soundswitcher 'Soundswitcher' "Cannot start JACK\nError: $error_code"
-  else
-    notify-send --app-name=Soundswitcher 'Soundswitcher' "JACK was started successfully\nCode: $error_code"
-  fi
+  polybar-msg cmd restart
 }
 
 function is_internal_exist {
@@ -130,13 +120,23 @@ function is_bluealsa_exist {
 }
 
 function switch_internal {
-  if is_internal_exist
-  then
+  # if is_internal_exist
+  # then
+  #   stop_jack
+  #   set_alsa internal
+  #   set_polybar internal
+  #   restart_polybar
+  # fi
+
+  # below is an alternate form of the if command
+  # see The Z Shell Manual, 6.4 Alternate Forms for Complex Commands, p. 13 for
+  # more details
+  if (is_internal_exist) {
     stop_jack
     set_alsa internal
     set_polybar internal
     restart_polybar
-  fi
+  }
 }
 
 function switch_usb {
@@ -161,13 +161,24 @@ function switch_bluealsa {
 }
 
 function main {
-  case $1 in
-    (switch_internal) switch_internal ;;
+  # case $1 in
+  #   (switch_internal) switch_internal ;;
+
+  #   (switch_usb) switch_usb ;;
+
+  #   (switch_bluealsa) switch_bluealsa ;;
+  # esac
+
+  # below is an alternate form of the case command
+  # see The Z Shell Manual, 6.4 Alternate Forms for Complex Commands, p. 13 for
+  # more details
+  case $1 {
+    (switch_internal) switch_internal ;| # also ;; or ;&
 
     (switch_usb) switch_usb ;;
 
-    (switch_bluealsa) switch_bluealsa ;;
-  esac
+    (switch_bluealsa) switch_bluealsa ;&
+  }
 }
 
 main $1
