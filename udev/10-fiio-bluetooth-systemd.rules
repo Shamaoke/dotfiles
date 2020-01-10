@@ -1,0 +1,1 @@
+ENV{DEVPATH}=="*hci0:21", ACTION=="add", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}="soundswitcher-bluetooth-add.service"

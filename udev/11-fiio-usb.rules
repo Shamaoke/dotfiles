@@ -1,0 +1,2 @@
+ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="a12/1243/2520", ACTION=="add",    RUN{program}="soundswitcher-wrapper usb add"
+ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="a12/1243/2520", ACTION=="remove", RUN{program}="soundswitcher-wrapper usb remove"

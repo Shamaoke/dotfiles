@@ -1,0 +1,2 @@
+ENV{DEVPATH}=="*hci0:21", ACTION=="add",    RUN{program}="/usr/bin/su -c '/usr/bin/systemctl --user start soundswitcher-bluetooth-add.service' user"
+ENV{DEVPATH}=="*hci0:21", ACTION=="remove", RUN{program}="/usr/bin/su -c '/usr/bin/systemctl --user start soundswitcher-bluetooth-remove.service' user"
