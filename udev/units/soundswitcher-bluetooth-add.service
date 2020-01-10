@@ -1,0 +1,8 @@
+[Unit]
+Description=Add a Bluetooth sound device
+
+[Service]
+ExecStart=/home/user/.local/bin/callback bluetooth add
+
+[Install]
+WantedBy=default.target

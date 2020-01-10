@@ -1,0 +1,8 @@
+[Unit]
+Description=Add a USB sound device
+
+[Service]
+ExecStart=/home/user/.local/bin/callback usb add
+
+[Install]
+WantedBy=default.target

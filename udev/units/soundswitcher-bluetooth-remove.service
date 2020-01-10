@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove a Bluetooth sound device
+
+[Service]
+ExecStart=/home/user/.local/bin/callback bluetooth remove
+
+[Install]
+WantedBy=default.target

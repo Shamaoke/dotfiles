@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove a USB sound device
+
+[Service]
+ExecStart=/home/user/.local/bin/callback usb remove
+
+[Install]
+WantedBy=default.target
