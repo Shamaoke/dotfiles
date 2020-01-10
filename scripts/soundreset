@@ -1,0 +1,31 @@
+#! /usr/bin/env zsh
+
+function set_alsa {
+
+cat <<HEREDOC > ~/.asoundrc
+# device: internal
+
+defaults.pcm.card 0
+defaults.ctl.card 0
+HEREDOC
+
+}
+
+function set_polybar {
+
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = hw:0
+master-mixer     = Master
+
+format-volume-prefix = int vol
+format-muted-prefix  = int vol
+HEREDOC
+
+}
+
+function main TRAPEXIT {
+  set_alsa
+  set_polybar
+}
+
+# vim: set textwidth=80 colorcolumn=80:
