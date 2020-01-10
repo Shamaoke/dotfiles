@@ -1,0 +1,29 @@
+#! /usr/bin/env zsh
+
+case $1 in
+
+  ('usb')
+    case $2 in
+      ('add')
+        $HOME/.local/bin/soundswitcher switch_usb
+        echo "$(date)/$(whoami): FiiO USB sound device was added." >> $HOME/.log/soundswitcher.info ;;
+
+      ('remove')
+        $HOME/.local/bin/soundswitcher switch_internal
+        echo "$(date)/$(whoami): FiiO USB sound device was removed." >> $HOME/.log/soundswitcher.info ;;
+    esac
+  ;;
+
+  ('bluetooth')
+    case $2 in
+      ('add')
+        $HOME/.local/bin/soundswitcher switch_bluealsa
+        echo "$(date)/$(whoami): FiiO Bluetooth sound device was added." >> $HOME/.log/soundswitcher.info ;;
+
+      ('remove')
+        $HOME/.local/bin/soundswitcher switch_internal
+        echo "$(date)/$(whoami): FiiO Bluetooth sound device was removed." >> $HOME/.log/soundswitcher.info ;;
+    esac
+  ;;
+
+esac
