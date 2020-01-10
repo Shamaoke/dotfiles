@@ -10,9 +10,13 @@ touchpad_toggle &
 
 dunst &
 
+# reset the current sound device to the default one (internal sound card)
+soundreset &
+
+# launch polybar
 ~/.config/polybar/launch.sh &
 
 # start a jack session through cadence at startup
 # cadence-session-start --start &
 
-# vim: set filetype=zsh:
+# vim: set filetype=zsh textwidth=80 colorcolumn=80:
