@@ -101,4 +101,11 @@
 " open new panel to the right of the current one when splitting vertically
   set splitright
 
+" change what preferences to store by the :mkview command (and restore by :loadview)
+" cursor: cursor position in file and in window
+" folds: manually created folds, opened/closed folds and local fold options
+" The preferences will be stored in state files at the `~/.vim/view` directory.
+" See Vim Reference Manual, options.txt, p. 935, 'viewoptions' for details.
+  set viewoptions=cursor,folds
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
