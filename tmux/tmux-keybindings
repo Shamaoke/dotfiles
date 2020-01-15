@@ -2,3 +2,8 @@
 # данная комбинация возвращает поведение программы в версиях < 2.6
 # см. https://github.com/tmux/tmux/issues/1115
 bind-key -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
+
+# copy the text, selected in the copy mode to the clipboard
+bind-key -T copy-mode-vi y send -X copy-pipe 'xclip -in -selection clipboard'
+
+# vim: set textwidth=80 colorcolumn=80:
