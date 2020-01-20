@@ -26,8 +26,6 @@ let s:denite_options = { 'direction'        : 'topleft',
 
 fun s:set_denite_options()
   call denite#custom#option('_', s:denite_options)
-
-  call denite#custom#kind('file', 'default_action', 'vsplit')
 endfun
 
 fun s:set_denite_bindings()
