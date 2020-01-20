@@ -20,7 +20,10 @@ source ~/.dotfiles/vim/rcs/plugin-rust
 source ~/.dotfiles/vim/rcs/plugin-tagbar
 
 " load Unite settings
-source ~/.dotfiles/vim/rcs/plugin-unite
+" source ~/.dotfiles/vim/rcs/plugin-unite
+
+" load Denite settings
+source ~/.dotfiles/vim/rcs/plugin-denite
 
 " load Vimfiler settings
 " source ~/.dotfiles/vim/rcs/plugin-vimfiler
