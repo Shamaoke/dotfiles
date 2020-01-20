@@ -1,0 +1,49 @@
+" :::denite:::
+
+" This is an example how to set Denite options in the command line
+" map <C-f>f :Denite file -vertical-preview -sorters=sorter/word -winwidth=40 -split=vertical -direction=topleft<CR>
+" map <C-f>b :Denite buffer -vertical-preview -sorters=sorter/word -winwidth=40 -split=vertical -direction=topleft<CR>
+
+nmap <C-f>f :Denite file<CR>
+nmap <C-f>b :Denite buffer<CR>
+
+" call denite#custom#option('default', 'direction', 'topleft')
+" call denite#custom#option('default', 'split', 'vertical')
+
+" The following autocommand doesn't work, because
+" “`autocmd FileType denite` will be called after denite initialization.”
+" See `https://github.com/Shougo/denite.nvim/issues/743` for details.
+
+autocmd VimEnter *      call s:set_denite_options()
+autocmd FileType denite call s:set_denite_bindings()
+
+let s:denite_options = { 'direction'        : 'topleft',
+                       \ 'split'            : 'vertical',
+                       \ 'sorters'          : 'sorter/word',
+                       \ 'winwidth'         : 45,
+                       \ 'statusline'       : 0,
+                       \ 'vertical_preview' : 1 }
+
+fun s:set_denite_options()
+  call denite#custom#option('_', s:denite_options)
+
+  call denite#custom#kind('file', 'default_action', 'vsplit')
+endfun
+
+fun s:set_denite_bindings()
+  nmap <silent><buffer><expr> <CR> denite#do_map('do_action')
+
+  nmap <silent><buffer><expr> q denite#do_map('quit')
+
+  nmap <silent><buffer><expr> t denite#do_map('toggle_select')
+
+  nmap <silent><buffer><expr> i denite#do_map('choose_action')
+
+  nmap <silent><buffer><expr> f denite#do_map('open_filter_buffer')
+
+  nmap <silent><buffer><expr> p denite#do_map('do_action', 'preview')
+
+  nmap <expr> b denite#do_map('do_action', 'cd')
+endfun
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
