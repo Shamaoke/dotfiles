@@ -3,7 +3,8 @@ name: <%= @args[0] || (File.basename Dir.pwd) %>
 startup_window: 1
 
 windows:
-  - editor: vim
+  # - editor: vim
+  - editor:
   - work:
   - build|install/view:
       layout: even-horizontal
