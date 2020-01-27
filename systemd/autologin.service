@@ -1,0 +1,9 @@
+# /etc/systemd/system
+[Unit]
+After=systemd-user-sessions.service
+
+[Service]
+ExecStart=/bin/su user -l -c /usr/bin/startx
+
+[Install]
+WantedBy=multi-user.target
