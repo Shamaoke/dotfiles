@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 ##
-# screengrab -- command line interface for grabbing the desktop
+# screengrab -- command line utility for grabbing the desktop
 #
 # Usage: screengrab [timeout] [dimensions]
 #
