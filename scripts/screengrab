@@ -1,0 +1,87 @@
+#!/usr/bin/env zsh
+
+##
+# screengrab -- command line interface for grabbing the desktop
+#
+# Usage: screengrab [timeout] [dimensions]
+#
+# Examples:
+#
+# screengrab 5
+#
+# screengrab 5 800x600
+#
+# screengrab 5 +10,20
+#
+# screengrab 5 800x600+10,20
+#
+
+timeout=$1
+size=${2%+[[:digit:]]*,[[:digit:]]*}
+offset=${(M)2%+[[:digit:]]*,[[:digit:]]*}
+
+##
+# timeout
+#
+# set a timeout
+#
+# Start grabbing the screen after a short period of time.
+#
+# Default: 0
+#
+
+##
+# size
+#
+# set the image size
+#
+# Specify the size of the screen portion. The format is <width>x<height>.
+#
+# Default: 1280x720
+#
+
+##
+# offset
+#
+# set an offset
+#
+# Specify an offset from the top left corner of the screen. The format is +<x>,<y>.
+#
+# Default: +0,0
+#
+
+sleep ${timeout:-0}
+
+ffmpeg -f x11grab \
+       -video_size ${size:-1280x720} \
+       -i :0.0${offset:-+0,0} \
+       -frames:v 1 \
+       -f image2pipe \
+       -codec:v png \
+       - \
+| \
+xclip -in \
+      -target image/png \
+      -selection clipboard
+
+##
+# ffmpeg
+#
+# -f x11grab           -- set the input format (X11 screen capture using XCB); use `ffmpeg -formats` to view all formats
+# -video_size 1280x720 -- set the frame size (alias: -s)
+# -i :0.0+0,0          -- use the X11 display as an input (format: :<display>.<screen>+<x-offset>,<y-offset>)
+# -frames:v 1          -- set the number of video frames to output
+# -f image2pipe        -- set the output format (an image sent to the input end of other program through a pipe)
+# -codec:v png         -- set the video codec (alias: -vcodec)
+# -                    -- output to the standard input
+#
+
+##
+# xclip
+#
+# -in                  -- read data into the X selection from the standard input (alias: -i)
+# -target image/png    -- specify an input data format (alias: -t)
+# -selection clipboard -- specify which X selection to use {primary|secondary|clipboard}
+#
+
+# vim: set textwidth=80 colorcolumn=80:
