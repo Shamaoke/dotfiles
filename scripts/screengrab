@@ -55,19 +55,27 @@ default_offset=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\2,\3/")
 # Default: $default_offset
 #
 
-sleep ${timeout:-0}
+function grab {
+  ffmpeg -f x11grab \
+         -video_size ${size:-$default_size} \
+         -i :0.0${offset:-$default_offset} \
+         -frames:v 1 \
+         -f image2pipe \
+         -codec:v png \
+         -
+}
 
-ffmpeg -f x11grab \
-       -video_size ${size:-$default_size} \
-       -i :0.0${offset:-$default_offset} \
-       -frames:v 1 \
-       -f image2pipe \
-       -codec:v png \
-       - \
-| \
-xclip -in \
-      -target image/png \
-      -selection clipboard
+function copy {
+  xclip -in \
+        -target image/png \
+        -selection clipboard
+}
+
+function main TRAPEXIT {
+  sleep ${timeout:-0}
+
+  grab | copy
+}
 
 ##
 # ffmpeg
