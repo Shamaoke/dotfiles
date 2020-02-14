@@ -46,11 +46,13 @@ Plugin 'gmarik/Vundle.vim'
   Plugin 'Shamaoke/undina'
 " Plugin 'jiangmiao/auto-pairs'
 " Plugin 'thaerkh/vim-indentguides'
+  Plugin 'Yggdroot/LeaderF'
 
 " :::Denite:::
-  Plugin 'Shougo/denite.nvim'
-  Plugin 'roxma/nvim-yarp'
-  Plugin 'roxma/vim-hug-neovim-rpc'
+" pynvim module should also be installed: `pip3 --user install pynvim
+" Plugin 'Shougo/denite.nvim'
+" Plugin 'roxma/nvim-yarp'
+" Plugin 'roxma/vim-hug-neovim-rpc'
 
 " Plugin 'scrooloose/nerdtree'
 " Plugin 'chriskempson/base16-vim'

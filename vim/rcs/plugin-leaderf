@@ -1,0 +1,6 @@
+" :::leaderf:::
+
+" set the position of the LeaderF window
+let g:Lf_WindowPosition = 'left'
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:

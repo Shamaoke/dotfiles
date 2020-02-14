@@ -23,7 +23,10 @@ source ~/.dotfiles/vim/rcs/plugin-tagbar
 " source ~/.dotfiles/vim/rcs/plugin-unite
 
 " load Denite settings
-source ~/.dotfiles/vim/rcs/plugin-denite
+" source ~/.dotfiles/vim/rcs/plugin-denite
+
+" load LeaderF settings
+source ~/.dotfiles/vim/rcs/plugin-leaderf
 
 " load Vimfiler settings
 " source ~/.dotfiles/vim/rcs/plugin-vimfiler
