@@ -141,3 +141,5 @@ configuration {
 /* me-accept-entry: "MouseD1"; */
 /* me-accept-custom: "Control+MouseD1"; */
 }
+
+/* vim: set filetype=css: */
