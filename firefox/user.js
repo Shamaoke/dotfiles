@@ -97,6 +97,9 @@ user_pref('pdfjs.disabled', true);
 user_pref('privacy.resistFingerprinting.block_mozAddonManager', true);
 user_pref('extensions.webextensions.restrictedDomains', '');
 
+// disable detaching a tab to a new window
+user_pref('browser.tabs.allowTabDetach', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
