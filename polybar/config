@@ -12,6 +12,7 @@
   foreground-alt-color = #ff4f2624
   foreground-normal    = #ff33e700
   foreground-alert     = #ffe70033
+  foreground-ready     = #ffe7b400
 
 [global/wm]
   margin-top    = 0
@@ -154,7 +155,8 @@
   format-disconnected = <label-disconnected>
 
   label-connected    = +
-  label-disconnected = ×
+# label-disconnected = ×
+  label-disconnected = •
 
   label-connected-padding-left    = 1
   label-disconnected-padding-left = 1
@@ -165,7 +167,8 @@
   format-connected-prefix-foreground    = ${colors.foreground-alt-color}
   format-disconnected-prefix-foreground = ${colors.foreground-alt-color}
   format-connected-foreground           = ${colors.foreground-normal}
-  format-disconnected-foreground        = ${colors.foreground-alert}
+# format-disconnected-foreground        = ${colors.foreground-alert}
+  format-disconnected-foreground        = ${colors.foreground-ready}
 
 [module/wireless-network]
   type = internal/network
@@ -179,7 +182,8 @@
   format-disconnected = <label-disconnected>
 
   label-connected    = +
-  label-disconnected = ×
+# label-disconnected = ×
+  label-disconnected = •
 
   label-connected-padding-left    = 1
   label-disconnected-padding-left = 1
@@ -190,7 +194,8 @@
   format-connected-prefix-foreground    = ${colors.foreground-alt-color}
   format-disconnected-prefix-foreground = ${colors.foreground-alt-color}
   format-connected-foreground           = ${colors.foreground-normal}
-  format-disconnected-foreground        = ${colors.foreground-alert}
+# format-disconnected-foreground        = ${colors.foreground-alert}
+  format-disconnected-foreground        = ${colors.foreground-ready}
 
 [module/battery]
   type = internal/battery
