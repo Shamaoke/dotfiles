@@ -3,4 +3,56 @@
 " set the position of the LeaderF window
 let g:Lf_WindowPosition = 'left'
 
+" configure showing the hint 'Press <F1> for help' in the Normal mode
+let g:Lf_HideHelp = 1
+
+" set the colorscheme of the status line
+let g:Lf_StlColorscheme = 'undina'
+
+" set the separators of the status line entries
+let g:Lf_StlSeparator = { 'left': '', 'right': '' }
+
+" configure displaying icons for file types
+let g:Lf_ShowDevIcons = 0
+
+" configure showing hidden files and directories
+let g:Lf_ShowHidden = 1
+
+" configure using a version control tool to index files when running Vim in
+" a repository under control
+"
+" If enabled, the files which are excluded from the repository and also special
+" files and directories (e. g. '.git') won't be indexed and displayed.
+"
+" When trying to lcd to the special directory ('.git') and then running LeaderF
+" in it, you will get the exception: 'This operation must be run in a work tree'.
+" See `https://github.com/Yggdroot/LeaderF/issues/544` for details.
+"
+let g:Lf_UseVersionControlTool = 0
+
+" set the mapping of searching files
+" let g:Lf_ShortcutF = '<C-f>f'
+
+" set the mapping of searching buffers
+" let g:Lf_ShortcutB = '<C-f>b'
+
+" configure the mappings in the command mode
+let g:Lf_CommandMap = {
+  \ '<F5>'   : ['<C-r>'],
+  \ '<ESC>'  : [ ],
+  \ '<TAB>'  : ['<ESC>']
+\ }
+
+" configure the mappings in the normal mode
+" See `https://github.com/Yggdroot/LeaderF/blob/614a2fe042d1df9d682114a48335fa5387a4ae36/autoload/leaderf/File.vim` for details.
+let g:Lf_NormalMap = {
+  \ 'File'   : [ ['<TAB>', '<Nop>'],
+  \              ['<ESC>', ':exec g:Lf_py "fileExplManager.input()"<CR>'],
+  \              ['<C-r>', ':exec g:Lf_py "fileExplManager.refresh()"<CR>'] ],
+  \
+  \ 'Buffer' : [ ['<TAB>', '<Nop>'],
+  \              ['<ESC>', ':exec g:Lf_py "fileExplManager.input()"<CR>'],
+  \              ['<C-r>', ':exec g:Lf_py "fileExplManager.refresh()"<CR>'] ]
+\ }
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
