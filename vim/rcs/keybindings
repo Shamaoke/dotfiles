@@ -7,10 +7,18 @@
 " nmap <C-k> O<ESC>
 
 " создать клавиатурную комбинацию для копирования в буфер обмена
-  map <C-y> "+y
+  nmap <C-y> "+y
 
 " создать клавиатурную комбинацию для вставки из буфера обмена
-  map <C-a> "+p
+  nmap <C-a> "+p
+
+" :::leaderf:::
+
+" set a keybinding to open LeaderF in the file mode
+  nmap <silent><C-f>f :Leaderf --nowrap file<CR>
+
+" set a keybinding to open LeaderF in the buffer mode
+  nmap <silent><C-f>b :Leaderf --nowrap buffer<CR>
 
 " установить клавиатурную комбинацию для смены режима переноса строк
 " map zw :set wrap!<CR>
