@@ -100,6 +100,9 @@ user_pref('extensions.webextensions.restrictedDomains', '');
 // disable detaching a tab to a new window
 user_pref('browser.tabs.allowTabDetach', false);
 
+// disable megabar
+user_pref('browser.urlbar.update1', false)
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
