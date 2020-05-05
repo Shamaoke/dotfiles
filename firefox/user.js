@@ -34,6 +34,8 @@ user_pref('ui.key.menuAccessKeyFocuses', false);
 
 // disable video autoplay
 // user_pref('media.autoplay.enabled', false);
+user_pref('media.autoplay.default', 5);
+user_pref('media.autoplay.enabled.user-gestures-needed', false);
 
 // use a configuration file for proxy settings
 user_pref('network.proxy.type', 2);
