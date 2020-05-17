@@ -4,7 +4,8 @@
 !    URxvt    !
 !-------------!
 
-#include ".Xresources.d/joy"
+!#include ".Xresources.d/joy"
+#include ".Xresources.d/chinese-pastel"
 
 !set geometry
   URxvt.geometry: 157x46
