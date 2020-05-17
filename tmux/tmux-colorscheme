@@ -1,6 +1,8 @@
 # установить стиль статусной строки
-# set -g status-style      'bg=colour18'
-# set -g status-left-style 'fg=colour08,bold'
+set -g  status-style 'fg=colour7'
+set -ag status-style 'bg=colour233'
+
+set -g status-left-style 'fg=colour11,bold'
 
 # установить стиль разделителей панелей
 # set -g pane-active-border-style 'fg=colour18'
