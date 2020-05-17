@@ -1,7 +1,7 @@
 # change prompt according to the input mode
 case $KEYMAP in
-  main)  export PROMPT="%F{10}%B>_%b%f " ;;
-  vicmd) export PROMPT="%F{9}%B>:%b%f "
+  main)  export PROMPT="%F{2}%B>_%b%f " ;;
+  vicmd) export PROMPT="%F{1}%B>:%b%f "
 esac
 
 zle reset-prompt

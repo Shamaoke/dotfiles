@@ -1,5 +1,5 @@
 # reset prompt to the default value
-export PROMPT="%F{10}%B>_%b%f "
+export PROMPT="%F{2}%B>_%b%f "
 
 zle reset-prompt
 
