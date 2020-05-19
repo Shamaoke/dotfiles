@@ -16,7 +16,7 @@ let g:Lf_StlSeparator = { 'left': '', 'right': '' }
 let g:Lf_ShowDevIcons = 0
 
 " configure showing hidden files and directories
-let g:Lf_ShowHidden = 1
+let g:Lf_ShowHidden = 0
 
 " configure using a version control tool to index files when running Vim in
 " a repository under control
