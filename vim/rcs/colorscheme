@@ -33,7 +33,7 @@ highlight StatusLineNC      cterm=none ctermfg=008  ctermbg=233
 highlight VertSplit         cterm=none ctermfg=232  ctermbg=none
 highlight Visual            cterm=none ctermfg=none ctermbg=238
 
-"syntax
+" syntax
 highlight Comment           cterm=none ctermfg=008  ctermbg=none
 highlight Normal            cterm=none ctermfg=015  ctermbg=none
 
