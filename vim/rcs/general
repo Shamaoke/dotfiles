@@ -55,18 +55,18 @@
 " set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
   set listchars=eol:¶,tab:∙►,trail:∙,precedes:←,extends:→,nbsp:↔
 
-" использовать символ пробела в качестве заполнителя разделителей панелей
-" (т. е. фактически, не использовать никаких видимых символов)
-  set fillchars+=vert:\ 
+" do not use any characters to fill in vertical separators and folds
+  set fillchars=vert:\ ,fold:\ 
 
 " use the plus and minus signs to fill the status lines of active and inctive
 " windows if StatusLine and StatusLineNC have the same highlighting
 " set fillchars+=stl:+,stlnc:-
 
-" настройка фолдинга
-  set nofoldenable
-  set foldlevelstart=99
-  set foldmethod=syntax
+" set the method of folding
+  set foldmethod=manual
+
+" set the format of the fold string
+  set foldtext=CustomizeFoldText()
 
 " настроить поля для вертикального скроллинга
   set scrolloff=10
@@ -77,8 +77,8 @@
 " установить величину сдвига при горизонтальном скроллинге
   set sidescroll=1
 
-" выделять текущую линию
-" set cursorline
+" highlight the current line
+  set cursorline
 
 " выделять текущую колонку
 " set cursorcolumn
