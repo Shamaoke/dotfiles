@@ -1,6 +1,9 @@
 " vim-markdown
 
-" выделять заголовок YAML
+" highlight yaml front matter
   let g:vim_markdown_frontmatter=1
+
+" disable plugin specific folding
+  let g:vim_markdown_folding_disabled=1
 
 " vim: set filetype=vim:
