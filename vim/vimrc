@@ -1,3 +1,6 @@
+" load user functions
+source ~/.dotfiles/vim/rcs/functions
+
 " load Vundle settings
 source ~/.dotfiles/vim/rcs/vundle
 
