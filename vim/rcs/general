@@ -68,6 +68,15 @@
 " set the format of the fold string
   set foldtext=CustomizeFoldText()
 
+" set a list of commands for which folds will be automatically opened
+  set foldopen=
+
+" set a list of commands for which folds will be automatically closed
+  set foldclose=
+
+" show the fold column
+  set foldcolumn=1
+
 " настроить поля для вертикального скроллинга
   set scrolloff=10
 
