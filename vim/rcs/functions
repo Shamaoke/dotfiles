@@ -1,0 +1,10 @@
+fun CustomizeFoldText()
+  return     '├'
+         \ . '─'
+         \ . '[' . printf('%03d', v:foldend - v:foldstart + 1) . ']'
+         \ . substitute(v:folddashes, '-', '─', 'g')
+         \ . ' '
+         \ . getline(v:foldstart)
+endfun
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
