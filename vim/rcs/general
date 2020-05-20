@@ -69,7 +69,7 @@
   set foldtext=CustomizeFoldText()
 
 " set a list of commands for which folds will be automatically opened
-  set foldopen=
+  set foldopen=search
 
 " set a list of commands for which folds will be automatically closed
   set foldclose=
