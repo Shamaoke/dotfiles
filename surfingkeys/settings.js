@@ -1,5 +1,11 @@
 // :::settings:::
 
+// set a threshold for choosing tabs with Omnibar (0 for always use it)
+settings.tabsThreshold = 20
+
+// set a sort order for tabs chosen by Omnibar (MRU or natural)
+settings.tabsMRUOrder = false
+
 // align hints on their target elements
 settings.hintAlign = 'left'
 
@@ -75,3 +81,4 @@ unmap('D')
 //   border-width:     2px               !important;
 //
 // `, 'text')
+
