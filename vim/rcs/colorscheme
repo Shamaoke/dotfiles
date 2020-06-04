@@ -18,7 +18,7 @@ highlight ColorColumn       cterm=none ctermfg=none ctermbg=235
 highlight CursorColumn      cterm=none ctermfg=none ctermbg=none
 highlight CursorLine        cterm=none ctermfg=none ctermbg=none
 highlight CursorLineNr      cterm=none ctermfg=007  ctermbg=235
-highlight Folded            cterm=none ctermfg=008  ctermbg=234
+highlight Folded            cterm=none ctermfg=007  ctermbg=234
 highlight FoldColumn        cterm=none ctermfg=008  ctermbg=none
 highlight LineNr            cterm=none ctermfg=008  ctermbg=234
 highlight NonText           cterm=none ctermfg=237  ctermbg=none
