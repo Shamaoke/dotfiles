@@ -103,7 +103,10 @@ user_pref('extensions.webextensions.restrictedDomains', '');
 user_pref('browser.tabs.allowTabDetach', false);
 
 // disable megabar
-user_pref('browser.urlbar.update1', false)
+// user_pref('browser.urlbar.update1', false);
+
+// enable loading of userChrome.css and userContent.css
+user_pref('toolkit.legacyUserProfileCustomizations.stylesheets', true);
 
 /* :::Fonts::: */
 
