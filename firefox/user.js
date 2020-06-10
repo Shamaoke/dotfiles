@@ -41,7 +41,7 @@ user_pref('media.autoplay.enabled.user-gestures-needed', false);
 user_pref('network.proxy.type', 2);
 
 // set a configuration file for proxy server settings
-user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/mr70dnal.default/proxy.pac');
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/ip4pk1la.user/proxy.pac');
 
 // show URL scheme in address bar
 // user_pref('browser.urlbar.trimURLs', false);
@@ -49,11 +49,16 @@ user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/mr
 // suppress web notifications requests for all sites
 user_pref('dom.webnotifications.enabled', false);
 
-// restore previous session when starting the browser
-user_pref('browser.startup.page', 3);
+// change the browser behavior at startup
+// 0 — start with blank page
+// 1 — use the home page (define it in 'browser.startup.homepage')
+// 2 — load the last visited page
+// 3 — resume the previous browser session
+// source: http://kb.mozillazine.org/Browser.startup.page
+user_pref('browser.startup.page', 1);
 
 // set the homepage
-user_pref('browser.startup.homepage', 'about:blank');
+user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/ip4pk1la.user/chrome/index.html');
 
 // set the new tab page as a blank page
 user_pref('browser.newtabpage.enabled', false);
@@ -65,7 +70,7 @@ user_pref('browser.urlbar.oneOffSearches', false);
 user_pref('app.shield.optoutstudies.enabled', false);
 
 // don't show buttons of the following search providers in the url bar drop-down list
-user_pref('browser.search.hiddenOneOffs', 'Yandex,Google,Bing,Amazon.com,DuckDuckGo,Twitter,Wikipedia (en)');
+user_pref('browser.search.hiddenOneOffs', 'Yandex,Google,Bing,Amazon.com,DuckDuckGo,Twitter,Wikipedia (en),eBay');
 
 // don't show search suggestions when typing in the address bar
 user_pref('browser.search.suggest.enabled', false);
