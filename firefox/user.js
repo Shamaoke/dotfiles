@@ -55,7 +55,7 @@ user_pref('dom.webnotifications.enabled', false);
 // 2 — load the last visited page
 // 3 — resume the previous browser session
 // source: http://kb.mozillazine.org/Browser.startup.page
-user_pref('browser.startup.page', 1);
+user_pref('browser.startup.page', 3);
 
 // set the homepage
 user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/ip4pk1la.user/chrome/index.html');
