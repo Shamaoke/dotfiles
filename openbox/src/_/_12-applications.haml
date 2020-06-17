@@ -104,6 +104,14 @@
   %application{ :class => 'firefox', :role => 'Organizer' }
     %decor no
 
+  %application{ :class => 'firefox', :role => 'Dialog' }
+    %decor no
+    %position{ :force => 'yes' }
+      %x center
+      %y center
+    %size
+      %width 500
+      %height 340
 
   %application{ :class => 'qBittorrent', :type => 'dialog' }
     %position{ :force => 'yes' }
