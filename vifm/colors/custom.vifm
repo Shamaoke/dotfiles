@@ -21,8 +21,8 @@ highlight WildMenu    cterm=none ctermfg=7    ctermbg=3
 highlight CmdLine     cterm=none ctermfg=none ctermbg=none
 highlight ErrorMsg    cterm=none ctermfg=9    ctermbg=none
 highlight JobLine     cterm=none ctermfg=7    ctermbg=1
-highlight TabLine     cterm=none ctermfg=none ctermbg=none
-highlight TabLineSel  cterm=none ctermfg=7    ctermbg=233
+highlight TabLine     cterm=none ctermfg=7    ctermbg=none
+highlight TabLineSel  cterm=none ctermfg=11   ctermbg=233
 
 " unknown
 highlight SuggestBox  cterm=none ctermfg=none ctermbg=13
