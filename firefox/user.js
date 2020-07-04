@@ -113,6 +113,9 @@ user_pref('browser.tabs.allowTabDetach', false);
 // enable loading of userChrome.css and userContent.css
 user_pref('toolkit.legacyUserProfileCustomizations.stylesheets', true);
 
+// prevent the context menu from stealing by sites
+user_pref('dom.event.contextmenu.enabled', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
