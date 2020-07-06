@@ -122,19 +122,19 @@
 # spacing      = 10
 
   mount-0 = /
+  mount-1 = /mnt/data
 
-  format-mounted-prefix = fsys
+# format-mounted-prefix = fsys
 
 # format-mounted = <label-mounted> <bar-free>
   format-mounted = <label-mounted>
 
 # label-mounted = %free%%{F#ff4f2624}/%{F-}%total%
-  label-mounted = %free% / %total%
-# label-mounted =
+  label-mounted = %{F#ff4f2624}%mountpoint%%{F-} %free%/%total%
 
-  label-mounted-padding-left = 1
+# label-mounted-padding-left = 1
 
-  format-mounted-prefix-foreground = ${colors.foreground-alt-color}
+# format-mounted-prefix-foreground = ${colors.foreground-alt-color}
 
 # bar-free-format    = %fill%%indicator%%empty%
 # bar-free-format    = [%{F#ff33e700}%fill%%{F-}%{F#ffe70033}%empty%%{F-}]
