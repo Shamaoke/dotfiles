@@ -12,6 +12,17 @@
 " создать клавиатурную комбинацию для вставки из буфера обмена
   nmap <C-a> "+p
 
+" :::spelling:::
+
+" switch on spell checking for English
+  nmap zse :setlocal spell spelllang=en_us<CR>
+
+" switch on spell checking for Russian
+  nmap zsr :setlocal spell spelllang=ru<CR>
+
+" switch off spell checking
+  nmap zsc :setlocal nospell<CR>
+
 " :::leaderf:::
 
 " set a keybinding to open LeaderF in the file mode
