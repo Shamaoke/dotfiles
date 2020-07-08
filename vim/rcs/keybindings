@@ -12,6 +12,17 @@
 " создать клавиатурную комбинацию для вставки из буфера обмена
   nmap <C-a> "+p
 
+" :::windows:::
+
+" expand current window horizontally
+  nmap <C-w>e :vertical resize<CR>
+
+" expand current window vertically
+  nmap <C-w>E :resize<CR>
+
+" make all windows equally high and wide
+  nmap <C-w>z <C-w>=
+
 " :::spelling:::
 
 " switch on spell checking for English
