@@ -33,6 +33,12 @@ highlight StatusLineNC      cterm=none ctermfg=008  ctermbg=233
 highlight VertSplit         cterm=none ctermfg=232  ctermbg=none
 highlight Visual            cterm=none ctermfg=none ctermbg=238
 
+" spelling
+highlight SpellBad          cterm=none ctermfg=none ctermbg=003
+highlight SpellCap          cterm=none ctermfg=none ctermbg=005
+highlight SpellRare         cterm=none ctermfg=none ctermbg=006
+highlight SepllLocal        cterm=none ctermfg=none ctermbg=002
+
 " syntax
 highlight Comment           cterm=none ctermfg=008  ctermbg=none
 highlight Normal            cterm=none ctermfg=015  ctermbg=none
