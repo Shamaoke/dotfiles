@@ -40,7 +40,7 @@ highlight SpellRare         cterm=none ctermfg=none ctermbg=006
 highlight SepllLocal        cterm=none ctermfg=none ctermbg=002
 
 " syntax
-highlight Comment           cterm=none ctermfg=008  ctermbg=none
+highlight Comment           cterm=none ctermfg=007  ctermbg=none
 highlight Normal            cterm=none ctermfg=015  ctermbg=none
 
 " vim: set filetype=vim:
