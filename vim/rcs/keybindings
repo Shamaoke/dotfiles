@@ -37,6 +37,12 @@
 " display suggestions list
   nmap zss z=
 
+" move to next misspelled word
+  nmap zsn ]s
+
+" move to previous misspelled word
+  nmap zsp [s
+
 " :::leaderf:::
 
 " set a keybinding to open LeaderF in the file mode
