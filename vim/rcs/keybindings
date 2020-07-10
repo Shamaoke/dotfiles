@@ -34,6 +34,9 @@
 " switch off spell checking
   nmap zsc :setlocal nospell<CR>
 
+" display suggestions list
+  nmap zss z=
+
 " :::leaderf:::
 
 " set a keybinding to open LeaderF in the file mode
