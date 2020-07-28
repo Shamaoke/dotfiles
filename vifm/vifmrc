@@ -115,7 +115,8 @@ command run !! ./%f
 " The command macros %f, %F, %d, %F may be used in the commands.
 " The %a macro is ignored.  To use a % you must put %%.
 
-filetype *.nes,*.gen,*.ccd,*.cue mednafen %f &> /dev/null &
+" Mednafen emulator
+filetype *.mdnf zsh %f &> /dev/null &
 
 " Web
 filetype *.html,*.htm links,mozilla
