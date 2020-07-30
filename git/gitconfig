@@ -20,3 +20,5 @@
 [user]
 	name = Shamaoke
 	email = shamaoke@yandex.ru
+[commit]
+	verbose = true
