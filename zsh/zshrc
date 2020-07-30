@@ -11,8 +11,18 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Set options
+# See “The Z Shell Manual”, p. 96, “16 Options” for details
+
 # Turn off beep
-setopt NO_BEEP
+setopt no_beep
+
+# Enable extended globbing expressions
+# ‘x#’  zero or more occurences of x
+# ‘x##’ one or more occurences of x
+# ‘^x’  anything not matching x
+# ‘x~y’ x but not y
+setopt extended_glob
 
 # Set aliases
 alias pacman='pacman --color=always'
