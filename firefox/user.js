@@ -119,6 +119,10 @@ user_pref('dom.event.contextmenu.enabled', false);
 // disable fullscreen warning message
 user_pref('full-screen-api.warning.timeout', 0);
 
+// disable cycling tabs by ctrl+tab in recently used order
+// this also disables previewing of tabs
+user_pref('browser.ctrlTab.recentlyUsedOrder', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
