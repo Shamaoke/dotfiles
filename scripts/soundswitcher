@@ -107,6 +107,14 @@ function restart_polybar {
   polybar-msg cmd restart
 }
 
+function set_goldendict {
+  case $1 {
+    (alsa) sed --in-place 's/mplayer -ao jack/mplayer -ao alsa/' ~/.goldendict/config ;;
+
+    (jack) sed --in-place 's/mplayer -ao alsa/mplayer -ao jack/' ~/.goldendict/config ;;
+  }
+}
+
 function is_internal_exist {
   cat /proc/asound/cards | [[ -n $(grep '0 \[PCH') ]]
 }
@@ -136,6 +144,7 @@ function switch_internal {
     set_alsa internal
     set_polybar internal
     restart_polybar
+    set_goldendict alsa
   }
 }
 
@@ -146,6 +155,7 @@ function switch_usb {
     set_alsa usb
     set_polybar usb
     restart_polybar
+    set_goldendict alsa
   fi
 }
 
@@ -157,6 +167,7 @@ function switch_bluealsa {
     start_jack
     set_polybar bluealsa
     restart_polybar
+    set_goldendict jack
   fi
 }
 
