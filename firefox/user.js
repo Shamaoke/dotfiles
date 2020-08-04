@@ -32,10 +32,20 @@ user_pref('ui.key.menuAccessKeyFocuses', false);
 // set the addres bar drop-down list length
 // user_pref('browser.urlbar.maxRichResults', 20);
 
-// disable video autoplay
-// user_pref('media.autoplay.enabled', false);
+// set autoplay preference
+// 0 — allow
+// 1 — block (default)
+// 5 — block all
 user_pref('media.autoplay.default', 5);
-user_pref('media.autoplay.enabled.user-gestures-needed', false);
+
+// set autoplay blocking policy
+// 0 — use sticky activation (default)
+// see `https://html.spec.whatwg.org/multipage/interaction.html#sticky-activation` for details
+// 1 — use transient activation (set duration in 'dom.user_activation.transient.timeout')
+// see `https://html.spec.whatwg.org/multipage/interaction.html#transient-activation` for details
+// 2 — user input depth
+// allow autoplay when the play is trigged by user input which is determined by the user input depth
+user_pref('media.autoplay.blocking_policy', 2);
 
 // use a configuration file for proxy settings
 user_pref('network.proxy.type', 2);
