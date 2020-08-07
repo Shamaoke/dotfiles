@@ -22,7 +22,7 @@ setopt no_beep
 # ‘x##’ one or more occurences of x
 # ‘^x’  anything not matching x
 # ‘x~y’ x but not y
-setopt extended_glob
+# setopt extended_glob
 
 # Set aliases
 alias pacman='pacman --color=always'
