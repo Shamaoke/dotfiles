@@ -1,0 +1,20 @@
+#compdef cht
+
+# ':completion:function:completer:command:argument:tag'
+zstyle ':completion:*:*:*:*:custom' format '%F{5}%B%d%b%f'
+zstyle ':completion:*:*:*:*:custom' list-separator '#'
+# zstyle ':completion:*:*:*:*:descriptions' format '%F{6}%B%d%b%f'
+
+function _cht {
+  local    title
+  local -a titles
+
+  title='Change terminal title'
+
+  values=('mutt:change title to “mutt”' \
+          'notes:change title to “notes”' \
+          'personal management:change title to “personal management”')
+
+  _describe -t custom $title values
+  # _describe $title values
+}
