@@ -27,7 +27,7 @@ export EDITOR='vim'
 # User functions
 #
 
-export FPATH=$FPATH:$HOME/.local/share/zsh/functions/Zle
+export FPATH=$FPATH:$HOME/.local/share/zsh/functions/Zle:$HOME/.local/share/zsh/functions/Completion
 
 #
 # Figlet
