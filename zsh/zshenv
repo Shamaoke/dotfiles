@@ -5,6 +5,43 @@
 export PROMPT="%F{2}%B>_%b%f "
 export RPROMPT=" %~"
 
+##
+# Zsh parameters used by the shell itself
+# ---------------------------------------
+#
+# See The Z Shell Reference Manual, p. 86, 15.6 Parameters Used by the Shell
+#
+
+#
+# Zle Suffix Characters
+#
+
+# By default in some circumstances the Z Shell completion system add suffixes at
+# the end of a competed entity. These are typically the space or the slash characters.
+#
+# In the case, if the character you type after the suffix is marked as requiring
+# the suffix to be removed, the latter will be removed automatically.
+#
+# Sometimes this behavior is undesirable. For example, by default the suffix
+# will be removed when you type the pipe character after the completed entity.
+#
+# Setting the ZLE_REMOVE_SUFFIX_CHARS parameter allow to specify the exact
+# characters which when typed after completion will cause the suffix to be removed.
+#
+# The default value is equivalent to the following.
+# ZLE_REMOVE_SUFFIX_CHARS=" \t\n;&|"
+#
+# References
+#
+# • The Z Shell Reference Manual, p. 95
+#
+# • [How stop zsh from eating space before pipe symbol?][*]
+#
+# [*]: https://superuser.com/questions/613685/how-stop-zsh-from-eating-space-before-pipe-symbol
+#
+
+export ZLE_REMOVE_SUFFIX_CHARS=" \t\n;&"
+
 #
 # Rubygems
 #
@@ -41,3 +78,4 @@ export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 
 export MEDNAFEN_HOME=$HOME/.config/mednafen
 
+# vim: set textwidth=80 colorcolumn=80:
