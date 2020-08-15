@@ -20,7 +20,7 @@ timeout=$1
 size=${2%+[[:digit:]]*,[[:digit:]]*}
 offset=${(M)2%+[[:digit:]]*,[[:digit:]]*}
 
-_regexp='^.*connected primary ([[:digit:]]+x[[:digit:]]+)(\+[[:digit:]]+)\+([[:digit:]]).*$'
+_regexp='^.*connected ([[:digit:]]+x[[:digit:]]+)(\+[[:digit:]]+)\+([[:digit:]]).*$'
 
 default_size=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\1/")
 default_offset=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\2,\3/")
