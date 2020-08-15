@@ -9,7 +9,11 @@ function configure_jack {
 
   # set driver parameters (dps — driver parameter set); get a driver parameters list by `jack_control dp`
   # set ALSA device name
-  jack_control dps device bluealsa
+  case $1 {
+    (bluealsa) jack_control dps device bluealsa ;;
+
+    (usb) jack_control dps device hw:2 ;;
+  }
 
   # set the sample rate
   jack_control dps rate 48000
@@ -159,11 +163,23 @@ function switch_usb {
   fi
 }
 
+function switch_usb_jack {
+  if (is_usb_exist) {
+    stop_jack
+    set_alsa usb
+    configure_jack usb
+    start_jack
+    set_polybar usb
+    restart_polybar
+    set_goldendict jack
+  }
+}
+
 function switch_bluealsa {
   if is_bluealsa_exist
   then
     set_alsa bluealsa
-    configure_jack
+    configure_jack bluealsa
     start_jack
     set_polybar bluealsa
     restart_polybar
@@ -187,6 +203,8 @@ function main {
     (switch_internal) switch_internal ;| # also ;; or ;&
 
     (switch_usb) switch_usb ;;
+
+    (switch_usb_jack) switch_usb_jack ;;
 
     (switch_bluealsa) switch_bluealsa ;&
   }
