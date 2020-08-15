@@ -16,6 +16,8 @@ soundreset &
 # launch polybar
 ~/.config/polybar/launch.sh &
 
+picom --daemon &
+
 # start a jack session through cadence at startup
 # cadence-session-start --start &
 
