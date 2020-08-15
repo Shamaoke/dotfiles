@@ -20,7 +20,7 @@ timeout=$1
 size=${2%+[[:digit:]]*,[[:digit:]]*}
 offset=${(M)2%+[[:digit:]]*,[[:digit:]]*}
 
-_regexp='^.*connected ([[:digit:]]+x[[:digit:]]+)(\+[[:digit:]]+)\+([[:digit:]]).*$'
+_regexp='^.*connected primary ([[:digit:]]+x[[:digit:]]+)(\+[[:digit:]]+)\+([[:digit:]]).*$'
 
 default_size=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\1/")
 default_offset=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\2,\3/")
@@ -63,6 +63,7 @@ function grab {
          -f image2pipe \
          -codec:v png \
          -
+  exit $?
 }
 
 function copy {
@@ -75,6 +76,11 @@ function main TRAPEXIT {
   sleep ${timeout:-0}
 
   grab | copy
+
+  case $pipestatus[1] {
+    (0) notify-send --app-name=screengrab 'Screengrab' 'A desktop screenshot was sent to the clipboard.' ;;
+    (*) notify-send --app-name=screenshot 'Screengrab' "An error occurrent when making a desktop screenshot!\nError code: \'${pipestatus[1]}\'." ;;
+  }
 }
 
 ##
