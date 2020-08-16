@@ -29,7 +29,7 @@ export RPROMPT=" %~"
 # characters which when typed after completion will cause the suffix to be removed.
 #
 # The default value is equivalent to the following.
-# ZLE_REMOVE_SUFFIX_CHARS=" \t\n;&|"
+# ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&|'
 #
 # References
 #
@@ -40,7 +40,7 @@ export RPROMPT=" %~"
 # [*]: https://superuser.com/questions/613685/how-stop-zsh-from-eating-space-before-pipe-symbol
 #
 
-export ZLE_REMOVE_SUFFIX_CHARS=" \t\n;&"
+export ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
 
 #
 # Rubygems
