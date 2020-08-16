@@ -53,6 +53,7 @@
 # modules-left       = ewmh tiler-even tiler-main chwn
   modules-left       = ewmh
   modules-center     = date
+# modules-right      = xkeyboard filesystem wired-network wireless-network battery backlight volume
   modules-right      = xkeyboard filesystem wired-network wireless-network battery volume
   enable-ipc         = true
 
@@ -225,6 +226,19 @@
   format-full-prefix-foreground        = ${colors.foreground-alt-color}
   format-charging-prefix-foreground    = ${colors.foreground-alt-color}
   format-discharging-prefix-foreground = ${colors.foreground-alt-color}
+
+# [module/backlight]
+#   type = internal/backlight
+#
+#   card = acpi_video0
+#
+#   format-prefix = blight
+#
+#   label = %percentage%%
+#
+#   label-padding-left = 1
+#
+#   format-prefix-foreground = ${colors.foreground-alt-color}
 
 [module/volume]
   type = internal/alsa
