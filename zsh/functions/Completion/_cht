@@ -7,14 +7,14 @@ zstyle ':completion:*:*:*:*:custom' list-separator '#'
 
 function _cht {
   local    title
-  local -a titles
+  local -a descriptions
 
   title='Change terminal title'
 
-  values=('mutt:change title to “mutt”' \
-          'notes:change title to “notes”' \
-          'personal management:change title to “personal management”')
+  descriptions=('mutt:change title to “mutt”' \
+                'notes:change title to “notes”' \
+                'personal management:change title to “personal management”')
 
-  _describe -t custom $title values
-  # _describe $title values
+  _describe -t custom $title descriptions
+  # _describe $title descriptions
 }
