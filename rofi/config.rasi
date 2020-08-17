@@ -138,6 +138,8 @@ configuration {
 /* ml-row-up: "Mouse4"; */
 /* ml-row-down: "Mouse5"; */
 /* me-select-entry: "MousePrimary"; */
+   me-select-entry: "MousePrimary";
+   me-accept-entry: [MouseDPrimary, MouseSecondary];
 /* me-accept-entry: "MouseDPrimary"; */
 /* me-accept-custom: "Control+MouseD1"; */
 }
