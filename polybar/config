@@ -63,10 +63,11 @@
 #   click-left = sleep 0.13; xdotool key F1
 
 [module/menu]
-  type        = custom/text
-  content     = Ω
-  click-left  = rofi -show drun
-  click-right = rofi -show window
+  type         = custom/text
+  content      = Ω
+  click-left   = rofi -show drun 1> /dev/null 2> /dev/null
+  click-middle = rofi -show run 1> /dev/null 2> /dev/null
+  click-right  = rofi -show window 1> /dev/null 2> /dev/null
 
   content-padding = 2
   content-background = ${colors.foreground-alt-color}
