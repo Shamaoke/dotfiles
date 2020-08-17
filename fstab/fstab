@@ -7,7 +7,7 @@
 # `nofail` option prevents aborting the boot process if a device is absent, see fstab(5)
 # `x-systemd.device-timeout` option allows to change the default timeout (90s) the system waits for the device
 # make sure not set it to 0, since in this case the system will wait infinitely, see systemd.mount(5)
-UUID=d81a559d-37bd-49f7-9ff7-7ee03fb995f5 /mnt/data ext4 defaults,nofail,x-systemd.device-timeout=1ms 0 0
+UUID=d81a559d-37bd-49f7-9ff7-7ee03fb995f5 /mnt/data ext4 defaults,nofail,x-systemd.device-timeout=1s 0 0
 
 # ecryptfs
 /mnt/data/.data-lower /home/user/.data-upper ecryptfs noauto,user,ecryptfs_sig=1bfa974051d4f83f,ecryptfs_fnek_sig=1bfa974051d4f83f,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_unlink_sigs 0 0
