@@ -49,9 +49,9 @@
 # separator          = "|"
 # module-margin      = 2
   module-margin      = 1
-# modules-left       = menu ewmh
+  modules-left       = menu ewmh
 # modules-left       = ewmh tiler-even tiler-main chwn
-  modules-left       = ewmh
+# modules-left       = ewmh
   modules-center     = date
 # modules-right      = xkeyboard filesystem wired-network wireless-network battery backlight volume
   modules-right      = xkeyboard filesystem wired-network wireless-network battery volume
@@ -62,6 +62,15 @@
 #   content    = openbox
 #   click-left = sleep 0.13; xdotool key F1
 
+[module/menu]
+  type        = custom/text
+  content     = Ω
+  click-left  = rofi -show drun
+  click-right = rofi -show window
+
+  content-padding = 2
+  content-background = ${colors.foreground-alt-color}
+
 [module/ewmh]
   type = internal/xworkspaces
 
@@ -70,6 +79,8 @@
 
   label-active-foreground = ${colors.foreground-color}
   label-empty-foreground  = ${colors.foreground-alt-color}
+
+  format-offset = -6
 
 # [module/tiler-even]
 #   type = custom/text
