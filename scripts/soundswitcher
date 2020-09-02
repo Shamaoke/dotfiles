@@ -35,7 +35,7 @@ function stop_jack {
 }
 
 function set_alsa {
-  case $1 in
+  case $1 {
     (internal)
 cat <<HEREDOC > ~/.asoundrc
 # device: internal
@@ -70,11 +70,11 @@ pcm.!default {
 }
 HEREDOC
     ;;
-  esac
+  }
 }
 
 function set_polybar {
-  case $1 in
+  case $1 {
     (internal)
 cat <<HEREDOC > ~/.config/polybar/soundcard.conf
 master-soundcard = hw:0
@@ -85,26 +85,46 @@ format-muted-prefix  = int vol
 HEREDOC
     ;;
 
-    (usb)
+    (usb_alsa)
 cat <<HEREDOC > ~/.config/polybar/soundcard.conf
 master-soundcard = hw:2
 master-mixer     = PCM
 
-format-volume-prefix = usb vol
-format-muted-prefix  = usb vol
+format-volume-prefix = usb a vol
+format-muted-prefix  = usb a vol
 HEREDOC
     ;;
 
-    (bluealsa)
+    (usb_jack)
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = hw:2
+master-mixer     = PCM
+
+format-volume-prefix = usb j vol
+format-muted-prefix  = usb j vol
+HEREDOC
+    ;;
+
+    (bluealsa_alsa)
 cat <<HEREDOC > ~/.config/polybar/soundcard.conf
 master-soundcard = bluealsa
 master-mixer     = FiiO BTR3 - A2DP
 
-format-volume-prefix = bt vol
-format-muted-prefix  = bt vol
+format-volume-prefix = bt a vol
+format-muted-prefix  = bt a vol
 HEREDOC
     ;;
-  esac
+
+    (bluealsa_jack)
+cat <<HEREDOC > ~/.config/polybar/soundcard.conf
+master-soundcard = bluealsa
+master-mixer     = FiiO BTR3 - A2DP
+
+format-volume-prefix = bt j vol
+format-muted-prefix  = bt j vol
+HEREDOC
+    ;;
+  }
 }
 
 function restart_polybar {
@@ -132,81 +152,75 @@ function is_bluealsa_exist {
 }
 
 function switch_internal {
-  # if is_internal_exist
-  # then
-  #   stop_jack
-  #   set_alsa internal
-  #   set_polybar internal
-  #   restart_polybar
-  # fi
-
-  # below is an alternate form of the if command
-  # see The Z Shell Manual, 6.4 Alternate Forms for Complex Commands, p. 13 for
-  # more details
-  if (is_internal_exist) {
+  if is_internal_exist
+  then
     stop_jack
     set_alsa internal
     set_polybar internal
     restart_polybar
     set_goldendict alsa
-  }
+  fi
 }
 
-function switch_usb {
+function switch_usb_alsa {
   if is_usb_exist
   then
     stop_jack
     set_alsa usb
-    set_polybar usb
+    set_polybar usb_alsa
     restart_polybar
     set_goldendict alsa
   fi
 }
 
 function switch_usb_jack {
-  if (is_usb_exist) {
+  if is_usb_exist
+  then
     stop_jack
     set_alsa usb
     configure_jack usb
     start_jack
-    set_polybar usb
+    set_polybar usb_jack
     restart_polybar
     set_goldendict jack
-  }
+  fi
 }
 
-function switch_bluealsa {
+function switch_bluealsa_alsa {
   if is_bluealsa_exist
   then
+    stop_jack
+    set_alsa bluealsa
+    set_polybar bluealsa_alsa
+    restart_polybar
+    set_goldendict alsa
+  fi
+}
+
+function switch_bluealsa_jack {
+  if is_bluealsa_exist
+  then
+    stop_jack
     set_alsa bluealsa
     configure_jack bluealsa
     start_jack
-    set_polybar bluealsa
+    set_polybar bluealsa_jack
     restart_polybar
     set_goldendict jack
   fi
 }
 
 function main {
-  # case $1 in
-  #   (switch_internal) switch_internal ;;
-
-  #   (switch_usb) switch_usb ;;
-
-  #   (switch_bluealsa) switch_bluealsa ;;
-  # esac
-
-  # below is an alternate form of the case command
-  # see The Z Shell Manual, 6.4 Alternate Forms for Complex Commands, p. 13 for
-  # more details
   case $1 {
-    (switch_internal) switch_internal ;| # also ;; or ;&
+    (switch_internal) switch_internal ;;
 
-    (switch_usb) switch_usb ;;
+    (switch_usb_alsa) switch_usb_alsa ;;
 
     (switch_usb_jack) switch_usb_jack ;;
 
-    (switch_bluealsa) switch_bluealsa ;&
+    (switch_bluealsa_alsa) switch_bluealsa_alsa ;;
+
+    (switch_bluealsa_jack) switch_bluealsa_jack ;;
   }
 }
 
