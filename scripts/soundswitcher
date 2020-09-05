@@ -20,10 +20,10 @@ function configure_jack {
 
   # set the frames per period between process( ) calls
   # also known as `buffer size`
-  jack_control dps period 1024
+  # jack_control dps period 1024
 
   # set the number of periods of playback latency
-  jack_control dps nperiods 2
+  # jack_control dps nperiods 2
 }
 
 function start_jack {
@@ -58,16 +58,24 @@ HEREDOC
 cat <<HEREDOC > ~/.asoundrc
 # device: bluealsa
 
-defaults.bluealsa.service "org.bluealsa"
-defaults.bluealsa.profile "a2dp"
-defaults.bluealsa.device  "40:ED:98:19:9C:33"
+defaults.bluealsa.service org.bluealsa
+defaults.bluealsa.profile a2dp
+defaults.bluealsa.device  40:ED:98:19:9C:33
 defaults.bluealsa.delay   10000
-defaults.bluealsa.battery "yes"
+defaults.bluealsa.battery yes
 
 pcm.!default {
  type plug
- slave.pcm "bluealsa"
+ slave.pcm bluealsa
 }
+
+# pcm.bluealsa {
+#   type    bluealsa
+#   device  40:ED:98:19:9C:33
+#   profile a2dp
+# }
+#
+# pcm.!default bluealsa
 HEREDOC
     ;;
   }
