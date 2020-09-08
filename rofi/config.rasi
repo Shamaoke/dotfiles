@@ -1,9 +1,9 @@
 configuration {
    modi: "run,drun";
 /* width: 50; */
-   lines: 20;
+/* lines: 20; */
 /* columns: 1; */
-   font: "PT Sans 12";
+/* font: "PT Sans 12"; */
    bw: 1;
 /* location: 0; */
 /* padding: 5; */
@@ -43,7 +43,7 @@ configuration {
 /* line-margin: 2; */
 /* line-padding: 1; */
 /* filter: ; */
-   separator-style: "solid";
+/* separator-style: "solid"; */
 /* hide-scrollbar: false; */
 /* fullscreen: false; */
 /* fake-transparency: false; */
@@ -55,11 +55,11 @@ configuration {
 /* window-format: "{w}    {c}   {t}"; */
 /* click-to-exit: true; */
 /* show-match: true; */
-/* theme: "sample"; */
-   color-normal: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff";
-   color-urgent: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff";
-   color-active: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff";
-   color-window: "#4f2624, #d68051, #d68051";
+   theme: "sample";
+/* color-normal: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
+/* color-urgent: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
+/* color-active: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
+/* color-window: "#4f2624, #d68051, #d68051"; */
 /* max-history-size: 25; */
 /* combi-hide-mode-prefix: false; */
 /* matching-negate-char: '-' /* unsupported */; */
