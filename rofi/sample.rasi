@@ -1,1 +1,76 @@
-entry { placeholder: ""; }
+* {
+  background-color: #4f2624;
+  text-color:       #ffffff;
+  handle-color:     @text-color;
+  border-color:     #d68051;
+  font:             "PT Sans 12";
+  selected-normal-background: #714d35;
+}
+
+window {
+  background-color: @background-color;
+  border-color:     @border-color;
+  text-color:       @text-color;
+  font:             @font;
+  padding: 4px;
+  border:  1px;
+}
+
+mainbox {
+  background-color: @background-color;
+}
+
+inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+  background-color: @background-color;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str:    ": ";
+}
+
+entry {
+  background-color: @background-color;
+}
+
+listview {
+  border:  1px 0 0 0;
+  padding: 4px 0 0 0;
+  border-color: @border-color;
+  scrollbar:    true;
+  lines:        20;
+}
+
+scrollbar {
+  background-color: @background-color;
+  handle-color:     @handle-color;
+  handle-width:     8px;
+  padding:          0 0 0 2px;
+}
+
+element {
+  children: [ element-icon, element-text ];
+}
+
+element-icon {
+  size: 15px;
+}
+
+element-text {
+}
+
+element normal normal {
+  background-color: @background-color;
+}
+
+element alternate normal {
+  background-color: @background-color;
+}
+
+element selected normal {
+  background-color: @selected-normal-background;
+}
