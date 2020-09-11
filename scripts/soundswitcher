@@ -4,6 +4,7 @@
 # Switch sound devices.
 
 local -a JACK_SETTINGS
+local    ARG=$1
 
 function configure_jack {
   # set driver (ds — driver set); get a drivers list by `jack_control dl`
@@ -242,8 +243,8 @@ function switch_bluealsa_jack {
   fi
 }
 
-function main {
-  case $1 {
+function main TRAPEXIT {
+  case $ARG {
     (switch_internal) switch_internal ;;
 
     (switch_usb_alsa) switch_usb_alsa ;;
@@ -255,7 +256,5 @@ function main {
     (switch_bluealsa_jack) switch_bluealsa_jack ;;
   }
 }
-
-main $1
 
 # vim: set textwidth=80 colorcolumn=80:
