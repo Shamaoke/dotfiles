@@ -3,20 +3,22 @@
 # Soundswitcher
 # Switch sound devices.
 
+local -a JACK_SETTINGS
+
 function configure_jack {
   # set driver (ds — driver set); get a drivers list by `jack_control dl`
-  jack_control ds alsa
+  # jack_control ds alsa
 
   # set driver parameters (dps — driver parameter set); get a driver parameters list by `jack_control dp`
   # set ALSA device name
-  case $1 {
-    (bluealsa) jack_control dps device bluealsa ;;
+  # case $1 {
+  #   (bluealsa) jack_control dps device bluealsa ;;
 
-    (usb) jack_control dps device hw:2 ;;
-  }
+  #   (usb) jack_control dps device hw:2 ;;
+  # }
 
   # set the sample rate
-  jack_control dps rate 48000
+  # jack_control dps rate 48000
 
   # set the frames per period between process( ) calls
   # also known as `buffer size`
@@ -24,14 +26,29 @@ function configure_jack {
 
   # set the number of periods of playback latency
   # jack_control dps nperiods 2
+
+  local device
+
+  case $1 {
+    (bluealsa) device=-dbluealsa ;;
+    (usb)      device=-dhw:2 ;;
+  }
+
+  JACK_SETTINGS=(
+    -dalsa
+    $device
+    -n10
+  )
 }
 
 function start_jack {
-  jack_control start
+  # jack_control start
+  jackd $JACK_SETTINGS[@] &
 }
 
 function stop_jack {
-  jack_control stop
+  # jack_control stop
+  killall jackd
 }
 
 function set_alsa {
@@ -69,13 +86,20 @@ pcm.!default {
  slave.pcm bluealsa
 }
 
-# pcm.bluealsa {
-#   type    bluealsa
-#   device  40:ED:98:19:9C:33
-#   profile a2dp
+# pcm.bluetooth {
+#    type    bluealsa
+#    device  40:ED:98:19:9C:33
+#    profile a2dp
+#    delay   10000
 # }
 #
-# pcm.!default bluealsa
+# ctl.bluetooth {
+#   type    bluealsa
+#   battery yes
+# }
+#
+# pcm.!default bluetooth
+# ctl.!default bluetooth
 HEREDOC
     ;;
   }
