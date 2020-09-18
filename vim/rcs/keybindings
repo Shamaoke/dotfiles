@@ -1,5 +1,8 @@
 " keybindings
 
+" set the value of <LocalLeader>
+  let maplocalleader=','
+
 " установить клавиатурную комбинацию для вставки пустой строки после текущей
 " nmap <C-j> o<ESC>
 
