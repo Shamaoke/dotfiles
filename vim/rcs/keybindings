@@ -54,6 +54,11 @@
 " set a keybinding to open LeaderF in the buffer mode
   nmap <silent><C-f>b :Leaderf --nowrap buffer<CR>
 
+" :::tern:::
+
+" enable key mappings
+  let tern_map_keys=1
+
 " установить клавиатурную комбинацию для смены режима переноса строк
 " map zw :set wrap!<CR>
 
