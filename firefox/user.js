@@ -133,6 +133,9 @@ user_pref('full-screen-api.warning.timeout', 0);
 // this also disables previewing of tabs
 user_pref('browser.ctrlTab.recentlyUsedOrder', false);
 
+// open a bookmark from the library in a new tab by double clicking on it
+user_pref('browser.tabs.loadBookmarksInTabs', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
