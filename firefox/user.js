@@ -54,7 +54,7 @@ user_pref('network.proxy.type', 2);
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/ip4pk1la.user/proxy.pac');
 
 // show URL scheme in address bar
-// user_pref('browser.urlbar.trimURLs', false);
+user_pref('browser.urlbar.trimURLs', false);
 
 // suppress web notifications requests for all sites
 user_pref('dom.webnotifications.enabled', false);
