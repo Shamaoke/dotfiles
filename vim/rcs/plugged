@@ -1,0 +1,9 @@
+""
+" :::Plugged:::
+"
+
+call plug#begin('~/.vim/plugged')
+
+call plug#end()
+
+" vim: filetype=vim textwidth=80 colorcolumn=80:
