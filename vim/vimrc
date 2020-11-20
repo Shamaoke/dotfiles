@@ -2,13 +2,16 @@
 source ~/.dotfiles/vim/rcs/functions
 
 " load Vundle settings
-source ~/.dotfiles/vim/rcs/vundle
+" source ~/.dotfiles/vim/rcs/vundle
+
+" load Plugged settings
+source ~/.dotfiles/vim/rcs/plugged
 
 " load Markdown settings
-source ~/.dotfiles/vim/rcs/plugin-markdown
+" source ~/.dotfiles/vim/rcs/plugin-markdown
 
 " load Matchparen settings
-source ~/.dotfiles/vim/rcs/plugin-matchparen
+" source ~/.dotfiles/vim/rcs/plugin-matchparen
 
 " load NERDTree settings
 " source ~/.dotfiles/vim/rcs/plugin-nerdtree
@@ -17,10 +20,10 @@ source ~/.dotfiles/vim/rcs/plugin-matchparen
 " source ~/.dotfiles/vim/rcs/plugin-auto-pairs
 
 " load Rust settings
-source ~/.dotfiles/vim/rcs/plugin-rust
+" source ~/.dotfiles/vim/rcs/plugin-rust
 
 " load Tagbar settings
-source ~/.dotfiles/vim/rcs/plugin-tagbar
+" source ~/.dotfiles/vim/rcs/plugin-tagbar
 
 " load Unite settings
 " source ~/.dotfiles/vim/rcs/plugin-unite
@@ -29,10 +32,13 @@ source ~/.dotfiles/vim/rcs/plugin-tagbar
 " source ~/.dotfiles/vim/rcs/plugin-denite
 
 " load LeaderF settings
-source ~/.dotfiles/vim/rcs/plugin-leaderf
+" source ~/.dotfiles/vim/rcs/plugin-leaderf
 
 " load Vimfiler settings
 " source ~/.dotfiles/vim/rcs/plugin-vimfiler
+
+" load Fzf settings
+source ~/.dotfiles/vim/rcs/plugin-fzf
 
 " load a colorscheme
 source ~/.dotfiles/vim/rcs/colorscheme
