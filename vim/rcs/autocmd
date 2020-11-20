@@ -1,6 +1,8 @@
-" autocommands
+""
+" :::Autocommands:::
+"
 
-" определять тип файла по расширению
+" set the file type according to its extension
   autocmd BufRead,BufNewFile *.rb      set filetype=ruby
   autocmd BufRead,BufNewFile *.ru      set filetype=ruby
   autocmd BufRead,BufNewFile Gemfile   set filetype=ruby
@@ -13,13 +15,10 @@
   autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
 
-" save and load folding when closing and opening a file with folds
-" autocmd BufWinLeave * if @% != '' | mkview   | endif
-" autocmd BufWinEnter * if @% != '' | loadview | endif
-
-" save folding when closing a file in a widnow (BufWinLeave) or a tab (BufLeave)
+" save folding when closing a file in a window (BufWinLeave) or a tab (BufLeave)
 " load folding when opening a file
-  autocmd BufWinLeave,BufLeave * if expand('<afile>') != '' | mkview   | endif
-  autocmd BufWinEnter          * if expand('<afile>') != '' | loadview | endif
+" use functions from `rcs/functions`
+  autocmd BufWinLeave,BufLeave * call MakeView()
+  autocmd BufWinEnter          * call LoadView()
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
