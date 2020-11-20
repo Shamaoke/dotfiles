@@ -4,6 +4,11 @@
 
 call plug#begin('~/.vim/plugged')
 
+" :::fzf:::
+" fzf plugin for Vim
+" https://github.com/junegunn/fzf
+  Plug 'junegunn/fzf'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
