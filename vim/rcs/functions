@@ -1,3 +1,7 @@
+""
+" Customize how folds looks like
+" the function is used at `rcs/general`
+"
 fun CustomizeFoldText()
   return     '├'
          \ . '─'
@@ -6,5 +10,30 @@ fun CustomizeFoldText()
          \ . ' '
          \ . getline(v:foldstart)
 endfun
+
+""
+" Make and load Vim views
+" the functions is used at `rcs/autocommands`
+"
+fun MakeView()
+  if expand('<afile>') != '' && expand('<afile>') != '!sh'
+    mkview
+  endif
+endfun
+
+fun LoadView()
+  if expand('<afile>') != '' && expand('<afile>') != '!sh'
+    loadview
+  endif
+endfun
+"
+" `expand()` is a function, which replaces given wildcards and special keywords to their values.
+" `<afile>` is a keyword, which stands for the file name the autocommand was executed for.
+"
+" References:
+"   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 255
+"   • Vim Reference Manual | Command Line Mode (cmdline.txt), 6. Ex Special Characters (:help cmdline-special), p. 788
+"   • Vim Reference Manual | Expression Evaluation (eval.txt), 4. Builtin Functions (:help expand()), p. 1317
+"
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
