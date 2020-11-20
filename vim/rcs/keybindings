@@ -49,15 +49,25 @@
 " :::leaderf:::
 
 " set a keybinding to open LeaderF in the file mode
-  nmap <silent><C-f>f :Leaderf --nowrap file<CR>
+" nmap <silent><C-f>f :Leaderf --nowrap file<CR>
 
 " set a keybinding to open LeaderF in the buffer mode
-  nmap <silent><C-f>b :Leaderf --nowrap buffer<CR>
+" nmap <silent><C-f>b :Leaderf --nowrap buffer<CR>
+
+" :::fzf:::
+  nmap <silent><C-f>z :call fzf#run(fzf#wrap(g:fzf_general_options))<CR>
+"
+" `fzf#wrap` call is needed in order to apply fzf global configuration
+" variables, which are set in `rcs/plugin-fzf` (e.g `g:fzf_actions`). Without
+" this call these variables won't be in effect. As a resut of this call, the fzf
+" global configuration options will be merged with options passed to `fzf#wrap`
+" (`g:fzf_general_options` in this case).
+"
 
 " :::tern:::
 
 " enable key mappings
-  let tern_map_keys=1
+" let tern_map_keys=1
 
 " установить клавиатурную комбинацию для смены режима переноса строк
 " map zw :set wrap!<CR>
@@ -80,4 +90,4 @@
 " move tab to the left
 " silent map <C-S-j> :tabmove -1<CR>
 
-" vim: set filetype=vim:
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
