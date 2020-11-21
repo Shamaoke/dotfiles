@@ -53,10 +53,15 @@ hash -d lg=$HOME/.documents/lingo
 # autoload user functions
 autoload zle-keymap-select
 autoload zle-line-init
+autoload fzf-history
 
 # define user widgets
 zle -N zle-keymap-select
 zle -N zle-line-init
+zle -N fzf-history
+
+# define user keybindings
+bindkey '^T' fzf-history
 
 # Use an external editor to edit the command line by pressing the `v' key at the edit mode
 autoload -U edit-command-line
