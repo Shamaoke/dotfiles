@@ -1,0 +1,10 @@
+##
+# :::fzf-hisotry:::
+#
+# Search history using fzf and push the selected string into the zle input stack
+#
+function fzf-history {
+  zle -U "$(fc -l -1000 | fzf --tac --no-multi | awk -F '[[:digit:]]  ' '{ print $2 }')"
+}
+
+# vim: set filetype=zsh textwidth=80 colorcolumn=80:
