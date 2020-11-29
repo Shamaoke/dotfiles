@@ -13,7 +13,7 @@ endfun
 
 ""
 " Make and load Vim views
-" the functions is used at `rcs/autocommands`
+" the functions are used at `rcs/autocommands`
 "
 fun MakeView()
   if expand('<afile>') != '' && expand('<afile>') != '!sh'
