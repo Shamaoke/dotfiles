@@ -163,6 +163,12 @@ filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.og
 " AUDIO
 filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
 
+" Atari
+filetype *.atr,*.atx atari800 %f &> /dev/null &
+
+" Mednafen
+filetype *.smc,*.gen mednafen %f &> /dev/null &
+
 " For automated FUSE mounts, you must register an extension with FILETYPE=..
 " in one of following formats:
 "
