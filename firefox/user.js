@@ -136,6 +136,9 @@ user_pref('browser.ctrlTab.recentlyUsedOrder', false);
 // open a bookmark from the library in a new tab by double clicking on it
 user_pref('browser.tabs.loadBookmarksInTabs', true);
 
+// reload all tabs when restore a session
+user_pref('browser.sessionstore.restore_on_demand', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
