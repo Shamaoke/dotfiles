@@ -11,7 +11,7 @@ touchpad_toggle &
 dunst &
 
 # reset the current sound device to the default one (internal sound card)
-soundreset &
+# soundreset &
 
 # launch polybar
 ~/.config/polybar/launch.sh &
