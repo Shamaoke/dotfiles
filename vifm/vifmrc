@@ -158,7 +158,11 @@ filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.og
          \ { run mpv with the alsa profile }
          \ mpv --profile=alsa --audio-file-auto=fuzzy %f &> /dev/null &,
          \ { run mpv with the jack profile }
-         \ mpv --profile=jack --audio-file-auto=fuzzy %f &> /dev/null &
+         \ mpv --profile=jack --audio-file-auto=fuzzy %f &> /dev/null &,
+         \ { run mpv with the alsa profile through FiiO BTR3 USB }
+         \ ALSAPCM=fiio_btr3_usb mpv --profile=alsa --audio-file-auto=fuzzy %f &> /dev/null &,
+         \ { run mpv with the alsa profile through FiiO BTR3 BT }
+         \ BLUEALSAPCM=fiio_btr3_bt mpv --profile=alsa --audio-file-auto=fuzzy %f &> /dev/null &
 
 " AUDIO
 filetype *.wav,*.mp3 mplayer -endpos 10 %f &> /dev/null &
