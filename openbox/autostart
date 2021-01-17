@@ -14,7 +14,7 @@ dunst &
 # soundreset &
 
 # launch polybar
-~/.config/polybar/launch.sh &
+~/.config/polybar/launch &
 
 # picom --daemon &
 
