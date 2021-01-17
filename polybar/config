@@ -276,6 +276,12 @@
 
   interval = 2
 
-  include-file = /home/user/.config/polybar/soundcard.conf
+  master-soundcard = hw:PCH
+  master-mixer     = Master
+
+  format-volume-prefix = vol
+  format-muted-prefix  = vol
+
+# include-file = /home/user/.config/polybar/soundcard.conf
 
 # vim: ft=dosini:
