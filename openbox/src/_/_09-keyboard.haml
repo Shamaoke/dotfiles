@@ -422,17 +422,17 @@
   -# 0x18 — `q'
   %keybind{ :key => 'W-0x18' }
     %action{ :name => 'Execute' }
-      %command volume_control 1%-
+      %command amixer set Master 1%-
 
   -# 0x19 — `w'
   %keybind{ :key => 'W-0x19' }
     %action{ :name => 'Execute' }
-      %command volume_control 1%+
+      %command amixer set Master 1%+
 
   -# 0x1a — `e'
   %keybind{ :key => 'W-0x1a' }
     %action{ :name => 'Execute' }
-      %command volume_control toggle
+      %command amixer set Master toggle
 
   -# Keybindings for controlling the mpd music player
   -# 0xd0 — `XF86AudioPlay'
