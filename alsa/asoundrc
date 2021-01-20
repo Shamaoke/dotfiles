@@ -1,0 +1,50 @@
+#
+# ~/.asoundrc
+#
+
+pcm.internal {
+  type hw
+  card PCH
+}
+
+pcm.fiio_btr3_usb {
+  type hw
+  card BTR3
+}
+
+pcm.fiio_btr3_bt {
+  type    bluealsa
+  device  40:ED:98:19:9C:33
+  profile a2dp
+  delay   10000
+}
+
+pcm.soundblaster {
+  type hw
+  card Pro
+}
+
+pcm.mixer {
+  type dmix
+
+  ipc_key 1024
+
+  slave.pcm {
+    @func getenv
+    vars  [ ALSAPCM ]
+
+    default internal
+  }
+}
+
+pcm.!default {
+  type plug
+
+  slave.pcm {
+    @func getenv
+    vars [ BLUEALSAPCM ]
+
+    default mixer
+  }
+}
+
