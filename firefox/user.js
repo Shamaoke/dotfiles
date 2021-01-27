@@ -139,6 +139,9 @@ user_pref('browser.tabs.loadBookmarksInTabs', true);
 // reload all tabs when restore a session
 user_pref('browser.sessionstore.restore_on_demand', false);
 
+// do not show Other Bookmarks on the bookmarks bar
+user_pref('browser.toolbars.bookmarks.showOtherBookmarks', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
