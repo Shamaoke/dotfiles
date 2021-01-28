@@ -142,6 +142,9 @@ user_pref('browser.sessionstore.restore_on_demand', false);
 // do not show Other Bookmarks on the bookmarks bar
 user_pref('browser.toolbars.bookmarks.showOtherBookmarks', false);
 
+// disable restore windows to original virtual desktops when restoring a session
+user_pref('widget.disable-workspace-management', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
