@@ -22,3 +22,5 @@
 	email = shamaoke@yandex.ru
 [commit]
 	verbose = true
+[init]
+	defaultBranch = main
