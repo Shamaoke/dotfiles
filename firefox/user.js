@@ -68,7 +68,7 @@ user_pref('dom.webnotifications.enabled', false);
 user_pref('browser.startup.page', 3);
 
 // set the homepage
-user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/ip4pk1la.user/chrome/index.html');
+user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/dmeebqfk.user/chrome/index.html');
 
 // set the new tab page as a blank page
 user_pref('browser.newtabpage.enabled', false);
