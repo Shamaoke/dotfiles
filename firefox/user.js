@@ -145,6 +145,9 @@ user_pref('browser.toolbars.bookmarks.showOtherBookmarks', false);
 // disable restore windows to original virtual desktops when restoring a session
 user_pref('widget.disable-workspace-management', true);
 
+// set redirection limit
+user_pref('network.http.redirection-limit', 1);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
