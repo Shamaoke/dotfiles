@@ -146,7 +146,7 @@ user_pref('browser.toolbars.bookmarks.showOtherBookmarks', false);
 user_pref('widget.disable-workspace-management', true);
 
 // set redirection limit
-user_pref('network.http.redirection-limit', 1);
+// user_pref('network.http.redirection-limit', 0);
 
 /* :::Fonts::: */
 
