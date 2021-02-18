@@ -46,10 +46,12 @@
 ! increase the line space in order to remove padding around the text area
 ! remove borders around the text area
 ! URxvt.font: xft:Input Mono:size=11, xft:Noto Sans Mono CJK JP
-  URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:Noto Sans Mono CJK JP
+! URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:Noto Sans Mono CJK JP
+  URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:IPAexGothic
 
 ! URxvt.boldFont: xft:Input Mono Medium:size=11
-  URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:Noto Sans Mono CJK JP
+! URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:Noto Sans Mono CJK JP
+  URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:IPAexGothic
 
 ! URxvt.letterSpace:    -1
   URxvt.letterSpace:     0
