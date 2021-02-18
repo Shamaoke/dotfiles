@@ -6,24 +6,24 @@ windows:
   - ja-en:
       layout: even-horizontal
       panes:
-        # - vim ja-en.md
-        -
+        - vim ja-en.md
         - echo ja-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -show-original yes -show-original-phonetics yes -show-languages no -show-alternatives no -show-prompt-message no ja:en | sed 's/\\\n/\n/g' | lolcat"
+
   - en-ja:
       layout: even-horizontal
       panes:
-        # - vim en-ja.md
-        -
+        - vim en-ja.md
         - echo en-ja.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -show-original no -show-languages no -show-alternatives no -show-prompt-message no -show-translation-phonetics yes en:ja | sed 's/\\\n/\n/g' | lolcat"
+
   - en-ru:
       layout: even-horizontal
       panes:
-        # - vim en-ru.md
-        -
+        - vim en-ru.md
         - echo en-ru.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b en:ru | sed 's/\\\n/\n/g' | lolcat"
+
   - ru-en:
       layout: even-horizontal
       panes:
-        # - vim ru-en.md
-        -
+        - vim ru-en.md
         - echo ru-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b ru:en | sed 's/\\\n/\n/g' | lolcat"
+
