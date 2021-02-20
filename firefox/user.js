@@ -148,6 +148,9 @@ user_pref('widget.disable-workspace-management', true);
 // set redirection limit
 // user_pref('network.http.redirection-limit', 0);
 
+// hide the toggle to enable picture-in-picture mode
+user_pref('media.videocontrols.picture-in-picture.video-toggle.enabled', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
