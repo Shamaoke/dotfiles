@@ -9,6 +9,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/junegunn/fzf
   Plug 'junegunn/fzf'
 
+" :::vim-signature:::
+" Place, toggle and display marks
+" https://github.com/kshenoy/vim-signature
+  Plug 'kshenoy/vim-signature'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
