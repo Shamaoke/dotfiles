@@ -36,11 +36,14 @@
 " отключить перенос строк
   set nowrap
 
-" ставить пробелы вместо символов табуляции
+" use spaces instead of tabs
   set expandtab
 
-" установить размер отступа при нажатии Tab
+" set tabulation size for spaces
   set softtabstop=2
+
+" set tabulation size for tabs
+  set tabstop=4
 
 " устанавить размер отступа при нажатии >> или <<
   set shiftwidth=2
@@ -53,7 +56,7 @@
 
 " установить спец-символы
 " set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
-  set listchars=eol:¶,tab:∙►,trail:∙,precedes:←,extends:→,nbsp:↔
+  set listchars=eol:¶,tab:∙∙,trail:∙,precedes:←,extends:→,nbsp:↔
 
 " do not use any characters to fill in vertical separators and folds
   set fillchars=vert:\ ,fold:\ 
