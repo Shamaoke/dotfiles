@@ -29,8 +29,8 @@ alias pacman='pacman --color=always'
 alias xi="xclip -selection 'clipboard' -i"
 alias xo="xclip -selection 'clipboard' -o"
 alias mux='tmuxinator'
-alias msb="mux start basic $1 --suppress-tmux-version-warning"
-alias mss="mux start simple $1 --suppress-tmux-version-warning"
+alias msb="mux start basic $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
+alias mss="mux start simple $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
 alias mdf='cd ~df && mss dotfiles'
 alias mch='cd ~dv/chrome && mss chrome'
 alias msc='cd ~ && msb console'
