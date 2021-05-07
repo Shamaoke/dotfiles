@@ -42,7 +42,7 @@ mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {s
 unmap('af')
 
 // unmap a key for opening a new window with the current tab
-unmap('W')
+// unmap('W')
 
 // unmap a key for going one tab left
 unmap('E')
