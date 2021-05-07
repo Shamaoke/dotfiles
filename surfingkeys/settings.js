@@ -56,6 +56,14 @@ unmap('S')
 // unmap a key for going forward in history
 unmap('D')
 
+Hints.style(`
+  border-radius:  2px               !important;
+  font-family:    Input Mono Narrow !important;
+  font-size:      9pt               !important;
+  font-weight:    normal            !important;
+  text-transform: lowercase         !important;
+`)
+
 // Hints.style(`
 //
 //   background: unset !important;
