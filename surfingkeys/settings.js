@@ -65,3 +65,12 @@ Hints.style(`
   text-transform: lowercase         !important;
 `)
 
+// set style for text hints
+Hints.style(`
+  border-radius:  2px               !important;
+  font-family:    Input Mono Narrow !important;
+  font-size:      9pt               !important;
+  font-weight:    normal            !important;
+  text-transform: lowercase         !important;
+`, 'text')
+
