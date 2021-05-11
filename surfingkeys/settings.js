@@ -56,6 +56,7 @@ unmap('S')
 // unmap a key for going forward in history
 unmap('D')
 
+// set style for links hints
 Hints.style(`
   border-radius:  2px               !important;
   font-family:    Input Mono Narrow !important;
