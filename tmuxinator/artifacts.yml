@@ -1,4 +1,4 @@
-name: <%= @args[0] || File.basename(Dir.pwd) %>
+name: <% case File.basename(Dir.pwd) when 'artifacts' then %>notes<% when 'pm' then %>personal management<% end %>
 
 startup_window: 1
 
