@@ -3,11 +3,11 @@ name: <% case File.basename(Dir.pwd) when 'artifacts' then %>notes<% when 'pm' t
 startup_window: 1
 
 windows:
-  - editor: <% case File.basename(Dir.pwd) when 'artifacts' then %>sleep 1 && vim notes.md<% when 'pm' then %>sleep 1 && vim -p goals.md activities.md timesheet.md books.md soft.md<% end %>
+  - editor: <% case File.basename(Dir.pwd) when 'artifacts' then %>vim --cmd 'set lines=45 columns=157' notes.md<% when 'pm' then %>vim --cmd 'set lines=45 columns=157' -p goals.md activities.md timesheet.md books.md soft.md<% end %>
   - git:
       layout: 8a0d,157x45,0,0{78x45,0,0,85,78x45,79,0[78x22,79,0,86,78x22,79,23,87]}
       panes:
         - watch -ctn 1 git\ godlog
         - watch -ctn 1 git\ st
-        - sleep 1 && clear
+        - clear
 
