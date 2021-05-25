@@ -5,8 +5,7 @@ name: <%= @args[0] || (File.basename Dir.pwd) %>
 startup_window: 1
 
 windows:
-  # - editor: vim
-  - editor:
+  - editor: vim --cmd 'set lines=45 columns=157'
   - work_a:
   - work_b:
   - top:
