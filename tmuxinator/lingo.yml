@@ -1,20 +1,26 @@
-name: <%= @args[0] || (File.basename Dir.pwd) %>
+#
+# :::lingo:::
+#
+
+<% @name = 'lingo' %>
+
+name: <%= @name %>
 
 startup_window: 1
+
+on_project_start: cht <%= @name %>
 
 windows:
   - ja-en:
       layout: even-horizontal
       panes:
         - vim -c "set textwidth=60 colorcolumn=60" ja-en.md
-        # - echo ja-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -show-original yes -show-original-phonetics yes -show-languages no -show-alternatives no -show-prompt-message no ja:en | sed 's/\\\n/\n/g' | lolcat"
         - echo ja-en.md | entr -c -r -s $'xargs -0 -a $0 trans ja:en -dump | awk -v \'FS=\r\n\' -v \'RS=\' \'{ print $2 }\' | jq --raw-output \'.[0] | [ [(.[:-1][ ][1] | gsub("\\\\n";""))],[(.[-1][-1] | split(" (?=\\\\d+\\\\.)";"g") | .[ ] | gsub("\\\\d+\\\\. ";""))],[(.[:-1][ ][0] | gsub("(\\\\d+\\\\. |\\\\n)";""))] ] | transpose | .[ ] | "\\(join("\\n"))\n"\'' | lolcat
 
   - en-ja:
       layout: even-horizontal
       panes:
         - vim -c "set textwidth=60 colorcolumn=60" en-ja.md
-        # - echo en-ja.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -show-original no -show-languages no -show-alternatives no -show-prompt-message no -show-translation-phonetics yes en:ja | sed 's/\\\n/\n/g' | lolcat"
         - echo en-ja.md | entr -c -r -s $'xargs -0 -a $0 trans en:ja -dump | awk -v \'FS=\r\n\' -v \'RS=\' \'{ print $2 }\' | jq --raw-output \'.[0] | [ [(.[:-1][ ][1] | gsub("\\\\n";""))],[(.[:-1][ ][0] | gsub("(\\\\d+\\\\.|\\\\n)";""))],[(.[-1][-1] | split(" (?=\\\\d+\\\\.)";"g") | .[ ] | gsub("\\\\d+\\\\. ";""))] ] | transpose | .[ ] | "\\(join("\\n"))\n"\'' | lolcat
 
   - en-ru:
