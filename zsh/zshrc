@@ -31,8 +31,8 @@ alias xo="xclip -selection 'clipboard' -o"
 alias mux='tmuxinator'
 alias msb="mux start basic $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
 alias mss="mux start simple $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
-alias mdf='cd ~df && mss dotfiles'
-alias mch='cd ~dv/chrome && mss chrome'
+alias mdf='cd ~df && mss'
+alias mch='cd ~dv/chrome && mss'
 alias msc='cd ~ && msb console'
 alias mlg='cd ~lg && mux start lingo --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias maf='cd ~af && mux start artifacts --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
