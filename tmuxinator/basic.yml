@@ -1,6 +1,16 @@
-name: <%= @args[0] || (File.basename Dir.pwd) %>
+#
+# :::basic:::
+#
+
+<% @basedir = File.basename Dir.pwd %>
+
+<% @name = @args[0] || (@basedir.start_with?('.') ? @basedir[1..-1] : @basedir) %>
+
+name: <%= @name %>
 
 startup_window: 1
+
+on_project_start: cht <%= @name %>
 
 windows:
   - editor: vim --cmd 'set lines=45 columns=157'
@@ -16,3 +26,4 @@ windows:
         -
         -
   - fm: vifm
+
