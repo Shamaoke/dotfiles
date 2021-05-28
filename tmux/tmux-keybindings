@@ -6,4 +6,7 @@ bind-key -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{s
 # copy the text, selected in the copy mode to the clipboard
 bind-key -T copy-mode-vi y send -X copy-pipe 'xclip -in -selection clipboard'
 
+# kill the current session
+bind-key -T prefix X confirm-before -p "kill-session '#S'? (y/n)" kill-session
+
 # vim: set textwidth=80 colorcolumn=80:
