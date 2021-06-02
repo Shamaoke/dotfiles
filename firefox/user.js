@@ -13,8 +13,8 @@ user_pref('extensions.pocket.enabled', false);
 // eliminate tearing when scrolling a page
 user_pref('layers.acceleration.force-enabled', true);
 
-// enable webrender
-user_pref('gfx.webrender.all', true);
+// disable webrender
+user_pref('gfx.webrender.force-disabled', true);
 
 // disable the reader mode
 user_pref('reader.parse-on-load.enabled', false);
