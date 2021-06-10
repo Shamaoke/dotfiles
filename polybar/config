@@ -49,7 +49,7 @@
 # separator          = "|"
 # module-margin      = 2
   module-margin      = 1
-  modules-left       = menu ewmh
+  modules-left       = menu workspaces
 # modules-left       = ewmh tiler-even tiler-main chwn
 # modules-left       = ewmh
   modules-center     = date
@@ -72,14 +72,19 @@
   content-padding = 2
   content-background = ${colors.foreground-alt-color}
 
-[module/ewmh]
+[module/workspaces]
   type = internal/xworkspaces
+
+  format = <label-state>
 
 # label-active-padding-right = 2
 # label-empty-padding-right  = 2
 
   label-active-foreground = ${colors.foreground-color}
-  label-empty-foreground  = ${colors.foreground-alt-color}
+
+  label-empty-foreground    = ${colors.foreground-alt-color}
+  label-occupied-foreground = ${colors.foreground-alt-color}
+  label-urgent-foreground   = ${colors.foreground-alt-color}
 
   format-offset = -6
 
