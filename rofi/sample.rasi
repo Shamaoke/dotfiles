@@ -67,10 +67,35 @@ element normal normal {
   background-color: @background-color;
 }
 
+element normal active {
+  background-color: @background-color;
+}
+
+element normal urgent {
+  background-color: @background-color;
+}
+
 element alternate normal {
+  background-color: @background-color;
+}
+
+element alternate active {
+  background-color: @background-color;
+}
+
+element alternate urgent {
   background-color: @background-color;
 }
 
 element selected normal {
   background-color: @selected-normal-background;
 }
+
+element selected active {
+  background-color: @selected-normal-background;
+}
+
+element selected urgent {
+  background-color: @selected-normal-background;
+}
+
