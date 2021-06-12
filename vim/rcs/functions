@@ -16,7 +16,7 @@ endfun
 " the functions are used at `rcs/autocommands`
 "
 fun MakeView()
-  if expand('<afile>') != '' && expand('<afile>') != '!sh'
+  if expand('<afile>') != '' && expand('<afile>') != '!sh' && filereadable(expand('<afile>')) != 1
     mkview
   endif
 endfun
@@ -27,8 +27,20 @@ fun LoadView()
   endif
 endfun
 "
-" `expand()` is a function, which replaces given wildcards and special keywords to their values.
-" `<afile>` is a keyword, which stands for the file name the autocommand was executed for.
+" `expand()` is a function, which replaces given wildcards and special keywords
+" to their values.
+
+" `filereadable()` is a function, which returns 1 if a file being edited exists
+" in the file system and 0 if it doesn't i. e. you start editing a new file by
+" the `:new` command.
+
+" `<afile>` is a keyword, which stands for the file name the autocommand was
+" executed for, or the file for a read or write.
+"
+" The `expand('<afile>') != '!sh'` check is needed to prevent windows created by
+" the [fzf][*] plugin to make views.
+"
+" [*]: https://github.com/junegunn/fzf
 "
 " References:
 "   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 255
