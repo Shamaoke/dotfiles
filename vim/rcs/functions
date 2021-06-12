@@ -37,8 +37,8 @@ endfun
 " `<afile>` is a keyword, which stands for the file name the autocommand was
 " executed for, or the file for a read or write.
 "
-" The `expand('<afile>') != '!sh'` check is needed to prevent windows created by
-" the [fzf][*] plugin to make views.
+" The `expand('<afile>') != '!sh'` check is needed to prevent making or loading
+" views for windows, created by the [fzf][*] plugin.
 "
 " [*]: https://github.com/junegunn/fzf
 "
