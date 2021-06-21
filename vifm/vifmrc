@@ -145,7 +145,12 @@ filetype *.chm kchmviewer %f &> /dev/null &
 
 " EPUB
 " filetype *.epub kchmviewer %f &> /dev/null &
-  filetype *.epub zathura %f &> /dev/null &
+" filetype *.epub zathura %f &> /dev/null &
+filetype *.epub
+  \ { open epub with zathura }
+  \ zathura %f &> /dev/null &,
+  \ { open epub with kchmviewer }
+  \ kchmviewer %f &> /dev/null &
 
 " Comic Book Reader (CDR)
 " filetype *.cbr zathura %f &> /dev/null &
