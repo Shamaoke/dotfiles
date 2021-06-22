@@ -150,7 +150,9 @@ filetype *.epub
   \ { open epub with zathura }
   \ zathura %f &> /dev/null &,
   \ { open epub with kchmviewer }
-  \ kchmviewer %f &> /dev/null &
+  \ kchmviewer %f &> /dev/null &,
+  \ { unzip epub }
+  \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
 
 " Comic Book Reader (CDR)
 " filetype *.cbr zathura %f &> /dev/null &
