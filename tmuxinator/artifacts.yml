@@ -4,14 +4,14 @@
 
 <% @basedir = File.basename Dir.pwd  %>
 
-name: <% case @basedir when 'artifacts' then %>notes<% when 'pm' then %>pm<% end %>
+name: <% case @basedir when 'artifacts' then %>notes<% when 'pm' then %>pm<% else %><%= @basedir %><% end %>
 
 startup_window: 1
 
-on_project_start: <% case @basedir when 'artifacts' then %>cht notes<% when 'pm' then %>cht personal\ management<% end %>
+on_project_start: <% case @basedir when 'artifacts' then %>cht notes<% when 'pm' then %>cht personal\ management<% else %>cht '<%= @basedir %>'<% end %>
 
 windows:
-  - editor: <% case @basedir when 'artifacts' then %>vim --cmd 'set lines=45 columns=157' notes.md<% when 'pm' then %>vim --cmd 'set lines=45 columns=157' -p goals.md activities.md timesheet.md books.md soft.md<% end %>
+  - editor: <% case @basedir when 'artifacts' then %>vim --cmd 'set lines=45 columns=157' notes.md<% when 'pm' then %>vim --cmd 'set lines=45 columns=157' -p goals.md activities.md timesheet.md books.md soft.md<% else %>vim --cmd 'set lines=45 columns=157'<% end %>
   - git:
       layout: 8a0d,157x45,0,0{78x45,0,0,85,78x45,79,0[78x22,79,0,86,78x22,79,23,87]}
       panes:
