@@ -90,4 +90,12 @@
 " move tab to the left
 " silent map <C-S-j> :tabmove -1<CR>
 
+" :::date:::
+
+" insert date
+  nmap <LocalLeader>d i<C-r>=strftime("%d.%m.%Y\n----------")<CR><Esc>
+
+" insert a timestamp
+  nmap <LocalLeader>t i<C-r>=strftime("%Y-%m-%d %H:%M:%S%z")<CR><Esc>
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
