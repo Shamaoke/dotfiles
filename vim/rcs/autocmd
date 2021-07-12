@@ -21,4 +21,10 @@
   autocmd BufWinLeave,BufLeave * call MakeView()
   autocmd BufWinEnter          * call LoadView()
 
+""
+" References:
+"   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 253
+"   • Vim Reference Manual | Automatic commands (autocmd.txt), p. 1206
+"
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
