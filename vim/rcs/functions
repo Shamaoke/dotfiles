@@ -50,7 +50,7 @@ endfun
 " [*]: https://github.com/junegunn/fzf
 "
 " References:
-"   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 255
+"   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 253
 "   • Vim Reference Manual | Command Line Mode (cmdline.txt), 6. Ex Special Characters (:help cmdline-special), p. 788
 "   • Vim Reference Manual | Expression Evaluation (eval.txt), 4. Builtin Functions (:help expand()), p. 1317
 "
