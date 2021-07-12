@@ -15,8 +15,15 @@ endfun
 " Make and load Vim views
 " the functions are used at `rcs/autocommands`
 "
+" fun MakeView()
+"   if expand('<afile>') != '' && expand('<afile>') != '!sh' && filereadable(expand('<afile>')) != 1
+"     mkview
+"   endif
+" endfun
+"
+
 fun MakeView()
-  if expand('<afile>') != '' && expand('<afile>') != '!sh' && filereadable(expand('<afile>')) != 1
+  if expand('<afile>') != '' && expand('<afile>') != '!sh'
     mkview
   endif
 endfun
