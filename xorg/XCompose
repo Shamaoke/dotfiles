@@ -1,2 +1,6 @@
 <Multi_key> <o> <equal>       : "◦" # U+25E6 WHITE BULLET
 <Multi_key> <greater> <equal> : "‣" # U+2023 TRIANGULAR BULLET
+<Multi_key> <asciicircum> <n> : "ⁿ" # U+2023 SUPERSCRIPT LATIN SMALL LETTER N
+<Multi_key> <n> <asciicircum> : "ⁿ" # U+2023 SUPERSCRIPT LATIN SMALL LETTER N
+<Multi_key> <greater> <n>     : "ⁿ" # U+2023 SUPERSCRIPT LATIN SMALL LETTER N
+<Multi_key> <n> <greater>     : "ⁿ" # U+2023 SUPERSCRIPT LATIN SMALL LETTER N
