@@ -8,7 +8,7 @@ name: <%= @name %>
 
 startup_window: 1
 
-on_project_start: cht <%= @name %>
+on_project_start: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @name %>'
 
 windows:
   - ja-en:

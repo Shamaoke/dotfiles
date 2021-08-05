@@ -8,7 +8,9 @@ name: <% case @basedir when 'artifacts' then %>notes<% when 'pm' then %>pm<% els
 
 startup_window: 1
 
-on_project_start: <% case @basedir when 'artifacts' then %>cht notes<% when 'pm' then %>cht personal\ management<% else %>cht '<%= @basedir %>'<% end %>
+on_project_start: <% case @basedir when 'artifacts' then %>printf '\x1b\x5d2;%s\x1b\x5c' notes<% when 'pm' then %>printf '\x1b\x5d2;%s\x1b\x5c' personal\ management<% else %>printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'<% end %>
+
+on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
 
 windows:
   - editor: <% case @basedir when 'artifacts' then %>vim --cmd 'set lines=45 columns=157' notes.md<% when 'pm' then %>vim --cmd 'set lines=45 columns=157' -p goals.md activities.md timesheet.md books.md soft.md<% else %>vim --cmd 'set lines=45 columns=157'<% end %>
