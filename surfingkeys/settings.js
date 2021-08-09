@@ -56,6 +56,9 @@ unmap('S')
 // unmap a key for going forward in history
 unmap('D')
 
+// unmap a key for emoji completion
+iunmap(':')
+
 // set style for links hints
 Hints.style(`
   border-radius:  2px               !important;
