@@ -9,6 +9,14 @@
 " установить клавиатурную комбинацию для вставки пустой строки перед текущей
 " nmap <C-k> O<ESC>
 
+" :::general:::
+
+" insert a blank line above the current line
+  nmap <LocalLeader>O :normal O<CR>
+
+" insert a blank line under the current line
+  nmap <LocalLeader>o :normal o<CR>
+
 " создать клавиатурную комбинацию для копирования в буфер обмена
   vmap <C-y> "+y
 
