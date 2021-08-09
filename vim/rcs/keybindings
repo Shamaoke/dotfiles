@@ -12,10 +12,10 @@
 " :::general:::
 
 " insert a blank line above the current line
-  nmap <LocalLeader>O :normal O<CR>
+  nmap <LocalLeader>O O<ESC>
 
 " insert a blank line under the current line
-  nmap <LocalLeader>o :normal o<CR>
+  nmap <LocalLeader>o o<ESC>
 
 " создать клавиатурную комбинацию для копирования в буфер обмена
   vmap <C-y> "+y
