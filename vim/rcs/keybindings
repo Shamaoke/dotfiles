@@ -63,7 +63,7 @@
 " nmap <silent><C-f>b :Leaderf --nowrap buffer<CR>
 
 " :::fzf:::
-  nmap <silent><C-f>z :call fzf#run(fzf#wrap(g:fzf_general_options))<CR>
+  nmap <silent><LocalLeader>f :call fzf#run(fzf#wrap(g:fzf_general_options))<CR>
 "
 " `fzf#wrap` call is needed in order to apply fzf global configuration
 " variables, which are set in `rcs/plugin-fzf` (e.g `g:fzf_actions`). Without
