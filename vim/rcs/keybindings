@@ -26,13 +26,13 @@
 " :::windows:::
 
 " expand current window horizontally
-  nmap <C-w>e :vertical resize<CR>
+  nmap <LocalLeader>zz :vertical resize<CR>
 
 " expand current window vertically
-  nmap <C-w>E :resize<CR>
+  nmap <LocalLeader>zv :resize<CR>
 
 " make all windows equally high and wide
-  nmap <C-w>z <C-w>=
+  nmap <LocalLeader>Z <C-w>=
 
 " :::spelling:::
 
