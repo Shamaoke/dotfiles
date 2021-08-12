@@ -1,0 +1,37 @@
+#
+# :::docker:::
+#
+
+<% @basedir = File.basename Dir.pwd %>
+
+<% @name = @args[0] || (@basedir.start_with?('.') ? @basedir[1..-1] : @basedir) %>
+
+name: <%= @name %>
+
+startup_window: 1
+
+on_project_start: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @name %>'
+
+on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
+
+windows:
+  - editor: vim --cmd 'set lines=45 columns=157'
+  - work:
+      layout: main-vertical
+      panes:
+        -
+        - watch -ctn 1 'docker images ls'
+        - watch -ctn 1 'docker container ls --all'
+        - watch -ctn 1 'docker network ls'
+  - build|install:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - console|man:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - fm: vifm
+
