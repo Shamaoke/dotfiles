@@ -20,7 +20,7 @@ windows:
       layout: main-vertical
       panes:
         -
-        - watch -ctn 1 'docker images ls'
+        - watch -ctn 1 'docker image ls'
         - watch -ctn 1 'docker container ls --all'
         - watch -ctn 1 'docker network ls'
   - build|install:
