@@ -10,11 +10,14 @@ user_pref('browser.tabs.closeWindowWithLastTab', false);
 // disable the pocket extension
 user_pref('extensions.pocket.enabled', false);
 
-// eliminate tearing when scrolling a page
-user_pref('layers.acceleration.force-enabled', true);
+// eliminate tearing when scrolling a page (removed in FF 92)
+// user_pref('layers.acceleration.force-enabled', true);
 
-// disable webrender
-user_pref('gfx.webrender.force-disabled', true);
+// disable webrender (removed in FF 92)
+// user_pref('gfx.webrender.force-disabled', true);
+
+// disable webrender, use OpenGL rendering instead
+user_pref('gfx.webrender.force-legacy-layers', true);
 
 // disable the reader mode
 user_pref('reader.parse-on-load.enabled', false);
@@ -153,6 +156,9 @@ user_pref('widget.disable-workspace-management', true);
 
 // hide the toggle to enable picture-in-picture mode
 user_pref('media.videocontrols.picture-in-picture.video-toggle.enabled', false);
+
+// remove the „Firefox Suggest“ section from the URL bar drop-down list
+user_pref('browser.urlbar.groupLabels.enabled', false);
 
 /* :::Fonts::: */
 
