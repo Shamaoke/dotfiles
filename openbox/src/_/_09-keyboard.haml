@@ -434,6 +434,22 @@
     %action{ :name => 'Execute' }
       %command amixer set Master toggle
 
+  -# Keybindings for controlling Dunst
+  -# 0x41 — `space'
+  %keybind{ :key => 'C-0x41' }
+    %action{ :name => 'Execute' }
+      %command dunstctl close
+
+  -# 0x41 — `space'
+  %keybind{ :key => 'C-S-0x41' }
+    %action{ :name => 'Execute' }
+      %command dunstctl close-all
+
+  -# 0x31 — `grave'
+  %keybind{ :key => 'C-0x31' }
+    %action{ :name => 'Execute' }
+      %command dunstctl history-pop
+
   -# Keybindings for controlling the mpd music player
   -# 0xd0 — `XF86AudioPlay'
   -# %keybind{ :key => '0xd0' }
