@@ -1,3 +1,5 @@
+picom &
+
 ibus-daemon -drx &
 
 pointer_hide &
