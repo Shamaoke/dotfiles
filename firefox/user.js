@@ -17,7 +17,13 @@ user_pref('extensions.pocket.enabled', false);
 // user_pref('gfx.webrender.force-disabled', true);
 
 // disable webrender, use OpenGL rendering instead
-user_pref('gfx.webrender.force-legacy-layers', true);
+// user_pref('gfx.webrender.force-legacy-layers', true);
+
+// enable webrender
+user_pref('gfx.webrender.all', true);
+
+// disable software mode for webrender
+user_pref('gfx.webrender.software', false);
 
 // disable the reader mode
 user_pref('reader.parse-on-load.enabled', false);
