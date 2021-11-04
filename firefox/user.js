@@ -166,6 +166,9 @@ user_pref('media.videocontrols.picture-in-picture.video-toggle.enabled', false);
 // remove the „Firefox Suggest“ section from the URL bar drop-down list
 user_pref('browser.urlbar.groupLabels.enabled', false);
 
+// behave in window mode as in fullscreen mode
+user_pref('full-screen-api.ignore-widgets', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
