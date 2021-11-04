@@ -40,7 +40,7 @@ mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {s
 
 // toggle fullscreen
 // mapkey( 'E', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
-mapkey( 'q', '#3Toggle fullscreen', ( ) => document.documentElement.requestFullscreen() )
+mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
 
 /* View in fullscreen */
 function openFullscreen() {
@@ -56,7 +56,7 @@ function openFullscreen() {
 
 /* Close fullscreen */
 function closeFullscreen() {
-    var elem = document.documentElement;
+  var elem = document.documentElement;
   if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.webkitExitFullscreen) { /* Safari */
