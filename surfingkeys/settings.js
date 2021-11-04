@@ -40,7 +40,6 @@ mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {s
 
 // toggle fullscreen
 // mapkey( 'E', '#3Toggle fullscreen', ( ) => document.documentElement.fullscreenElement ? document.ExitFullscreen() : document.documentElement.requestFullscreen() )
-map( 'E', '<F11>' )
 
 // unmap a key for opening a link in a new tab
 unmap('af')
