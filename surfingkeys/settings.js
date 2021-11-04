@@ -39,44 +39,14 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
 // toggle fullscreen
-// mapkey( 'E', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
-mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
-
-/* View in fullscreen */
-function openFullscreen() {
-  var elem = document.documentElement;
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
-
-/* Close fullscreen */
-function closeFullscreen() {
-  var elem = document.documentElement;
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-    document.msExitFullscreen();
-  }
-}
-
-function openFullscreen_toggle() {
-  if (!document.fullscreenElement) {
-    openFullscreen();
-  } else {
-    closeFullscreen();
-  }
-}
-
-// mapkey('q', 'full screen', function() {
-//     openFullscreen_toggle();
-// });
+// mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
+// Issues
+// ======
+// 1. When in the fullscreen mode, the Esc button brings the browser back into the normal mode
+// 2. When in the fullscreen mode, the Alt-Tab button brings the browser back into the normal mode
+// 3. When in the fullscreen mode, navigating to another web-page (e. g. by clicking a link) brings the browser back into the normal mode
+// 4. If a web-page contains frames, going to fullscreen results in only one frame is displayed in the viewport
+// 5. Web-page contents jitter when going to the fullscreen mode
 
 // unmap a key for opening a link in a new tab
 unmap('af')
