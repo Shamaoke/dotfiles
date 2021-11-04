@@ -41,6 +41,42 @@ mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {s
 // toggle fullscreen
 // mapkey( 'E', '#3Toggle fullscreen', ( ) => document.documentElement.fullscreenElement ? document.ExitFullscreen() : document.documentElement.requestFullscreen() )
 
+/* View in fullscreen */
+function openFullscreen() {
+  var elem = document.documentElement;
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+    var elem = document.documentElement;
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+
+function openFullscreen_toggle() {
+  if (!document.fullscreenElement) {
+    openFullscreen();
+  } else {
+    closeFullscreen();
+  }
+}
+
+mapkey('q', 'full screen', function() {
+    openFullscreen_toggle();
+});
+
 // unmap a key for opening a link in a new tab
 unmap('af')
 
