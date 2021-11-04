@@ -39,7 +39,7 @@ mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {st
 mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
 
 // toggle fullscreen
-mapkey( 'E', '#3Toggle fullscreen', ( ) => document.documentElement.fullscreenElement ? documentExitFullscreen() : document.documentElement.requestFullscreen() )
+mapkey( 'E', '#3Toggle fullscreen', ( ) => document.documentElement.fullscreenElement ? document.ExitFullscreen() : document.documentElement.requestFullscreen() )
 
 // unmap a key for opening a link in a new tab
 unmap('af')
