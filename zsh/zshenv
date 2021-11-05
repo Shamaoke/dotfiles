@@ -72,10 +72,4 @@ export FPATH=$FPATH:$HOME/.local/share/zsh/functions/Zle:$HOME/.local/share/zsh/
 
 export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 
-#
-# Mednafen emulator
-#
-
-export MEDNAFEN_HOME=$HOME/.config/mednafen
-
 # vim: set textwidth=80 colorcolumn=80:
