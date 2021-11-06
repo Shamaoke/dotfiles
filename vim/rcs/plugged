@@ -9,6 +9,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/junegunn/fzf
   Plug 'junegunn/fzf'
 
+" :::ack:::
+" Vim plugin for the Perl module / CLI script 'ack'
+" https://github.com/mileszs/ack.vim
+  Plug 'mileszs/ack.vim'
+
 " :::vim-signature:::
 " Place, toggle and display marks
 " https://github.com/kshenoy/vim-signature
