@@ -1,0 +1,8 @@
+""
+" :::ack:::
+"
+
+" use ag instead of ack
+let g:ackprg = '/usr/bin/ag --vimgrep'
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
