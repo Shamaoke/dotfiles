@@ -2,7 +2,7 @@
   set guioptions ''
 
 " set the background color
-  set default-bg '#241704'
+  set default-bg '#101a23'
 
 " define the font will be used
   set font 'InputMonoNarrow 11'
