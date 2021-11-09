@@ -4,6 +4,18 @@
 " set the background color
   set default-bg '#101a23'
 
+" set the background color for the index mode
+  set index-bg '#101a23'
+
+" set the foreground color for the index mode
+  set index-fg '#ffffff'
+
+" set the dark color for the recoloring mode
+  set recolor-darkcolor '#ffffff'
+
+" set the light color for the recoloring mode
+  set recolor-lightcolor '#101a23'
+
 " define the font will be used
   set font 'InputMonoNarrow 11'
 
