@@ -4,7 +4,7 @@ configuration {
 /* lines: 20; */
 /* columns: 1; */
 /* font: "PT Sans 12"; */
-   bw: 1;
+/* bw: 1; */
 /* location: 0; */
 /* padding: 5; */
 /* yoffset: 0; */
