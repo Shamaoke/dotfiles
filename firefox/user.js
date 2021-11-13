@@ -169,6 +169,9 @@ user_pref('browser.urlbar.groupLabels.enabled', false);
 // behave in window mode as in fullscreen mode
 user_pref('full-screen-api.ignore-widgets', true);
 
+// show PID and activeness in a tab tooltip
+user_pref('browser.tabs.tooltipsShowPidAndActiveness', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
