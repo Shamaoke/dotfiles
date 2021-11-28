@@ -1,3 +1,6 @@
+
+
+
 configuration {
    modi: "run,drun";
 /* width: 50; */
@@ -55,7 +58,7 @@ configuration {
 /* window-format: "{w}    {c}   {t}"; */
 /* click-to-exit: true; */
 /* show-match: true; */
-   theme: "sample";
+/* theme: "sample"; */
 /* color-normal: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
 /* color-urgent: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
 /* color-active: "#4f2624, #ffffff, #4f2624, #714d35, #ffffff"; */
@@ -148,3 +151,6 @@ configuration {
    me-accept-entry: [MouseDPrimary, MouseSecondary];
 /* me-accept-custom: "Control+MouseDPrimary"; */
 }
+
+@theme "sample"
+
