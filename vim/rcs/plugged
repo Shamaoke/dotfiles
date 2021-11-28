@@ -21,6 +21,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/kshenoy/vim-signature
   Plug 'kshenoy/vim-signature'
 
+" :::ultisnips:::
+" UltiSnips — the ultimate snippet solution for Vim
+" https://github.com/SirVer/ultisnips
+  Plug 'SirVer/ultisnips'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
