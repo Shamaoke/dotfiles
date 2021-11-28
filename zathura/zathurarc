@@ -1,6 +1,9 @@
 " do not display the status bar
   set guioptions ''
 
+" set the auto adjustment mode to be used when a document is loaded
+  set adjust-open 'best-fit'
+
 " set the background color
   set default-bg '#101a23'
 
