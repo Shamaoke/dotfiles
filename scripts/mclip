@@ -2,7 +2,7 @@
 
 
 url=`xclip -selection 'clipboard' -o`
-title=`youtube-dl --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
+title=`yt-dlp --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
 mpv --profile=$1 --geometry=1276x718 --title=$title $url
 
 if [[ error_code=$? -ne 0 ]]; then
