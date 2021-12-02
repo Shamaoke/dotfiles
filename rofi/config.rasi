@@ -148,9 +148,12 @@ configuration {
 /* ml-row-up: "ScrollUp"; */
 /* ml-row-down: "ScrollDown"; */
    hover-select: true;
-   me-select-entry: "MousePrimary";
-   me-accept-entry: [MouseDPrimary, MouseSecondary];
-/* me-accept-custom: "Control+MouseDPrimary"; */
+   me-select-entry: ""; /* it's needed to select MousePrimary as an entry acceptor */
+   me-accept-entry: [MousePrimary, MouseSecondary];
+   /* me-accept-entry: [MousePrimary, MouseSecondary]; */
+   /* me-select-entry: "MousePrimary"; */
+   /* me-accept-entry: [MouseDPrimary, MouseSecondary]; */
+  /* me-accept-custom: "Control+MouseDPrimary"; */
 }
 
 @theme "sample"
