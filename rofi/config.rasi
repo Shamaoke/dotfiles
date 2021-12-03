@@ -2,6 +2,19 @@
 
 
 configuration {
+
+   // drun {
+   //  display-name: "drun";
+   // }
+
+   // run {
+   //   display-name: "run";
+   // }
+
+   // window {
+   //   display-name: "window";
+   // }
+
    modi: "run,drun";
 /* width: 50; */
 /* lines: 20; */
@@ -33,7 +46,7 @@ configuration {
 /* sort: false; */
 /* sorting-method: "normal"; */
 /* case-sensitive: false; */
-/* cycle: true; */
+   cycle: false;
 /* sidebar-mode: false; */
 /* eh: 1; */
 /* auto-select: false; */
@@ -153,7 +166,7 @@ configuration {
    /* me-accept-entry: [MousePrimary, MouseSecondary]; */
    /* me-select-entry: "MousePrimary"; */
    /* me-accept-entry: [MouseDPrimary, MouseSecondary]; */
-  /* me-accept-custom: "Control+MouseDPrimary"; */
+   /* me-accept-custom: "Control+MouseDPrimary"; */
 }
 
 @theme "sample"
