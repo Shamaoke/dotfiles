@@ -58,8 +58,11 @@
 " set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
   set listchars=eol:¶,tab:\-\-\>,trail:∙,precedes:←,extends:→,nbsp:↔
 
-" do not use any characters to fill in vertical separators and folds
-  set fillchars=vert:\ ,fold:\ 
+" set characters to fill statuslines and vertical separators
+" vert -- vertical separators |:vsplit|
+" fold -- filling foldtext
+" eob  -- empty lines below the end of a buffer
+  set fillchars=vert:\ ,fold:\ ,eob:\ 
 
 " use the plus and minus signs to fill the status lines of active and inctive
 " windows if StatusLine and StatusLineNC have the same highlighting
