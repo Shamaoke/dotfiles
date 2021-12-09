@@ -62,7 +62,7 @@
 " vert -- vertical separators |:vsplit|
 " fold -- filling foldtext
 " eob  -- empty lines below the end of a buffer
-  set fillchars=vert:\ ,fold:\ ,eob:\ 
+  set fillchars=vert:│,fold:\ ,eob:\ 
 
 " use the plus and minus signs to fill the status lines of active and inctive
 " windows if StatusLine and StatusLineNC have the same highlighting
