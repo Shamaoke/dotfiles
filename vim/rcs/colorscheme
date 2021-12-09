@@ -30,7 +30,7 @@ highlight SignatureMarkText cterm=none ctermfg=008  ctermbg=none
 highlight SpecialKey        cterm=none ctermfg=009  ctermbg=none
 highlight StatusLine        cterm=none ctermfg=007  ctermbg=233
 highlight StatusLineNC      cterm=none ctermfg=008  ctermbg=233
-highlight VertSplit         cterm=none ctermfg=232  ctermbg=none
+highlight VertSplit         cterm=none ctermfg=233  ctermbg=none
 highlight Visual            cterm=none ctermfg=none ctermbg=238
 
 " spelling
