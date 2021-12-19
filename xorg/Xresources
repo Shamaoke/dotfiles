@@ -7,57 +7,17 @@
 !#include ".Xresources.d/joy"
 #include ".Xresources.d/chinese-pastel"
 
-!set geometry
-  URxvt.geometry: 157x46
+! set terminal dimensions
+  URxvt.geometry: 174x34
 
-!URxvt.geometry: 164x40
-!URxvt.geometry: 170x42
-!URxvt.geometry: 170x43
-!URxvt.geometry: 200x50
+! set font
+  URxvt.font: xft:Iosevka Term:style=Regular:size=12, xft:Noto Sans Mono CJK JP
+  URxvt.boldFont: xft:Iosevka Term:style=Medium:size=12, xft:Noto Sans Mono CJK JP
+  URxvt.italicFont: xft:Iosevka Term:style=Italic:size=12, xft:Noto Sans Mono CJK JP
+  URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=12, xft:Noto Sans Mono CJK JP
 
-!set a font and its size
-!URxvt.font: xft:Dejavu Sans Mono:size=8
-!URxvt.font: xft:Dejavu Sans Mono:size=12
-!URxvt.font: xft:Dejavu Sans Mono:size=10
-!URxvt.font: xft:Hack:size=10
-!URxvt.font: xft:InputMonoCompressed Medium:size=12
-!URxvt.font: xft:InputMonoNarrow Light:size=12
-!URxvt.font: xft:InputMono Light:size=12
-
-!URxvt.font: xft:InputMonoCondensed:size=12
-
-!URxvt.font: \
-!  xft:InputMonoCondensed Light:size=12, \
-!  xft:Noto Sans Mono CJK JP
-
-!URxvt.boldFont: xft:InputMonoCondensed Medium:size=12
-
-!disable high intensity colors for bold text
+! disable high intensity colors for bold text
   URxvt.intensityStyles: false
-
-!do not use a bold font
-!URxvt.boldFont: xft:Dejavu Sans Mono:size=8
-!URxvt.boldFont: xft:Dejavu Sans Mono:size=12
-!URxvt.boldFont: xft:Dejavu Sans Mono:size=11
-!URxvt.boldFont: xft:Hack:size=13
-
-! URxvt.font: xft:InputMono:size=11 {{{
-! decrease a space between letters for a better look
-! increase the line space in order to remove padding around the text area
-! remove borders around the text area
-! URxvt.font: xft:Input Mono:size=11, xft:Noto Sans Mono CJK JP
-! URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:Noto Sans Mono CJK JP
-  URxvt.font: xft:Input Mono Narrow:pixelsize=16, xft:IPAexGothic
-
-! URxvt.boldFont: xft:Input Mono Medium:size=11
-! URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:Noto Sans Mono CJK JP
-  URxvt.boldFont: xft:Input Mono Narrow Medium:pixelsize=16, xft:IPAexGothic
-
-! URxvt.letterSpace:    -1
-  URxvt.letterSpace:     0
-  URxvt.lineSpace:       0
-  URxvt.internalBorder:  0
-! }}}
 
 !do not show a scrollbar
 URxvt.scrollBar: false
