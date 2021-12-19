@@ -56,7 +56,7 @@
 
 " установить спец-символы
 " set listchars=eol:⏎,tab:↣→,trail:·,precedes:⇠,extends:⇢,nbsp:↔
-  set listchars=eol:¶,tab:\-\-\>,trail:∙,precedes:←,extends:→,nbsp:↔
+  set listchars=eol:¶,tab:\-\-\>,trail:·,precedes:⇠,extends:⇢,nbsp:↔
 
 " set characters to fill statuslines and vertical separators
 " vert -- vertical separators |:vsplit|
