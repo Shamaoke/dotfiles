@@ -20,7 +20,7 @@
   set recolor-lightcolor '#101a23'
 
 " define the font will be used
-  set font 'InputMonoNarrow 11'
+  set font 'Iosevka Term 12'
 
 " use basenames of opened files in window title (instead of full paths)
   set window-title-basename true
