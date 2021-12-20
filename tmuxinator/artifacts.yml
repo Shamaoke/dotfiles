@@ -13,7 +13,7 @@ on_project_start: <% case @basedir when 'artifacts' then %>printf '\x1b\x5d2;%s\
 on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
 
 windows:
-  - editor: <% case @basedir when 'artifacts' then %>vim --cmd 'set lines=45 columns=157' notes.md<% when 'pm' then %>vim --cmd 'set lines=45 columns=157' -p goals.md activities.md books.md soft.md<% else %>vim --cmd 'set lines=45 columns=157'<% end %>
+  - editor: <% case @basedir when 'artifacts' then %>vim --cmd 'set lines=33 columns=174' notes.md<% when 'pm' then %>vim --cmd 'set lines=33 columns=174' -p goals.md activities.md books.md soft.md<% else %>vim --cmd 'set lines=33 columns=174'<% end %>
   - git:
       layout: 8a0d,157x45,0,0{78x45,0,0,85,78x45,79,0[78x22,79,0,86,78x22,79,23,87]}
       panes:
