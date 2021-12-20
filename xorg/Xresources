@@ -11,10 +11,28 @@
   URxvt.geometry: 174x34
 
 ! set font
-  URxvt.font: xft:Iosevka Term:style=Regular:size=12, xft:Noto Sans Mono CJK JP
-  URxvt.boldFont: xft:Iosevka Term:style=Medium:size=12, xft:Noto Sans Mono CJK JP
-  URxvt.italicFont: xft:Iosevka Term:style=Italic:size=12, xft:Noto Sans Mono CJK JP
-  URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=12, xft:Noto Sans Mono CJK JP
+! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.boldFont: xft:Iosevka Term:style=Medium:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.italicFont: xft:Iosevka Term:style=Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
+
+! set font
+! URxvt.font: xft:Iosevka Term Extended:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.boldFont: xft:Iosevka Term Extended:style=Medium:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.italicFont: xft:Iosevka Term Extended:style=Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
+! URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Medium Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
+
+!set font
+  URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:IPAexGothic:size=13
+  URxvt.boldFont: xft:Iosevka Term:style=Medium:size=13, xft:IPAexGothic:size=13
+  URxvt.italicFont: xft:Iosevka Term=Italic:size=13, xft:IPAexGothic:size=12
+  URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+
+! set font
+! URxvt.font: xft:Iosevka Term Extended:style=Regular:size=13, xft:IPAexGothic:size=13
+! URxvt.boldFont: xft:Iosevka Term Extended:style=Medium:size=13, xft:IPAexGothic:size=13
+! URxvt.italicFont: xft:Iosevka Term Extended:style=Italic:size=13, xft:IPAexGothic:size=13
+! URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
