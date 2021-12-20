@@ -10,29 +10,41 @@
 ! set terminal dimensions
   URxvt.geometry: 174x34
 
-! set font
+! set font Term + Noto Sans Mono CJK JP
 ! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.boldFont: xft:Iosevka Term:style=Medium:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.italicFont: xft:Iosevka Term:style=Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
 
-! set font
+! set font Term Extended + Noto Sans Mone CJK JP
 ! URxvt.font: xft:Iosevka Term Extended:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.boldFont: xft:Iosevka Term Extended:style=Medium:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.italicFont: xft:Iosevka Term Extended:style=Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
 ! URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Medium Italic:size=13, xft:Noto Sans Mono CJK JP:size=12
 
-!set font
-  URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:IPAexGothic:size=13
-  URxvt.boldFont: xft:Iosevka Term:style=Medium:size=13, xft:IPAexGothic:size=13
-  URxvt.italicFont: xft:Iosevka Term=Italic:size=13, xft:IPAexGothic:size=12
-  URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+!set font Term + IPAexGothic
+! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:IPAexGothic:size=13
+! URxvt.boldFont: xft:Iosevka Term:style=Medium:size=13, xft:IPAexGothic:size=13
+! URxvt.italicFont: xft:Iosevka Term=Italic:size=13, xft:IPAexGothic:size=12
+! URxvt.boldItalicFont: xft:Iosevka Term:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
-! set font
+! set font Term Extended + IPAexGothic
 ! URxvt.font: xft:Iosevka Term Extended:style=Regular:size=13, xft:IPAexGothic:size=13
 ! URxvt.boldFont: xft:Iosevka Term Extended:style=Medium:size=13, xft:IPAexGothic:size=13
 ! URxvt.italicFont: xft:Iosevka Term Extended:style=Italic:size=13, xft:IPAexGothic:size=13
 ! URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+
+! set font Term Slab + IPAexGothic
+  URxvt.font: xft:Iosevka Term Slab:style=Regular:size=13, xft:IPAexGothic:size=13
+  URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=13, xft:IPAexGothic:size=13
+  URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=13, xft:IPAexGothic:size=13
+  URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+
+! set font Term Slab Extended + IPAexGothic
+! URxvt.font: xft:Iosevka Term Slab Extended:style=Regular:size=13, xft:IPAexGothic:size=13
+! URxvt.boldFont: xft:Iosevka Term Slab Extended:style=Medium:size=13, xft:IPAexGothic:size=13
+! URxvt.italicFont: xft:Iosevka Term Slab Extended:style=Italic:size=13, xft:IPAexGothic:size=13
+! URxvt.boldItalicFont: xft:Iosevka Term Slab Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
