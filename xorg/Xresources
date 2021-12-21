@@ -8,7 +8,7 @@
 #include ".Xresources.d/chinese-pastel"
 
 ! set terminal dimensions
-  URxvt.geometry: 157x34
+  URxvt.geometry: 158x33
 
 ! set font Term + Noto Sans Mono CJK JP
 ! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
