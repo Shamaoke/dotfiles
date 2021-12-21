@@ -8,7 +8,7 @@
 #include ".Xresources.d/chinese-pastel"
 
 ! set terminal dimensions
-  URxvt.geometry: 174x34
+  URxvt.geometry: 157x34
 
 ! set font Term + Noto Sans Mono CJK JP
 ! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
@@ -35,16 +35,22 @@
 ! URxvt.boldItalicFont: xft:Iosevka Term Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 ! set font Term Slab + IPAexGothic
-  URxvt.font: xft:Iosevka Term Slab:style=Regular:size=13, xft:IPAexGothic:size=13
-  URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=13, xft:IPAexGothic:size=13
-  URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=13, xft:IPAexGothic:size=13
-  URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+! URxvt.font: xft:Iosevka Term Slab:style=Regular:size=13, xft:IPAexGothic:size=13
+! URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=13, xft:IPAexGothic:size=13
+! URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=13, xft:IPAexGothic:size=13
+! URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 ! set font Term Slab Extended + IPAexGothic
 ! URxvt.font: xft:Iosevka Term Slab Extended:style=Regular:size=13, xft:IPAexGothic:size=13
 ! URxvt.boldFont: xft:Iosevka Term Slab Extended:style=Medium:size=13, xft:IPAexGothic:size=13
 ! URxvt.italicFont: xft:Iosevka Term Slab Extended:style=Italic:size=13, xft:IPAexGothic:size=13
 ! URxvt.boldItalicFont: xft:Iosevka Term Slab Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
+
+! set font Custom Term Slab + IPAexGothic
+  URxvt.font: xft:Iosevka Custom Term Slab:style=Regular:size=13, xft:IPAexGothic:size=13
+  URxvt.boldFont: xft:Iosevka Custom Term Slab:style=Medium:size=13, xft:IPAexGothic:size=13
+  URxvt.italicFont: xft:Iosevka Custom Term Slab:style=Italic:size=13, xft:IPAexGothic:size=13
+  URxvt.boldItalicFont: xft:Iosevka Custom Term Slab:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
