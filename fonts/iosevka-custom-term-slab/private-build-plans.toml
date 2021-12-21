@@ -1,0 +1,140 @@
+#
+# ::: Iosevka Custom Term Slab :::
+#
+
+##
+# Building instructions
+# =====================
+# 1. Install node.js (≥ 12.16.0);
+# 2. Install ttfautohint;
+# 3. Run `npm install`;
+#    This command will install all the NPM dependencies, and will also validate
+#    whether external dependencies are present.
+# 4. Run `npm run build -- ttf::iosevka-custom-term-slab`;
+# 5. Wait compilation to complete;
+# 6. The built fonts will be available in the `dist` directory;
+# 7. To clean the working directory run `npm run clean`.
+
+##
+# The top-level properties section
+# ================================
+# Configure the basic font properties.
+[buildPlans.iosevka-custom-term-slab]
+##
+# Define the family name
+# ----------------------
+family = "Iosevka Custom Term Slab"
+
+##
+# Define the spacing
+# ------------------
+# "normal" -- the normal monospace font
+# "quasi-proportional" -- the quasi-proportional font
+# "term" -- make the symbols' width suitable for terminal emulators; arrows and geometric symbols will become narrower
+# "fontconfig-mono" -- apply "term" spacing changes and further apply changes to
+# be compatible with FontConfig's Mono spacing, which recognizes a font as
+# monospace if and only if its every non-combining characters having the same width
+# The changes include the following.
+# Completely remove wide glyphs. All non-combining glyphs will be exactly the same width.
+# As a consequence, the following characters will be removed.
+#   • U+27F5 LONG LEFTWARDS ARROW
+#   • U+27F6 LONG RIGHTWARDS ARROW
+#   • U+27FB LONG LEFTWARDS ARROW FROM BAR
+#   • U+27FC LONG RIGHTWARDS ARROW FROM BAR
+# "fixed" -- apply "fontconfig-mono" changes and further remove ligations
+spacing = "term"
+
+##
+# Define the styles of serifs
+# ---------------------------
+# "slab" -- the slab-serif font
+serifs = "slab"
+
+##
+# Configure OpenType features
+# ---------------------------
+# true -- disable OpenType features
+no-cv-ss = true
+
+##
+# Configure ligations
+# -------------------
+# true -- disable ligations
+no-ligation = true
+
+##
+# Configure exporting glyph names into fonts
+# ------------------------------------------
+# true -- export glyph names into fonts
+# Setting this to ‘true’ will increase file footprint, however this is necessary
+# for ligature support in [Kitty](https://sw.kovidgoyal.net/kitty/).
+# export-glyph-names = true
+
+##
+# Configure character variants
+# ============================
+# Configure character variants to all types: normal, upright, italic and oblique.
+[buildPlans.iosevka-custom-term-slab.variants.design]
+##
+# Styles for U+0079 LATIN SMALL LETTER Y
+# --------------------------------------
+# "straight"
+# "straight-turn"
+# "curly"
+# "curly-turn"
+# "cursive"
+# "cursive-flat-hook"
+# "straight-motion-serifed"
+# "straight-turn-motion-serifed"
+# "curly-motion-serifed"
+# "curly-turn-motion-serifed"
+# "cursive-motion-serifed"
+# "cursive-flat-hook-motion-serifed"
+y = "straight-turn"
+
+##
+# Styles for U+002A ASTERISK
+# --------------------------
+# "penta-high"
+# "penta-low"
+# "flip-penta-high"
+# "flip-penta-low"
+# "hex-high"
+# "hex-low"
+# "turn-hex-high"
+# "turn-hex-low"
+asterisk = "hex-high"
+
+##
+# Styles for U+00B6 PILCROW SIGN
+# ------------------------------
+# "high"
+# "low"
+paragraph-sign = "low"
+
+##
+# Styles for U+0028 LEFT PARENTHESIS and U+0029 RIGHT PARENTHESIS
+# ---------------------------------------------------------------
+# "normal"
+# "large-contour"
+# "flat-arc"
+paren = "large-contour"
+
+##
+# Styles for U+007B LEFT CURLY BRACKET and U+007D RIGHT CURLY BRACKET
+# -------------------------------------------------------------------
+# "straight"
+# "curly"
+# "curly-flat-boundary"
+brace = "straight"
+
+##
+# Styles for U+0025 PERCENT SIGN
+# ------------------------------
+# "dots"
+# "rings-segmented-slash"
+# "rings-continuous-slash"
+# "rings-continuous-slash-also-connected"
+percent = "rings-continuous-slash"
+
+# vim: textwidth=80 colorcolumn=80:
