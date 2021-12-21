@@ -1,4 +1,0 @@
-<Multi_key> <o> <equal>       : "◦" # U+25E6 WHITE BULLET
-<Multi_key> <greater> <equal> : "‣" # U+2023 TRIANGULAR BULLET
-<Multi_key> <g> <o>           : "g̊" # U+030a LATIN SMALL LETTER G COMBINING RING ABOVE
-<Multi_key> <o> <g>           : "g̊" # U+030a LATIN SMALL LETTER G COMBINING RING ABOVE
