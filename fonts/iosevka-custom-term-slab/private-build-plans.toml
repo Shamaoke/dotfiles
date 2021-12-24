@@ -48,6 +48,7 @@ spacing = "term"
 # Define the styles of serifs
 # ---------------------------
 # "slab" -- the slab-serif font
+# "sans" -- the sans-serif font
 serifs = "slab"
 
 ##
