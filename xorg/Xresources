@@ -4,7 +4,6 @@
 !    URxvt    !
 !-------------!
 
-!#include ".Xresources.d/joy"
 #include ".Xresources.d/chinese-pastel"
 
 ! set terminal dimensions
