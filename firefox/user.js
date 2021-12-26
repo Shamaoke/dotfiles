@@ -175,6 +175,9 @@ user_pref('full-screen-api.ignore-widgets', true);
 // show PID and activeness in a tab tooltip
 user_pref('browser.tabs.tooltipsShowPidAndActiveness', true);
 
+// prevent the “switch to tab” suggestion when typing in the URL bar
+user_pref('browser.urlbar.suggest.openpage', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
