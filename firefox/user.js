@@ -178,6 +178,19 @@ user_pref('browser.tabs.tooltipsShowPidAndActiveness', true);
 // prevent the “switch to tab” suggestion when typing in the URL bar
 user_pref('browser.urlbar.suggest.openpage', false);
 
+/* ::: Tracking Protection ::: */
+// configure tracking protection in both the regular browsing mode and the private browsing mode
+user_pref('privacy.trackingprotection.enabled', true);
+
+// configure tracking protection in the private browsing mode
+user_pref('privacy.trackingprotection.pbmode.enabled', true);
+
+// configure blocking cryptomining scripts on websites
+user_pref('privacy.trackingprotection.cryptomining.enabled', true);
+
+// configure blocking fingerprinting scripts on websites
+user_pref('privacy.trackingprotection.fingerprinting.enabled', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
