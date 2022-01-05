@@ -17,10 +17,10 @@
 # The “value” filed from the first line (3a) is the scancode and the “code”
 # field from the second line (1) is the keycode.
 #
-# To get the event handler for the keyboard run `cat /dev/input/devices`, find a
-# name of the device at the Name field and check the Handler field in the same
-# info block. The handler field can contain several handler names. The required
-# handler should have the “event“ prefix.
+# To get the event handler for the keyboard run `cat /dev/input/devices` or
+# `cat /proc/bus/input/devices`, find a name of the device at the Name field and
+# check the Handler field in the same info block. The handler field can contain
+# several handler names. The required handler should have the “event“ prefix.
 
 # Map scancodes to keycodes:
 #   dd (KEY_COMPOSE)  to 126 (KEY_RIGHTMETA)
