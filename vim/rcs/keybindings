@@ -37,22 +37,22 @@
 " :::spelling:::
 
 " switch on spell checking for English
-  nmap zse :setlocal spell spelllang=en_us<CR>
+  nmap <LocalLeader>se :setlocal spell spelllang=en_us<CR>
 
 " switch on spell checking for Russian
-  nmap zsr :setlocal spell spelllang=ru<CR>
+  nmap <LocalLeader>sr :setlocal spell spelllang=ru<CR>
 
 " switch off spell checking
-  nmap zsc :setlocal nospell<CR>
+  nmap <LocalLeader>sc :setlocal nospell<CR>
 
 " display suggestions list
-  nmap zss z=
+  nmap <LocalLeader>sl z=
 
 " move to next misspelled word
-  nmap zsn ]s
+  nmap <LocalLeader>ss ]s
 
 " move to previous misspelled word
-  nmap zsp [s
+  nmap <LocalLeader>sp [s
 
 " :::leaderf:::
 
