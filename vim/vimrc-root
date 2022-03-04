@@ -1,0 +1,165 @@
+"
+" ::: General settings :::
+"
+
+" use utf-8 encoding
+  set encoding=utf-8
+
+" display absolute line numbers
+  set number
+
+" display relative line numbers
+  set relativenumber
+
+" always show tabline
+  set showtabline=2
+
+" always show statusline
+  set laststatus=2
+
+" copy indent from the previous line
+  set autoindent
+
+" don't wrap long lines
+  set nowrap
+
+" use spaces instead of tabs
+  set expandtab
+
+" set tabulation size for spaces
+  set softtabstop=2
+
+" set tabulation size for tabs
+  set tabstop=4
+
+" set the indent size when shifting a line (by pressing >> or <<)
+  set shiftwidth=2
+
+" show the special symbols
+  set list
+
+" define characters for the special symbol classes
+  set listchars=eol:¶,tab:\⊢\-\>,trail:·,precedes:⇠,extends:⇢,nbsp:↔
+
+" set characters to fill statuslines and vertical separators
+" vert — vertical separators |:vsplit|
+" fold — filling foldtext
+" eob  — empty lines below the end of a buffer
+  set fillchars=vert:│,fold:\ ,eob:\ 
+
+" set margins for the vertical scroll
+  set scrolloff=10
+
+" set margins for the horizontal scroll
+  set sidescrolloff=20
+
+" set the shift amount for horizontal scroll
+  set sidescroll=1
+
+" highlight the current line
+  set cursorline
+
+" don't create backup files
+  set nobackup
+
+" don't create swap files
+  set noswapfile
+
+" don't change the window title
+  set notitle
+
+" open a new panel below the current one when splitting horizontally
+  set splitbelow
+
+" open a new panel to the right of the current one when splitting vertically
+  set splitright
+
+"
+" ::: Cursor settings :::
+"
+
+" prevent delay when switching vim modes
+  set ttimeoutlen=0
+" to prevent the delay when working in Tmux add `set -g escape-time 0` to `.tmux.conf`
+
+" change the cursor form depending on the current vim mode (NORMAL, INSERT, REPLACE)
+  if exists("$TMUX")
+  " send the specific escape sequences when working in Tmux
+    " set the cursor shape when switching to the INSERT mode (Tmux)
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>[6 q\<Esc>\\"
+    " set the cursor shape when switching to the REPLACE mode (Tmux)
+    let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>[4 q\<Esc>\\"
+    " set the cursor shape when escaping from the INSERT mode or the REPLACE mode (Tmux)
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>[2 q\<Esc>\\"
+  else
+    " set the cursor shape when switching to the INSERT mode
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>[6 q\<Esc>\\"
+    let &t_SI = "\<Esc>[6 q"
+    " set the cursor shape when switching to the REPLACE mode
+    let &t_SR = "\<Esc>[4 q"
+    " set the cursor shape when escaping from the INSERT mode or the REPLACE mode
+    let &t_EI = "\<Esc>[2 q"
+  endif
+" See for details — `:help termcap-cursor-shape'
+
+" List of possible values and the shapes of the cursor corresponding to them
+" (these values are specific to urxvt)
+
+" 1 — blinking block
+" 2 — block
+" 3 — blinking underscore
+" 4 — underscore
+" 5 — blinking vertical bar
+" 6 — vertical bar
+
+"
+" ::: Colorscheme settings :::
+"
+
+" set background
+  set background=dark
+
+" enable syntax highlighting
+" must be set before 'colorscheme'
+  syntax on
+
+" set color scheme
+  colorscheme default
+
+"
+" ::: User interface colors :::
+"
+  highlight ColorColumn       cterm=none ctermfg=none ctermbg=235
+  highlight CursorColumn      cterm=none ctermfg=none ctermbg=none
+  highlight CursorLine        cterm=none ctermfg=none ctermbg=none
+  highlight CursorLineNr      cterm=none ctermfg=007  ctermbg=235
+  highlight Folded            cterm=none ctermfg=007  ctermbg=234
+  highlight FoldColumn        cterm=none ctermfg=008  ctermbg=none
+  highlight LineNr            cterm=none ctermfg=008  ctermbg=234
+  highlight NonText           cterm=none ctermfg=237  ctermbg=none
+  highlight TabLine           cterm=none ctermfg=none ctermbg=007
+  highlight TabLineFill       cterm=none ctermfg=none ctermbg=236
+  highlight TabLineSel        cterm=none ctermfg=none ctermbg=001
+  highlight SignColumn        cterm=none ctermfg=none ctermbg=232
+  highlight SignatureMarkText cterm=none ctermfg=008  ctermbg=none
+  highlight SpecialKey        cterm=none ctermfg=009  ctermbg=none
+  highlight StatusLine        cterm=none ctermfg=007  ctermbg=233
+  highlight StatusLineNC      cterm=none ctermfg=008  ctermbg=233
+  highlight VertSplit         cterm=none ctermfg=233  ctermbg=none
+  highlight Visual            cterm=none ctermfg=none ctermbg=238
+
+"
+" ::: Spelling colors :::
+"
+  highlight SpellBad          cterm=none ctermfg=none ctermbg=003
+  highlight SpellCap          cterm=none ctermfg=none ctermbg=005
+  highlight SpellRare         cterm=none ctermfg=none ctermbg=006
+  highlight SepllLocal        cterm=none ctermfg=none ctermbg=002
+
+"
+" ::: Syntax highlighting colors :::
+"
+  highlight Comment           cterm=none ctermfg=007  ctermbg=none
+  highlight Normal            cterm=none ctermfg=015  ctermbg=none
+  highlight MatchParen        cterm=none ctermfg=none ctermbg=235
+
