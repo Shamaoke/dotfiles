@@ -55,4 +55,14 @@ endfun
 "   • Vim Reference Manual | Expression Evaluation (eval.txt), 4. Builtin Functions (:help expand()), p. 1317
 "
 
+""
+" Display the highlight group element under the cursor
+"
+fun GetHighlightGroupName( )
+  let syntaxIdentifer = synID( line('.'), col('.'), 1 )
+  let syntaxName      = synIDattr(syntaxIdentifer, 'name')
+
+  return syntaxName
+endfun
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
