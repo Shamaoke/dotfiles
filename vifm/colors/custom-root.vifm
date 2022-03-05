@@ -1,0 +1,30 @@
+highlight clear
+
+" filetypes
+highlight Directory   cterm=none ctermfg=15   ctermbg=none
+highlight Link        cterm=none ctermfg=13   ctermbg=none
+highlight BrokenLink  cterm=none ctermfg=9    ctermbg=none
+highlight Executable  cterm=none ctermfg=10   ctermbg=none
+highlight Device      cterm=none ctermfg=11   ctermbg=none
+highlight Socket      cterm=none ctermfg=12   ctermbg=none
+highlight Fifo        cterm=none ctermfg=14   ctermbg=none
+
+" ui
+highlight Win         cterm=none ctermfg=none ctermbg=none
+highlight CurrLine    cterm=none ctermfg=none ctermbg=4
+highlight Selected    cterm=none ctermfg=none ctermbg=2
+highlight TopLine     cterm=none ctermfg=7    ctermbg=233
+highlight TopLineSel  cterm=none ctermfg=7    ctermbg=233
+highlight StatusLine  cterm=none ctermfg=7    ctermbg=233
+highlight Border      cterm=none ctermfg=7    ctermbg=233
+highlight WildMenu    cterm=none ctermfg=7    ctermbg=3
+highlight CmdLine     cterm=none ctermfg=none ctermbg=none
+highlight ErrorMsg    cterm=none ctermfg=9    ctermbg=none
+highlight JobLine     cterm=none ctermfg=7    ctermbg=1
+highlight TabLine     cterm=none ctermfg=7    ctermbg=none
+highlight TabLineSel  cterm=none ctermfg=15   ctermbg=1
+
+" unknown
+highlight SuggestBox  cterm=none ctermfg=none ctermbg=13
+highlight CmpMismatch cterm=none ctermfg=none ctermbg=13
+
