@@ -31,4 +31,4 @@ endif
 " 5 — мерцающая вертикальная черта
 " 6 — вертикальная черта
 
-" vim: set filetype=vim:
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
