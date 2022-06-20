@@ -52,7 +52,7 @@
   nmap <LocalLeader>ss ]s
 
 " move to previous misspelled word
-  nmap <LocalLeader>sp [s
+  nmap <LocalLeader>sS [s
 
 " :::leaderf:::
 
