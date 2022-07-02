@@ -178,6 +178,9 @@ user_pref('browser.tabs.tooltipsShowPidAndActiveness', true);
 // prevent the “switch to tab” suggestion when typing in the URL bar
 user_pref('browser.urlbar.suggest.openpage', false);
 
+// prevent bringing up the downloads panel when starting a download (since FF 102.0)
+user_pref('browser.download.alwaysOpenPanel', false);
+
 /* ::: Tracking Protection ::: */
 // configure tracking protection in both the regular browsing mode and the private browsing mode
 user_pref('privacy.trackingprotection.enabled', true);
