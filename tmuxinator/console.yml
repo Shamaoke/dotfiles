@@ -30,7 +30,7 @@ windows:
   - downloads:
       layout: even-vertical
       panes:
-        -
-        -
+        - cd ~/.downloads; clear
+        - cd ~/.downloads; clear
   - fm: vifm
 
