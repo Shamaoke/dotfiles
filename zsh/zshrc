@@ -33,7 +33,7 @@ alias msb="mux start basic $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERS
 alias mss="mux start simple $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
 alias mdf='cd ~df && mss'
 alias mch='cd ~dv/chrome && mss'
-alias msc='cd ~ && msb console'
+alias msc='cd ~ && mux start console --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias mlg='cd ~lg && mux start lingo --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias maf='cd ~af && mux start artifacts --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias mpm='cd ~pm && mux start artifacts --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
