@@ -1,0 +1,36 @@
+#
+# :::console:::
+#
+
+<% @basedir = File.basename Dir.pwd %>
+
+<% @name = 'console' %>
+
+name: <%= @name %>
+
+startup_window: 1
+
+on_project_start: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @name %>'
+
+on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
+
+windows:
+  - editor: vim --cmd 'set lines=32 columns=158'
+  - work:
+  - build|install:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - console|man:
+      layout: even-horizontal
+      panes:
+        -
+        -
+  - downloads:
+      layout: even-vertical
+      panes:
+        -
+        -
+  - fm: vifm
+
