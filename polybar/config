@@ -281,7 +281,8 @@
 
   interval = 2
 
-  master-soundcard = hw:PCH
+# master-soundcard = hw:PCH
+  master-soundcard = default
   master-mixer     = Master
 
   format-volume-prefix = vol
