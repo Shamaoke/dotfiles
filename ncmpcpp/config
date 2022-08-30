@@ -423,6 +423,9 @@ mpd_music_dir = ~/.audio
 #display_volume_level = yes
 #
 #display_bitrate = no
+
+display_bitrate = yes
+
 #
 #display_remaining_time = no
 #
