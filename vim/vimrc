@@ -58,7 +58,7 @@ source ~/.dotfiles/vim/rcs/cursor
 " load commands
 source ~/.dotfiles/vim/rcs/commands
 
-" load kebindings
+" load keybindings
 source ~/.dotfiles/vim/rcs/keybindings
 " source ~/.dotfiles/vim/rcs/keybindings-russian
 
