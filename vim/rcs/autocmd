@@ -22,6 +22,9 @@
   autocmd BufWinLeave,BufLeave * call MakeView()
   autocmd BufWinEnter          * call LoadView()
 
+" set the `softtabstop` setting for the markdown files since apparently Vim modifies it for that file type
+  autocmd BufRead,BufNewFile *.md set softtabstop=2
+
 ""
 " References:
 "   • Vim User Manual | Make New Commands (usr_40.txt), 40.3. Autocommands, p. 253
