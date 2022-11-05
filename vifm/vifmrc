@@ -162,7 +162,7 @@ filetype *.epub
 
 " VIDEO
 " filetype *.mp4,*.avi,*.wmv,*.flv vlc %f &> /dev/null &
-filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.ogv
+filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.ogv,*.mpg
   \ { open file in mpv }
   \ mpv --audio-file-auto=fuzzy %f &> /dev/null &
 
