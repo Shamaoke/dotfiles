@@ -266,6 +266,9 @@ mpd_music_dir = ~/.audio
 ##
 #
 #song_columns_list_format = (20)[]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+
+song_columns_list_format = (25)[11]{a} (50)[16]{t} (25)[13]{b} (5f)[12]{l}
+
 #
 ##### various settings #####
 #
