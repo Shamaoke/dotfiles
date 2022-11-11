@@ -1,9 +1,13 @@
-" vim-markdown
+"
+" ::: vim-markdown :::
+"
+" https://github.com/tpope/vim-markdown
+"
 
-" highlight yaml front matter
-  let g:vim_markdown_frontmatter=1
+" disable markdown recommended style for markdown files
+let g:markdown_recommended_style = 0
 
-" disable plugin specific folding
-  let g:vim_markdown_folding_disabled=1
+" enable syntax highliting in code blocks for selected languages
+let g:markdown_fenced_languages = [ 'ruby' ]
 
-" vim: set filetype=vim:
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
