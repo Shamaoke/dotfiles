@@ -8,7 +8,7 @@ source ~/.dotfiles/vim/rcs/functions
 source ~/.dotfiles/vim/rcs/plugged
 
 " load Markdown settings
-" source ~/.dotfiles/vim/rcs/plugin-markdown
+source ~/.dotfiles/vim/rcs/plugin-markdown
 
 " load Matchparen settings
 " source ~/.dotfiles/vim/rcs/plugin-matchparen
