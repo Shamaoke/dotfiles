@@ -8,6 +8,6 @@
 let g:markdown_recommended_style = 0
 
 " enable syntax highliting in code blocks for selected languages
-let g:markdown_fenced_languages = [ 'ruby' ]
+let g:markdown_fenced_languages = [ 'ruby', 'erb=eruby', 'ini=confini', 'zsh' ]
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
