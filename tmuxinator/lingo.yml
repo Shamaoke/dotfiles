@@ -35,5 +35,7 @@ windows:
         - vim -c "set textwidth=60 colorcolumn=60" ru-en.md
         - echo ru-en.md | entr -c -r -s "xargs -0 -a \$0 trans -e google -no-autocorrect -no-warn -b ru:en | sed 's/\\\n/\n/g' | lolcat"
 
+  - dict:
+
   - fm: vifm
 
