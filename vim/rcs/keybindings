@@ -17,6 +17,9 @@
 " insert a blank line under the current line
   nmap <LocalLeader>o o<ESC>
 
+" create a new empty window and make it only one on the screen
+  nmap <LocalLeader>n :new \| only<CR>
+
 " создать клавиатурную комбинацию для копирования в буфер обмена
   vmap <C-y> "+y
 
