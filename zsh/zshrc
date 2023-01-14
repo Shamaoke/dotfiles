@@ -71,4 +71,7 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
+# opam configuration
+[[ ! -r /home/user/.opam/opam-init/init.zsh ]] || source /home/user/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 # vim: set textwidth=80 colorcolumn=80:
