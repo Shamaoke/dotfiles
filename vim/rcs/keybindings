@@ -18,13 +18,13 @@
   nmap <LocalLeader>o o<ESC>
 
 " create a new empty window and make it only one on the screen
-  nmap <LocalLeader>nn :new \| only<CR>
+  nmap <silent> <LocalLeader>nn :new \| only<CR>
 
 " create a new empty window in a vertical split
-  nmap <LocalLeader>nv :vnew<CR>
+  nmap <silent> <LocalLeader>nv :vnew<CR>
 
 " create a new empty window in a horizontal split
-  nmap <LocalLeader>ns :new<CR>
+  nmap <silent> <LocalLeader>ns :new<CR>
 
 " создать клавиатурную комбинацию для копирования в буфер обмена
   vmap <C-y> "+y
