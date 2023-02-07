@@ -26,6 +26,9 @@
 " create a new empty window in a horizontal split
   nmap <silent> <LocalLeader>ns :new<CR>
 
+" create a new empty tab
+  nmap <silent> <LocalLeader>t :tabnew<CR>
+
 " создать клавиатурную комбинацию для копирования в буфер обмена
   vmap <C-y> "+y
 
@@ -113,7 +116,7 @@
   nmap <LocalLeader>d i<C-r>=strftime("%d.%m.%Y\n----------")<CR><Esc>
 
 " insert a timestamp
-  nmap <LocalLeader>t i<C-r>=strftime("%Y-%m-%d %H:%M:%S%z")<CR><Esc>
+" nmap <LocalLeader>t i<C-r>=strftime("%Y-%m-%d %H:%M:%S%z")<CR><Esc>
 
 " :::commands:::
 
