@@ -17,6 +17,14 @@
 " insert a blank line under the current line
   nmap <LocalLeader>o o<ESC>
 
+" создать клавиатурную комбинацию для копирования в буфер обмена
+  vmap <C-y> "+y
+
+" создать клавиатурную комбинацию для вставки из буфера обмена
+  nmap <C-a> "+p
+
+" :::windows:::
+
 " create a new empty window and make it only one on the screen
   nmap <silent> <LocalLeader>nn :new \| only<CR>
 
@@ -27,15 +35,7 @@
   nmap <silent> <LocalLeader>ns :new<CR>
 
 " create a new empty tab
-  nmap <silent> <LocalLeader>t :tabnew<CR>
-
-" создать клавиатурную комбинацию для копирования в буфер обмена
-  vmap <C-y> "+y
-
-" создать клавиатурную комбинацию для вставки из буфера обмена
-  nmap <C-a> "+p
-
-" :::windows:::
+  nmap <silent> <LocalLeader>nt :tabnew<CR>
 
 " expand current window horizontally
   nmap <LocalLeader>zz :vertical resize<CR>
