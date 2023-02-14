@@ -113,10 +113,10 @@
 " :::date:::
 
 " insert date
-  nmap <LocalLeader>d i<C-r>=strftime("%d.%m.%Y\n----------")<CR><Esc>
+  nmap <LocalLeader>td i<C-r>=strftime("%d.%m.%Y\n----------")<CR><Esc>
 
 " insert a timestamp
-" nmap <LocalLeader>t i<C-r>=strftime("%Y-%m-%d %H:%M:%S%z")<CR><Esc>
+  nmap <LocalLeader>tt i<C-r>=strftime("%Y-%m-%d %H:%M:%S%z")<CR><Esc>
 
 " :::commands:::
 
