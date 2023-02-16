@@ -23,6 +23,9 @@
 " создать клавиатурную комбинацию для вставки из буфера обмена
   nmap <C-a> "+p
 
+" write to a file
+  nmap <LocalLeader>w :write<CR>
+
 " :::windows:::
 
 " create a new empty window and make it only one on the screen
