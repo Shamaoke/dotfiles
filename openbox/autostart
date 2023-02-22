@@ -1,5 +1,3 @@
-picom &
-
 amixer set Master 95% &
 amixer --card 0 set Speaker 100% unmute &
 
