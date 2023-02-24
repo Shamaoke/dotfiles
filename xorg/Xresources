@@ -60,6 +60,9 @@
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
 
+!! adjust the letter spacing
+URxvt.letterSpace: -1
+
 !do not show a scrollbar
 URxvt.scrollBar: false
 
