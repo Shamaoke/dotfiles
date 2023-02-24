@@ -11,7 +11,7 @@
   syntax on
 
 " set color scheme
-  colorscheme default
+" colorscheme default
 
 " ui
 highlight ColorColumn       cterm=none ctermfg=none ctermbg=235
