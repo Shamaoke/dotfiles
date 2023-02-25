@@ -6,6 +6,9 @@
 
 #include ".Xresources.d/chinese-pastel"
 
+!! set the window title
+URxvt.title: terminal
+
 ! set terminal dimensions
 ! URxvt.geometry: 158x33
 
