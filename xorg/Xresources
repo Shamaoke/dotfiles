@@ -66,6 +66,9 @@ URxvt.title: terminal
 !! adjust the letter spacing
 URxvt.letterSpace: -1
 
+!! Disable the usage of the built-in block graphics/line drawing characters
+URxvt.skipBuiltinGlyphs: true
+
 !do not show a scrollbar
 URxvt.scrollBar: false
 
