@@ -1,3 +1,4 @@
 #! /usr/bin/env zsh
 
-tabbed -c urxvt -embed
+tabbed -c urxvt -embed 1>~/.log/urxvtt.log 2>&1
+
