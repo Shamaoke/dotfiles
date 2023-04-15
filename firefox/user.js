@@ -194,6 +194,9 @@ user_pref('privacy.trackingprotection.cryptomining.enabled', true);
 // configure blocking fingerprinting scripts on websites
 user_pref('privacy.trackingprotection.fingerprinting.enabled', true);
 
+// prevent encoding non-ascii characters when copying URL from location bar
+user_pref('browser.urlbar.decodeURLsOnCopy', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
