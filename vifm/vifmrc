@@ -154,6 +154,9 @@ filetype *.epub
   \ { unzip epub }
   \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR
 
+" FB2
+filetype *.fb2 zathura %f &> /dev/null &
+
 " Comic Book Reader (CDR)
 " filetype *.cbr zathura %f &> /dev/null &
 
