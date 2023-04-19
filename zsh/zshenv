@@ -46,7 +46,12 @@ export ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
 # Rubygems
 #
 
-export GEM_HOME=$HOME/.gem/ruby/2.5.0
+#
+# The GEM_HOME environment variable needs to be unset in order to prevent conflicts
+# with the Ruby Version Manager (RVM).
+#
+# export GEM_HOME=$HOME/.gem/ruby/2.5.0
+#
 
 #
 # Less
