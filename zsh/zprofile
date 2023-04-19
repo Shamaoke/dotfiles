@@ -7,7 +7,8 @@ path=(
   # /opt/android-sdk/platform-tools
   ~/.bin
   ~/.local/bin
-  ~/.gem/ruby/3.0.0/bin
+  # ~/.gem/ruby/3.0.0/bin
+  ~/.rvm/bin
   ~/.cargo/bin
   $path
 )
