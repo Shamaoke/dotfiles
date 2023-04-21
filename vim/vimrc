@@ -20,7 +20,7 @@ source ~/.dotfiles/vim/rcs/plugin-markdown
 " source ~/.dotfiles/vim/rcs/plugin-auto-pairs
 
 " load Rust settings
-" source ~/.dotfiles/vim/rcs/plugin-rust
+source ~/.dotfiles/vim/rcs/plugin-rust
 
 " load Tagbar settings
 " source ~/.dotfiles/vim/rcs/plugin-tagbar
