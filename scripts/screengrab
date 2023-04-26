@@ -3,7 +3,7 @@
 ##
 # screengrab -- command line utility for grabbing the desktop
 #
-# Usage: screengrab [timeout] [dimensions]
+# Usage: screengrab [timeout] [dimensions] [draw_mouse?]
 #
 # Examples:
 #
@@ -15,10 +15,13 @@
 #
 # screengrab 5 800x600+10,20
 #
+# screengrab 5 800x600+10,20 0
+#
 
 timeout=$1
 size=${2%+[[:digit:]]*,[[:digit:]]*}
 offset=${(M)2%+[[:digit:]]*,[[:digit:]]*}
+draw_mouse=${3:-1}
 
 _regexp='^.*connected ([[:digit:]]+x[[:digit:]]+)(\+[[:digit:]]+)\+([[:digit:]]).*$'
 
@@ -57,6 +60,7 @@ default_offset=$(xrandr | sed -r ":a;N;\$!ba;s/$_regexp/\2,\3/")
 
 function grab {
   ffmpeg -f x11grab \
+         -draw_mouse ${draw_mouse} \
          -video_size ${size:-$default_size} \
          -i :0.0${offset:-$default_offset} \
          -frames:v 1 \
@@ -87,6 +91,7 @@ function main TRAPEXIT {
 # ffmpeg
 #
 # -f x11grab           -- set the input format (X11 screen capture using XCB); use `ffmpeg -formats` to view all formats
+# -draw_mouse 0        -- specify whether to draw the mouse pointer (0 — not to draw, 1 — draw (default))
 # -video_size 1280x720 -- set the frame size (alias: -s)
 # -i :0.0+0,0          -- use the X11 display as an input (format: :<display>.<screen>+<x-offset>,<y-offset>)
 # -frames:v 1          -- set the number of video frames to output
