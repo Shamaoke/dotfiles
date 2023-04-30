@@ -261,3 +261,5 @@ user_pref('font.size.fixed.x-cyrillic', 14);
 
 // set a size for the Japanese monospace fonts
 user_pref('font.size.fixed.ja', 14);
+
+// vim: set textwidth=80 colorcolumn=80:
