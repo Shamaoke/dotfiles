@@ -197,6 +197,18 @@ user_pref('privacy.trackingprotection.fingerprinting.enabled', true);
 // prevent encoding non-ascii characters when copying URL from location bar
 user_pref('browser.urlbar.decodeURLsOnCopy', true);
 
+// set the paper size unit in the print dialog when saving to PDF
+// This setting seems to only affect the browser's internal print dialog. It doesn't affect the system print dialog.
+// 0 — inch
+// 1 — millimeter
+// user_pref('print.printer_Mozilla_Save_to_PDF.print_paper_size_unit', 1);
+
+// set the paper size unit in the print dialog when printing to a file
+// This setting seems to only affect the browser's internal print dialog. It doesn't affect the system print dialog.
+// 0 — inch
+// 1 — millimeter
+// user_pref('print.printer_Print_to_File.print_paper_size_unit', 1);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
