@@ -15,6 +15,7 @@
   autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
   autocmd BufRead,BufNewFile *.pdftk   set filetype=pdftk
+  autocmd BufRead,BufNewfile *.wat     set filetype=wast
 
 " save folding when closing a file in a window (BufWinLeave) or a tab (BufLeave)
 " load folding when opening a file
