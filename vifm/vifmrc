@@ -124,7 +124,7 @@ filetype *.o nm %f | less
 " Image
 " filetype *.jpg,*.jpeg,*.png,*.gif eog,xv,gimp
 " filetype *.jpg,*.jpeg,*.png,*.gif eog %f &> /dev/null &
-filetype *.jpg,*.jpeg,*.png,*.gif,*.tif feh --geometry=1276x720 %f &> /dev/null &
+filetype *.jpg,*.jpeg,*.png,*.tif feh --geometry=1276x720 %f &> /dev/null &
 
 " Archive
   filetype *.tar.gz,*.tgz tar -tzf %f | less,tar -zxvf %f
@@ -165,7 +165,7 @@ filetype *.fb2 zathura %f &> /dev/null &
 
 " VIDEO
 " filetype *.mp4,*.avi,*.wmv,*.flv vlc %f &> /dev/null &
-filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.ogv,*.mpg
+filetype *.mp4,*.avi,*.wmv,*.flv,*.mkv,*.mvo,*.m4v,*.webm,*.ogg,*.mov,*.mxf,*.ogv,*.mpg,*.gif
   \ { open file in mpv }
   \ mpv --audio-file-auto=fuzzy %f &> /dev/null &
 
