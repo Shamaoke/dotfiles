@@ -16,6 +16,9 @@
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
   autocmd BufRead,BufNewFile *.pdftk   set filetype=pdftk
 
+" enable paredit mode for the WebAssembly .wat files
+  autocmd FileType wat call PareditInitBuffer()
+
 " save folding when closing a file in a window (BufWinLeave) or a tab (BufLeave)
 " load folding when opening a file
 " use functions from `rcs/functions`
