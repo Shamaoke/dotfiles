@@ -1,0 +1,10 @@
+""
+" ::: Paredit :::
+"
+" Structured editing of Lisp S-expressions
+"
+
+" Enable balancing of [] and {} regardless of language
+let g:paredit_full_balancing = 1
+
+" vim: set filetype=vim textwidth=80 colorcolumn=80:
