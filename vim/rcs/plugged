@@ -28,8 +28,13 @@ call plug#begin('~/.vim/plugged')
 
 " :::paredit:::
 " Structured Editing of Lisp S-expressions
+" Official repository
 " https://github.com/vim-scripts/paredit.vim
-  Plug 'vim-scripts/paredit.vim'
+" Plug 'vim-scripts/paredit.vim'
+"
+" Fork with balancing of [ ] and { } regardless of language enabled
+" https://github.com/tranchis/paredit.vim
+  Plug 'tranchis/paredit.vim', { 'for': 'wat' }
 
 call plug#end()
 
