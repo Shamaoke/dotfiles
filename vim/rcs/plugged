@@ -26,6 +26,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/SirVer/ultisnips
   Plug 'SirVer/ultisnips'
 
+" :::paredit:::
+" Structured Editing of Lisp S-expressions
+" https://github.com/vim-scripts/paredit.vim
+  Plug 'vim-scripts/paredit.vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
