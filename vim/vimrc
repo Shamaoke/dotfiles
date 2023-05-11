@@ -43,6 +43,9 @@ source ~/.dotfiles/vim/rcs/plugin-fzf
 " load Ack settings
 source ~/.dotfiles/vim/rcs/plugin-ack
 
+" load Paredit settings
+source ~/.dotfiles/vim/rcs/plugin-paredit
+
 " load a colorscheme
 source ~/.dotfiles/vim/rcs/colorscheme
 
