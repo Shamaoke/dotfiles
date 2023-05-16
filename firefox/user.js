@@ -136,7 +136,7 @@ user_pref('browser.tabs.allowTabDetach', false);
 user_pref('toolkit.legacyUserProfileCustomizations.stylesheets', true);
 
 // prevent the context menu from stealing by sites
-user_pref('dom.event.contextmenu.enabled', false);
+// user_pref('dom.event.contextmenu.enabled', false);
 
 // disable fullscreen warning message
 user_pref('full-screen-api.warning.timeout', 0);
