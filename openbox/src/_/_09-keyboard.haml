@@ -358,12 +358,14 @@
   -# 0x37 — `v'
   %keybind{ :key => 'C-A-0x37' }
     %action{ :name => 'Execute' }
-      %command urxvt -e vim
+      -# %command urxvt -e vim
+      %command alacritty --command vim
 
   -# 0x3a — `m'
   %keybind{ :key => 'C-A-0x3a' }
     %action{ :name => 'Execute' }
-      %command urxvt -e vifm
+      -# %command urxvt -e vifm
+      %command alacritty --command vifm
 
   -# Keybindings for controlling an application launcher
   -# 0x1b — `r'
