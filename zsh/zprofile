@@ -3,13 +3,10 @@
 #
 
 path=(
-  /usr/local/{bin,sbin}
-  # /opt/android-sdk/platform-tools
-  ~/.bin
   ~/.local/bin
-  # ~/.gem/ruby/3.0.0/bin
-  ~/.rvm/bin
   ~/.cargo/bin
+  ~/.opam/5.0.0/bin
+  ~/.rvm/bin
   $path
 )
 
