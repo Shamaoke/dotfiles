@@ -4,7 +4,7 @@ GEM
     haml (4.0.7)
       tilt
     rake (13.0.6)
-    tilt (2.0.10)
+    tilt (2.1.0)
 
 PLATFORMS
   x86_64-linux
@@ -14,4 +14,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   2.2.16
+   2.4.10
