@@ -1,10 +1,4 @@
 #
-# PATH
-#
-
-export PATH=$HOME/.bin:$PATH
-
-#
 # IBUS
 #
 
