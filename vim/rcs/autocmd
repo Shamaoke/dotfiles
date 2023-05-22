@@ -22,8 +22,8 @@
 " save folding when closing a file in a window (BufWinLeave) or a tab (BufLeave)
 " load folding when opening a file
 " use functions from `rcs/functions`
-  autocmd BufWinLeave,BufLeave * silent! call MakeView()
-  autocmd BufWinEnter          * call LoadView()
+" autocmd BufWinLeave,BufLeave * silent! call MakeView()
+" autocmd BufWinEnter          * call LoadView()
 
 ""
 " References:
