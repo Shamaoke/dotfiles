@@ -41,7 +41,7 @@ source ~/.dotfiles/vim/rcs/plugin-rust
 source ~/.dotfiles/vim/rcs/plugin-fzf
 
 " load Ack settings
-source ~/.dotfiles/vim/rcs/plugin-ack
+" source ~/.dotfiles/vim/rcs/plugin-ack
 
 " load Paredit settings
 source ~/.dotfiles/vim/rcs/plugin-paredit
