@@ -120,4 +120,10 @@
 " See Vim Reference Manual, options.txt, p. 935, 'viewoptions' for details.
   set viewoptions=cursor,folds
 
+" Set program to use for the `grep` command
+  set grepprg=ag\ --vimgrep\ $*
+
+" Set format for the `grepprg` output
+  set grepformat=%f:%l:%c:%m
+
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
