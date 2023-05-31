@@ -8,8 +8,8 @@ call plug#begin('~/.vim/plugged')
 " fzf plugin for Vim
 " https://github.com/junegunn/fzf
 " https://github.com/junegunn/fzf.vim
-  Plug 'junegunn/fzf'
-  Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf.vim'
 
 " :::ack:::
 " Vim plugin for the Perl module / CLI script 'ack'
