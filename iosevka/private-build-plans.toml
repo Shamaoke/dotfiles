@@ -1,0 +1,333 @@
+#
+# ::: Iosevka :::
+#
+
+##
+# Building instructions
+# =====================
+# 1. Install node.js (≥ 12.16.0);
+# 2. Install ttfautohint;
+# 3. Run `npm install`;
+#    This command will install all the NPM dependencies, and will also validate
+#    whether external dependencies are present.
+# 4. Run `npm run build -- ttf::iosevka-<variant>`;
+# 5. Wait compilation to complete;
+# 6. The built fonts will be available in the `dist` directory;
+# 7. To clean the working directory run `npm run clean`.
+#
+
+##
+# The top-level properties section
+# ================================
+# Configure the basic font properties.
+#
+# [buildPlans.iosevka-<variant>]
+#
+
+##
+# Define the family name
+# ----------------------
+# String, defines the family name of your custom variant.
+# family = 'Iosevka <None|Slab|Term|Term Slab|Aile|Etoile>'
+#
+
+##
+# Define the spacing
+# ------------------
+# Optional, String, denotes the spacing of the custom variant. Valid values include:
+# spacing = 'normal' # The normal monospace font.
+# spacing = 'quasi-proportional' # The font will become quasi-proportional.
+# spacing = 'quasi-proportional-extension-only' # The font will become quasi-proportional, but will not shrink narrow letters (like i). Only wide letters (like M) will get expanded.
+# spacing = 'term'# Make the symbols' width suitable for terminal emulators. Arrows and geometric symbols will become narrower.
+# spacing = 'fontconfig-mono' # Apply term spacing changes and further apply changes to be compatible with FontConfig's Mono spacing, which recognizes a font as monospace if and only if its every non-combining characters having the same width.
+# # The changes include:
+# #   • Completely remove wide glyphs. All non-combining glyphs will be exactly the same width.
+# #     As a consequence, the following characters will be removed.
+# #       • U+27F5 LONG LEFTWARDS ARROW
+# #       • U+27F6 LONG RIGHTWARDS ARROW
+# #       • U+27FB LONG LEFTWARDS ARROW FROM BAR
+# #       • U+27FC LONG RIGHTWARDS ARROW FROM BAR
+# #   • Remove NWID and WWID features typographic features.
+# spacing = 'fixed' # Apply fontconfig-mono changes and further remove ligations.
+#
+
+##
+# Define the styles of serifs
+# ---------------------------
+# Optional, String, configures style of serifs.
+# When set to ‘slab’, the font will be converted into slab-serif. Otherwise the font will be sans-serif.
+# serifs = 'slab'
+#
+
+##
+# Configure OpenType features
+# ---------------------------
+# Optional, Boolean, disables cv## and ss## OpenType features.
+# no-cv-ss = true # (custom default)
+# no-cv-ss = false
+#
+
+##
+# Configure ligations
+# -------------------
+# Optional, Boolean, disables ligations.
+# no-ligation = true # (custom default)
+# no-ligation = false
+#
+
+##
+# Configure exporting glyph names into fonts
+# ------------------------------------------
+# Setting this to ‘true’ will increase file footprint, however this is necessary
+# for ligature support in [Kitty](https://sw.kovidgoyal.net/kitty/).
+# export-glyph-names = true
+# export-glyph-names = false # (custom default)
+#
+
+##
+# Configure character variants
+# ============================
+# Configure character variants to all types: normal, upright, italic and oblique.
+#
+# [buildPlans.iosevka-<variant>.variants.design]
+#
+
+##
+# Styles for U+0079 LATIN SMALL LETTER Y and U=0443 CYRILLIC SMALL LETTER U
+# -------------------------------------------------------------------------
+# y = 'straight-serifless' # Y/U with straight shape; without serifs (default for Sans Upright)
+# y = 'straight-motion-serifed' # Y/U with straight shape, and motion serifs
+# y = 'straight-serifed' # Y/U with straight shape, and serifs
+# y = 'straight-turn-serifless' # Y/U with straight shape, and a tail turns leftward; without serifs (custom default for Sans Upright)
+# y = 'straight-turn-motion-serifed' # Y/U with straight shape, a tail turns leftward, and motion serifs
+# y = 'straight-turn-serifed' # Y/U with straight shape, a tail turns leftward, and serifs (default for Slab Upright)
+# y = 'curly-serifless' # Y/U with curly shape; without serifs
+# y = 'curly-motion-serifed' # Y/U with curly shape, and motion serifs
+# y = 'curly-serifed' # Y/U with curly shape, and serifs
+# y = 'curly-turn-serifless' # Y/U with curly shape, and a tail turns leftward; without serifs
+# y = 'curly-turn-motion-serifed' # Y/U with curly shape, a tail turns leftward, and motion serifs
+# y = 'curly-turn-serifed' # Y/U with curly shape, a tail turns leftward, and serifs
+# y = 'cursive-serifless' # Y/U with cursive shape; without serifs (default for Sans Italic)
+# y = 'cursive-motion-serifed' # Y/U with cursive shape, and motion serifs (default for Slab Italic)
+# y = 'cursive-serifed' # Y/U with cursive shape, and serifs
+# y = 'cursive-flat-hook-serifless' # Y/U with cursive shape, and a flat terminal hook; without serifs
+# y = 'cursive-flat-hook-motion-serifed' # Y/U with cursive shape, a flat terminal hook, and motion serifs
+# y = 'cursive-flat-hook-serifed' # Y/U with cursive shape, a flat terminal hook, and serifs
+#
+
+##
+# Styles for U+0423 CYRILLIC CAPITAL LETTER U
+# -------------------------------------------
+# cyrl-capital-u = 'straight-serifless' # Cyrillic Capital U with straight shape; without serifs (default for Sans)
+# cyrl-capital-u = 'straight-motion-serifed' # Cyrillic Capital U with straight shape, and motion serifs
+# cyrl-capital-u = 'straight-serifed' # Cyrillic Capital U with straight shape, and serifs
+# cyrl-capital-u = 'straight-turn-serifless' # Cyrillic Capital U with straight shape, and a tail turns leftward; without serifs (custom default for Sans)
+# cyrl-capital-u = 'straight-turn-motion-serifed' # Cyrillic Capital U with straight shape, a tail turns leftward, and motion serifs
+# cyrl-capital-u = 'straight-turn-serifed' # Cyrillic Capital U with straight shape, a tail turns leftward, and serifs (default for Slab)
+# cyrl-capital-u = 'curly-serifless' # Cyrillic Capital U with curly shape; without serifs
+# cyrl-capital-u = 'curly-motion-serifed' # Cyrillic Capital U with curly shape, and motion serifs
+# cyrl-capital-u = 'curly-serifed' # Cyrillic Capital U with curly shape, and serifs
+# cyrl-capital-u = 'curly-turn-serifless' # Cyrillic Capital U with curly shape, and a tail turns leftward; without serifs
+# cyrl-capital-u = 'curly-turn-motion-serifed' # Cyrillic Capital U with curly shape, a tail turns leftward, and motion serifs
+# cyrl-capital-u = 'curly-turn-serifed' # Cyrillic Capital U with curly shape, a tail turns leftward, and serifs
+# cyrl-capital-u = 'cursive-serifless' # Cyrillic Capital U with cursive shape; without serifs
+# cyrl-capital-u = 'cursive-motion-serifed' # Cyrillic Capital U with cursive shape, and motion serifs
+# cyrl-capital-u = 'cursive-serifed' # Cyrillic Capital U with cursive shape, and serifs
+# cyrl-capital-u = 'cursive-flat-hook-serifless' # Cyrillic Capital U with cursive shape, and a flat terminal hook; without serifs
+# cyrl-capital-u = 'cursive-flat-hook-motion-serifed' # Cyrillic Capital U with cursive shape, a flat terminal hook, and motion serifs
+# cyrl-capital-u = 'cursive-flat-hook-serifed' # Cyrillic Capital U with cursive shape, a flat terminal hook, and serifs
+#
+
+##
+# Styles for U+002A ASTERISK
+# --------------------------
+# asterisk = 'penta-high' # Asterisk with five-pointed shape, and high position (default)
+# asterisk = 'penta-mid' # Asterisk with five-pointed shape, and medium position
+# asterisk = 'penta-low' # Asterisk with five-pointed shape, and low position
+# asterisk = 'turn-penta-high' # Asterisk with turned five-pointed shape, and high position
+# asterisk = 'turn-penta-mid' # Asterisk with turned five-pointed shape, and medium position
+# asterisk = 'turn-penta-low' # Asterisk with turned five-pointed shape, and low position
+# asterisk = 'hex-high' # Asterisk with six-pointed shape, and high position (custom default)
+# asterisk = 'hex-mid' # Asterisk with six-pointed shape, and medium position
+# asterisk = 'hex-low' # Asterisk with six-pointed shape, and low position
+# asterisk = 'turn-hex-high' # Asterisk with turned six-pointed shape, and high position
+# asterisk = 'turn-hex-mid' # Asterisk with turned six-pointed shape, and medium position
+# asterisk = 'turn-hex-low' # Asterisk with turned six-pointed shape, and low position
+#
+
+##
+# Styles for U+00B6 PILCROW SIGN
+# ------------------------------
+# pilcrow = 'high' # Higher pilcrow sign (default)
+# pilcrow = 'low' # Lower pilcrow sign (custom default)
+#
+
+##
+# Styles for U+0028 LEFT PARENTHESIS and U+0029 RIGHT PARENTHESIS
+# ---------------------------------------------------------------
+# paren = 'normal' # Parenthesis with normal contour (default)
+# paren = 'large-contour' # Parenthesis with larger contour, like that in Monaco (custom default)
+# paren = 'flat-arc' # Parenthesis with flat arc, like that in JetBrains Mono
+#
+
+##
+# Styles for U+007B LEFT CURLY BRACKET and U+007D RIGHT CURLY BRACKET
+# -------------------------------------------------------------------
+# brace = 'straight' # More straight braces (custom default)
+# brace = 'curly' # More curly braces (default)
+# brace = 'curly-flat-boundary' # Curly braces with flat boundary shape
+#
+
+##
+# Styles for U+0025 PERCENT SIGN
+# ------------------------------
+# percent = 'dots' # Percent with rectangular dots
+# percent = 'rings-segmented-slash' # Percent sign with rings and segmented slash (default)
+# percent = 'rings-continuous-slash' # Percent sign with rings and continuous bar (custom default)
+# percent = 'rings-continuous-slash-also-connected' # Percent sign with rings and continuous bar and the slash in percent sign is also connected to the top-left ring
+#
+
+##
+# Styles for U+0030 DIGIT ZERO
+# ----------------------------
+# zero = 'unslashed' # Zero with standard shape; without slash
+# zero = 'slashed' # Zero with standard shape, and slash (default, custom default)
+# zero = 'reverse-slashed' # Zero with standard shape, and revese slash
+# zero = 'tall-slashed' # Zero with standard shape, and tall slash
+# zero = 'tall-reverse-slashed' # Zero with standard shape, and tall reverse slash
+# zero = 'dotted' # Zero with standard shape, and center dot
+# zero = 'long-dotted' # Zero with standard shape, and long center dot
+# zero = 'slashed-split' # Zero with standard shape, and slash separated from the outline
+# zero = 'reverse-slashed-split' # Zero with standard shape, and reverse slash separated from the outline
+# zero = 'broken-slash' # Zero with standard shape, and slash broken in the middle (like in Fixedsys)
+# zero = 'broken-reverse-slash' # Zero with standard shape, and reverse slash broken in the middle
+# zero = 'broken-vertical-bar' # Zero with standard shape, and vertical bar broken in the middle
+# zero = 'slashed-cutout' # Zero with standard shape, and a slash cutout
+# zero = 'reverse-slashed-cutout' # Zero with standard shape, and a reverse-slash cutout
+# zero = 'tall-slashed-cutout' # Zero with standard shape, and a taller slash cutout
+# zero = 'tall-reverse-slashed-cutout' # Zero with standard shape, and a taller reverse-slash cutout
+# zero = 'vertical-bar-cutout' # Zero with standard shape, and a vertical bar cutout
+# zero = 'top-right-cutout' # Zero with standard shape, and the top-right bit cutout
+# zero = 'oval-unslashed' # Zero with oval shape; without slash
+# zero = 'oval-slashed' # Zero with oval shape, and slash
+# zero = 'oval-reverse-slashed' # Zero with oval shape, and revese slash
+# zero = 'oval-tall-slashed' # Zero with oval shape, and tall slash
+# zero = 'oval-tall-reverse-slashed' # Zero with oval shape, and tall reverse slash
+# zero = 'oval-dotted' # Zero with oval shape, and center dot
+# zero = 'oval-long-dotted' # Zero with oval shape, and long center dot
+# zero = 'oval-slashed-split' # Zero with oval shape, and slash separated from the outline
+# zero = 'oval-reverse-slashed-split' # Zero with oval shape, and reverse slash separated from the outline
+# zero = 'oval-broken-slash' # Zero with oval shape, and slash broken in the middle (like in Fixedsys)
+# zero = 'oval-broken-reverse-slash' # Zero with oval shape, and reverse slash broken in the middle
+# zero = 'oval-broken-vertical-bar' # Zero with oval shape, and vertical bar broken in the middle
+# zero = 'oval-slashed-cutout' # Zero with oval shape, and a slash cutout
+# zero = 'oval-reverse-slashed-cutout' # Zero with oval shape, and a reverse-slash cutout
+# zero = 'oval-tall-slashed-cutout' # Zero with oval shape, and a taller slash cutout
+# zero = 'oval-tall-reverse-slashed-cutout' # Zero with oval shape, and a taller reverse-slash cutout
+# zero = 'oval-vertical-bar-cutout' # Zero with oval shape, and a vertical bar cutout
+# zero = 'oval-top-right-cutout' # Zero with oval shape, and the top-right bit cutout
+#
+
+[buildPlans.iosevka]
+family = 'Iosevka'
+spacing = 'normal'
+serifs = 'sans'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka-slab]
+family = 'Iosevka Slab'
+spacing = 'normal'
+serifs = 'slab'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka-term]
+family = 'Iosevka Term'
+spacing = 'term'
+serifs = 'sans'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka-term-slab]
+family = 'Iosevka Term Slab'
+spacing = 'term'
+serifs = 'slab'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka-aile]
+family = 'Iosevka Aile'
+spacing = 'quasi-proportional'
+serifs = 'sans'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka-etoile]
+family = 'Iosevka Etoile'
+spacing = 'quasi-proportional'
+serifs = 'slab'
+no-cv-ss = true
+no-ligation = true
+export-glyph-names = false
+
+[buildPlans.iosevka.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+y = 'straight-turn-serifless'
+cyrl-capital-u = 'straight-turn-serifless'
+zero = 'slashed'
+
+[buildPlans.iosevka-slab.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+zero = 'slashed'
+
+[buildPlans.iosevka-term.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+y = 'straight-turn-serifless'
+cyrl-capital-u = 'straight-turn-serifless'
+zero = 'slashed'
+
+[buildPlans.iosevka-term-slab.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+zero = 'slashed'
+
+[buildPlans.iosevka-aile.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+y = 'straight-turn-serifless'
+cyrl-capital-u = 'straight-turn-serifless'
+zero = 'slashed'
+
+[buildPlans.iosevka-etoile.variants.design]
+asterisk = 'hex-high'
+pilcrow = 'low'
+paren = 'large-contour'
+brace = 'straight'
+percent = 'rings-continuous-slash'
+zero = 'slashed'
+
+# vim: textwidth=80 colorcolumn=80:
