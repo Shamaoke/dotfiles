@@ -55,10 +55,10 @@ URxvt.title: terminal
 !!
 
 ! set font Custom Term Slab + IPAexGothic
-  URxvt.font: xft:Iosevka Custom Term Slab:style=Regular:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.boldFont: xft:Iosevka Custom Term Slab:style=Medium:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.italicFont: xft:Iosevka Custom Term Slab:style=Italic:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.boldItalicFont: xft:Iosevka Custom Term Slab:style=Medium Italic:size=12.5, xft:IPAexGothic:size=12.5
+  URxvt.font: xft:Iosevka Term Slab:style=Regular:size=12.5, xft:IPAexGothic:size=12.5
+  URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=12.5, xft:IPAexGothic:size=12.5
+  URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=12.5, xft:IPAexGothic:size=12.5
+  URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=12.5, xft:IPAexGothic:size=12.5
 
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
