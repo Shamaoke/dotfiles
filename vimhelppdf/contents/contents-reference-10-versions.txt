@@ -1,0 +1,7 @@
+vi_diff.txt Differences between Vim and Vi
+version4.txt Differences between Vim version 3.0 and 4.x
+version5.txt Differences between Vim version 4.6 and 5.x
+version6.txt Differences between Vim version 5.7 and 6.x
+version7.txt Differences between Vim version 6.4 and 7.x
+version8.txt Differences between Vim version 7.4 and 8.x
+version9.txt Differences between Vim version 8.2 and 9.0
