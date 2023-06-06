@@ -1,0 +1,3 @@
+gui.txt Vim's graphical user interface
+gui_w32.txt Vim's Win32 graphical user interface
+gui_x11.txt Vim's X11 graphical user interface
