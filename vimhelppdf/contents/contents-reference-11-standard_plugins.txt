@@ -1,0 +1,9 @@
+pi_getscript.txt Getscript
+pi_gzip.txt Gzip
+pi_logipat.txt LogiPat
+pi_netrw.txt Netrw
+pi_paren.txt MatchParen
+pi_spec.txt SpecChangelog
+pi_tar.txt Tar
+pi_vimball.txt Vimball
+pi_zip.txt Zip
