@@ -1,0 +1,8 @@
+intro.txt Introduction to Vim
+helphelp.txt Help on help files
+index.txt List of commands
+howto.txt How to ...
+tips.txt Tips and ideas for using Vim
+message.txt List of messages and error messages
+develop.txt Development of Vim
+debug.txt Debugging Vim itself
