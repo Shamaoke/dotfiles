@@ -1,0 +1,8 @@
+testing.txt Testing Vim and Vim script
+print.txt Printing
+remote.txt Vim client-server communication
+term.txt Terminal information
+terminal.txt Terminal window support
+popup.txt Displaying text in a floating window
+vim9.txt Vim9 script commands and expressions
+vim9class.txt Vim9 classes, objects, interfaces, types and enums
