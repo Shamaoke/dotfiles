@@ -1,0 +1,11 @@
+starting.txt Starting Vim
+editing.txt Editing files
+motion.txt Cursor motions
+scroll.txt Scrolling
+insert.txt Inserting and replacing text
+change.txt Deleting and changing text
+undo.txt Undo and redo
+repeat.txt Repeating commands, Vim scripts and debugging
+visual.txt Visual mode
+various.txt Various commands
+recover.txt Recovery after a crash
