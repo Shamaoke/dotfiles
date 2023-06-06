@@ -59,11 +59,11 @@
 # howto.txt how to do the most common editing tasks
 # tips.txt various tips on using Vim
 # message.txt (error) messages and explanations
-# quotes.txt remarks from users of Vim
-# todo.txt known problems and desired extensions
+## quotes.txt remarks from users of Vim
+## todo.txt known problems and desired extensions
 # develop.txt development of Vim
 # debug.txt debugging Vim itself
-# uganda.txt Vim distribution conditions and what to do with your money
+## uganda.txt Vim distribution conditions and what to do with your money
 
 ## Basic editing
 # starting.txt starting Vim, Vim command arguments, initialisation
@@ -111,6 +111,8 @@
 # textprop.txt Attaching properties to text for highlighting or other
 # filetype.txt settings done specifically for a type of file
 # quickfix.txt commands for a quick edit-compile-fix cycle
+
+## Filetype plugins for languages
 # ft_ada.txt Ada (the programming language) support
 # ft_context.txt Filetype plugin for ConTeXt
 # ft_mp.txt Filetype plugin for METAFONT and MetaPost
@@ -123,12 +125,12 @@
 # digraph.txt list of available digraphs
 # mbyte.txt multi-byte text support
 # mlang.txt non-English language support
-# rileft.txt right-to-left editing mode
-# arabic.txt Arabic language support and editing
-# farsi.txt Farsi (Persian) editing
-# hebrew.txt Hebrew language support and editing
+## rileft.txt right-to-left editing mode
+## arabic.txt Arabic language support and editing
+## farsi.txt Farsi (Persian) editing
+## hebrew.txt Hebrew language support and editing
 # russian.txt Russian language support and editing
-# hangulin.txt Hangul (Korean) input mode
+## hangulin.txt Hangul (Korean) input mode
 
 ## GUI
 # gui.txt Graphical User Interface (GUI)
@@ -139,11 +141,11 @@
 # if_cscop.txt using Cscope with Vim
 # if_lua.txt Lua interface
 # if_mzsch.txt MzScheme interface
+# if_ole.txt OLE automation interface for Win32
 # if_perl.txt Perl interface
 # if_pyth.txt Python interface
-# if_tcl.txt Tcl interface
-# if_ole.txt OLE automation interface for Win32
 # if_ruby.txt Ruby interface
+# if_tcl.txt Tcl interface
 # debugger.txt Interface with a debugger
 # netbeans.txt NetBeans External Editor interface
 # sign.txt debugging signs
@@ -158,20 +160,20 @@
 # version9.txt Differences between Vim version 8.2 and 9.0
 
 ## Remarks about specific systems
-# os_390.txt OS/390 Unix
-# os_amiga.txt Amiga
-# os_beos.txt BeOS and BeBox
-# os_dos.txt MS-DOS and MS-Windows NT/95 common items
-# os_haiku.txt Haiku
-# os_mac.txt Macintosh
-# os_mint.txt Atari MiNT
-# os_msdos.txt MS-DOS (plain DOS and DOS box under Windows)
-# os_os2.txt OS/2
-# os_qnx.txt QNX
-# os_risc.txt RISC-OS
-# os_unix.txt Unix
-# os_vms.txt VMS
-# os_win32.txt MS-Windows 95/98/NT
+## os_390.txt OS/390 Unix
+## os_amiga.txt Amiga
+## os_beos.txt BeOS and BeBox
+## os_dos.txt MS-DOS and MS-Windows NT/95 common items
+## os_haiku.txt Haiku
+## os_mac.txt Macintosh
+## os_mint.txt Atari MiNT
+## os_msdos.txt MS-DOS (plain DOS and DOS box under Windows)
+## os_os2.txt OS/2
+## os_qnx.txt QNX
+## os_risc.txt RISC-OS
+## os_unix.txt Unix
+## os_vms.txt VMS
+## os_win32.txt MS-Windows 95/98/NT
 
 ## Standard plugins
 # pi_getscript.txt Downloading latest version of Vim scripts
@@ -186,6 +188,7 @@
 
 # Miscellaneous
 
-# sponsor.txt Sponsor Vim development, become a registered Vim user
+## sponsor.txt Sponsor Vim development, become a registered Vim user
 # vim_faq.txt Frequently asked questions
-# tags.txt Index
+## tags.txt Index
+
