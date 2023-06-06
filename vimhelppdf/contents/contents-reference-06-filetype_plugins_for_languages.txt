@@ -1,0 +1,7 @@
+ft_ada.txt Ada
+ft_context.txt ConTeXt
+ft_mp.txt METAFONT and MetaPost
+ft_ps1.txt PowerShell
+ft_raku.txt Raku
+ft_rust.txt Rust
+ft_sql.txt SQL
