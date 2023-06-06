@@ -1,0 +1,1 @@
+vim_faq.txt Frequently asked questions
