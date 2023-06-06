@@ -1,0 +1,15 @@
+cmdline.txt Command-line mode
+options.txt Options
+pattern.txt Patterns and search commands
+map.txt key Key mapping, abbreviations and user-defined commands
+tagsrch.txt Tags and special searches
+windows.txt Editing with multiple windows and buffers
+tabpage.txt Editing with windows in multiple tab pages
+spell.txt Spell checking
+diff.txt Showing differences between files
+autocmd.txt Automatic commands
+eval.txt Expression evaluation
+builtin.txt Builtin functions
+userfunc.txt Defining and using functions
+channel.txt Inter-process communication
+fold.txt Folding
