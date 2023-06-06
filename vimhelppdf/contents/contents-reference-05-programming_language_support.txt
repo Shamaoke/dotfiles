@@ -1,0 +1,5 @@
+indent.txt Indenting C programs and other files
+syntax.txt Syntax highlighting
+textprop.txt Displaying text with properties attached
+filetype.txt Filetypes
+quickfix.txt Quickfix
