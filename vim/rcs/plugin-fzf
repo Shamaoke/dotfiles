@@ -1,18 +1,24 @@
-""
-" :::fzf:::
-"
+vim9script
 
-" set keybindings
-let g:fzf_action =
-  \ { 'ctrl-t': 'tab split',
-  \   'ctrl-x': 'split',
-  \   'ctrl-v': 'vsplit' }
+##
+# ::: Fzf :::
+#
 
-" set fzf options
-let g:fzf_general_options =
-  \ { 'window': { 'width':  0.8,
-  \               'height': 0.9,
-  \               'border': 'sharp' },
-  \   'options': '--multi' }
+# Set Fzf key bindings
+g:fzf_action = {
+  'ctrl-t': 'tab split',
+  'ctrl-x': 'split',
+  'ctrl-v': 'vsplit'
+}
 
-" vim: set filetype=vim textwidth=80 colorcolumn=80:
+# Set Fzf options
+g:fzf_general_options = {
+  'window': {
+    'width':  0.8,
+    'height': 0.9,
+    'border': 'sharp'
+  },
+  'options': '--multi'
+}
+
+# vim: set filetype=vim textwidth=80 colorcolumn=80:
