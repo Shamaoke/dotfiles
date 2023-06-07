@@ -36,6 +36,9 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/tranchis/paredit.vim
   Plug 'tranchis/paredit.vim', { 'for': 'wat' }
 
+" ::: fzf-spellsuggest :::
+  Plug '~/.development/fzf-spellsuggest.vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
