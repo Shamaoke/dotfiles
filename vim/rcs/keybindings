@@ -62,7 +62,7 @@
 
 " display suggestions list
 " nmap <LocalLeader>sl z=
-  nmap <LocalLeader>sl :FzfSS<CR>
+  nmap <silent> <LocalLeader>sl :FzfSS<CR>
 
 " move to next misspelled word
   nmap <LocalLeader>ss ]s
