@@ -61,7 +61,8 @@
   nmap <LocalLeader>sc :setlocal nospell<CR>
 
 " display suggestions list
-  nmap <LocalLeader>sl z=
+" nmap <LocalLeader>sl z=
+  nmap <LocalLeader>sl :FzfSS<CR>
 
 " move to next misspelled word
   nmap <LocalLeader>ss ]s
