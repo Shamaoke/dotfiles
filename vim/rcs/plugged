@@ -41,6 +41,12 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-spellsuggest.vim
   Plug 'Shamaoke/fzf-spellsuggest.vim'
 
+" ::: fzf-filefind :::
+" Display a list of files to open
+" https://github.com/Shamaoke/fzf-filefind.vim
+" Plug '~/.development/fzf-filefind.vim'
+  Plug 'Shamaoke/fzf-filefind.vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
