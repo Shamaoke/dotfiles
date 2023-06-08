@@ -37,7 +37,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'tranchis/paredit.vim', { 'for': 'wat' }
 
 " ::: fzf-spellsuggest :::
-  Plug '~/.development/fzf-spellsuggest.vim'
+" Display a list of spelling suggestions for the word under the cursor.
+" https://github.com/Shamaoke/fzf-spellsuggest.vim
+  Plug 'Shamaoke/fzf-spellsuggest.vim'
 
 call plug#end()
 
