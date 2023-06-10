@@ -80,6 +80,8 @@
 
 " :::fzf:::
   nmap <silent> <LocalLeader>ff :FzfFF<CR>
+
+  nmap <silent> <LocalLeader>fs :FzfFS<CR>
 "
 " `fzf#wrap` call is needed in order to apply fzf global configuration
 " variables, which are set in `rcs/plugin-fzf` (e.g `g:fzf_actions`). Without
