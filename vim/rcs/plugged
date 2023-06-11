@@ -37,15 +37,19 @@ call plug#begin('~/.vim/plugged')
   Plug 'tranchis/paredit.vim', { 'for': 'wat' }
 
 " ::: fzf-spellsuggest :::
-" Display a list of spelling suggestions for the word under the cursor.
+" Display a list of spelling suggestions for the word under the cursor
 " https://github.com/Shamaoke/fzf-spellsuggest.vim
   Plug 'Shamaoke/fzf-spellsuggest.vim'
 
 " ::: fzf-filefind :::
 " Display a list of files to open
 " https://github.com/Shamaoke/fzf-filefind.vim
-" Plug '~/.development/fzf-filefind.vim'
   Plug 'Shamaoke/fzf-filefind.vim'
+
+" ::: fzf-filesearch :::
+" Display a list of files to search for strings in them
+" https://github.com/Shamaoke/fzf-filesearch.vim
+  Plug 'Shamaoke/fzf-filesearch.vim'
 
 call plug#end()
 
