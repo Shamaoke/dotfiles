@@ -22,6 +22,7 @@ highlight Folded            cterm=none ctermfg=007  ctermbg=234
 highlight FoldColumn        cterm=none ctermfg=008  ctermbg=none
 highlight LineNr            cterm=none ctermfg=008  ctermbg=234
 highlight NonText           cterm=none ctermfg=237  ctermbg=none
+highlight Pmenu             cterm=none ctermfg=008  ctermbg=none
 highlight TabLine           cterm=none ctermfg=none ctermbg=007
 highlight TabLineFill       cterm=none ctermfg=none ctermbg=236
 highlight TabLineSel        cterm=none ctermfg=none ctermbg=011
