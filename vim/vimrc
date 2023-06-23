@@ -1,5 +1,5 @@
-" load user functions
-source ~/.dotfiles/vim/rcs/functions
+" Load user functions
+source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/functions'`
 
 " load Vundle settings
 " source ~/.dotfiles/vim/rcs/vundle
