@@ -51,6 +51,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-filesearch.vim
   Plug 'Shamaoke/fzf-filesearch.vim'
 
+" ::: fzf-buffers :::
+" Display a list of buffers to open
+" https://github.com/Shamaoke/fzf-buffers.vim
+  Plug 'Shamaoke/fzf-buffers.vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
