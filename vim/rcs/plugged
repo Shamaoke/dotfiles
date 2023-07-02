@@ -41,10 +41,10 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-spellsuggest.vim
   Plug 'Shamaoke/fzf-spellsuggest.vim'
 
-" ::: fzf-filefind :::
+" ::: fzf-files :::
 " Display a list of files to open
-" https://github.com/Shamaoke/fzf-filefind.vim
-  Plug 'Shamaoke/fzf-filefind.vim'
+" https://github.com/Shamaoke/fzf-files.vim
+  Plug 'Shamaoke/fzf-files.vim'
 
 " ::: fzf-filesearch :::
 " Display a list of files to search for strings in them
