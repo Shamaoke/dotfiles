@@ -81,7 +81,7 @@
 " :::fzf:::
   nmap <silent> <LocalLeader>ff :FzfFF<CR>
 
-  nmap <silent> <LocalLeader>fs :FzfFS<CR>
+  nmap <silent> <LocalLeader>fg :FzfGR<CR>
 
   nmap <silent> <LocalLeader>fb :FzfBF<CR>
 "
