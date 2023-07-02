@@ -46,10 +46,10 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-files.vim
   Plug 'Shamaoke/fzf-files.vim'
 
-" ::: fzf-filesearch :::
+" ::: fzf-grep :::
 " Display a list of files to search for strings in them
-" https://github.com/Shamaoke/fzf-filesearch.vim
-  Plug 'Shamaoke/fzf-filesearch.vim'
+" https://github.com/Shamaoke/fzf-grep.vim
+  Plug 'Shamaoke/fzf-grep.vim'
 
 " ::: fzf-buffers :::
 " Display a list of buffers to open
