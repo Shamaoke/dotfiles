@@ -36,6 +36,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/tranchis/paredit.vim
   Plug 'tranchis/paredit.vim', { 'for': 'wat' }
 
+" ::: fzf-run :::
+" Provide a function to start Fzf inside Vim with a given spec
+" https://github.com/Shamaoke/fzf-run.vim
+  Plug 'Shamaoke/fzf-run.vim'
+
 " ::: fzf-spellsuggest :::
 " Display a list of spelling suggestions for the word under the cursor
 " https://github.com/Shamaoke/fzf-spellsuggest.vim
