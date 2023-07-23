@@ -61,6 +61,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-buffers.vim
   Plug 'Shamaoke/fzf-buffers.vim'
 
+" ::: fzf-grep-buffer :::
+" Display a list of strings in the current buffer to search in them.
+" https://github.com/Shamaoke/fzf-grep-buffer.vim
+  Plug 'Shamaoke/fzf-grep-buffer.vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
