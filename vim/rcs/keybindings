@@ -81,9 +81,12 @@
 " :::fzf:::
   nmap <silent> <LocalLeader>ff :FzfFF<CR>
 
-  nmap <silent> <LocalLeader>fg :FzfGR<CR>
-
   nmap <silent> <LocalLeader>fb :FzfBF<CR>
+
+  nmap <silent> <LocalLeader>gg :FzfGR<CR>
+
+  nmap <silent> <LocalLeader>gb :FzfGB<CR>
+
 "
 " `fzf#wrap` call is needed in order to apply fzf global configuration
 " variables, which are set in `rcs/plugin-fzf` (e.g `g:fzf_actions`). Without
