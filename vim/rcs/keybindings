@@ -83,6 +83,8 @@
 
   nmap <silent> <LocalLeader>fb :FzfBF<CR>
 
+  nmap <silent> <LocalLeader>ft :FzfTT<CR>
+
   nmap <silent> <LocalLeader>gg :FzfGR<CR>
 
   nmap <silent> <LocalLeader>gb :FzfGB<CR>
