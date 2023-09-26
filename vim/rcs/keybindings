@@ -26,6 +26,12 @@
 " write to a file
   nmap <LocalLeader>w :write<CR>
 
+" cd to the location of the currently opened file
+  nmap <silent> <LocalLeader>mm :cd %:h<CR>
+
+" lcd to the location of the currently opened file
+  nmap <silent> <LocalLeader>ml :lcd %:h<CR>
+
 " :::windows:::
 
 " create a new empty window and make it only one on the screen
