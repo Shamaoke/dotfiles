@@ -66,6 +66,12 @@ export LESS='-g -i -M -R -S -w -X -z-4 -#1'
 export EDITOR='vim'
 
 #
+# Calcurse editor
+#
+
+export CALCURSE_EDITOR='vim -c "set textwidth=80 colorcolumn=80"'
+
+#
 # User functions
 #
 
