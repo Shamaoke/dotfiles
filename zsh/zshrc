@@ -37,6 +37,7 @@ alias msc='cd ~ && mux start console --suppress-tmux-version-warning=SUPPRESS-TM
 alias mlg='cd ~lg && mux start lingo --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias maf='cd ~af && mux start notes --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias mpm='cd ~pm && mux start pm --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias moz='cd ~/.desktop && mux start organizer --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias w3m='w3m -B -title'
 
 # Set the named directories
