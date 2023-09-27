@@ -15,7 +15,6 @@ on_project_start: printf '\x1b\x5d2;%s\x1b\x5c' 'personal management'
 on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
 
 windows:
-  - calcurse: calcurse
   - editor: vim -p goals.md activities.md books.md soft.md
   - git:
       layout: 8a0d,157x45,0,0{78x45,0,0,85,78x45,79,0[78x22,79,0,86,78x22,79,23,87]}
