@@ -57,7 +57,7 @@ export ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
 # Less
 #
 
-export LESS='-F -g -i -M -R -S -w -X -z-4 -#1'
+export LESS='-g -i -M -R -S -w -X -z-4 -#1'
 
 #
 # Vim
