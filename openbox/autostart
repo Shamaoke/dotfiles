@@ -12,7 +12,7 @@ touchpad_toggle &
 
 dunst &
 
-calcurse --daemon &
+# calcurse --daemon &
 
 # reset the current sound device to the default one (internal sound card)
 # soundreset &
