@@ -15,7 +15,7 @@ on_project_start: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @name %>'
 on_project_exit: printf '\x1b\x5d2;%s\x1b\x5c' '<%= @basedir %>'
 
 windows:
-  - calcurse: calcurse
+  - calcurse: calcurse --confdir '/home/user/.data-upper/calcurse/config' --datadir '/home/user/.data-upper/calcurse/data'
   - mutt: mutt
   - editor: vim
   - fm: vifm
