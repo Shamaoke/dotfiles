@@ -238,13 +238,13 @@ user_pref('font.default.x-cyrillic', 'sans-serif');
 // user_pref('font.name.sans-serif.ja', 'Kozuka Gothic Pro');
 
 // set a font family for the Latin monospace type
-// user_pref('font.name.monospace.x-western', 'Input Mono Narrow');
+user_pref('font.name.monospace.x-western', 'Iosevka Slab');
 
 // set a font family for the Cyrillic monospace type
-// user_pref('font.name.monospace.x-cyrillic', 'Input Mono Narrow');
+user_pref('font.name.monospace.x-cyrillic', 'Iosevka Slab');
 
 // set a font family for the Japanese monospace type
-// user_pref('font.name.monospace.ja', 'Input Mono Narrow');
+user_pref('font.name.monospace.ja', 'IPAexMincho');
 
 // set a size for the Latin proportional fonts
 user_pref('font.size.variable.x-western', 18);
