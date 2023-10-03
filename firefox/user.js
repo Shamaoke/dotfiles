@@ -211,6 +211,18 @@ user_pref('browser.urlbar.decodeURLsOnCopy', true);
 // 1 — millimeter
 // user_pref('print.printer_Print_to_File.print_paper_size_unit', 1);
 
+////
+// Enable CSS has selector
+//
+// Details:
+// --------
+// • [:has() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)
+//
+// • [When is :has() css selector going to be fully impl... - Mozilla Connect](https://connect.mozilla.org/t5/ideas/when-is-has-css-selector-going-to-be-fully-implemented-in/idi-p/23794)
+//
+user_pref('layout.css.has-selector.enabled', true);
+//
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
