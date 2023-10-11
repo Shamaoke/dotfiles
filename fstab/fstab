@@ -1,16 +1,20 @@
 # Static information about the filesystems
-# See fstab(5) for details
+# See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
 
 # data
-# `nofail` option prevents aborting the boot process if a device is absent, see fstab(5)
+# `nofail` option prevents aborting the boot process if a device is absent (see `man 5 fstab`)
 # `x-systemd.device-timeout` option allows to change the default timeout (90s) the system waits for the device
-# make sure not set it to 0, since in this case the system will wait infinitely, see systemd.mount(5)
-UUID=d81a559d-37bd-49f7-9ff7-7ee03fb995f5 /mnt/data ext4 defaults,nofail,x-systemd.device-timeout=1s 0 0
+# make sure not set it to 0, since in this case the system will wait infinitely (see `man 5 systemd.mount`)
+UUID=41bd2f93-a13b-4da9-ba25-c5ad12dad5e7 /mnt/data ext4 defaults,nofail,x-systemd.device-timeout=5s 0 0
 
-# ecryptfs
-/mnt/data/.data-lower /home/user/.data-upper ecryptfs noauto,user,ecryptfs_sig=1bfa974051d4f83f,ecryptfs_fnek_sig=1bfa974051d4f83f,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_unlink_sigs 0 0
+# old internal 256GB SunDisk SSD with data
+# UUID=d81a559d-37bd-49f7-9ff7-7ee03fb995f5 /mnt/data ext4 defaults,nofail,x-systemd.device-timeout=5s 0 0
+
+# eCryptfs
+# Use the `exec` option in the fourth field (`<options>`) to permit execution of executable files. By default it's not allowed. (See `man 8 mount` and `man 5 fstab` for details.)
+/mnt/data/.data-lower /home/user/.data-upper ecryptfs noauto,user,exec,ecryptfs_sig=1bfa974051d4f83f,ecryptfs_fnek_sig=1bfa974051d4f83f,ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_unlink_sigs 0 0
 
 # ecryptfs on the old 500 GB HDD
 # mount by hand with `mount -i /mnt/internal/old-linux/home/user/.data-upper`
@@ -27,8 +31,9 @@ LABEL=WINSETUP /mnt/winsetup vfat noauto,rw,user,fmask=133,dmask=022 0 0
 UUID=6ce1b748-006b-4f20-adf5-56498ba456e0 /mnt/internal/old-linux   ext4 noauto,rw,user                   0 0
 UUID=8090C51690C51416                     /mnt/internal/old-windows ntfs-3g noauto,rw,fmask=133,dmask=022 0 0
 
-# internal SSD with windows for dualbooting
-UUID=2C40C4C840C499CA /mnt/internal/windows ntfs-3g noauto,rw,fmask=133,dmask=022 0 0
+# internal SSD with Windows 7 installation
+# UUID=2C40C4C840C499CA /mnt/internal/windows ntfs-3g noauto,rw,fmask=133,dmask=022 0 0
 
 # camera SD
-UUID=52FB-7EB5 /mnt/sd vfat noauto,rw,user,fmask=133,dmask=022 0 0
+UUID=1613-1CEB /mnt/sd vfat noauto,rw,user,fmask=133,dmask=022 0 0
+
