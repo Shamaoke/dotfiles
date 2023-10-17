@@ -233,6 +233,16 @@ user_pref('layout.css.has-selector.enabled', true);
 user_pref('media.webspeech.recognition.enable', false);
 user_pref('media.webspeech.synth.enabled', false);
 
+////
+// Disable Encrypted Media Extensions API
+//
+// Details
+// -------
+// [Encrypted Media Extensions API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API)
+//
+user_pref('media.eme.enabled', false);
+user_pref('browser.eme.ui.enabled', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
