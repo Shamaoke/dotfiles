@@ -223,6 +223,16 @@ user_pref('browser.urlbar.decodeURLsOnCopy', true);
 user_pref('layout.css.has-selector.enabled', true);
 //
 
+////
+// Disable Web Speech API
+//
+// Details
+// -------
+// [Web Speech API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+//
+user_pref('media.webspeech.recognition.enable', false);
+user_pref('media.webspeech.synth.enabled', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
