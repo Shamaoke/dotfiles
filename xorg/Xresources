@@ -48,11 +48,9 @@ URxvt.title: terminal
 ! URxvt.italicFont: xft:Iosevka Term Slab Extended:style=Italic:size=13, xft:IPAexGothic:size=13
 ! URxvt.boldItalicFont: xft:Iosevka Term Slab Extended:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
-!!
 !! Configure the input method and the preedit type (OnTheSpot | OverTheSpot | OffTheSpot | Root)
-!! URxvt.inputMethod: ibus
-!! URxvt.preeditType: OverTheSpot
-!!
+   URxvt.inputMethod: ibus
+   URxvt.preeditType: OverTheSpot
 
 ! set font Custom Term Slab + IPAexGothic
   URxvt.font: xft:Iosevka Term Slab:style=Regular:size=12.5, xft:IPAexGothic:size=12.5
