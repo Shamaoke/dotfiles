@@ -2,6 +2,19 @@
   -# Use the `xev' utility to get a keycode as a decimal value.
   -# Use `printf "%x\n" 43' to convert the decimal value (here is `43') to hexadecimal.
 
+  -#
+  -# ::: Keybindings for sending windows to specific monitors :::
+  -#
+  -# 0x3b - `comma (,)'
+  %keybind{ :key => 'C-A-0x3b' }
+    %action{ :name => 'MoveResizeTo' }
+      %monitor next
+
+  -# 0x3c - `period (.)`
+  %keybind{ :key => 'C-A-0x3c' }
+    %action{ :name => 'MoveResizeTo' }
+      %monitor prev
+
   -# Keybindings for desktop switching
   -# Go to a desktop
   -# 0x2b — `h'
