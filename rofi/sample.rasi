@@ -3,7 +3,7 @@
   text-color:       #ffffff;
   handle-color:     @text-color;
   border-color:     #d68051;
-  font:             "Roboto Condensed 12";
+  font:             "RobotoCondensed 12";
   selected-normal-background: #714d35;
 }
 
