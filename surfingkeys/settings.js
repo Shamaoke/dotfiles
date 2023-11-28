@@ -70,20 +70,20 @@
 // iunmap(':')
 
 // set style for links hints
-// Hints.style(`
-//   border-radius:  2px               !important;
-//   font-family:    Iosevka           !important;
-//   font-size:      9pt               !important;
-//   font-weight:    normal            !important;
-//   text-transform: lowercase         !important;
-// `)
+api.Hints.style(`
+  border-radius:  2px       !important;
+  font-family:    Iosevka   !important;
+  font-size:      11pt      !important;
+  font-weight:    normal    !important;
+  text-transform: lowercase !important;
+`)
 
 // set style for text hints
-// Hints.style(`
-//   border-radius:  2px               !important;
-//   font-family:    Iosevka           !important;
-//   font-size:      9pt               !important;
-//   font-weight:    normal            !important;
-//   text-transform: lowercase         !important;
-// `, 'text')
+api.Hints.style(`
+  border-radius:  2px       !important;
+  font-family:    Iosevka   !important;
+  font-size:      11pt      !important;
+  font-weight:    normal    !important;
+  text-transform: lowercase !important;
+`, 'text')
 
