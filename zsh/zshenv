@@ -83,4 +83,16 @@ export FPATH=$FPATH:$HOME/.local/share/zsh/functions/Zle:$HOME/.local/share/zsh/
 
 export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 
+#
+# Alacritty
+#
+# Disable DPI scaling, preventing padding to appear at the right and bottom sides on two monitor setup.
+#
+# Details:
+#
+# [Can't turn off DPI scaling · Issue #5076 · alacritty/alacritty · GitHub](https://github.com/alacritty/alacritty/issues/5076)
+#
+
+export WINIT_X11_SCALE_FACTOR=1
+
 # vim: set textwidth=80 colorcolumn=80:
