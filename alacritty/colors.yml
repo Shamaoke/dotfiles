@@ -78,7 +78,7 @@ colors:
     - index: 247
       color: '#bdcddb'
 
-    # the following is the same
+    # the following are the same
     - index: 248
       color: '#ccdae5'
 
