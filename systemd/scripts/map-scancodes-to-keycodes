@@ -32,5 +32,6 @@
 #   b8 (KEY_RIGHTALT) to 56  (KEY_LEFTALT)
 
 /usr/bin/setkeycodes dd 126 3a 1 1 58 b8 56
+# The `/usr/bin/setkeycodes` executable is a part of the `kbd` package.
 
 # vim: set textwidth=80 colorcolumn=80:
