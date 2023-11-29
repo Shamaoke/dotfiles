@@ -29,54 +29,52 @@ colors:
 
   indexed_colors:
     - index: 232
-      color: '#101a23'
+      color: '#172430'
 
     - index: 233
-      color: '#1a2632'
+      color: '#202f3d'
 
     - index: 234
-      color: '#243242'
+      color: '#293a4a'
 
     - index: 235
-      color: '#2e3e51'
+      color: '#334657'
 
     - index: 236
-      color: '#394a60'
+      color: '#3d5264'
 
     - index: 237
-      color: '#435470'
+      color: '#495e71'
 
-    # the same as 240
     - index: 238
-      color: '#4d5e7f'
+      color: '#556b7e'
 
     - index: 239
-      color: '#57688e'
+      color: '#63788b'
 
-    # a mistake?
     - index: 240
-      color: '#4d5e7f'
+      color: '#718597'
 
     - index: 241
-      color: '#61729e'
+      color: '#8093a4'
 
     - index: 242
-      color: '#7081a8'
+      color: '#8fa1b1'
 
     - index: 243
-      color: '#8091b2'
+      color: '#a0b0be'
 
     - index: 244
-      color: '#8fa0bd'
+      color: '#b1bfcb'
 
     - index: 245
-      color: '#9eafc7'
+      color: '#c3ced8'
 
     - index: 246
-      color: '#adbed1'
+      color: '#d6dee5'
 
     - index: 247
-      color: '#bdcddb'
+      color: '#eaeef2'
 
     # the following are the same
     - index: 248
