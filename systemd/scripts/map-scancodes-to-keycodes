@@ -30,7 +30,15 @@
 #   3a (KEY_CAPSLOCK) to 1   (KEY_ESC)
 #   1  (KEY_ESC)      to 58  (KEY_CAPSLOCK)
 #   b8 (KEY_RIGHTALT) to 56  (KEY_LEFTALT)
+#
+# Note, that the `setkeycodes` utility doesn't work with USB keyboard.
+#
 
 /usr/bin/setkeycodes dd 126 3a 1 1 58 b8 56
+
+# Details
+#
+# [Map scancodes to keycodes - ArchWiki](https://wiki.archlinux.org/title/map_scancodes_to_keycodes)
+#
 
 # vim: set textwidth=80 colorcolumn=80:
