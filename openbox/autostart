@@ -1,10 +1,10 @@
-amixer --card 0 set Speaker 100% unmute &
+# amixer --card 0 set Speaker 100% unmute &
 
 ibus-daemon -drx &
 
 pointer_hide &
 
-touchpad_toggle &
+# touchpad_toggle &
 
 ~/.fehbg &
 
