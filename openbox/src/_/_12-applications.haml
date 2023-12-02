@@ -249,6 +249,9 @@
   -#   %decor no
   -#   %maximized yes
 
+  -#
+  -# ::: QtCreator :::
+  -#
   %application{ :class => 'QtCreator', :type => 'normal' }
     %decor no
     %position{ :force => 'yes' }
@@ -257,6 +260,14 @@
     %size
       %width 1584
       %height 853
+
+  %application{ :class => 'QtCreator', :type => 'dialog' }
+    %position{ :force => 'yes' }
+      %x 200
+      %y 38
+    %size
+      %width 1196
+      %height 772
 
   %application{ :class => 'Zathura', :type => 'normal' }
     %position{ :force => 'no' }
