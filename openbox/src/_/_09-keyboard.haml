@@ -234,8 +234,10 @@
     %action{ :name => 'MoveResizeTo' }
       %x center
       %y center
-      %width 800
-      %height 600
+      -# %width 800
+      -# %height 600
+      %width 1200
+      %height 800
 
   -# 0xd — `4'
   %keybind{ :key => 'W-0xd' }
@@ -373,16 +375,16 @@
       %command alacritty
 
   -# 0x37 — `v'
-  %keybind{ :key => 'C-A-0x37' }
-    %action{ :name => 'Execute' }
-      -# %command urxvt -e vim
-      %command alacritty --command vim
+  -# %keybind{ :key => 'C-A-0x37' }
+  -#   %action{ :name => 'Execute' }
+  -#     -# %command urxvt -e vim
+  -#     %command alacritty --command vim
 
   -# 0x3a — `m'
-  %keybind{ :key => 'C-A-0x3a' }
-    %action{ :name => 'Execute' }
-      -# %command urxvt -e vifm
-      %command alacritty --command vifm
+  -# %keybind{ :key => 'C-A-0x3a' }
+  -#   %action{ :name => 'Execute' }
+  -#     -# %command urxvt -e vifm
+  -#     %command alacritty --command vifm
 
   -# Keybindings for controlling an application launcher
   -# 0x1b — `r'
