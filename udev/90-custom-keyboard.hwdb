@@ -1,0 +1,7 @@
+
+evdev:name:CHICONY USB Keyboard:dmi:bvnAmericanMegatrendsInc.:bvr0803:bd10/12/2012:br4.6:svnSystemmanufacturer:pnSystemProductName:pvrSystemVersion:rvnASUSTeKCOMPUTERINC.:rnP8H77-VLE:rvrRevX.0x:cvnChassisManufacture:ct3:cvrChassisVersion:skuSKU:
+  KEYBOARD_KEY_70029=capslock
+  KEYBOARD_KEY_70039=esc
+  KEYBOARD_KEY_70065=leftmeta
+  KEYBOARD_KEY_700e6=leftalt
+
