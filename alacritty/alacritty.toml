@@ -1,0 +1,48 @@
+
+import = ["/home/user/.dotfiles/alacritty/colors.toml"]
+live_config_reload = false
+
+[mouse]
+hide_when_typing = true
+
+[window]
+decorations = "full"
+dynamic_title = true
+title = "terminal"
+
+[cursor]
+blink_interval = 500
+blink_timeout = 0
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[font]
+builtin_box_drawing = true
+size = 13.0
+
+[font.normal]
+family = "Iosevka Term Slab"
+style = "Regular"
+
+[font.bold]
+family = "Iosevka Term Slab"
+style = "Medium"
+
+[font.italic]
+family = "Iosevka Term Slab"
+style = "Italic"
+
+[font.bold_italic]
+family = "Iosevka Term Slab"
+style = "Medium Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.offset]
+x = 0
+y = 0
+
