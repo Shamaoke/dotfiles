@@ -18,7 +18,7 @@ windows:
   # - editor: vim --cmd 'set lines=32 columns=158'
   - editor: vim
   - work:
-      layout: main-vertical
+      layout: cf5d,158x33,0,0{80x33,0,0,1,77x33,81,0[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7]}
       panes:
         -
         - watch -ctn 1 'docker image ls'
