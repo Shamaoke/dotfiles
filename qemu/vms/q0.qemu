@@ -1,0 +1,12 @@
+qemu-system-x86_64 \
+  -name q0 \
+  -machine q35 \
+  -accel kvm \
+  -cpu host \
+  -smp 2 \
+  -m 1G \
+  -display sdl  \
+  -device VGA,vgamem_mb=128 \
+  -drive if=ide,format=raw,media=disk,file=$HOME/.qemu/images/bi05.img \
+  -device rtl8139,netdev=net0 \
+  -netdev tap,id=net0,ifname=tap0,script=$HOME/.qemu/scripts/ifup,downscript=$HOME/.qemu/scripts/ifdown
