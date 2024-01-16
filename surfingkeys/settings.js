@@ -1,7 +1,7 @@
 // :::settings:::
 
 // set a threshold for choosing tabs with Omnibar (0 for always use it)
-// settings.tabsThreshold = 0
+settings.tabsThreshold = 0
 
 // set a sort order for tabs chosen by Omnibar (MRU or natural)
 // settings.tabsMRUOrder = false
