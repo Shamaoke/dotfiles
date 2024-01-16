@@ -1,0 +1,21 @@
+#! /usr/bin/env zsh
+
+function main {
+  sudo ip link add br0 type bridge
+
+  sudo ip address add 192.168.0.20/24 dev br0
+
+  sudo ip tuntap add dev tap0 mode tap user user group user
+
+  sudo ip link set enp3s0 master br0
+  sudo ip addr flush dev enp3s0
+
+  sudo ip link set tap0 master br0
+
+  sudo ip link set dev br0 up
+  sudo ip link set dev tap0 up
+}
+
+main $@
+
+# vim: set textwidth=80 colorcolumn=80:
