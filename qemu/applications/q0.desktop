@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=q0
+GenericName=Qemu virtual machine
+Icon=/usr/share/icons/hicolor/scalable/apps/qemu.svg
+Exec=/home/user/.qemu/vms/q0.qemu
