@@ -1,0 +1,17 @@
+#! /usr/bin/env zsh
+
+function main {
+  sudo ip link set enp3s0 nomaster
+
+  sudo ip address add 192.168.0.10/24 dev enp3s0
+
+  sudo ip link set dev tap0 down
+  sudo ip link set dev br0 down
+
+  sudo ip link delete tap0
+  sudo ip link delete br0
+}
+
+main $@
+
+# vim: set textwidth=80 colorcolumn=80:
