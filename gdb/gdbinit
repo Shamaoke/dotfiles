@@ -1,0 +1,7 @@
+
+# Prevent prompting for downloading debugging resources with `debuginfod`
+set debuginfod enabled off
+
+# Disable confirmation requests
+set confirm off
+
