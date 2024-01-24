@@ -1,3 +1,4 @@
 #! /usr/bin/env zsh
 
 startx 1>$HOME/.log/openbox.info 2>$HOME/.log/openbox.error
+
