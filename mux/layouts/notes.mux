@@ -1,0 +1,5 @@
+#! /usr/bin/env zsh
+
+printf "%s\n" "The notes layout has been loaded."
+
+# vim: set textwidth=80 colorcolumn=80:
