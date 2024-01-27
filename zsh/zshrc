@@ -28,16 +28,15 @@ setopt no_beep
 alias pacman='pacman --color=always'
 alias xi="xclip -selection 'clipboard' -i"
 alias xo="xclip -selection 'clipboard' -o"
-alias mux='tmuxinator'
-alias msb="mux start basic $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
-alias mss="mux start simple $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
+alias msb="tmuxinator start basic $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
+alias mss="tmuxinator start simple $1 --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING"
 alias mdf='cd ~df && mss'
 alias mch='cd ~dv/chrome && mss'
-alias msc='cd ~ && mux start console --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
-alias mlg='cd ~lg && mux start lingo --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
-alias maf='cd ~af && mux start notes --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
-alias mpm='cd ~pm && mux start pm --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
-alias moz='cd ~/.desktop && mux start organizer --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias msc='cd ~ && tmuxinator start console --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias mlg='cd ~lg && tmuxinator start lingo --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias maf='cd ~af && tmuxinator start notes --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias mpm='cd ~pm && tmuxinator start pm --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
+alias moz='cd ~/.desktop && tmuxinator start organizer --suppress-tmux-version-warning=SUPPRESS-TMUX-VERSION-WARNING'
 alias w3m='w3m -B -title'
 
 # Set the named directories
