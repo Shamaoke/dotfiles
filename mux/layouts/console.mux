@@ -1,0 +1,51 @@
+#!/usr/bin/zsh
+
+tmux has-session -t console 2>/dev/null
+
+if [[ $? -ne 0 ]] {
+  # Create a new session
+  tmux new-session -d -s console -n 'editor'
+
+  # Create the sessions' windows
+  tmux new-window -t console:2 -n 'work'
+  tmux new-window -t console:3 -n 'build|install'
+  tmux new-window -t console:4 -n 'console|man'
+  tmux new-window -t console:5 -n 'downloads'
+  tmux new-window -t console:6 -n 'fm'
+
+  # Window “editor”
+  tmux send-keys -t console:1 vim C-m
+
+  # Window “work”
+
+  # Window “build|install”
+  tmux split-window  -t console:3
+  tmux select-layout -t console:3 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
+  tmux select-pane   -t console:3.1
+
+  # Window “console|man”
+  tmux split-window  -t console:4
+  tmux select-layout -t console:4 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
+  tmux select-pane   -t console:4.1
+
+  # Window “downloads”
+  tmux split-window  -t console:5
+  tmux select-layout -t console:5 9231,210x51,0,0\[210x25,0,0,28,210x25,0,26,32\]
+  tmux send-keys -t console:5.1 'cd ~/.downloads; clear' C-m
+  tmux send-keys -t console:5.2 'cd ~/.downloads; clear' C-m
+  tmux select-pane -t console:5.1
+
+  # Window “fm”
+  tmux send-keys -t console:6 vifm C-m
+
+  # Select the initial window and pane
+  tmux select-window -t console:1
+  tmux select-pane   -t console:1.1
+
+  # Attach the session
+  tmux attach-session -t console
+} else {
+  tmux attach-session -t console
+}
+
+# vim: set textwidth=80 colorcolumn=80:
