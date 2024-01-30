@@ -21,18 +21,22 @@ if [[ $? -ne 0 ]] {
   # Window “build|install”
   tmux split-window  -t console:3
   tmux select-layout -t console:3 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
-  tmux select-pane   -t console:3.1
+  tmux send-keys -t console:3.1 C-l
+  tmux send-keys -t console:3.2 C-l
+  tmux select-pane -t console:3.1
 
   # Window “console|man”
   tmux split-window  -t console:4
   tmux select-layout -t console:4 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
-  tmux select-pane   -t console:4.1
+  tmux send-keys -t console:4.1 C-l
+  tmux send-keys -t console:4.2 C-l
+  tmux select-pane -t console:4.1
 
   # Window “downloads”
   tmux split-window  -t console:5
   tmux select-layout -t console:5 9231,210x51,0,0\[210x25,0,0,28,210x25,0,26,32\]
-  tmux send-keys -t console:5.1 'cd ~/.downloads; clear' C-m
-  tmux send-keys -t console:5.2 'cd ~/.downloads; clear' C-m
+  tmux send-keys -t console:5.1 'cd ~/.downloads' C-m C-l
+  tmux send-keys -t console:5.2 'cd ~/.downloads' C-m C-l
   tmux select-pane -t console:5.1
 
   # Window “fm”
@@ -40,7 +44,7 @@ if [[ $? -ne 0 ]] {
 
   # Select the initial window and pane
   tmux select-window -t console:1
-  tmux select-pane   -t console:1.1
+  tmux select-pane -t console:1.1
 
   # Attach the session
   tmux attach-session -t console
