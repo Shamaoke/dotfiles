@@ -1,55 +1,57 @@
 #!/usr/bin/zsh
 
-tmux has-session -t console 2>/dev/null
+declare session_name=$1
+
+tmux has-session -t $session_name 2>/dev/null
 
 if [[ $? -ne 0 ]] {
   # Create a new session
-  tmux new-session -d -s console -n 'editor'
+  tmux new-session -d -s $session_name -n 'editor'
 
   # Create the sessions' windows
-  tmux new-window -t console:2 -n 'work'
-  tmux new-window -t console:3 -n 'build|install'
-  tmux new-window -t console:4 -n 'console|man'
-  tmux new-window -t console:5 -n 'downloads'
-  tmux new-window -t console:6 -n 'fm'
+  tmux new-window -t $session_name:2 -n 'work'
+  tmux new-window -t $session_name:3 -n 'build|install'
+  tmux new-window -t $session_name:4 -n 'console|man'
+  tmux new-window -t $session_name:5 -n 'downloads'
+  tmux new-window -t $session_name:6 -n 'fm'
 
   # Window “editor”
-  tmux send-keys -t console:1 vim C-m
+  tmux send-keys -t $session_name:1 vim C-m
 
   # Window “work”
 
   # Window “build|install”
-  tmux split-window  -t console:3
-  tmux select-layout -t console:3 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
-  tmux send-keys -t console:3.1 C-l
-  tmux send-keys -t console:3.2 C-l
-  tmux select-pane -t console:3.1
+  tmux split-window  -t $session_name:3
+  tmux select-layout -t $session_name:3 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
+  tmux send-keys -t $session_name:3.1 C-l
+  tmux send-keys -t $session_name:3.2 C-l
+  tmux select-pane -t $session_name:3.1
 
   # Window “console|man”
-  tmux split-window  -t console:4
-  tmux select-layout -t console:4 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
-  tmux send-keys -t console:4.1 C-l
-  tmux send-keys -t console:4.2 C-l
-  tmux select-pane -t console:4.1
+  tmux split-window  -t $session_name:4
+  tmux select-layout -t $session_name:4 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
+  tmux send-keys -t $session_name:4.1 C-l
+  tmux send-keys -t $session_name:4.2 C-l
+  tmux select-pane -t $session_name:4.1
 
   # Window “downloads”
-  tmux split-window  -t console:5
-  tmux select-layout -t console:5 9231,210x51,0,0\[210x25,0,0,28,210x25,0,26,32\]
-  tmux send-keys -t console:5.1 'cd ~/.downloads' C-m C-l
-  tmux send-keys -t console:5.2 'cd ~/.downloads' C-m C-l
-  tmux select-pane -t console:5.1
+  tmux split-window  -t $session_name:5
+  tmux select-layout -t $session_name:5 9231,210x51,0,0\[210x25,0,0,28,210x25,0,26,32\]
+  tmux send-keys -t $session_name:5.1 'cd ~/.downloads' C-m C-l
+  tmux send-keys -t $session_name:5.2 'cd ~/.downloads' C-m C-l
+  tmux select-pane -t $session_name:5.1
 
   # Window “fm”
-  tmux send-keys -t console:6 vifm C-m
+  tmux send-keys -t $session_name:6 vifm C-m
 
   # Select the initial window and pane
-  tmux select-window -t console:1
-  tmux select-pane -t console:1.1
+  tmux select-window -t $session_name:1
+  tmux select-pane -t $session_name:1.1
 
   # Attach the session
-  tmux attach-session -t console
+  tmux attach-session -t $session_name
 } else {
-  tmux attach-session -t console
+  tmux attach-session -t $session_name
 }
 
 # vim: set textwidth=80 colorcolumn=80:
