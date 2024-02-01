@@ -1,0 +1,60 @@
+#!/usr/bin/zsh
+
+declare session_name=$1
+
+tmux has-session -t $session_name 2>/dev/null
+
+if [[ $? -ne 0 ]] {
+  # Create a new session
+  tmux new-session -d -s $session_name -n ja-en
+
+  # Create the session's windows
+  tmux new-window -t lingo:2 -n en-ja
+  tmux new-window -t lingo:3 -n en-ru
+  tmux new-window -t lingo:4 -n ru-en
+  tmux new-window -t lingo:5 -n dict
+  tmux new-window -t lingo:6 -n fm
+
+  # Window “ja-en”
+  tmux split-window -t lingo:1
+  tmux send-keys -t lingo:1.1 'vim ja-en.md' C-m
+  tmux send-keys -t lingo:1.2 echo\ ja-en.md\ \|\ entr\ -c\ -r\ -s\ \$\'xargs\ -0\ -a\ \$0\ trans\ ja:en\ -dump\ \|\ awk\ -v\ \\\'FS\=\\r\\n\\\'\ -v\ \\\'RS\=\\\'\ \\\'\{\ print\ \$2\ \}\\\'\ \|\ jq\ --raw-output\ \\\'.\[0\]\ \|\ \[\ \[\(.\[:-1\]\[\ \]\[1\]\ \|\ gsub\(\"\\\\\\\\n\"\;\"\"\)\)\],\[\(.\[-1\]\[-1\]\ \|\ split\(\"\ \(\?\=\\\\\\\\d+\\\\\\\\.\)\"\;\"g\"\)\ \|\ .\[\ \]\ \|\ gsub\(\"\\\\\\\\d+\\\\\\\\.\ \"\;\"\"\)\)\],\[\(.\[:-1\]\[\ \]\[0\]\ \|\ gsub\(\"\(\\\\\\\\d+\\\\\\\\.\ \|\\\\\\\\n\)\"\;\"\"\)\)\]\ \]\ \|\ transpose\ \|\ .\[\ \]\ \|\ \"\\\\\(join\(\"\\\\n\"\)\)\\n\"\\\'\'\ \|\ lolcat C-m
+  tmux select-layout -t lingo:1 even-horizontal
+  tmux select-pane -t lingo:1.1
+
+  # Window “en-ja”
+  tmux split-window -t lingo:2
+  tmux send-keys -t lingo:2.1 'vim en-ja.md' C-m
+  tmux send-keys -t lingo:2.2 echo\ en-ja.md\ \|\ entr\ -c\ -r\ -s\ \$\'xargs\ -0\ -a\ \$0\ trans\ en:ja\ -dump\ \|\ awk\ -v\ \\\'FS\=\\r\\n\\\'\ -v\ \\\'RS\=\\\'\ \\\'\{\ print\ \$2\ \}\\\'\ \|\ jq\ --raw-output\ \\\'.\[0\]\ \|\ \[\ \[\(.\[:-1\]\[\ \]\[1\]\ \|\ gsub\(\"\\\\\\\\n\"\;\"\"\)\)\],\[\(.\[:-1\]\[\ \]\[0\]\ \|\ gsub\(\"\(\\\\\\\\d+\\\\\\\\.\|\\\\\\\\n\)\"\;\"\"\)\)\],\[\(.\[-1\]\[-1\]\ \|\ split\(\"\ \(\?\=\\\\\\\\d+\\\\\\\\.\)\"\;\"g\"\)\ \|\ .\[\ \]\ \|\ gsub\(\"\\\\\\\\d+\\\\\\\\.\ \"\;\"\"\)\)\]\ \]\ \|\ transpose\ \|\ .\[\ \]\ \|\ \"\\\\\(join\(\"\\\\n\"\)\)\\n\"\\\'\'\ \|\ lolcat C-m
+  tmux select-layout -t lingo:2 even-horizontal
+  tmux select-pane -t lingo:2.1
+
+  # Window “en-ru”
+  tmux split-window -t lingo:3
+  tmux send-keys -t lingo:3.1 'vim en-ru.md' C-m
+  tmux send-keys -t lingo:3.2 echo\ en-ru.md\ \|\ entr\ -c\ -r\ -s\ \"xargs\ -0\ -a\ \\\$0\ trans\ -e\ google\ -no-autocorrect\ -no-warn\ -b\ en:ru\ \|\ sed\ \'s/\\\\\\n/\\n/g\'\ \|\ lolcat\" C-m
+  tmux select-layout -t lingo:3 even-horizontal
+  tmux select-pane -t lingo:3.1
+
+  # Window “ru-en”
+  tmux split-window -t lingo:4
+  tmux send-keys -t lingo:4.1 'vim ru-en.md' C-m
+  tmux send-keys -t lingo:4.2 echo\ ru-en.md\ \|\ entr\ -c\ -r\ -s\ \"xargs\ -0\ -a\ \\\$0\ trans\ -e\ google\ -no-autocorrect\ -no-warn\ -b\ ru:en\ \|\ sed\ \'s/\\\\\\n/\\n/g\'\ \|\ lolcat\" C-m
+  tmux select-layout -t lingo:4 even-horizontal
+  tmux select-pane -t lingo:4.1
+
+  # Window “dict”
+
+  # Window “fm”
+  tmux send-keys -t lingo:6 vifm C-m
+
+  # Select the initial window and pane
+  tmux select-window -t lingo:1
+  tmux select-pane -t lingo:1.1
+
+  tmux attach-session -t $session_name
+} else {
+  tmux attach-session -t $session_name
+}
+
+# vim: set textwidth=80 colorcolumn=80:
