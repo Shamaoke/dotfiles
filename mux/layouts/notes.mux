@@ -1,0 +1,35 @@
+#!/usr/bin/zsh
+
+declare session_name=$1
+
+tmux has-session -t $session_name 2>/dev/null
+
+if [[ $? -ne 0 ]] {
+  # Create a new session
+  tmux new-session -d -s $session_name -n 'editor'
+
+  # Create the session's windows
+  tmux new-window -t $session_name:2 -n git
+
+  # Window “editor”
+  tmux send-keys -t $session_name:1 'vim notes.md' C-m
+
+  # Window “git”
+  tmux send-keys     -t $session_name:2.1 "watch -ctn 1 'git godlog'" C-m
+  tmux split-window  -t $session_name:2
+  tmux send-keys     -t $session_name:2.2 "watch -ctn 1 'git st'" C-m
+  tmux split-window  -t $session_name:2
+  tmux select-layout -t $session_name:2 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
+  tmux select-pane   -t $session_name:2.3
+
+  # Select the initial window and pane
+  tmux select-window -t $session_name:1
+  tmux select-pane   -t $session_name:1.1
+
+  # Attach the session
+  tmux attach-session -t $session_name
+} else {
+  tmux attach-session -t $session_name
+}
+
+# vim: set textwidth=80 colorcolumn=80:
