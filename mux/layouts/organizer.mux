@@ -1,0 +1,35 @@
+#! /usr/bin/env zsh
+
+declare session_name=$1
+
+tmux has-session -t $session_name 2>/dev/null
+
+if [[ $? -ne 0 ]] {
+  # Create a new session
+  tmux new-session -d -s $session_name -n 'calcurse'
+
+  # Create the session's windows
+  tmux new-window -t $session_name:2 -n mail
+  tmux new-window -t $session_name:3 -n fm
+
+  # Window “calcurse”
+  tmux send-keys -t $session_name:1 "calcurse --confdir '/home/user/.data-upper/calcurse/config' --datadir '/home/user/.data-upper/calcurse/data'" C-m
+
+  # Window “mutt”
+  tmux send-keys -t $session_name:2 mutt C-m
+
+  # Window “fm”
+  tmux send-keys -t $session_name:3 vifm C-m
+
+  # Select the initial window and pane
+  tmux select-window -t $session_name:1
+  tmux select-pane   -t $session_name:1.1
+
+  # Attach the session
+  tmux attach-session -t $session_name
+} else {
+  # Attach the session
+  tmux attach-session -t $session_name
+}
+
+# vim: set textwidth=80 colorcolumn=80:
