@@ -4,7 +4,7 @@
 settings.tabsThreshold = 0
 
 // set a sort order for tabs chosen by Omnibar (MRU or natural)
-// settings.tabsMRUOrder = false
+settings.tabsMRUOrder = false
 
 // align hints on their target elements
 // settings.hintAlign = 'left'
