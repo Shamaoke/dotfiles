@@ -75,4 +75,7 @@ bindkey -M vicmd v edit-command-line
 # Load the Ruby Version Manager (RVM) into a shell session as a function
 source $HOME/.rvm/scripts/rvm
 
+# Load the Python virtual environment into a shell session
+source $HOME/.virtualenvs/python-3.11.6@user/bin/activate
+
 # vim: set textwidth=80 colorcolumn=80:
