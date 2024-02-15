@@ -101,4 +101,12 @@ export WINIT_X11_SCALE_FACTOR=1
 
 export MUX_LAYOUTS=$HOME/.mux/layouts
 
+#
+# The Python virtual environment
+#
+
+# Disable setting the command line prompt by the python virtual environment.
+# See `~/.virtualenvs/python-3.11@user/bin/activate:56` for details.
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # vim: set textwidth=80 colorcolumn=80:
