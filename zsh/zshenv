@@ -89,4 +89,10 @@ export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 
 export MUX_LAYOUTS=$HOME/.mux/layouts
 
+#
+# Thy Python virtual environment
+#
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # vim: set textwidth=80 colorcolumn=80:
