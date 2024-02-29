@@ -45,6 +45,7 @@ hash -d dv=$HOME/.development
 hash -d pg=$HOME/.development/playground
 hash -d lg=$HOME/.documents/lingo
 hash -d wo=$HOME/.data-upper/virtualbox/share/work
+hash -d qt=$HOME/.development/QtPult48-TEM18LNG
 
 # Change the standard colors by using terminal control sequences
 # Run either of the following to set  the value of color17
