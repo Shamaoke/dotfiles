@@ -1,0 +1,4 @@
+
+# Prevent waring about incorrect PATH set from appearing
+rvm_silence_path_mismatch_check_flag=1
+
