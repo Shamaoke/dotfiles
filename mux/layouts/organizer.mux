@@ -21,7 +21,7 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:2 mutt C-m
 
   # Window “pm”
-  tmux send-keys -t $session_name:3 'vim -p goals.md activities.md books.md soft.md' C-m
+  tmux send-keys -t $session_name:3 'vim -p goals.md activities.md time.md books.md soft.md' C-m
 
   # Window “git”
   tmux send-keys     -t $session_name:4.1 "watch -ctn 1 'git godlog'" C-m
