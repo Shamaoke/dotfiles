@@ -40,9 +40,14 @@ if [[ $? -ne 0 ]] {
 
   # Attach the session
   tmux attach-session -t $session_name
+
+  return 0
+
 } else {
   # Attach the session
   tmux attach-session -t $session_name
+
+  return 0
 }
 
 # vim: set textwidth=80 colorcolumn=80:
