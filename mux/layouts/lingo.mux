@@ -53,8 +53,13 @@ if [[ $? -ne 0 ]] {
   tmux select-pane -t lingo:1.1
 
   tmux attach-session -t $session_name
+
+  return 0
+
 } else {
   tmux attach-session -t $session_name
+
+  return 0
 }
 
 # vim: set textwidth=80 colorcolumn=80:
