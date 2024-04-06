@@ -18,20 +18,20 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:1 vim C-m
 
   # Window “work”
-  tmux split-window -t $session_name:2
-  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
+  # tmux split-window -t $session_name:2
+  # tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
 
   tmux split-window -t $session_name:2
-  tmux send-keys -t $session_name:2.3 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker image ls'" C-m
 
   tmux split-window -t $session_name:2
-  tmux send-keys -t $session_name:2.4 "watch -ctn 1 'docker container ls --all'" C-m
+  tmux send-keys -t $session_name:2.3 "watch -ctn 1 'docker container ls --all'" C-m
 
   tmux split-window -t $session_name:2
-  tmux send-keys -t $session_name:2.5 "watch -ctn 1 'docker network ls'" C-m
+  tmux send-keys -t $session_name:2.4 "watch -ctn 1 'docker network ls'" C-m
 
-  # tmux select-layout -t $session_name:2 cf5d,158x33,0,0\{80x33,0,0,1,77x33,81,0\[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7\]\}
-  tmux select-layout -t $session_name:2 'fb7d,158x33,0,0{80x33,0,0[80x16,0,0,12,80x16,0,17,21],77x33,81,0[77x10,81,0,16,77x10,81,11,17,77x11,81,22,18]}'
+  tmux select-layout -t $session_name:2 'cf5d,158x33,0,0{80x33,0,0,1,77x33,81,0[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7]}'
+  # tmux select-layout -t $session_name:2 'fb7d,158x33,0,0{80x33,0,0[80x16,0,0,12,80x16,0,17,21],77x33,81,0[77x10,81,0,16,77x10,81,11,17,77x11,81,22,18]}'
 
   tmux select-pane -t $session_name:2.1
 
