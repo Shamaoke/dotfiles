@@ -3,6 +3,8 @@
 "
 
 " set the file type according to its extension
+  autocmd BufRead,BufNewFile * set textwidth=80 colorcolumn=80
+
   autocmd BufRead,BufNewFile *.rb      set filetype=ruby
   autocmd BufRead,BufNewFile *.ru      set filetype=ruby
   autocmd BufRead,BufNewFile Gemfile   set filetype=ruby
@@ -16,9 +18,6 @@
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
   autocmd BufRead,BufNewFile *.pdftk   set filetype=pdftk
   autocmd BufRead,BufNewFile *.qrc     set filetype=xml
-  autocmd BufRead,BufNewFile CMakeLists.txt set textwidth=80 colorcolumn=80
-  autocmd BufRead,BufNewFile *.cmake        set textwidth=80 colorcolumn=80
-  autocmd BufRead,BufNewFile Dockerfile     set textwidth=80 colorcolumn=80
 
 " enable paredit mode for the WebAssembly .wat files
   autocmd FileType wat call PareditInitBuffer()
