@@ -26,6 +26,17 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:1 vim C-m
 
   # Window “work”
+  tmux split-window  -t $session_name:2
+  tmux split-window  -t $session_name:2
+  tmux split-window  -t $session_name:2
+  tmux select-layout -t $session_name:2 even-vertical
+  tmux split-window  -t $session_name:2
+  tmux select-layout -t $session_name:2 a06e,210x51,0,0\[210x40,0,0\{105x40,0,0\[105x20,0,0,79,105x19,0,21,85\],104x40,106,0\[104x20,106,0,83,104x19,106,21,84\]\},210x10,0,41,82\]
+  tmux send-keys -t $session_name:2.1 "watch -ctn 1 'docker container ls --all'" C-m
+  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
+  tmux send-keys -t $session_name:2.3 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:2.4 "watch -ctn 1 'docker network ls'" C-m
+  tmux select-pane   -t $session_name:2.5
 
   # Window “build|install”
   tmux split-window  -t $session_name:3
