@@ -10,64 +10,72 @@ if [[ $? -ne 0 ]] {
 
   # Create the sessions' windows
   tmux new-window -t $session_name:2 -n 'work'
-  tmux new-window -t $session_name:3 -n 'build|install'
-  tmux new-window -t $session_name:4 -n 'console'
+  tmux new-window -t $session_name:3 -n 'docker'
+  tmux new-window -t $session_name:4 -n 'build|install'
+  tmux new-window -t $session_name:5 -n 'console'
 
   cd ./source
 
-  tmux new-window -t $session_name:5 -n 'git'
+  tmux new-window -t $session_name:6 -n 'git'
 
   cd ..
 
-  tmux new-window -t $session_name:6 -n 'man'
-  tmux new-window -t $session_name:7 -n 'fm'
+  tmux new-window -t $session_name:7 -n 'man'
+  tmux new-window -t $session_name:8 -n 'fm'
 
   # Window “editor”
   tmux send-keys -t $session_name:1 vim C-m
 
   # Window “work”
-  tmux split-window  -t $session_name:2
-  tmux split-window  -t $session_name:2
-  tmux split-window  -t $session_name:2
-  tmux select-layout -t $session_name:2 even-vertical
-  tmux split-window  -t $session_name:2
-  tmux select-layout -t $session_name:2 a06e,210x51,0,0\[210x40,0,0\{105x40,0,0\[105x20,0,0,79,105x19,0,21,85\],104x40,106,0\[104x20,106,0,83,104x19,106,21,84\]\},210x10,0,41,82\]
-  tmux send-keys -t $session_name:2.1 "watch -ctn 1 'docker container ls --all'" C-m
-  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
-  tmux send-keys -t $session_name:2.3 "watch -ctn 1 'docker image ls'" C-m
-  tmux send-keys -t $session_name:2.4 "watch -ctn 1 'docker network ls'" C-m
-  tmux select-pane   -t $session_name:2.5
+  tmux split-window -t $session_name:2
+  tmux select-layout -t $session_name:2 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
+  tmux send-keys -t $session_name:2.1 C-l
+  tmux send-keys -t $session_name:2.2 C-l
+  tmux select-pane -t $session_name:2.1
+
+  # Window “docker”
+  tmux split-window -t $session_name:3
+  tmux split-window -t $session_name:3
+  tmux split-window -t $session_name:3
+  tmux select-layout -t $session_name:3 even-vertical
+  tmux split-window -t $session_name:3
+  tmux select-layout -t $session_name:3 3477,158x33,0,0\[158x27,0,0\{79x27,0,0\[79x13,0,0,80,79x13,0,14,78\],78x27,80,0\[78x13,80,0,79,78x13,80,14,77\]\},158x5,0,28,74\]
+  tmux send-keys -t $session_name:3.1 "watch -ctn 1 'docker container ls --all'" C-m
+  tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker volume ls'" C-m
+  tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:3.4 "watch -ctn 1 'docker network ls'" C-m
+  tmux select-pane -t $session_name:3.5
 
   # Window “build|install”
-  tmux split-window  -t $session_name:3
-  tmux select-layout -t $session_name:3 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
-  tmux send-keys -t $session_name:3.1 C-l
-  tmux send-keys -t $session_name:3.2 C-l
-  tmux select-pane -t $session_name:3.1
+  tmux split-window -t $session_name:4
+  tmux select-layout -t $session_name:4 3e82,210x51,0,0\{104x51,0,0,3,105x51,105,0,7\}
+  tmux send-keys -t $session_name:4.1 C-l
+  tmux send-keys -t $session_name:4.2 C-l
+  tmux select-pane -t $session_name:4.1
 
   # Window “console”
 
   cd ./source
 
   # Window “git”
-  tmux send-keys     -t $session_name:5.1 "watch -ctn 1 'git godlog'" C-m
-  tmux split-window  -t $session_name:5
-  tmux send-keys     -t $session_name:5.2 "watch -ctn 1 'git st'" C-m
-  tmux split-window  -t $session_name:5
-  tmux select-layout -t $session_name:5 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
-  tmux select-pane   -t $session_name:5.3
+  tmux send-keys -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
+  tmux split-window  -t $session_name:6
+  tmux send-keys -t $session_name:6.2 "watch -ctn 1 'git st'" C-m
+  tmux split-window -t $session_name:6
+  tmux select-layout -t $session_name:6 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
+  tmux select-pane -t $session_name:6.3
 
   cd ..
 
   # Window “man”
-  tmux split-window  -t $session_name:6
-  tmux select-layout -t $session_name:6 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
-  tmux send-keys -t $session_name:6.1 C-l
-  tmux send-keys -t $session_name:6.2 C-l
-  tmux select-pane -t $session_name:6.1
+  tmux split-window -t $session_name:7
+  tmux select-layout -t $session_name:7 ac68,210x51,0,0\{104x51,0,0,27,105x51,105,0,31\}
+  tmux send-keys -t $session_name:7.1 C-l
+  tmux send-keys -t $session_name:7.2 C-l
+  tmux select-pane -t $session_name:7.1
 
   # Window “fm”
-  tmux send-keys -t $session_name:7 vifm C-m
+  tmux send-keys -t $session_name:8 vifm C-m
 
   # Select the initial window and pane
   tmux select-window -t $session_name:1
