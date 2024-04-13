@@ -1,26 +1,22 @@
 [core]
-	editor = vim
-	quotepath = false
+  editor = vim
+  quotepath = false
 [alias]
-	godalog = log --graph --oneline --decorate=short --all
-        godlog = log --graph --oneline --decorate=short
-	merge = merge --ff-only
-	st = !git branch && git status -s
-        sd = !git branch && git diff --stat
+  godalog = log --graph --oneline --decorate=short --all
+  godlog = log --graph --oneline --decorate=short
+  merge = merge --ff-only
+  st = !git branch && git status -su
+  sd = !git branch && git diff --stat
 [merge]
-	tool = vimdiff
-[giggle]
-	compact-mode = false
-	main-window-maximized = false
-	main-window-geometry = 1200x800+39+67
+  tool = vimdiff
 [color]
-	ui = always
+  ui = always
 [push]
-	default = matching
+  default = matching
 [user]
-	name = Shamaoke
-	email = shamaoke@yandex.ru
+  name = Shamaoke
+  email = shamaoke@yandex.ru
 [commit]
-	verbose = true
+  verbose = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
