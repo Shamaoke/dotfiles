@@ -84,4 +84,3 @@ if [[ $? -ne 0 ]] {
   return 0
 }
 
-# vim: set textwidth=80 colorcolumn=80:
