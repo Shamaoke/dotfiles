@@ -14,8 +14,8 @@
 [push]
   default = matching
 [user]
-  name = Shamaoke
-  email = shamaoke@yandex.ru
+  name = Pavel Alekhin
+  email = alekhin.kolomna@yandex.ru
 [commit]
   verbose = true
 [init]
