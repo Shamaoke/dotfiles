@@ -1,6 +1,7 @@
 #!/usr/bin/zsh
 
 declare session_name=$1
+declare session_state=$2
 
 tmux has-session -t $session_name 2>/dev/null
 
@@ -52,7 +53,8 @@ if [[ $? -ne 0 ]] {
   tmux select-window -t lingo:1
   tmux select-pane -t lingo:1.1
 
-  tmux attach-session -t $session_name
+  # Attach the session
+  [[ $session_state == 'attached' ]] && tmux attach-session -t $session_name
 
   return 0
 
