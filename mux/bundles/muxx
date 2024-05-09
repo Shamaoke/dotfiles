@@ -1,0 +1,10 @@
+#! /usr/bin/env zsh
+
+function main {
+  mux start --detached --name=organizer organizer
+  mux start --detached --name=notes notes
+  mux start --name=console console
+}
+
+main
+
