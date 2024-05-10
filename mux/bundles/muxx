@@ -7,6 +7,9 @@ function main {
   cd $HOME/.data-upper/artifacts
   mux start --detached --name=notes notes
 
+  cd $HOME/.dotfiles
+  mux start --detached --name=dotfiles simple
+
   cd $HOME/.desktop
   mux start --detached --name=console console
 
