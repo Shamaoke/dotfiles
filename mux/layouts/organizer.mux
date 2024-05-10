@@ -46,7 +46,7 @@ if [[ $? -ne 0 ]] {
 
 } else {
   # Attach the session
-  tmux attach-session -t $session_name
+  [[ $session_state == 'attached' ]] && tmux attach-session -t $session_name
 
   return 0
 }
