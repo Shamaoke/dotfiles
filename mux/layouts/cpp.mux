@@ -40,7 +40,7 @@ if [[ $? -ne 0 ]] {
   tmux split-window -t $session_name:3
   tmux select-layout -t $session_name:3 even-vertical
   tmux split-window -t $session_name:3
-  tmux select-layout -t $session_name:3 3477,158x33,0,0\[158x27,0,0\{79x27,0,0\[79x13,0,0,80,79x13,0,14,78\],78x27,80,0\[78x13,80,0,79,78x13,80,14,77\]\},158x5,0,28,74\]
+  tmux select-layout -t $session_name:3 ab82,210x51,0,0\[210x34,0,0\{105x34,0,0\[105x16,0,0,38,105x17,0,17,45\],104x34,106,0\[104x16,106,0,46,104x17,106,17,47\]\},210x16,0,35,48\]
   tmux send-keys -t $session_name:3.1 "watch -ctn 1 'docker container ls --all'" C-m
   tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker volume ls'" C-m
   tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker image ls'" C-m
