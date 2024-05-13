@@ -1,8 +1,8 @@
 #! /usr/bin/env zsh
 
 function main {
-  cd $HOME/.data-upper/pm
-  mux start --detached --name=organizer organizer
+  # cd $HOME/.data-upper/pm
+  # mux start --detached --name=organizer organizer
 
   cd $HOME/.data-upper/artifacts
   mux start --detached --name=notes notes
@@ -15,6 +15,12 @@ function main {
 
   cd $HOME/.development/summaries
   mux start --detached --name=summaries simple
+
+  cd $HOME/.development/dark_cam
+  mux start --detached --name=dark_cam cpp
+
+  cd $HOME/.development/tem18lngdm
+  mux start --detached --name=tem18lngdm cpp
 
   cd $HOME/.desktop
   mux start --detached --name=console console
