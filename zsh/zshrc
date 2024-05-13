@@ -28,13 +28,6 @@ setopt no_beep
 alias pacman='pacman --color=always'
 alias xi="xclip -selection 'clipboard' -i"
 alias xo="xclip -selection 'clipboard' -o"
-alias mss="mux start simple $1"
-alias mdf='cd ~df && mss dotfiles'
-alias mch='cd ~dv/chrome && mss chrome'
-alias msc='cd ~/.desktop && mux start console console'
-alias mlg='cd ~lg && mux start lingo lingo'
-alias maf='cd ~af && mux start notes notes'
-alias moz='cd ~pm && mux start organizer organizer'
 alias w3m='w3m -B -title'
 
 # Set the named directories
