@@ -1,0 +1,26 @@
+#! /usr/bin/env zsh
+
+function main {
+  cd $HOME/.data-upper/pm
+  mux start --detached --name=organizer organizer
+
+  cd $HOME/.data-upper/artifacts
+  mux start --detached --name=notes notes
+
+  cd $HOME/.dotfiles
+  mux start --detached --name=dotfiles simple
+
+  cd $HOME/.lingo
+  mux start --detached --name=lingo lingo
+
+  cd $HOME/.development/summaries
+  mux start --detached --name=summaries simple
+
+  cd $HOME/.desktop
+  mux start --detached --name=console console
+
+  tmux attach-session -t console
+}
+
+main
+
