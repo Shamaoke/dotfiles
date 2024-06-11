@@ -22,6 +22,9 @@ function main {
   cd $HOME/.development/tem18lngdm
   mux start --detached --name=tem18lngdm cpp
 
+  cd $HOME/.development/sample_media_player
+  mux start --detached --name=sample_media_player cpp
+
   cd $HOME/.desktop
   mux start --detached --name=console console
 
