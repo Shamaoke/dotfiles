@@ -1,6 +1,9 @@
 #! /usr/bin/env zsh
 
-function main {
+#[maybe_unused]
+declare -a args=($@)
+
+function main TRAPEXIT {
   cd $HOME/.data-upper/pm
   mux start --detached --name=organizer organizer
 
@@ -16,11 +19,12 @@ function main {
   cd $HOME/.development/summaries
   mux start --detached --name=summaries simple
 
+  cd $HOME/.development/sample_media_player
+  mux start --detached --name=sample_media_player cpp
+
   cd $HOME/.desktop
   mux start --detached --name=console console
 
   tmux attach-session -t console
 }
-
-main
 
