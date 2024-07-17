@@ -69,6 +69,6 @@ source $HOME/.opam/opam-init/init.zsh
 source $HOME/.rvm/scripts/rvm
 
 # Load The “user” Python virtual environment into a shell session
-source $HOME/.virtualenvs/python-3.11.6@user/bin/activate
+source $HOME/.virtualenvs/default/bin/activate
 
 # vim: set textwidth=80 colorcolumn=80:
