@@ -6,8 +6,11 @@ declare session_state=${2}
 tmux has-session -t $session_name 2>/dev/null
 
 if [[ $? -ne 0 ]] {
+
   # Create a new session
+  cd ./source
   tmux new-session -d -s $session_name -n 'editor'
+  cd ..
 
   # Create the sessions' windows
   tmux new-window -t $session_name:2 -n 'work'
