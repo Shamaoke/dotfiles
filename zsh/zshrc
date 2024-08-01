@@ -34,11 +34,10 @@ alias w3m='w3m -B -title'
 hash -d pm=$HOME/.data-upper/pm
 hash -d af=$HOME/.data-upper/artifacts
 hash -d df=$HOME/.dotfiles
-hash -d dv=$HOME/.development
-hash -d pg=$HOME/.development/playground
+hash -d ws=$HOME/.workspace
+hash -d pg=$HOME/.workspace/playground
 hash -d lg=$HOME/.documents/lingo
 hash -d wo=$HOME/.data-upper/virtualbox/share/work
-hash -d ptm=$HOME/.development/tem18lngdm
 
 # Change the standard colors by using terminal control sequences
 # Run either of the following to set  the value of color17
