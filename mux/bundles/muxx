@@ -1,6 +1,6 @@
 #! /usr/bin/env zsh
 
-function main {
+function main TRAPEXIT {
   # cd $HOME/.data-upper/pm
   # mux start --detached --name=organizer organizer
 
@@ -13,23 +13,24 @@ function main {
   cd $HOME/.lingo
   mux start --detached --name=lingo lingo
 
-  cd $HOME/.development/summaries
+  cd $HOME/.workspace/summaries
   mux start --detached --name=summaries simple
 
-  cd $HOME/.development/dark_cam
+  cd $HOME/.workspace/dark_cam
   mux start --detached --name=dark_cam cpp
 
-  cd $HOME/.development/tem18lngdm
+  cd $HOME/.workspace/tem18lngdm
   mux start --detached --name=tem18lngdm cpp
 
-  cd $HOME/.development/sample_media_player
+  cd $HOME/.workspace/sample_media_player
   mux start --detached --name=sample_media_player cpp
+
+  cd $HOME/.workspace/asudpp
+  mux start --detached --name=asudpp simple
 
   cd $HOME/.desktop
   mux start --detached --name=console console
 
   tmux attach-session -t console
 }
-
-main
 
