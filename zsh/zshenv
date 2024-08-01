@@ -109,4 +109,10 @@ export MUX_LAYOUTS=$HOME/.mux/layouts
 # See `~/.virtualenvs/python-3.11@user/bin/activate:56` for details.
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+##
+## ::: Convenience environment variables :::
+##
+
+export PLAYGROUND=$HOME/.workspace/playground
+
 # vim: set textwidth=80 colorcolumn=80:
