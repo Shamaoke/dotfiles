@@ -65,10 +65,13 @@ bindkey -M vicmd v edit-command-line
 # Initialize Opam, a package manager for the OCaml programming language
 # source $HOME/.opam/opam-init/init.zsh
 
-# Load the Ruby Version Manager (RVM) into a shell session as a function
+# Load the Ruby Version Manager (RVM) into a shell session
 source $HOME/.rvm/scripts/rvm
 
 # Load the Python virtual environment into a shell session
 source $HOME/.virtualenvs/default/bin/activate
+
+# Load the Rust environment into a shell session
+source $HOME/.cargo/env
 
 # vim: set textwidth=80 colorcolumn=80:
