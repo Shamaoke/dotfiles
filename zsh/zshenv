@@ -84,17 +84,35 @@ export FPATH=$FPATH:$HOME/.local/share/zsh/functions/Zle:$HOME/.local/share/zsh/
 export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 
 #
+# Alacritty
+#
+# Disable DPI scaling, preventing padding to appear at the right and bottom sides on two monitor setup.
+#
+# Details:
+#
+# [Can't turn off DPI scaling · Issue #5076 · alacritty/alacritty · GitHub](https://github.com/alacritty/alacritty/issues/5076)
+#
+
+# export WINIT_X11_SCALE_FACTOR=1
+
+#
 # Mux
 #
 
 export MUX_LAYOUTS=$HOME/.mux/layouts
 
 #
-# Thy Python virtual environment
+# The Python virtual environment
 #
 
 # Disable setting the command line prompt by the python virtual environment.
 # See `~/.virtualenvs/python-3.11@user/bin/activate:56` for details.
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+##
+## ::: Convenience environment variables :::
+##
+
+export PLAYGROUND=$HOME/.workspace/playground
 
 # vim: set textwidth=80 colorcolumn=80:
