@@ -16,10 +16,10 @@ function main TRAPEXIT {
   cd $HOME/.lingo
   mux start --detached --name=lingo lingo
 
-  cd $HOME/.development/summaries
+  cd $HOME/.workspace/summaries
   mux start --detached --name=summaries simple
 
-  cd $HOME/.development/sample_media_player
+  cd $HOME/.workspace/sample_media_player
   mux start --detached --name=sample_media_player cpp
 
   cd $HOME/.desktop
