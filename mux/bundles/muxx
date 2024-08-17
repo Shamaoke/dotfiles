@@ -11,13 +11,13 @@ function main TRAPEXIT {
   mux start --detached --name=notes notes
 
   cd $HOME/.dotfiles
-  mux start --detached --name=dotfiles simple
+  mux start --detached --name=dotfiles generic
 
   cd $HOME/.lingo
   mux start --detached --name=lingo lingo
 
   cd $HOME/.workspace/summaries
-  mux start --detached --name=summaries simple
+  mux start --detached --name=summaries generic
 
   cd $HOME/.workspace/sample_media_player
   mux start --detached --name=sample_media_player cpp
