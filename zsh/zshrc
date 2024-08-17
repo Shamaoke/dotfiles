@@ -34,8 +34,8 @@ alias w3m='w3m -B -title'
 hash -d pm=$HOME/.data-upper/pm
 hash -d af=$HOME/.data-upper/artifacts
 hash -d df=$HOME/.dotfiles
-hash -d dv=$HOME/.development
-hash -d pg=$HOME/.development/playground
+hash -d ws=$HOME/.workspace
+hash -d pg=$HOME/.workspace/playground
 hash -d lg=$HOME/.documents/lingo
 hash -d wo=$HOME/.data-upper/virtualbox/share/work
 
@@ -65,10 +65,13 @@ bindkey -M vicmd v edit-command-line
 # Initialize Opam, a package manager for the OCaml programming language
 source $HOME/.opam/opam-init/init.zsh
 
-# Load the Ruby Version Manager (RVM) into a shell session as a function
+# Load the Ruby Version Manager (RVM) into a shell session
 source $HOME/.rvm/scripts/rvm
 
-# Load The “user” Python virtual environment into a shell session
+# Load the Python virtual environment into a shell session
 source $HOME/.virtualenvs/default/bin/activate
+
+# Load the Rust environment into a shell session
+source $HOME/.cargo/env
 
 # vim: set textwidth=80 colorcolumn=80:
