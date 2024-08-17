@@ -3,16 +3,31 @@
 # см. https://github.com/tmux/tmux/issues/1115
 # bind-key -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
 
+# Unbind a default key for creating a new window
+unbind-key c
+
+# Unbind a default key for custumizing options
+unbind-key C
+
 # Display a list of sessions
 bind-key s choose-tree -ZsN
 
 # Display a list of sessions and windows opened in them
-bind-key w choose-tree -ZwN
+# bind-key w choose-tree -ZwN
+
+# Display a list of windows opened in the current session
+bind-key w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
 
 # copy the text, selected in the copy mode to the clipboard
 bind-key -T copy-mode-vi y send -X copy-pipe 'xclip -in -selection clipboard'
 
 # kill the current session
 bind-key -T prefix X confirm-before -p "kill-session '#S'? (y/n)" kill-session
+
+# Create a new window after the current
+bind-key c new-window -a
+
+# Display a command prompt with a command for creating a new window
+bind-key C command-prompt "new-window -a -n %%"
 
 # vim: set textwidth=80 colorcolumn=80:
