@@ -19,8 +19,11 @@ function main TRAPEXIT {
   cd $HOME/.workspace/summaries
   mux start --detached --name=summaries generic
 
-  cd $HOME/.workspace/sample_media_player
-  mux start --detached --name=sample_media_player cpp
+  # cd $HOME/.workspace/sample_media_player
+  # mux start --detached --name=sample_media_player cpp
+
+  cd $HOME/.workspace/playground/rust
+  mux start --detached --name=rust generic
 
   cd $HOME/.desktop
   mux start --detached --name=console console
