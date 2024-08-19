@@ -13,9 +13,9 @@
   ui = always
 [push]
   default = matching
-[user]
-  name = Shamaoke
-  email = shamaoke@yandex.ru
+# [user]
+#   name = Shamaoke
+#   email = shamaoke@yandex.ru
 [commit]
   verbose = true
 [init]
