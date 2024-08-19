@@ -13,9 +13,9 @@
   ui = always
 [push]
   default = matching
-[user]
-  name = Pavel Alekhin
-  email = alekhin.kolomna@yandex.ru
+# [user]
+#   name = Pavel Alekhin
+#   email = alekhin.kolomna@yandex.ru
 [commit]
   verbose = true
 [init]
