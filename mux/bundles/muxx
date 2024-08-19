@@ -1,8 +1,8 @@
 #! /usr/bin/env zsh
 
 function main TRAPEXIT {
-  # cd $HOME/.data-upper/pm
-  # mux start --detached --name=organizer organizer
+  cd $HOME/.data-upper/pm
+  mux start --detached --name=organizer organizer
 
   cd $HOME/.data-upper/artifacts
   mux start --detached --name=notes notes
@@ -16,17 +16,17 @@ function main TRAPEXIT {
   cd $HOME/.workspace/summaries
   mux start --detached --name=summaries generic
 
-  cd $HOME/.workspace/dark_cam
-  mux start --detached --name=dark_cam cpp
+  # cd $HOME/.workspace/dark_cam
+  # mux start --detached --name=dark_cam cpp
 
-  cd $HOME/.workspace/tem18lngdm
-  mux start --detached --name=tem18lngdm cpp
+  # cd $HOME/.workspace/tem18lngdm
+  # mux start --detached --name=tem18lngdm cpp
 
-  cd $HOME/.workspace/sample_media_player
-  mux start --detached --name=sample_media_player cpp
+  # cd $HOME/.workspace/sample_media_player
+  # mux start --detached --name=sample_media_player cpp
 
-  cd $HOME/.workspace/asudpp
-  mux start --detached --name=asudpp generic
+  # cd $HOME/.workspace/asudpp
+  # mux start --detached --name=asudpp generic
 
   cd $HOME/.workspace/playground/rust
   mux start --detached --name='playground | rust' generic
