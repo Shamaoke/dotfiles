@@ -1,10 +1,10 @@
 #! /usr/bin/env zsh
 
 function main TRAPEXIT {
-  cd $HOME/.data-upper/pm
+  cd $DATA_DIR/pm
   mux start --detached --name=organizer organizer
 
-  cd $HOME/.data-upper/artifacts
+  cd $DATA_DIR/artifacts
   mux start --detached --name=notes notes
 
   cd $HOME/.dotfiles
@@ -28,8 +28,8 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/asudpp
   # mux start --detached --name=asudpp generic
 
-  cd $HOME/.workspace/playground/rust
-  mux start --detached --name='playground | rust' generic
+  # cd $HOME/.workspace/playground/rust
+  # mux start --detached --name='playground | rust' generic
 
   cd $HOME/.desktop
   mux start --detached --name=console console
