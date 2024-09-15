@@ -1,4 +1,4 @@
 
-# Prevent waring about incorrect PATH set from appearing
-rvm_silence_path_mismatch_check_flag=1
+# Prevent a warning about an incorrectly set PATH variable from appearing
+export rvm_silence_path_mismatch_check_flag=1
 
