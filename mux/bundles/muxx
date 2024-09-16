@@ -31,6 +31,9 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/playground/rust
   # mux start --detached --name='playground | rust' generic
 
+  cd $HOME/.workspace/playground/rails
+  mux start --detached --name='playground | rails' generic
+
   cd $HOME/.desktop
   mux start --detached --name=console console
 
