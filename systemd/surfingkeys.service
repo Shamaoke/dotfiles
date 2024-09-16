@@ -2,7 +2,7 @@
 Description=Run the WEBrick server to serve the Surfingkeys configuration file
 
 [Service]
-ExecStart=/home/user/.rvm/bin/rvm ruby-3.3.0@user do ruby -r un -e httpd /home/user/.config/surfingkeys -b 127.0.0.1 -p 8888
+ExecStart=/home/user/.rvm/bin/rvm ruby-3.3.5@user do ruby -r un -e httpd /home/user/.config/surfingkeys -b 127.0.0.1 -p 8888
 
 [Install]
 WantedBy=default.target
