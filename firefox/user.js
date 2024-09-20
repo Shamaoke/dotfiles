@@ -243,6 +243,12 @@ user_pref('media.webspeech.synth.enabled', false);
 user_pref('media.eme.enabled', false);
 user_pref('browser.eme.ui.enabled', false);
 
+////
+// Enable vertical tabs
+//
+user_pref('sidebar.revamp', true);
+user_pref('sidebar.verticalTabs', true);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
