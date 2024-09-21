@@ -115,4 +115,6 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 export PLAYGROUND=$HOME/.workspace/playground
 
+export DATA_DIR=$HOME/.data-upper
+
 # vim: set textwidth=80 colorcolumn=80:
