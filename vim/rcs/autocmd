@@ -7,6 +7,7 @@
 
   autocmd BufRead,BufNewFile *.rb         set filetype=ruby
   autocmd BufRead,BufNewFile *.ru         set filetype=ruby
+  autocmd BufRead,BufNewFile *.tt         set filetype=ruby
   autocmd BufRead,BufNewFile Gemfile      set filetype=ruby
   autocmd BufRead,BufNewFile Rakefile     set filetype=ruby
   autocmd BufRead,BufNewFile Guardfile    set filetype=ruby
