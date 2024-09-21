@@ -1,0 +1,59 @@
+
+##
+## ::: Generic Thor Rails template :::
+##
+
+run 'bundle config path vendor/bundle'
+
+# remove_dir 'bin'
+
+remove_file 'Gemfile'
+
+create_file 'Gemfile' do
+<<~doc
+
+source 'https://rubygems.org'
+
+gem 'rails'
+gem 'sprockets-rails'
+gem 'sqlite3'
+gem 'puma'
+gem 'importmap-rails'
+gem 'turbo-rails'
+gem 'stimulus-rails'
+gem 'bcrypt'
+gem 'ostruct'
+
+group :development, :test do
+  gem 'debug', require: 'debug/prelude'
+end
+
+group :development do
+  gem 'foreman'
+  gem 'tailwindcss-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end
+
+doc
+end
+
+create_file 'Procfile' do
+<<~doc
+
+server: bundle exec rails server --port 4444
+css: bundle exec rails tailwindcss:watch
+
+doc
+end
+
+run 'bundle install'
+
+run 'bundle exec rails tailwindcss:install'
+
+remove_file 'Procfile.dev'
+remove_file 'bin/dev'
+
