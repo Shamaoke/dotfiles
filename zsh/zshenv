@@ -110,6 +110,12 @@ export MUX_LAYOUTS=$HOME/.mux/layouts
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 ##
+## ::: Ruby on rails :::
+##
+
+export RAILS_CONFIG=$HOME/.config/rails
+
+##
 ## ::: Convenience environment variables :::
 ##
 
