@@ -248,6 +248,7 @@ user_pref('browser.eme.ui.enabled', false);
 //
 // user_pref('sidebar.revamp', true);
 // user_pref('sidebar.verticalTabs', true);
+// user_pref('sidebar.position_start', false);
 
 /* :::Fonts::: */
 
