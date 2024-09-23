@@ -93,7 +93,7 @@ export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 # [Can't turn off DPI scaling · Issue #5076 · alacritty/alacritty · GitHub](https://github.com/alacritty/alacritty/issues/5076)
 #
 
-export WINIT_X11_SCALE_FACTOR=1
+# export WINIT_X11_SCALE_FACTOR=1
 
 #
 # Mux
@@ -108,6 +108,12 @@ export MUX_LAYOUTS=$HOME/.mux/layouts
 # Disable setting the command line prompt by the python virtual environment.
 # See `~/.virtualenvs/python-3.11@user/bin/activate:56` for details.
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+##
+## ::: Ruby on rails :::
+##
+
+export RAILS_CONFIG=$HOME/.config/rails
 
 ##
 ## ::: Convenience environment variables :::
