@@ -246,8 +246,8 @@ user_pref('browser.eme.ui.enabled', false);
 ////
 // Enable vertical tabs
 //
-user_pref('sidebar.revamp', true);
-user_pref('sidebar.verticalTabs', true);
+// user_pref('sidebar.revamp', true);
+// user_pref('sidebar.verticalTabs', true);
 
 /* :::Fonts::: */
 
