@@ -1,0 +1,14 @@
+
+##
+## ::: Ruby on rails run commands :::
+##
+
+--skip-bundle
+--skip-docker
+--skip-git
+--skip-ci
+--skip-bootsnap
+--skip-rubocop
+--skip-brakeman
+--template=$RAILS_CONFIG/templates/generic.tt
+
