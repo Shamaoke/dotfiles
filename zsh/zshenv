@@ -93,7 +93,7 @@ export FIGLET_FONTDIR=$HOME/.local/share/figlet/fonts
 # [Can't turn off DPI scaling · Issue #5076 · alacritty/alacritty · GitHub](https://github.com/alacritty/alacritty/issues/5076)
 #
 
-# export WINIT_X11_SCALE_FACTOR=1
+export WINIT_X11_SCALE_FACTOR=1
 
 #
 # Mux
