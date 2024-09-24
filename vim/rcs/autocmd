@@ -19,6 +19,7 @@
   autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
   autocmd BufRead,BufNewFile *.pdftk   set filetype=pdftk
   autocmd BufRead,BufNewFile *.qrc     set filetype=xml
+  autocmd BufRead,BufNewFile Procfile* set filetype=yaml
 
 " enable paredit mode for the WebAssembly .wat files
   autocmd FileType wat call PareditInitBuffer()
