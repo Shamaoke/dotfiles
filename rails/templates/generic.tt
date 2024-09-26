@@ -94,6 +94,9 @@ create_file '.gitignore' do
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+# Ignore vendored gems
+/vendor/*
+
 # Ignore tags file
 tags
 doc
