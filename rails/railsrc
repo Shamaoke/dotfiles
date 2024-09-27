@@ -10,5 +10,10 @@
 --skip-bootsnap
 --skip-rubocop
 --skip-brakeman
+--skip-action-mailer
+--skip-action-mailbox
+--skip-jbuilder
+--skip-test
+--skip-system-test
 --template=$RAILS_CONFIG/templates/generic.tt
 
