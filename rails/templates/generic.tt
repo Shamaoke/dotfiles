@@ -1,11 +1,11 @@
 
 ##
-## ::: Generic Thor Rails template :::
+## ::: Generic Rails Thor template :::
 ##
 
 run 'bundle config path vendor/bundle'
 
-# remove_dir 'bin'
+# run 'bundle config bin bin'
 
 remove_file 'Gemfile'
 
@@ -23,19 +23,24 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 gem 'bcrypt'
 gem 'ostruct'
+gem 'haml-rails'
+gem 'dartsass-sprockets'
 
 group :development, :test do
   gem 'debug', require: 'debug/prelude'
+  gem 'rspec-rails'
+  gem 'tailwindcss-rails'
 end
 
 group :development do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
   gem 'foreman'
-  gem 'tailwindcss-rails'
 end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'cuprite'
 end
 
 doc
@@ -87,6 +92,7 @@ create_file '.gitignore' do
 # Ignore master key for decrypting credentials and more
 /config/master.key
 
+# Ignore assets built in development
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
@@ -102,7 +108,12 @@ end
 run 'bundle install'
 
 run 'bundle exec rails tailwindcss:install'
+run 'bundle exec rails generate cucumber:install'
+run 'bundle exec rails generate rspec:install'
 
 remove_file 'Procfile.dev'
 remove_file 'bin/dev'
+remove_file 'bin/cucumber'
+
+run 'mv bin script'
 
