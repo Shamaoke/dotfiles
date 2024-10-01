@@ -91,6 +91,7 @@ create_file '.gitignore' do
 !/tmp/storage/
 !/tmp/storage/.keep
 
+# Ignore public assets
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
@@ -104,6 +105,7 @@ create_file '.gitignore' do
 
 # Ignore tags file
 tags
+
 doc
 end
 
