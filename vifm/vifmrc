@@ -25,6 +25,13 @@ set trash
 
 set title
 
+""
+""  Whether to wrap text in quick view
+""
+""  set nowrap
+""
+set nowrap
+
 " Set location of the trash directory
 set trashdir=~/.local/share/vifm/trash
 
@@ -263,5 +270,13 @@ set showtabline=always
 "   `pane'   — a tab is located inside a pane and manages it and the quick view.
 "
 set tabscope=global
+
+""""
+""""
+"" ::: Set command for previewing files :::
+""
+
+fileviewer *.h,*.c,*.hpp,*.cpp,*.js,*.rb,*.rs /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
+fileviewer * /usr/bin/hexyl %c
 
 " vim: set textwidth=80 colorcolumn=80:
