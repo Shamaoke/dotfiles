@@ -1,11 +1,14 @@
-" :::keybindings:::
 
-" switch to normal view
+"""
+""" ::: Vifm | Keybindings :::
+"""
+
+" Switch to normal view
   nmap <c-v>r :regular<cr>
 
-" switch to tree view
+" Switch to tree view
   nmap <c-v>t :tree<cr>
 
-" toggle normal-tree view
+" Toggle normal-tree view
   nmap <c-v>g :tree!<cr>
 
