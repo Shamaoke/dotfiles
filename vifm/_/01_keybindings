@@ -9,4 +9,3 @@
 " toggle normal-tree view
   nmap <c-v>g :tree!<cr>
 
-" vim: set filetype=vifm:
