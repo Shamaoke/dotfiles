@@ -30,4 +30,10 @@ bind-key c new-window -a
 # Display a command prompt with a command for creating a new window
 bind-key C command-prompt "new-window -a -n %%"
 
+# Create a new pane in the same directory with the vertical split
+bind-key v split-window -h -c "#{pane_current_path}"
+
+# Create a new pane in the same directory as the current one with the horizontal split
+bind-key h split-window -c "#{pane_current_path}"
+
 # vim: set textwidth=80 colorcolumn=80:
