@@ -276,7 +276,7 @@ set tabscope=global
 "" ::: Set command for previewing files :::
 ""
 
-fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.haml,*.sass,*.java,*.js,*.java,*.json,*.md,*.rb,*.rs /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
+fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.erb,*.haml,*.sass,*.java,*.js,*.java,*.json,*.md,*.rb,*.rs /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
 fileviewer */ tree %c
 fileviewer * /usr/bin/hexyl %c
 
