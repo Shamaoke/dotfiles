@@ -3,6 +3,9 @@
 """ ::: Vifm | Keybindings :::
 """
 
+" Toggle a preview window in the adjacient pane
+  nmap ,g :view<CR>
+
 " Switch to normal view
   nmap <c-v>r :regular<cr>
 
