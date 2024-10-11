@@ -3,17 +3,33 @@
 ## ::: Ruby on rails run commands :::
 ##
 
+#
+# --skip-action-cable   -- intergartion websockets into Rails
+# --skip-action-mailbox -- integration of email inbox behaviour into Rails controllers
+# --skip-action-mailer  -- send email with Rails
+# --skip-action-text    -- add the ability to put a HTML into Rails
+# --skip-bootsnap       -- boot a Rails app faster
+# --skip-hotwire        -- disable Hotwire integration
+# --skip-jbuilder       -- build JSON response
+# --skip-system-tests   -- functional testing abilities
+# --stip-test           -- unit testing abilities
+#
+
+--skip-action-cable
+--skip-action-mailbox
+--skip-action-mailer
+--skip-action-text
+--skip-bootsnap
+--skip-brakeman
 --skip-bundle
+--skip-ci
 --skip-docker
 --skip-git
---skip-ci
---skip-bootsnap
---skip-rubocop
---skip-brakeman
---skip-action-mailer
---skip-action-mailbox
+--skip-hotwire
 --skip-jbuilder
---skip-test
+--skip-rubocop
 --skip-system-test
+--skip-test
+
 --template=$RAILS_CONFIG/templates/generic.tt
 
