@@ -4,6 +4,10 @@
 ##
 
 run 'bundle config path vendor/bundle'
+run 'bundle config ignore_messages.i18n true'
+##
+## Details: [ruby - How to disable post-install messages from rubygems? - Stack Overflow](https://stackoverflow.com/questions/21584349/how-to-disable-post-install-messages-from-rubygems)
+##
 
 # remove_dir 'bin'
 
@@ -19,8 +23,6 @@ gem 'sprockets-rails'
 gem 'sqlite3'
 gem 'puma'
 gem 'importmap-rails'
-gem 'turbo-rails'
-gem 'stimulus-rails'
 gem 'bcrypt'
 gem 'ostruct'
 gem 'haml-rails'
@@ -35,7 +37,6 @@ end
 
 group :development do
   gem 'foreman'
-  gem 'authentication-zero'
 end
 
 group :test do
@@ -103,6 +104,9 @@ create_file '.gitignore' do
 # Ignore tags file
 tags
 
+# Ignore master.key
+/config/master.key
+
 doc
 end
 
@@ -113,9 +117,31 @@ run 'bundle exec rails generate rspec:install'
 run 'bundle exec rails tailwindcss:install'
 # run 'bundle exec rails generate action_policy:install'
 
+remove_file 'app/views/layouts/application.html.erb'
+
+create_file 'app/views/layouts/application.haml' do
+<<~doc
+
+!!!html
+%html
+  %head
+    %title= content_for :title or 'Title'
+    %link{ rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'tailwind'
+    = stylesheet_link_tag 'application'
+    = yield :head
+  %body
+    %main
+    = yield
+
+doc
+end
+
 remove_file 'Procfile.dev'
 remove_file 'bin/dev'
 remove_file 'bin/cucumber'
 
-run 'mv bin script'
+# run 'mv bin script'
 
