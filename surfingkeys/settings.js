@@ -12,7 +12,13 @@ settings.tabsThreshold = 0
 // where a new tab should be opened: “first“, “last“, “left“, “right“, “default“
 // settings.newTabPosition = 'right'
 
-// :::bindings:::
+//////
+/// ::: Bindings :::
+///
+/// Details:
+/// --------
+/// [Surfingkeys/src/content_scripts/common/default.js at master · brookhong/Surfingkeys](https://github.com/brookhong/Surfingkeys/blob/master/src/content_scripts/common/default.js)
+///
 
 // open a link in a new tab
 // mapkey( 'F', '#1Open a link in a new tab', ( ) => Hints.create('', Hints.dispatchMouseClick, {tabbed: true}) )
@@ -37,6 +43,17 @@ settings.tabsThreshold = 0
 
 // move the current tab to the right
 // mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
+
+/// Go to the most recently used tab
+// api.mapkey( '<Ctrl-5>', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
+api.mapkey( 's', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
+// api.map('s', '<Ctrl-6>')
+
+/// Unmap the default key for going to the most recently used tab
+// api.unmap('<Ctrl-6>')
+
+// Unmap the default key for openning detected links from text
+// api.unmap('O')
 
 // toggle fullscreen
 // mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
