@@ -46,7 +46,7 @@ settings.tabsThreshold = 0
 
 /// Go to the most recently used tab
 // api.mapkey( '<Ctrl-5>', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
-api.mapkey( 's', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
+// api.mapkey( 's', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
 // api.map('s', '<Ctrl-6>')
 
 /// Unmap the default key for going to the most recently used tab
