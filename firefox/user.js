@@ -249,6 +249,16 @@ user_pref('browser.eme.ui.enabled', false);
 // user_pref('sidebar.revamp', true);
 // user_pref('sidebar.verticalTabs', true);
 
+////
+// Configure the hover tab preview
+//
+// Details
+// -------
+// [How to disable Hover Tab Previews for good? : r/firefox](https://www.reddit.com/r/firefox/comments/1dv5xqg/how_to_disable_hover_tab_previews_for_good)
+//
+user_pref('browser.tabs.hoverPreview.enabled', false);
+user_pref('browser.tabs.hoverPreview.showThumbnails', false);
+
 /* :::Fonts::: */
 
 // set a type for the Latin proportional fonts
