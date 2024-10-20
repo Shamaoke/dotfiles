@@ -7,4 +7,5 @@ include "%L"
 <Multi_key> <asciicircum> <apostrophe>  : "́"  # U+0301  Combining acute accent
 <Multi_key> <question> <question>       : "ʕ" # U+0295  Voiced pharyngeal fricative
 <Multi_key> <v> <v>                     : "🗸" # U+1F5F8 Light check mark
+<Multi_key> <space>                     : " " # U+00A0  No-break space
 
