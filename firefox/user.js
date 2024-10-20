@@ -26,7 +26,7 @@ user_pref('gfx.webrender.all', true);
 user_pref('gfx.webrender.software', false);
 
 // disable the reader mode
-user_pref('reader.parse-on-load.enabled', false);
+// user_pref('reader.parse-on-load.enabled', false);
 
 // disable showing the menu by pressing Alt
 // user_pref('ui.key.menuAccessKey', 0);
