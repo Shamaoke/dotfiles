@@ -29,6 +29,7 @@ alias pacman='pacman --color=always'
 alias xi="xclip -selection 'clipboard' -i"
 alias xo="xclip -selection 'clipboard' -o"
 alias w3m='w3m -B -title'
+alias ip='ip --color'
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
