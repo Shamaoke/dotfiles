@@ -276,8 +276,9 @@ set tabscope=global
 "" ::: Set command for previewing files :::
 ""
 
-fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.erb,*.haml,*.sass,*.java,*.js,*.json,*.yml,*.yaml,*.md,*.rb,*.rs,tags,Gemfile /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
+fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.erb,*.haml,*.sass,*.java,*.js,*.json,*.yml,*.yaml,*.md,*.rb,*.rs,tags,Gemfile,Dockerfile /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
+
 fileviewer */ tree %c
 fileviewer * /usr/bin/hexyl %c
 
-" vim: set textwidth=80 colorcolumn=80:
+" vim: set textwidth=80 colorcolumn=80 filetype=vim:
