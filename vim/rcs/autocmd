@@ -5,21 +5,21 @@
 " set the file type according to its extension
   autocmd BufRead,BufNewFile * set textwidth=80 colorcolumn=80
 
-  autocmd BufRead,BufNewFile *.rb      set filetype=ruby
-  autocmd BufRead,BufNewFile *.ru      set filetype=ruby
-  autocmd BufRead,BufNewFile *.tt      set filetype=ruby
-  autocmd BufRead,BufNewFile Gemfile   set filetype=ruby
-  autocmd BufRead,BufNewFile Rakefile  set filetype=ruby
-  autocmd BufRead,BufNewFile Guardfile set filetype=ruby
-  autocmd BufRead,BufNewFile *.haml    set filetype=haml
-  autocmd BufRead,BufNewFile *.sass    set filetype=sass
-  autocmd BufRead,BufNewFile *.feature set filetype=cucumber
-  autocmd BufRead,BufNewFile .xinitrc  set filetype=zsh
-  autocmd BufRead,BufNewFile themerc   set filetype=xdefaults
-  autocmd BufRead,BufNewFile tmux-*    set filetype=tmux
-  autocmd BufRead,BufNewFile *.pdftk   set filetype=pdftk
-  autocmd BufRead,BufNewFile *.qrc     set filetype=xml
-  autocmd BufRead,BufNewFile Procfile* set filetype=yaml
+  autocmd BufRead,BufNewFile *.rb        set filetype=ruby
+  autocmd BufRead,BufNewFile *.ru        set filetype=ruby
+  autocmd BufRead,BufNewFile *.tt        set filetype=ruby
+  autocmd BufRead,BufNewFile Gemfile     set filetype=ruby
+  autocmd BufRead,BufNewFile Rakefile    set filetype=ruby
+  autocmd BufRead,BufNewFile *.haml      set filetype=haml
+  autocmd BufRead,BufNewFile *.sass      set filetype=sass
+  autocmd BufRead,BufNewFile *.feature   set filetype=cucumber
+  autocmd BufRead,BufNewFile .xinitrc    set filetype=zsh
+  autocmd BufRead,BufNewFile themerc     set filetype=xdefaults
+  autocmd BufRead,BufNewFile tmux-*      set filetype=tmux
+  autocmd BufRead,BufNewFile *.pdftk     set filetype=pdftk
+  autocmd BufRead,BufNewFile *.qrc       set filetype=xml
+  autocmd BufRead,BufNewFile Procfile*   set filetype=yaml
+  autocmd BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 
 " enable paredit mode for the WebAssembly .wat files
   autocmd FileType wat call PareditInitBuffer()
