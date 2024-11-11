@@ -26,7 +26,7 @@ user_pref('gfx.webrender.all', true);
 user_pref('gfx.webrender.software', false);
 
 // disable the reader mode
-// user_pref('reader.parse-on-load.enabled', false);
+user_pref('reader.parse-on-load.enabled', false);
 
 // disable showing the menu by pressing Alt
 // user_pref('ui.key.menuAccessKey', 0);
@@ -248,7 +248,16 @@ user_pref('browser.eme.ui.enabled', false);
 //
 // user_pref('sidebar.revamp', true);
 // user_pref('sidebar.verticalTabs', true);
-// user_pref('sidebar.position_start', false);
+
+////
+// Configure the hover tab preview
+//
+// Details
+// -------
+// [How to disable Hover Tab Previews for good? : r/firefox](https://www.reddit.com/r/firefox/comments/1dv5xqg/how_to_disable_hover_tab_previews_for_good)
+//
+user_pref('browser.tabs.hoverPreview.enabled', false);
+user_pref('browser.tabs.hoverPreview.showThumbnails', false);
 
 /* :::Fonts::: */
 
