@@ -22,6 +22,8 @@
   autocmd BufRead,BufNewFile *.qrc        set filetype=xml
   autocmd BufRead,BufNewFile Dockerfile.* set filetype=dockerfile
   autocmd BufRead,BufNewFile *rvmrc       set filetype=zsh
+  autocmd BufRead,BufNewFile vifmrc       set filetype=vim
+  autocmd BufRead,BufNewFile .vifmrc      set filetype=vim
 
 " enable paredit mode for the WebAssembly .wat files
   autocmd FileType wat call PareditInitBuffer()
