@@ -25,6 +25,13 @@ set trash
 
 set title
 
+""
+""  Whether to wrap text in quick view
+""
+""  set nowrap
+""
+set nowrap
+
 " Set location of the trash directory
 set trashdir=~/.local/share/vifm/trash
 
@@ -264,4 +271,13 @@ set showtabline=always
 "
 set tabscope=global
 
-" vim: set textwidth=80 colorcolumn=80:
+""""
+""""
+"" ::: Set command for previewing files :::
+""
+
+fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.erb,*.haml,*.sass,*.java,*.js,*.json,*.yml,*.yaml,*.md,*.rb,*.rs,tags,Gemfile,Dockerfile /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
+
+fileviewer */ tree %c
+fileviewer * /usr/bin/hexyl %c
+
