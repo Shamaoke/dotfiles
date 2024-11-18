@@ -11,6 +11,8 @@
 # --skip-bootsnap       -- boot a Rails app faster
 # --skip-hotwire        -- disable Hotwire integration
 # --skip-jbuilder       -- build JSON response
+# --skip-kamal          -- skip Kamal setup
+# --skip-solid          -- skip Solid Cache, Queue, and Cable setup
 # --skip-system-tests   -- functional testing abilities
 # --stip-test           -- unit testing abilities
 #
@@ -27,7 +29,9 @@
 --skip-git
 --skip-hotwire
 --skip-jbuilder
+--skip-kamal
 --skip-rubocop
+--skip-solid
 --skip-system-test
 --skip-test
 
