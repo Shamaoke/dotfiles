@@ -8,7 +8,8 @@
 
 # Window borders
   window.active.border.color:   #4f2624
-  window.inactive.border.color: #714d35
+# window.inactive.border.color: #714d35
+  window.inactive.border.color: #d68051
   border.width: 2
 
 # Window title bar
