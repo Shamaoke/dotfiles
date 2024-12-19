@@ -20,3 +20,10 @@ user_pref('ui.key.menuAccessKeyFocuses', false);
 /// Behave in the window mode as in the fullscreen mode
 user_pref('full-screen-api.ignore-widgets', true);
 
+/// Disable built-in translator
+user_pref('browser.translations.enable', false);
+
+/// Prevent save password popup from appearing when entering passwords in
+/// password fields
+user_pref('signon.rememberSignons', false);
+
