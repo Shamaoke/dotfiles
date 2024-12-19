@@ -3,6 +3,9 @@
 /// ::: Firefox configuration for the TOR profile :::
 ///
 
+/// Do not close the browser window when closing the last tab
+user_pref('browser.tabs.closeWindowWithLastTab', false);
+
 /// When restoring a session, disable opening the browser on the virtual desktop
 /// where it was closed last time
 user_pref('widget.disable-workspace-management', true);
