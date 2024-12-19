@@ -10,7 +10,8 @@ blinking = "On"
 shape = "Block"
 
 [font]
-builtin_box_drawing = false
+# builtin_box_drawing = false
+builtin_box_drawing = true
 size = 13.0
 
 [font.bold_italic]
