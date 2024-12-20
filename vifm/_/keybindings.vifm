@@ -4,17 +4,17 @@
 """
 
 """ Toggle a preview window in the adjacient pane
-  nmap ,g :view<CR>
+nmap ,g :view<CR>
 
 """ Create a new tab
-  nmap ,t :tabnew<CR>
+nmap ,t :tabnew<CR>
 
 """ Switch to normal view
-  nmap <c-v>r :regular<cr>
+nmap <c-v>r :regular<cr>
 
 """ Switch to tree view
-  nmap <c-v>t :tree<cr>
+nmap <c-v>t :tree<cr>
 
 """ Toggle normal-tree view
-  nmap <c-v>g :tree!<cr>
+nmap <c-v>g :tree!<cr>
 
