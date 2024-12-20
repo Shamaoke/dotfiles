@@ -7,8 +7,7 @@
 " If you would like to use another vi clone such Elvis or Vile
 " you will need to change this setting.
 
-source ~/.dotfiles/vifm/_/00_commands
-source ~/.dotfiles/vifm/_/01_keybindings
+source ~/.dotfiles/vifm/_/keybindings.vifm
 
 set vicmd=vim
 
