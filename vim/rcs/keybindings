@@ -50,13 +50,16 @@
   nmap <silent> <LocalLeader>nt :tabnew<CR>
 
 " expand current window horizontally
-  nmap <LocalLeader>zz :vertical resize<CR>
+" nmap <LocalLeader>zz :vertical resize<CR>
 
 " expand current window vertically
-  nmap <LocalLeader>zv :resize<CR>
+" nmap <LocalLeader>zv :resize<CR>
+
+" expand current window horizontally and vertically
+  nmap<silent> <LocalLeader>zz :resize \| vertical resize<CR>
 
 " make all windows equally high and wide
-  nmap <LocalLeader>Z <C-w>=
+  nmap<silent> <LocalLeader>Z <C-w>=
 
 " :::spelling:::
 
