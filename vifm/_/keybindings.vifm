@@ -9,6 +9,9 @@ nmap ,g :view<CR>
 """ Create a new tab
 nmap ,t :tabnew<CR>
 
+""" Sync panes
+nmap ,s :sync<CR>
+
 """ Switch to normal view
 nmap <c-v>r :regular<cr>
 
