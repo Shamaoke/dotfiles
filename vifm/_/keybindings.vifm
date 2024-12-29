@@ -12,6 +12,9 @@ nmap ,t :tabnew<CR>
 """ Sync panes
 nmap ,s :sync<CR>
 
+""" Rename entries
+noremap <silent> ,r :rename<CR>
+
 """ Switch to normal view
 nmap <c-v>r :regular<cr>
 
