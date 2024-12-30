@@ -12,7 +12,7 @@ nmap ,t :tabnew<CR>
 """ Sync panes
 nmap ,s :sync<CR>
 
-""" Rename entries
+""" Rename highlited/selected entries
 noremap <silent> ,r :rename<CR>
 
 """ Switch to normal view
