@@ -79,10 +79,10 @@ user_pref('media.webspeech.synth.enabled', false);
 /// ::: Proxy configuration :::
 ///
 
-// use a configuration file for proxy settings
+/// Use a configuration file for proxy settings
 user_pref('network.proxy.type', 2);
 
-// set a configuration file for proxy server settings
+/// Set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/japu7glc.home/proxy.pac');
 
 ///
