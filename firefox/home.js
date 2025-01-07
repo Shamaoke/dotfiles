@@ -85,3 +85,10 @@ user_pref('network.proxy.type', 2);
 // set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/japu7glc.home/proxy.pac');
 
+///
+/// ::: Geo configuration :::
+///
+
+/// Keep geo location popup from appearing
+user_pref('geo.enabled', false);
+
