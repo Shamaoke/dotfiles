@@ -3,6 +3,7 @@
 #
 
 path=(
+  /usr/lib/qt6/bin/
   ~/.local/bin
   ~/.cargo/bin
   ~/.opam/5.0.0/bin
