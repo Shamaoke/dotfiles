@@ -1,0 +1,19 @@
+
+""
+"" ::: Set command for previewing files :::
+""
+
+fileviewer */ tree -C %c
+fileviewer <text/*> /usr/bin/bat --color=always --terminal-width=100 --wrap=never --paging=never %c
+fileviewer * /usr/bin/hexyl %c
+
+""
+"" Details
+"" -------
+"" • [Vifm | vifm-patterns](https://vifm.info/vimdoc.shtml#vifm-patterns)
+""
+"" • [Vifm | vifm-globs](https://vifm.info/vimdoc.shtml#vifm-globs)
+""
+"" • [Vifm | vifm-regexp](https://vifm.info/vimdoc.shtml#vifm-regexp)
+""
+

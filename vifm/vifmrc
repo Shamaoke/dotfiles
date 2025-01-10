@@ -7,8 +7,8 @@
 " If you would like to use another vi clone such Elvis or Vile
 " you will need to change this setting.
 
-source ~/.dotfiles/vifm/_/00_commands
-source ~/.dotfiles/vifm/_/01_keybindings
+source ~/.dotfiles/vifm/_/keybindings.vifm
+source ~/.dotfiles/vifm/_/fileviewer.vifm
 
 set vicmd=vim
 
@@ -270,14 +270,4 @@ set showtabline=always
 "   `pane'   — a tab is located inside a pane and manages it and the quick view.
 "
 set tabscope=global
-
-""""
-""""
-"" ::: Set command for previewing files :::
-""
-
-fileviewer *.h,*.c,*.hpp,*.cpp,*.html,*.css,*.erb,*.haml,*.sass,*.java,*.js,*.json,*.yml,*.yaml,*.md,*.rb,*.rs,tags,Gemfile,Dockerfile* /usr/bin/bat --color=always --terminal-width=100 --wrap=never %c
-
-fileviewer */ tree %c
-fileviewer * /usr/bin/hexyl %c
 

@@ -1,0 +1,26 @@
+
+"""
+""" ::: Vifm | Keybindings :::
+"""
+
+""" Toggle a preview window in the adjacient pane
+nmap ,g :view<CR>
+
+""" Create a new tab
+nmap ,t :tabnew<CR>
+
+""" Sync panes
+nmap ,s :sync<CR>
+
+""" Rename highlited/selected entries
+noremap <silent> ,r :rename<CR>
+
+""" Switch to normal view
+nmap <c-v>r :regular<cr>
+
+""" Switch to tree view
+nmap <c-v>t :tree<cr>
+
+""" Toggle normal-tree view
+nmap <c-v>g :tree!<cr>
+
