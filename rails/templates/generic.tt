@@ -18,19 +18,23 @@ create_file 'Gemfile' do
 
 source 'https://rubygems.org'
 
-gem 'rails', '~>8.0.0'
-gem 'propshaft'
-gem 'sqlite3'
-gem 'puma'
-gem 'importmap-rails'
-gem 'bcrypt'
-gem 'ostruct'
-gem 'haml-rails'
 gem 'action_policy'
+gem 'bcrypt'
+gem 'debug', require: 'debug/prelude'
+gem 'haml-rails'
+gem 'importmap-rails'
+gem 'ostruct'
+gem 'propshaft'
+gem 'puma'
+gem 'rails', '~>8.0.0'
+gem 'sqlite3'
+gem 'tailwindcss-rails'
+gem 'tzinfo-data'
+
+group :production do
+end
 
 group :development, :test do
-  gem 'debug', require: 'debug/prelude'
-  gem 'tailwindcss-rails'
   gem 'rspec-rails'
 end
 
@@ -39,10 +43,10 @@ group :development do
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
   gem 'capybara'
+  gem 'cucumber-rails', require: false
   gem 'cuprite'
+  gem 'database_cleaner'
 end
 
 doc
@@ -109,6 +113,48 @@ tags
 doc
 end
 
+create_file '.dockerignore' do
+<<~doc
+
+.bundle
+.dockerignore
+.git
+.gitignore
+.rspec
+
+Gemfile.lock
+Dockerfile*
+Procfile
+
+features
+spec
+tags
+tmp
+vendor
+
+**/.keep
+
+assets/builds
+
+bin/docker
+
+config/environments/development.rb
+config/environments/test.rb
+
+config/cucumber.yml
+
+lib/tasks/cucumber.rake
+
+log/development.log
+
+public/assets
+
+storage/development.sqlite3
+storage/test.sqlite3
+
+doc
+end
+
 run 'bundle install'
 
 run 'bundle exec rails generate cucumber:install'
@@ -140,7 +186,7 @@ end
 
 remove_file 'Procfile.dev'
 remove_file 'bin/dev'
-remove_file 'bin/cucumber'
+# remove_file 'bin/cucumber'
 
 # run 'mv bin script'
 
