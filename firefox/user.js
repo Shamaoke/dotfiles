@@ -63,7 +63,7 @@ user_pref('media.autoplay.blocking_policy', 2);
 user_pref('network.proxy.type', 2);
 
 // set a configuration file for proxy server settings
-user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/dmeebqfk.user/proxy.pac');
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/ngoqwd5t.user/proxy.pac');
 
 // show URL scheme in address bar
 user_pref('browser.urlbar.trimURLs', false);
@@ -80,7 +80,7 @@ user_pref('dom.webnotifications.enabled', false);
 user_pref('browser.startup.page', 3);
 
 // set the homepage
-user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/dmeebqfk.user/chrome/index.html');
+user_pref('browser.startup.homepage', 'file:///home/user/.mozilla/firefox/ngoqwd5t.user/chrome/index.html');
 
 // set the new tab page as a blank page
 user_pref('browser.newtabpage.enabled', false);
