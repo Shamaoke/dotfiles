@@ -3,16 +3,20 @@
 ## ::: C++ snippets
 ##
 
-snippet "
+snippet " "" i
 "${1}"${2}
 endsnippet
 
-snippet (
+snippet ( "" i
 (${1})${2}
 endsnippet
 
-snippet {
+snippet { "" i
 {${1}}${2}
+endsnippet
+
+snippet fc "function call" i
+${1:NAME}(${2:ARGS})${3}
 endsnippet
 
 snippet if
