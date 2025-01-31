@@ -7,6 +7,9 @@ source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/functions'`
 " load Plugged settings
 source ~/.dotfiles/vim/rcs/plugged
 
+" load UltiSnips settings
+source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/ultisnips.vim'`
+
 " load Markdown settings
 source ~/.dotfiles/vim/rcs/plugin-markdown
 
