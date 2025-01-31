@@ -25,18 +25,21 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/sample_media_player
   # mux start --detached --name=sample_media_player cpp
 
-  # cd $HOME/.workspace/asudpp
-  # mux start --detached --name=asudpp generic
+  cd $HOME/.workspace/sdb
+  mux start --detached --name=sdb generic
+
+  cd $HOME/.workspace/asudpp
+  mux start --detached --name=asudpp generic
 
   # cd $HOME/.workspace/playground/rust
   # mux start --detached --name='playground | rust' generic
 
   cd $HOME/.workspace/playground
-  mux start --detached --name='playground' generic
+  mux start --detached --name=playground generic
 
   cd $HOME/.desktop
-  mux start --detached --name=console console
+  mux start --detached --name=desktop console
 
-  tmux attach-session -t console
+  tmux attach-session -t desktop
 }
 
