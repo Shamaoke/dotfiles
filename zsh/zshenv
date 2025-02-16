@@ -123,4 +123,11 @@ export PLAYGROUND=$HOME/.workspace/playground
 
 export DATA_DIR=$HOME/.data-upper
 
+##
+## ::: VCPKG :::
+##
+
+export VCPKG_ROOT=$HOME/.local/share/vcpkg
+export VCPKG_DISABLE_METRICS=true
+
 # vim: set textwidth=80 colorcolumn=80:
