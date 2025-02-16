@@ -27,10 +27,10 @@ settings.tabsMRUOrder = false
 // mapkey( '>', '#4Go forward in history', ( ) => history.go(1), {repeatIgnore: true} )
 
 // go one tab left
-// mapkey( 'h', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
+api.mapkey( 'J', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), { repeatIgnore: true } )
 
 // go one tab right
-// mapkey( 'l', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
+api.mapkey( 'K', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), { repeatIgnore: true } )
 
 // move the current tab to the left
 // mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {step: -1}) )
