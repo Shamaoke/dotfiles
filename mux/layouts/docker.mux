@@ -53,7 +53,7 @@ if [[ $? -ne 0 ]] {
   # Window “fm”
   tmux send-keys -t $session_name:5 vifm C-m
 
- # Select the initial window and pane
+  # Select the initial window and pane
   tmux select-window -t $session_name:1
   tmux select-pane -t $session_name:1.1
 
