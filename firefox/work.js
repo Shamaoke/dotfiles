@@ -83,7 +83,7 @@ user_pref('media.webspeech.synth.enabled', false);
 user_pref('network.proxy.type', 2);
 
 /// Set a configuration file for proxy server settings
-user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/znmchfzd.work/proxy.pac');
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/qyuyckgf.work/proxy.pac');
 
 ///
 /// ::: Geo configuration :::
