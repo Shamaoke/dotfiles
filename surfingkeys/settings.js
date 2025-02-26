@@ -4,7 +4,7 @@
 settings.tabsThreshold = 0
 
 // set a sort order for tabs chosen by Omnibar (MRU or natural)
-// settings.tabsMRUOrder = false
+settings.tabsMRUOrder = false
 
 // align hints on their target elements
 // settings.hintAlign = 'left'
@@ -12,13 +12,7 @@ settings.tabsThreshold = 0
 // where a new tab should be opened: “first“, “last“, “left“, “right“, “default“
 // settings.newTabPosition = 'right'
 
-//////
-/// ::: Bindings :::
-///
-/// Details:
-/// --------
-/// [Surfingkeys/src/content_scripts/common/default.js at master · brookhong/Surfingkeys](https://github.com/brookhong/Surfingkeys/blob/master/src/content_scripts/common/default.js)
-///
+// :::bindings:::
 
 // open a link in a new tab
 // mapkey( 'F', '#1Open a link in a new tab', ( ) => Hints.create('', Hints.dispatchMouseClick, {tabbed: true}) )
@@ -33,27 +27,16 @@ settings.tabsThreshold = 0
 // mapkey( '>', '#4Go forward in history', ( ) => history.go(1), {repeatIgnore: true} )
 
 // go one tab left
-// mapkey( 'h', '#3Go left on {count} tabs', ( ) => RUNTIME('previousTab'), {repeatIgnore: true} )
+api.mapkey( 'K', '#3Go to previous {count} tabs', ( ) => api.RUNTIME('previousTab'), { repeatIgnore: true } )
 
 // go one tab right
-// mapkey( 'l', '#3Go right on {count} tabs', ( ) => RUNTIME('nextTab'), {repeatIgnore: true} )
+api.mapkey( 'J', '#3Go to next {count} tabs', ( ) => api.RUNTIME('nextTab'), { repeatIgnore: true } )
 
 // move the current tab to the left
 // mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {step: -1}) )
 
 // move the current tab to the right
 // mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
-
-/// Go to the most recently used tab
-// api.mapkey( '<Ctrl-5>', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
-// api.mapkey( 's', '#4 Go to the most recently used tab', ( ) => RUNTIME('goToLastTab') )
-// api.map('s', '<Ctrl-6>')
-
-/// Unmap the default key for going to the most recently used tab
-// api.unmap('<Ctrl-6>')
-
-// Unmap the default key for openning detected links from text
-// api.unmap('O')
 
 // toggle fullscreen
 // mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
@@ -72,10 +55,10 @@ settings.tabsThreshold = 0
 // unmap('W')
 
 // unmap a key for going one tab left
-// unmap('E')
+api.unmap('E')
 
 // unmap a key for going one tab right
-// unmap('R')
+api.unmap('R')
 
 // unmap a key for going back in history
 // unmap('S')
