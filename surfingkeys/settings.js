@@ -6,6 +6,16 @@ settings.tabsThreshold = 0
 // set a sort order for tabs chosen by Omnibar (MRU or natural)
 settings.tabsMRUOrder = false
 
+/// Prevent following a link if there's the only one on a page
+settings.hintExplicit = true
+///
+/// Details:
+/// --------
+/// • [Prevent following a link if there's the only one on a page · Issue #1083 · brookhong/Surfingkeys](https://github.com/brookhong/Surfingkeys/issues/1083)
+///
+/// • [Added hintExplicit option to disable automatic hint selection by j-hui · Pull Request #1157 · brookhong/Surfingkeys](https://github.com/brookhong/Surfingkeys/pull/1157)
+///
+
 // align hints on their target elements
 // settings.hintAlign = 'left'
 
