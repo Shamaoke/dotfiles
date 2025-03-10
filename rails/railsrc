@@ -17,18 +17,40 @@
 # --stip-test           -- unit testing abilities
 #
 
+## Preconfigure for selected database
+## Default: sqlite3
+## Possible values: mysql, trilogy, postgresql, sqlite3, mariadb-mysql, mariadb-trilogy
+--database sqlite3
+
+## Choose JavaScript approach
+## Default: importmap
+## Possible values: importmap, bun, webpack, esbuild, rollup
+--javascript importmap
+
+## Choose CSS processor. Check https://github.com/rails/cssbundling-rails for more options
+## Possible values: tailwind, bootstrap, bulma, postcss, sass
+--css tailwind
+
+## Skip Brakeman setup
+--skip-brakeman
+## Brakeman is a free vulnerability scanner specifically designed for Ruby on
+## Rails applications. It statically analyzes Rails application code to find
+## security issues at any stage of development.
+##
+## [Brakeman](https://brakemanscanner.org)
+##
+
 --skip-action-cable
 --skip-action-mailbox
 --skip-action-mailer
 --skip-action-text
 --skip-bootsnap
---skip-brakeman
 --skip-bundle
 --skip-ci
 --skip-docker
 --skip-git
---skip-hotwire
---skip-jbuilder
+# --skip-hotwire
+# --skip-jbuilder
 --skip-kamal
 --skip-rubocop
 --skip-solid
