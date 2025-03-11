@@ -287,5 +287,3 @@ remove_file 'Procfile.dev'
 remove_file 'bin/dev'
 remove_file 'bin/cucumber'
 
-# run 'mv bin script'
-
