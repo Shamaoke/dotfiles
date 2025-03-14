@@ -71,6 +71,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/Shamaoke/fzf-tags.vim
   Plug 'Shamaoke/fzf-tags.vim'
 
+" ::: qmake-syntax-vim :::
+" qmake project highlighting support for the Vim editor
+" https://github.com/artoj/qmake-syntax-vim
+  Plug 'artoj/qmake-syntax-vim'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
