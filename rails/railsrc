@@ -40,7 +40,7 @@
 ## [Brakeman](https://brakemanscanner.org)
 ##
 
---skip-action-cable
+# --skip-action-cable
 --skip-action-mailbox
 --skip-action-mailer
 --skip-action-text
