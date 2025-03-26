@@ -14,7 +14,7 @@
 # --skip-kamal          -- skip Kamal setup
 # --skip-solid          -- skip Solid Cache, Queue, and Cable setup
 # --skip-system-tests   -- functional testing abilities
-# --stip-test           -- unit testing abilities
+# --skip-test           -- unit testing abilities
 #
 
 ## Preconfigure for selected database
