@@ -227,49 +227,49 @@ end
 create_file '.gitignore' do
 <<~doc
 
-# Ignore bundler config
+## Ignore bundler config
 /.bundle
 
-# Ignore all environment files (except templates)
+## Ignore all environment files (except templates)
 /.env*
 !/.env*.erb
 
-# Ignore log files, but keep the directory.
+## Ignore log files, but keep the directory
 /log/*
 !/log/.keep
 
-# Ignore temporary files, but keep the directory.
+## Ignore temporary files, but keep the directory
 /tmp/*
 !/tmp/.keep
 
-# Ignore pidfiles, but keep the directory.
+## Ignore pidfiles, but keep the directory
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
 
-# Ignore storage (uploaded files in development and any SQLite databases).
+## Ignore storage (uploaded files in development and any SQLite databases)
 /storage/*
 !/storage/.keep
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
 
-# Ignore public assets
+## Ignore public assets
 /public/assets
 
-# Ignore master key for decrypting credentials and more.
+## Ignore master key for decrypting credentials and more
 /config/master.key
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
-# Ignore vendored gems
+## Ignore vendored gems
 /vendor/*
 
-# Ignore tags file
+## Ignore tags file
 tags
 
-# Ignore master.key
+## Ignore master.key
 /config/master.key
 
 doc
