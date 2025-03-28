@@ -330,7 +330,7 @@ run 'bundle exec rails turbo:install'
 
 remove_file 'app/views/layouts/application.html.erb'
 
-create_file 'app/views/layouts/application.haml' do
+create_file 'app/views/layouts/application.html.haml' do
 <<~doc
 
 !!!html
@@ -341,8 +341,6 @@ create_file 'app/views/layouts/application.haml' do
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
     = csrf_meta_tags
     = csp_meta_tag
-    -# = stylesheet_link_tag 'tailwind'
-    -# = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'tailwind', 'inter-font', 'data-turbo-track': 'reload'
     = stylesheet_link_tag :app, 'data-turbo-track': 'reload'
     = javascript_importmap_tags
@@ -449,6 +447,75 @@ std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags 'not 
 %>
 default: <%= std_opts %> --publish-quiet features
 rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags 'not @wip'
+
+doc
+end
+
+remove_file 'config/routes.rb'
+
+create_file 'config/routes.rb' do
+<<~'doc'
+
+Rails.application.routes.draw do
+end
+
+doc
+end
+
+remove_file 'app/controllers/application_controller.rb'
+
+create_file 'app/controllers/application_controller.rb' do
+<<~'doc'
+
+class ApplicationController < ActionController::Base
+end
+
+doc
+end
+
+create_file 'app/models/concerns/uuid_generator.rb' do
+<<~'doc'
+
+module UuidGenerator
+
+  extend ActiveSupport::Concern
+
+  included {
+    before_create { self.id = SecureRandom.uuid }
+  }
+end
+
+doc
+end
+
+remove_file 'app/models/application_record.rb'
+
+create_file 'app/models/application_record.rb' do
+<<~'doc'
+
+class ApplicationRecord < ActiveRecord::Base
+
+  primary_abstract_class
+
+  include UuidGenerator
+end
+
+doc
+end
+
+create_file 'config/initializers/locales.rb' do
+<<~'doc'
+
+I18n.available_locales = [:en, :ru]
+I18n.default_locale = :ru
+
+doc
+end
+
+create_file 'config/locales/ru.yml' do
+<<~'doc'
+
+ru:
 
 doc
 end
