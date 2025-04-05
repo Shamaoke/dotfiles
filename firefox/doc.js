@@ -75,3 +75,13 @@ user_pref('browser.translations.enable', false);
 user_pref('media.webspeech.recognition.enable', false);
 user_pref('media.webspeech.synth.enabled', false);
 
+///
+/// ::: Proxy configuration :::
+///
+
+/// Use a configuration file for proxy settings
+user_pref('network.proxy.type', 2);
+
+/// Set a configuration file for proxy server settings
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/1icuz0yk.doc/proxy.pac');
+
