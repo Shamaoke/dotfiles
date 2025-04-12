@@ -28,8 +28,8 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/doc/bi05-openv
   # mux start --detached --name=bi05-openv generic
 
-  cd $HOME/.workspace/sdb
-  mux start --detached --name=sdb generic
+  # cd $HOME/.workspace/sdb
+  # mux start --detached --name=sdb generic
 
   # cd $HOME/.workspace/asudpp
   # mux start --detached --name=asudpp generic
