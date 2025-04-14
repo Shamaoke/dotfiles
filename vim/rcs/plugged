@@ -76,6 +76,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/artoj/qmake-syntax-vim
   Plug 'artoj/qmake-syntax-vim'
 
+" ::: YouCompleteMe :::
+" A code-completion engine for Vim
+" https://github.com/ycm-core/YouCompleteMe
+  Plug 'ycm-core/YouCompleteMe'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
