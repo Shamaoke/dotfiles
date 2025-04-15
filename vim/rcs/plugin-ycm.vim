@@ -138,3 +138,12 @@ augroup YCMCustom
     \ }
 augroup END
 
+""
+"" ::: YouCompletMe Hotkeys :::
+""
+nmap <silent> <C-i>c :YcmCompleter GoToDeclaration<CR>
+nmap <silent> <C-i>f :YcmCompleter GoToDefinition<CR>
+"" Use <C-o> to jump back to where you were before.
+"" Use <C-i> to jump forward.
+"" See `:help quickfix` for details.
+
