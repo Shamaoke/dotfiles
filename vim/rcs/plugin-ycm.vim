@@ -119,6 +119,38 @@ let g:ycm_key_invoke_completion = '<C-i>i'
 "" let g:ycm_auto_hover = 'CursorHold'
 
 ""
+"" `g:ycm_goto_buffer_command`
+""
+"" Defines where `GoTo*` commands result should be opened. Can take one of the
+"" following values: `'same-buffer'`, `'split'`, or `'split-or-existing-window'`.
+"" If this option is set to the `'same-buffer'` but current buffer can not be
+"" switched (when buffer is modified and `nohidden` option is set), then result
+"" will be opened in a split. When the option is set to `'split-or-existing-window'`,
+"" if the result is already open in a window of the current tab page (or any tab
+"" pages with the `:tab` modifier; see below), it will jump to that window.
+"" Otherwise, the result will be opened in a split as if the option was set to `'split'`.
+""
+"" To customize the way a new window is split, prefix the `GoTo*` command with one
+"" of the following modifiers: `:aboveleft`, `:belowright`, `:botright`,
+"" `:leftabove`, `:rightbelow`, `:topleft`, and `:vertical`. For instance, to
+"" split vertically to the right of the current window, run the command:
+""
+"" ````
+"" :rightbelow vertical YcmCompleter GoTo
+"" ````
+""
+"" To open in a new tab page, use the `:tab` modifier with the `'split'` or
+"" `'split-or-existing-window'` options e.g.:
+""
+"" ````
+"" :tab YcmCompleter GoTo
+"" ````
+""
+"" Default: `'same-buffer'`
+""
+let g:ycm_goto_buffer_command = 'split'
+
+""
 "" ::: YouCompleteMe Autocommands :::
 ""
 
@@ -128,21 +160,22 @@ let g:ycm_key_invoke_completion = '<C-i>i'
 augroup YCMCustom
   autocmd!
   autocmd FileType c,cpp let b:ycm_hover = {
-    \ 'command': 'GetDoc',
-    \ 'syntax': &filetype,
-    \ 'popup_params': {
-    \     'maxwidth': 80,
-    \     'border': [],
-    \     'borderchars': ['─', '│', '─', '│', '┌', '┐', '┘', '└']
+    \   'command': 'GetDoc',
+    \   'syntax': &filetype,
+    \   'popup_params': {
+    \      'maxwidth': 100,
+    \      'border': [],
+    \      'borderchars': ['─', '│', '─', '│', '┌', '┐', '┘', '└']
     \   }
     \ }
 augroup END
+"" Press <C-c> to hide the pupup.
 
 ""
 "" ::: YouCompletMe Hotkeys :::
 ""
-nmap <silent> <C-i>c :YcmCompleter GoToDeclaration<CR>
-nmap <silent> <C-i>f :YcmCompleter GoToDefinition<CR>
+nmap <silent> <C-i>c :vertical YcmCompleter GoToDeclaration<CR>
+nmap <silent> <C-i>f :vertical YcmCompleter GoToDefinition<CR>
 "" Use <C-o> to jump back to where you were before.
 "" Use <C-i> to jump forward.
 "" See `:help quickfix` for details.
