@@ -1,4 +1,6 @@
+
 sub on_init {
+
   my $self = shift;
 
   for my $color (18..257) {
@@ -8,4 +10,3 @@ sub on_init {
   ()
 }
 
-# vim: set filetype=perl:
