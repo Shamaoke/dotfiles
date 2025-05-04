@@ -11,6 +11,7 @@ URxvt.title: terminal
 
 ! set terminal dimensions
 ! URxvt.geometry: 158x33
+URxvt.geometry: 400x400
 
 ! set font Term + Noto Sans Mono CJK JP
 ! URxvt.font: xft:Iosevka Term:style=Regular:size=13, xft:Noto Sans Mono CJK JP:size=12
@@ -55,10 +56,15 @@ URxvt.title: terminal
 !!
 
 ! set font Custom Term Slab + IPAexGothic
-  URxvt.font: xft:Iosevka Term Slab:style=Regular:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=12.5, xft:IPAexGothic:size=12.5
-  URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=12.5, xft:IPAexGothic:size=12.5
+! URxvt.font: xft:Iosevka Term Slab:style=Regular:size=12.5, xft:IPAexGothic:size=12.5
+! URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=12.5, xft:IPAexGothic:size=12.5
+! URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=12.5, xft:IPAexGothic:size=12.5
+! URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=12.5, xft:IPAexGothic:size=12.5
+
+URxvt.font: xft:Iosevka Term Slab:style=Regular:size=14, xft:IPAexGothic:size=14
+URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=14, xft:IPAexGothic:size=14
+URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=14, xft:IPAexGothic:size=14
+URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=14, xft:IPAexGothic:size=14
 
 ! disable high intensity colors for bold text
   URxvt.intensityStyles: false
@@ -113,10 +119,11 @@ URxvt.keysym.S-Next: \033[6$
 URxvt.secondaryScroll: false
 
 ! do not initialize the perl interpreter
-! URxvt.perl-ext:
-! URxvt.perl-ext-common:
+URxvt.perl-ext:
+URxvt.perl-ext-common: colorize
 
-  URxvt.perl-ext-common: colorize
+!! URxvt.perl-ext-common:
+
 
 ! set the urgency hint for the WM on receipt of a bell character (\x07)
 ! this allows to highlight the urgent tab in the suckless tabbed utility
