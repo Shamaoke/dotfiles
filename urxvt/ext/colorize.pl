@@ -1,0 +1,12 @@
+
+sub on_init {
+
+  my $self = shift;
+
+  for my $color (18..257) {
+    $self->resource("color+$color", $self->x_resource("color${\($color - 2)}"));
+  }
+
+  ()
+}
+
