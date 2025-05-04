@@ -1,0 +1,117 @@
+
+!!! ░█░█░█▀▄░█░█░█░█░▀█▀
+!!! ░█░█░█▀▄░▄▀▄░▀▄▀░░█░
+!!! ░▀▀▀░▀░▀░▀░▀░░▀░░░▀░
+
+!!!
+!!! NOTE! Always run the `xrdb -merge ~/.Xresources` after editing this file
+!!! in order the changes to take effect.
+!!!
+
+#include "colors/chinese-pastel.xrs"
+
+!!! Set the window title
+URxvt.title: terminal
+
+!!! Set terminal dimensions
+URxvt.geometry: 400x400
+!!!
+!!! This value is needed in order to prevent an issue when at the terminal startup
+!!! the command prompt appears at the middle of the terminal screen.
+!!!
+!!! Details
+!!! -------
+!!! • [SOLVED \[i3 tw\] Urxvt(c) first line not on top since last system update / Newbie Corner / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=282791)
+!!!
+!!! • [FS#77062 : \[rxvt-unicode\] half-screen spacing on launch](https://bugs.archlinux.org/task/77062)
+!!!
+
+!!! Configure the input method and the preedit type (OnTheSpot | OverTheSpot | OffTheSpot | Root)
+URxvt.inputMethod: ibus
+URxvt.preeditType: OnTheSpot
+!!!
+!!! In order to use the `OnTheSpot` preedit type the `xim-onthespot` Perl extension
+!!! should be enabled (which is the default).
+!!!
+
+!!! Configure fonts
+URxvt.font: xft:Iosevka Term Slab:style=Regular:size=14, xft:IPAexGothic:size=14
+URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=14, xft:IPAexGothic:size=14
+URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=14, xft:IPAexGothic:size=14
+URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=14, xft:IPAexGothic:size=14
+
+!!! Configure using high intensity colors for bold text
+URxvt.intensityStyles: false
+
+!!! Adjust the letter spacing
+URxvt.letterSpace: 0
+
+!!! Adjust the line spacing
+URxvt.lineSpace: 0
+
+!!! Configure the usage of the built-in block graphics/line drawing characters
+URxvt.skipBuiltinGlyphs: false
+
+!!! Configure showing the scrollbar
+URxvt.scrollBar: false
+
+!!! Set the color of borders around the text area
+!!! URxvt.borderColor: #ffcc00
+
+!!! Configure cursor blinking
+URxvt.cursorBlink: true
+
+!!! Configure hiding the mouse pointer when a key is pressed or after a set number
+!!! of seconds of inactivity
+URxvt.pointerBlank: true
+!!!
+!!! The number of seconds is determined by the `pointerBlankDelay` preference (default: 2)
+!!!
+
+!!! Set a number of seconds of inactivity before the mouse pointer will be hidden
+!!! URxvt.pointerBlankDelay: 10
+
+!!! Configure the Unicode input mode
+URxvt.iso14755: false
+!!!
+!!! This mode is available by pressing `Ctrl+Shift`.
+!!!
+
+!!! Set the number of lines in the viewing buffer
+URxvt.saveLines: 10000
+
+!!! Move the viewing buffer up and down by 1 line by pressing `Ctrl+j/k`
+!!! URxvt.keysym.C-k: command:\033]720;1\007
+!!! URxvt.keysym.C-j: command:\033]721;1\007
+
+!!! Move the viewing buffer up and down by 10 lines by pressing `Ctrl+Shift+j/k`
+!!! URxvt.keysym.C-S-K: command:\033]720;10\007
+!!! URxvt.keysym.C-S-J: command:\033]721;10\007
+
+!!! Configure actions when pressing `Shift+PgUp/PgDown`
+!!! Send keycode for `Shift+PgUp`
+URxvt.keysym.S-Prior: \033[5$
+!!! Send keycode for `Shift+PgDown`
+URxvt.keysym.S-Next: \033[6$
+!!!
+!!! By default, the actions are to send the scrolling controll sequences.
+!!!
+
+!!! Configure adding lines to viewing buffer when scrolling in console applications (e. g. vim)
+URxvt.secondaryScroll: false
+
+!!! Set the used Perl extensions
+URxvt.perl-ext:
+URxvt.perl-ext-common: colorize,xim-onthespot
+!!!
+!!! The `xim-onthespot` extension is necessary for using the `OnTheSpot` Xim
+!!! preedit type.
+!!!
+
+!!! Configure setting the urgency hint for the WM on receipt of the bell character (\x07)
+URxvt.urgentOnBell: false
+!!!
+!!! This, for example, allows to highlight the urgent tab in the suckless tabbed
+!!! utility when the bell character is sent.
+!!!
+
