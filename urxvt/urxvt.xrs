@@ -35,10 +35,10 @@ URxvt.preeditType: OnTheSpot
 !!!
 
 !!! Configure fonts
-URxvt.font: xft:Iosevka Term Slab:style=Regular:size=14, xft:IPAexGothic:size=14
-URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=14, xft:IPAexGothic:size=14
-URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=14, xft:IPAexGothic:size=14
-URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=14, xft:IPAexGothic:size=14
+URxvt.font: xft:Iosevka Term Slab:style=Regular:size=13, xft:IPAexGothic:size=13
+URxvt.boldFont: xft:Iosevka Term Slab:style=Medium:size=13, xft:IPAexGothic:size=13
+URxvt.italicFont: xft:Iosevka Term Slab:style=Italic:size=13, xft:IPAexGothic:size=13
+URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=13, xft:IPAexGothic:size=13
 
 !!! Configure using high intensity colors for bold text
 URxvt.intensityStyles: false
