@@ -180,3 +180,14 @@ nmap <silent> <C-i>f :vertical YcmCompleter GoToDefinition<CR>
 "" Use <C-i> to jump forward.
 "" See `:help quickfix` for details.
 
+"" NOTE. Can't get the following feature working
+""
+"" Display subtypes and supertypes of the symbol under the cursor
+"" nmap <LocalLeader>yth <Plug>(YCMTypeHierarchy)
+""
+"" Display callees and callers of the symbol under the cursor
+"" nmap <LocalLeader>ych <Plug>(YCMCallHierarchy)
+""
+"" Details: https://github.com/ycm-core/YouCompleteMe?tab=readme-ov-file#typecall-hierarchy
+""
+
