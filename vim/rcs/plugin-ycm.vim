@@ -41,7 +41,7 @@ let g:ycm_confirm_extra_conf = 0
 ""
 "" `https://github.com/ycm-core/YouCompleteMe?tab=readme-ov-file#the-gycm_key_invoke_completion-option`
 ""
-let g:ycm_key_invoke_completion = '<C-i>i'
+"" let g:ycm_key_invoke_completion = '<C-i>i'
 
 ""
 "" `g:ycm_auto_hover`
@@ -174,8 +174,8 @@ augroup END
 ""
 "" ::: YouCompletMe Hotkeys :::
 ""
-nmap <silent> <C-i>c :vertical YcmCompleter GoToDeclaration<CR>
-nmap <silent> <C-i>f :vertical YcmCompleter GoToDefinition<CR>
+"" nmap <silent> <C-i>c :vertical YcmCompleter GoToDeclaration<CR>
+"" nmap <silent> <C-i>f :vertical YcmCompleter GoToDefinition<CR>
 "" Use <C-o> to jump back to where you were before.
 "" Use <C-i> to jump forward.
 "" See `:help quickfix` for details.
