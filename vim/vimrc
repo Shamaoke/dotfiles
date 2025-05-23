@@ -8,7 +8,7 @@ source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/functions'`
 source ~/.dotfiles/vim/rcs/plugged
 
 " load UltiSnips settings
-source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/ultisnips.vim'`
+source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ultisnips.vim'`
 
 " load YouCompleteMe settings
 source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ycm.vim'`
