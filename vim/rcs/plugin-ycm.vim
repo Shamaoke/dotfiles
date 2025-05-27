@@ -174,8 +174,8 @@ augroup END
 ""
 "" ::: YouCompletMe Hotkeys :::
 ""
-"" nmap <silent> <C-i>c :vertical YcmCompleter GoToDeclaration<CR>
-"" nmap <silent> <C-i>f :vertical YcmCompleter GoToDefinition<CR>
+nmap <silent> <LocalLeader>jk :vertical YcmCompleter GoToDeclaration<CR>
+nmap <silent> <LocalLeader>jj :vertical YcmCompleter GoToDefinition<CR>
 "" Use <C-o> to jump back to where you were before.
 "" Use <C-i> to jump forward.
 "" See `:help quickfix` for details.
