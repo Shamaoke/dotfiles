@@ -7,6 +7,10 @@ source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/functions'`
 " load Plugged settings
 source ~/.dotfiles/vim/rcs/plugged
 
+" load keybindings
+source ~/.dotfiles/vim/rcs/keybindings
+" source ~/.dotfiles/vim/rcs/keybindings-russian
+
 " load UltiSnips settings
 source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ultisnips.vim'`
 
@@ -66,10 +70,6 @@ source ~/.dotfiles/vim/rcs/cursor
 
 " load commands
 source ~/.dotfiles/vim/rcs/commands
-
-" load keybindings
-source ~/.dotfiles/vim/rcs/keybindings
-" source ~/.dotfiles/vim/rcs/keybindings-russian
 
 " load omni-completion settings
 source ~/.dotfiles/vim/rcs/omni-completion
