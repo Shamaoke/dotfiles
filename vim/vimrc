@@ -7,6 +7,13 @@ source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/functions'`
 " load Plugged settings
 source ~/.dotfiles/vim/rcs/plugged
 
+" load keybindings
+source ~/.dotfiles/vim/rcs/keybindings
+" source ~/.dotfiles/vim/rcs/keybindings-russian
+
+" load YouCompleteMe settings
+source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ycm.vim'`
+
 " load Markdown settings
 source ~/.dotfiles/vim/rcs/plugin-markdown
 
@@ -60,10 +67,6 @@ source ~/.dotfiles/vim/rcs/cursor
 
 " load commands
 source ~/.dotfiles/vim/rcs/commands
-
-" load keybindings
-source ~/.dotfiles/vim/rcs/keybindings
-" source ~/.dotfiles/vim/rcs/keybindings-russian
 
 " load omni-completion settings
 source ~/.dotfiles/vim/rcs/omni-completion
