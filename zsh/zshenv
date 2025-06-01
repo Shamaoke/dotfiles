@@ -130,3 +130,11 @@ export DATA_DIR=$HOME/.data-upper
 export VCPKG_ROOT=$HOME/.local/share/vcpkg
 export VCPKG_DISABLE_METRICS=true
 
+##
+## ::: IBus :::
+##
+
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
