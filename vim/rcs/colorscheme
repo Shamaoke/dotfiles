@@ -45,4 +45,11 @@ highlight Comment           cterm=none ctermfg=007  ctermbg=none
 highlight Normal            cterm=none ctermfg=015  ctermbg=none
 highlight MatchParen        cterm=none ctermfg=none ctermbg=235
 
+" diff
+highlight DiffAdd     cterm=none ctermfg=015 ctermbg=004
+highlight DiffChange  cterm=none ctermfg=015 ctermbg=005
+highlight DiffDelete  cterm=none ctermfg=015 ctermbg=006
+highlight DiffText    cterm=none ctermfg=015 ctermbg=009
+highlight DiffTextAdd cterm=none ctermfg=015 ctermbg=009
+
 " vim: set filetype=vim:
