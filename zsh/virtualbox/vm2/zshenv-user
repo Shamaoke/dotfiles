@@ -1,0 +1,14 @@
+
+##
+## ZSH prompt
+##
+
+export PROMPT="%F{2}%B>_%b%f "
+export RPROMPT=" %~"
+
+##
+## Editor
+##
+
+export EDITOR='vim'
+
