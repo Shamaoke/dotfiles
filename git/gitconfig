@@ -20,3 +20,7 @@
   verbose = true
 [init]
   defaultBranch = main
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
