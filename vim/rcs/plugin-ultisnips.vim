@@ -3,9 +3,10 @@
 "" ::: UtilSnips
 ""
 
-"" Expand a snippet then jump forward
-let g:UltiSnipsExpandOrJumpTrigger = '<C-j>'
+let g:UltiSnipsExpandTrigger = '<C-l>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
-"" Jump backward
-let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
+"" Expand a snippet then jump forward
+"" let g:UltiSnipsExpandOrJumpTrigger = '<C-j>'
 
