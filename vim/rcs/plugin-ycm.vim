@@ -151,6 +151,34 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_goto_buffer_command = 'split'
 
 ""
+"" `g:ycm_filetype_blacklist`
+""
+"" This option controls for which Vim filetypes should YCM be turned off. The
+"" option value should be a Vim dictionary with keys being filetype strings
+"" (like python, cpp, etc.) and values being unimportant (the dictionary is used
+"" like a hash set, meaning that only the keys matter).
+""
+"" Default: [see next line]
+""
+"" ```
+"" let g:ycm_filetype_blacklist = {
+""   \ 'tagbar': 1,
+""   \ 'notes': 1,
+""   \ 'markdown': 1,
+""   \ 'netrw': 1,
+""   \ 'unite': 1,
+""   \ 'text': 1,
+""   \ 'vimwiki': 1,
+""   \ 'pandoc': 1,
+""   \ 'infolog': 1,
+""   \ 'leaderf': 1,
+""   \ 'mail': 1
+""   \}
+"" ```
+""
+let g:ycm_filetype_blacklist = { }
+
+""
 "" ::: YouCompleteMe Autocommands :::
 ""
 
