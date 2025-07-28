@@ -271,3 +271,30 @@ set showtabline=always
 "
 set tabscope=global
 
+""
+"" `syscalls'
+""
+"" type: boolean
+"" default: false
+""
+"" When disabled, vifm will rely on external applications to perform file-system
+"" operations, otherwise system calls are used instead (much faster and supports
+"" progress tracking). The option should eventually be removed. Mostly *nix-like
+"" systems are affected.
+""
+set syscalls
+
+""
+"" `uioptions'
+""
+"" type: set
+"" default: `'
+""
+"" Tweaks UI behaviour. The following values are available:
+""
+""   `iodetails' — show I/O progress details dialog automatically instead of
+""                 displaying progress on statusbar until user presses `i` to see
+""                 the dialog.
+""
+set uioptions=iodetails
+
