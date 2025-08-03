@@ -9,6 +9,9 @@ unbind-key c
 # Unbind a default key for custumizing options
 unbind-key C
 
+# Unbind the default key for selecting layouts
+unbind-key Space
+
 # Display a list of sessions
 bind-key s choose-tree -ZsN
 
