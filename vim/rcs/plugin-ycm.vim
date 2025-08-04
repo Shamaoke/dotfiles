@@ -204,10 +204,10 @@ augroup END
 ""
 nmap <silent> <LocalLeader>jk :vertical YcmCompleter GoToDeclaration<CR>
 nmap <silent> <LocalLeader>jj :vertical YcmCompleter GoToDefinition<CR>
-nmap <silent> <LocalLeader>jl :YcmDiags<CR>
 "" Use <C-o> to jump back to where you were before.
 "" Use <C-i> to jump forward.
 "" See `:help quickfix` for details.
+nmap <silent> <LocalLeader>jl :YcmDiags<CR>
 
 "" NOTE. Can't get the following feature working
 ""
