@@ -34,8 +34,9 @@ function main TRAPEXIT {
   cd $HOME/.workspace/tem18lng-soft/tem18lng-display_unit
   mux start --detached --name=tem18lng-display_unit cpp
 
-  cd $HOME/.workspace/tem18lng-soft/tem18lng-rack
-  mux start --detached --name=tem18lng-rack cpp
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/program
+  # mux start --detached --name=tem18lng-rack cpp
+  mux start --detached --name=tem18lng-rack generic
 
   cd $HOME/.workspace/asudpp
   mux start --detached --name=asudpp generic
