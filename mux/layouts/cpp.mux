@@ -62,7 +62,8 @@ if [[ $? -ne 0 ]] {
   cd ./source
 
   # Window “git”
-  tmux send-keys -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
+  # tmux send-keys -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
+  tmux send-keys -t $session_name:6.1 "gitui" C-m
   tmux split-window  -t $session_name:6
   tmux send-keys -t $session_name:6.2 "watch -ctn 1 'git st'" C-m
   tmux split-window -t $session_name:6
