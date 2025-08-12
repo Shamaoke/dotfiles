@@ -130,4 +130,9 @@ export DATA_DIR=/mnt/flash
 export VCPKG_ROOT=$HOME/.local/share/vcpkg
 export VCPKG_DISABLE_METRICS=true
 
+##
+## ::: SSH-Agent :::
+##
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+
 # vim: set textwidth=80 colorcolumn=80:
