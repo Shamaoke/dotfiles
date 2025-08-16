@@ -34,7 +34,8 @@ gui:
 
   # If true, capture mouse events.
   # When mouse events are captured, it's a little harder to select text: e.g. requiring you to hold the option key when on macOS.
-  mouseEvents: true
+  # mouseEvents: true
+  mouseEvents: false
 
   # If true, do not show a warning when amending a commit.
   skipAmendWarning: false
@@ -53,7 +54,8 @@ gui:
 
   # Fraction of the total screen width to use for the left side section. You may want to pick a small number (e.g. 0.2) if you're using a narrow screen, so that you can see more of the main section.
   # Number from 0 to 1.0.
-  sidePanelWidth: 0.3333
+  # sidePanelWidth: 0.3333
+  sidePanelWidth: 0.5
 
   # If true, increase the height of the focused side window; creating an accordion effect.
   expandFocusedSidePanel: false
@@ -67,7 +69,8 @@ gui:
   # - 'horizontal': split the window horizontally
   # - 'vertical': split the window vertically
   # - 'flexible': (default) split the window horizontally if the window is wide enough, otherwise split vertically
-  mainPanelSplitMode: flexible
+  # mainPanelSplitMode: flexible
+  mainPanelSplitMode: horizontal
 
   # How the window is split when in half screen mode (i.e. after hitting '+' once).
   # Possible values:
@@ -78,13 +81,15 @@ gui:
   # If true, wrap lines in the staging view to the width of the view. This
   # makes it much easier to work with diffs that have long lines, e.g.
   # paragraphs of markdown text.
-  wrapLinesInStagingView: true
+  # wrapLinesInStagingView: true
+  wrapLinesInStagingView: false
 
   # If true, hunk selection mode will be enabled by default when entering the staging view.
   useHunkModeInStagingView: true
 
   # One of 'auto' (default) | 'en' | 'zh-CN' | 'zh-TW' | 'pl' | 'nl' | 'ja' | 'ko' | 'ru'
-  language: auto
+  # language: auto
+  language: en
 
   # Format used when displaying time e.g. commit time.
   # Uses Go's time format syntax: https://pkg.go.dev/time#Time.Format
@@ -167,13 +172,15 @@ gui:
   showNumstatInFilesView: false
 
   # If true, show a random tip in the command log when Lazygit starts
-  showRandomTip: true
+  # showRandomTip: true
+  showRandomTip: false
 
   # If true, show the command log
   showCommandLog: true
 
   # If true, show the bottom line that contains keybinding info and useful buttons. If false, this line will be hidden except to display a loader for an in-progress action.
-  showBottomLine: true
+  # showBottomLine: true
+  showBottomLine: false
 
   # If true, show jump-to-window keybindings in window titles.
   showPanelJumps: true
@@ -184,13 +191,16 @@ gui:
   nerdFontsVersion: ""
 
   # If true (default), file icons are shown in the file views. Only relevant if NerdFontsVersion is not empty.
-  showFileIcons: true
+  # showFileIcons: true
+  showFileIcons: false
 
   # Length of author name in (non-expanded) commits view. 2 means show initials only.
-  commitAuthorShortLength: 2
+  # commitAuthorShortLength: 2
+  commitAuthorShortLength: 10
 
   # Length of author name in expanded commits view. 2 means show initials only.
-  commitAuthorLongLength: 17
+  # commitAuthorLongLength: 17
+  commitAuthorLongLength: 10
 
   # Length of commit hash in commits view. 0 shows '*' if NF icons aren't on.
   commitHashLength: 8
@@ -208,7 +218,8 @@ gui:
   # Whether to split the main window when viewing file changes.
   # One of: 'auto' | 'always'
   # If 'auto', only split the main window when a file has both staged and unstaged changes
-  splitDiff: auto
+  # splitDiff: auto
+  splitDiff: always
 
   # Default size for focused window. Can be changed from within Lazygit with '+' and '_' (but this won't change the default).
   # One of: 'normal' (default) | 'half' | 'full'
@@ -216,7 +227,8 @@ gui:
 
   # Window border style.
   # One of 'rounded' (default) | 'single' | 'double' | 'hidden' | 'bold'
-  border: rounded
+  # border: rounded
+  border: single
 
   # If true, show a seriously epic explosion animation when nuking the working tree.
   animateExplosion: true
@@ -243,7 +255,8 @@ gui:
 
   # Status panel view.
   # One of 'dashboard' (default) | 'allBranchesLog'
-  statusPanelView: dashboard
+  # statusPanelView: dashboard
+  statusPanelView: allBranchesLog
 
   # If true, jump to the Files panel after popping a stash
   switchToFilesAfterStashPop: true
@@ -279,7 +292,8 @@ git:
     signOff: false
 
     # Automatic WYSIWYG wrapping of the commit message as you type
-    autoWrapCommitMessage: true
+    # autoWrapCommitMessage: true
+    autoWrapCommitMessage: false
 
     # If autoWrapCommitMessage is true, the width to wrap to
     autoWrapWidth: 72
@@ -305,14 +319,16 @@ git:
   skipHookPrefix: WIP
 
   # If true, periodically fetch from remote
-  autoFetch: true
+  # autoFetch: true
+  autoFetch: false
 
   # If true, periodically refresh files and submodules
   autoRefresh: true
 
   # If not "none", lazygit will automatically fast-forward local branches to match their upstream after fetching. Applies to branches that are not the currently checked out branch, and only to those that are strictly behind their upstream (as opposed to diverged).
   # Possible values: 'none' | 'onlyMainBranches' | 'allBranches'
-  autoForwardBranches: onlyMainBranches
+  # autoForwardBranches: onlyMainBranches
+  autoForwardBranches: none
 
   # If true, pass the --all arg to git fetch
   fetchAll: true
@@ -321,7 +337,8 @@ git:
   # conflicts but no longer do; and it will also ask you if you want to
   # continue a merge or rebase if you've resolved all conflicts. If false, it
   # won't do either of these things.
-  autoStageResolvedConflicts: true
+  # autoStageResolvedConflicts: true
+  autoStageResolvedConflicts: false
 
   # Command used when displaying the current branch git log in the main window
   branchLogCmd: git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --
@@ -393,23 +410,28 @@ git:
 # Periodic update checks
 update:
   # One of: 'prompt' (default) | 'background' | 'never'
-  method: prompt
+  # method: prompt
+  method: never
 
   # Period in days between update checks
-  days: 14
+  # days: 14
+  days: 0
 
 # Background refreshes
 refresher:
   # File/submodule refresh interval in seconds.
   # Auto-refresh can be disabled via option 'git.autoRefresh'.
-  refreshInterval: 10
+  # refreshInterval: 10
+  refreshInterval: 1
 
   # Re-fetch interval in seconds.
   # Auto-fetch can be disabled via option 'git.autoFetch'.
-  fetchInterval: 60
+  # fetchInterval: 60
+  fetchInterval: 0
 
 # If true, show a confirmation popup before quitting Lazygit
-confirmOnQuit: false
+# confirmOnQuit: false
+confirmOnQuit: true
 
 # If true, exit Lazygit when the user presses escape in a context where there is nothing to cancel/close
 quitOnTopLevelReturn: false
@@ -457,7 +479,8 @@ os:
   shellFunctionsFile: ""
 
 # If true, don't display introductory popups upon opening Lazygit.
-disableStartupPopups: false
+# disableStartupPopups: false
+disableStartupPopups: true
 
 # User-configured commands that can be invoked from within Lazygit
 # See https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Command_Keybindings.md
