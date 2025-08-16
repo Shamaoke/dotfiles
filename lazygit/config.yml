@@ -20,7 +20,8 @@ gui:
   scrollHeight: 2
 
   # If true, allow scrolling past the bottom of the content in the main window
-  scrollPastBottom: true
+  # scrollPastBottom: true
+  scrollPastBottom: false
 
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#scroll-off-margin
   scrollOffMargin: 2
@@ -30,7 +31,8 @@ gui:
 
   # The number of spaces per tab; used for everything that's shown in the main view, but probably mostly relevant for diffs.
   # Note that when using a pager, the pager has its own tab width setting, so you need to pass it separately in the pager command.
-  tabWidth: 4
+  # tabWidth: 4
+  tabWidth: 2
 
   # If true, capture mouse events.
   # When mouse events are captured, it's a little harder to select text: e.g. requiring you to hold the option key when on macOS.
@@ -70,7 +72,7 @@ gui:
   # - 'vertical': split the window vertically
   # - 'flexible': (default) split the window horizontally if the window is wide enough, otherwise split vertically
   # mainPanelSplitMode: flexible
-  mainPanelSplitMode: horizontal
+  mainPanelSplitMode: vertical
 
   # How the window is split when in half screen mode (i.e. after hitting '+' once).
   # Possible values:
@@ -159,7 +161,8 @@ gui:
     show: true
 
   # If true, show the '5 of 20' footer at the bottom of list views
-  showListFooter: true
+  # showListFooter: true
+  showListFooter: false
 
   # If true, display the files in the file views as a tree. If false, display the files as a flat list.
   # This can be toggled from within Lazygit with the '`' key, but that will not change the default.
@@ -218,11 +221,12 @@ gui:
   # Whether to split the main window when viewing file changes.
   # One of: 'auto' | 'always'
   # If 'auto', only split the main window when a file has both staged and unstaged changes
-  # splitDiff: auto
-  splitDiff: always
+  splitDiff: auto
 
   # Default size for focused window. Can be changed from within Lazygit with '+' and '_' (but this won't change the default).
   # One of: 'normal' (default) | 'half' | 'full'
+  # screenMode: normal
+  # screenMode: half
   screenMode: normal
 
   # Window border style.
@@ -235,7 +239,8 @@ gui:
 
   # Whether to stack UI components on top of each other.
   # One of 'auto' (default) | 'always' | 'never'
-  portraitMode: auto
+  # portraitMode: auto
+  portraitMode: never
 
   # How things are filtered when typing '/'.
   # One of 'substring' (default) | 'fuzzy'
@@ -278,7 +283,7 @@ git:
     # diff-so-fancy
     # delta --dark --paging=never
     # ydiff -p cat -s --wrap --width={{columnWidth}}
-    pager: ""
+    pager: "bat --style=plain --paging=never --color=always --wrap=never"
 
     # If true, Lazygit will use whatever pager is specified in `$GIT_PAGER`, `$PAGER`, or your *git config*. If the pager ends with something like ` | less` we will strip that part out, because less doesn't play nice with our rendering approach. If the custom pager uses less under the hood, that will also break rendering (hence the `--paging=never` flag for the `delta` pager).
     useConfig: false
@@ -391,7 +396,8 @@ git:
     showGraph: always
 
     # displays the whole git graph by default in the commits view (equivalent to passing the `--all` argument to `git log`)
-    showWholeGraph: false
+    # showWholeGraph: false
+    showWholeGraph: true
 
   # How branches are sorted in the local branches view.
   # One of: 'date' (default) | 'recency' | 'alphabetical'
@@ -439,18 +445,19 @@ quitOnTopLevelReturn: false
 # Config relating to things outside of Lazygit like how files are opened, copying to clipboard, etc
 os:
   # Command for editing a file. Should contain "{{filename}}".
-  edit: ""
+  edit: "vim {{filename}}"
 
   # Command for editing a file at a given line number. Should contain
   # "{{filename}}", and may optionally contain "{{line}}".
-  editAtLine: ""
+  editAtLine: "vim +{{line}} {{filename}}"
 
   # Same as EditAtLine, except that the command needs to wait until the
   # window is closed.
   editAtLineAndWait: ""
 
   # Whether lazygit suspends until an edit process returns
-  editInTerminal: false
+  # editInTerminal: false
+  editInTerminal: true
 
   # For opening a directory in an editor
   openDirInEditor: ""
@@ -586,14 +593,18 @@ keybinding:
     decreaseRenameSimilarityThreshold: (
     openDiffTool: <c-t>
   status:
-    checkForUpdate: u
-    recentRepos: <enter>
+    # checkForUpdate: u
+    checkForUpdate: <disabled>
+    # recentRepos: <enter>
+    recentRepos: <disabled>
     allBranchesLogGraph: a
   files:
-    commitChanges: c
+    # commitChanges: c
+    commitChanges: <disabled>
     commitChangesWithoutHook: w
     amendLastCommit: A
-    commitChangesWithEditor: C
+    # commitChangesWithEditor: C
+    commitChangesWithEditor: c
     findBaseCommitForFixup: <c-f>
     confirmDiscard: x
     ignoreFile: i
