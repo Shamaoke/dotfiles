@@ -44,7 +44,7 @@ URxvt.boldItalicFont: xft:Iosevka Term Slab:style=Medium Italic:size=13, xft:IPA
 URxvt.intensityStyles: false
 
 !!! Adjust the letter spacing
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 !!! Adjust the line spacing
 URxvt.lineSpace: 0
