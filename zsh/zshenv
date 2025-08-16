@@ -144,3 +144,9 @@ export XMODIFIERS=@im=ibus
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
+##
+## ::: XDG :::
+##
+
+## export XDG_CURRENT_DESKTOP=openbox
+
