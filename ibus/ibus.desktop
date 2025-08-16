@@ -1,6 +1,17 @@
+
+##
+## Place the file to the `~/.config/autostart` directory to launch the
+## application automatically during startup of the desktop environment.
+##
+## Details:
+##
+## [Freedesktop | Desktop Application Autostart Specification](https://specifications.freedesktop.org/autostart-spec/latest/)
+##
+
 [Desktop Entry]
 Type=Application
 Name=IBus
 GenericName=Intelligent Input Bus
 Icon=ibus
 Exec=ibus-daemon --daemonize --xim --replace
+
