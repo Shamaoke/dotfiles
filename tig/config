@@ -252,6 +252,12 @@ bind generic  q view-close    # Close the current view
 # bind generic  <C-C> quit      # Close all views and quit
 bind generic ZZ quit # Close all views and quit
 
+##
+## ::: Bindings | Status :::
+##
+
+bind status P !git push origin
+
 ## View specific
 bind status u status-update   # Stage/unstage changes in file
 bind status ! status-revert   # Revert changes in file
