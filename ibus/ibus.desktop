@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=IBus
+GenericName=Intelligent Input Bus
+Icon=ibus
+Exec=ibus-daemon --daemonize --xim --replace
