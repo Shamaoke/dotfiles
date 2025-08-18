@@ -25,8 +25,8 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/sample_media_player
   # mux start --detached --name=sample_media_player cpp
 
-  cd $HOME/.workspace/doc/bi05-openv
-  mux start --detached --name=bi05-openv generic
+  # cd $HOME/.workspace/doc/bi05-openv
+  # mux start --detached --name=bi05-openv generic
 
   # cd $HOME/.workspace/sdb
   # mux start --detached --name=sdb generic
@@ -34,12 +34,12 @@ function main TRAPEXIT {
   cd $HOME/.workspace/tem18lng-soft/tem18lng-display_unit
   mux start --detached --name=tem18lng-display_unit cpp
 
-  cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/program
+  # cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/program
   # mux start --detached --name=tem18lng-rack cpp
-  mux start --detached --name=tem18lng-rack generic
+  # mux start --detached --name=tem18lng-rack generic
 
-  cd $HOME/.workspace/asudpp
-  mux start --detached --name=asudpp generic
+  # cd $HOME/.workspace/asudpp
+  # mux start --detached --name=asudpp generic
 
   # cd $HOME/.workspace/playground/rust
   # mux start --detached --name='playground | rust' generic
