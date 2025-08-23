@@ -52,11 +52,9 @@ if [[ $? -ne 0 ]] {
   # Window “console”
 
   # Window “git”
-  # tmux send-keys     -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
-  tmux send-keys     -t $session_name:6.1 "tig" C-m
+  tmux send-keys     -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
   tmux split-window  -t $session_name:6
-  # tmux send-keys     -t $session_name:6.2 "watch -ctn 1 'git st'" C-m
-  tmux send-keys     -t $session_name:6.2 "tig status" C-m
+  tmux send-keys     -t $session_name:6.2 "watch -ctn 1 'git st'" C-m
   tmux split-window  -t $session_name:6
   tmux select-layout -t $session_name:6 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
   tmux select-pane   -t $session_name:6.3
@@ -72,10 +70,6 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:8 vifm C-m
 
   # Select the initial window and pane and zoom the pane
-  # tmux select-window -t $session_name:6
-  # tmux select-pane   -t $session_name:6.1
-  # tmux resize-pane   -Z $session_name:6.1
-
   tmux select-window -t $session_name:1
   tmux select-pane   -t $session_name:1.1
   tmux resize-pane   -Z $session_name:1.1
