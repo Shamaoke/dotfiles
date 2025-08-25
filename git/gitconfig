@@ -1,26 +1,37 @@
+
 [core]
   editor = vim
   quotepath = false
+
 [alias]
   godalog = log --graph --oneline --decorate=short --all
   godlog = log --graph --oneline --decorate=short
   merge = merge --ff-only
   st = !git branch && git status -su
   sd = !git branch && git diff --stat
+
 [merge]
   tool = vimdiff
+
 [color]
   ui = always
+
 [push]
   default = matching
+
 # [user]
 #   name = Pavel Alekhin
 #   email = alekhin.kolomna@yandex.ru
+
 [commit]
   verbose = true
+
 [init]
   defaultBranch = main
+
 [diff]
-	tool = vimdiff
+  tool = vimdiff
+
 [difftool]
-	prompt = false
+  prompt = false
+
