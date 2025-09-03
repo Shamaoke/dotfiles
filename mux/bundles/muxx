@@ -31,7 +31,7 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/sdb
   # mux start --detached --name=sdb generic
 
-  cd $HOME/.workspace/tem18lng-soft/tem18lng-display_unit
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-display_unit/source
   mux start --detached --name=tem18lng-display_unit generic
 
   cd $HOME/.workspace/tem18lng-soft/tem18lng-rack
