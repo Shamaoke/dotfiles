@@ -2,7 +2,7 @@
 
 
 url=`xclip -selection 'clipboard' -o`
-title=`yt-dlp --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
+title=`torify yt-dlp --skip-download --dump-json --output '%(uploader)s | %(title)s' $url | jshon -e _filename | sed -rn 's/"//gp'`
 mpv --geometry=1276x718 --title=$title $url
 
 if [[ error_code=$? -ne 0 ]]; then
