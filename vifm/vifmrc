@@ -298,3 +298,38 @@ set syscalls
 ""
 set uioptions=iodetails
 
+""
+"" 'number' 'nu'
+""
+""   type: boolean
+""   default: false
+""   scope: local
+""
+""   Print line number in front of each file name when 'lsview' option is turned
+""   off.  Use 'numberwidth' to control width of line number.  Also see 'relativenumber'.
+""
+set number
+
+""
+"" 'relativenumber' 'rnu'
+""
+""   type: boolean
+""   default: false
+""   scope: local
+""
+""   Print relative line number in front of each file name when 'lsview' option is
+""   turned off. Use 'numberwidth' to control width of line number.  Various
+""   combinations of 'number'  and 'relativenumber' lead to such results:
+""
+""                         nonumber               number
+""
+""     norelativenumber   | first                |   1 first
+""                        | second               |   2 second
+""                        | third                |   3 third
+""
+""       relativenumber   |   1 first            |   1 first
+""                        |   0 second           |2    second
+""                        |   1 third            |   1 third
+""
+set relativenumber
+
