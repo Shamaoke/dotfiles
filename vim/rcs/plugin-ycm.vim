@@ -151,6 +151,26 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_goto_buffer_command = 'split'
 
 ""
+"" `g:ycm_clangd_args`
+""
+"" This option controls the command line arguments passed to the clangd binary.
+"" It appends new options and overrides the existing ones.
+""
+""  Default: '[]'
+""
+let g:ycm_clangd_args = ['--header-insertion=never']
+""
+"" Prevent clangd from automatically adding includes when inserting lines which
+"" contain entities from not currently included files.
+""
+"" For other clangd options see `clangd --help-list`.
+""
+"" Details
+"" -------
+"" [vim - how to avoid automatically adding header files after complete in Youcompleteme - Stack Overflow](https://stackoverflow.com/questions/60261145/how-to-avoid-automatically-adding-header-files-after-complete-in-youcompleteme)
+""
+
+""
 "" `g:ycm_filetype_blacklist`
 ""
 "" This option controls for which Vim filetypes should YCM be turned off. The
