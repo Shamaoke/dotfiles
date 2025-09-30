@@ -1,0 +1,9 @@
+qemu-system-aarch64 \
+  -cpu cortex-a53 \
+  -M virt \
+  -m 2048 \
+  -nographic \
+  -kernel $HOME/.qemu/vms/q1/vmlinuz-6.12.43+deb13-arm64 \
+  -initrd $HOME/.qemu/vms/q1/initrd.img-6.12.43+deb13-arm64 \
+  -append 'root=/dev/vda1' \
+  -drive if=virtio,format=qcow2,file=$HOME/.qemu/vms/q1/q1.qcow2
