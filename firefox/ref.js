@@ -60,7 +60,7 @@ user_pref('media.autoplay.default', 5);
 user_pref('media.autoplay.blocking_policy', 2);
 
 // use a configuration file for proxy settings
-user_pref('network.proxy.type', 2);
+user_pref('network.proxy.type', 0);
 
 // set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/dmeebqfk.user/proxy.pac');

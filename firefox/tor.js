@@ -11,8 +11,8 @@ user_pref('browser.tabs.closeWindowWithLastTab', false);
 user_pref('widget.disable-workspace-management', true);
 
 /// Use a configuration file for proxy settings
-// user_pref('network.proxy.type', 2);
+user_pref('network.proxy.type', 0);
 
 /// Set the configuration file for proxy server settings
-// user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/8z23nxxa.tor/proxy.pac');
+user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/8z23nxxa.tor/proxy.pac');
 
