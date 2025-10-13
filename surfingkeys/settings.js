@@ -31,10 +31,10 @@ settings.hintExplicit = true
 // mapkey( 'f', '#1Open a link in the current tab;<br /> press Shift to flip hints if they are overlapped', ( ) => Hints.create('', Hints.dispatchMouseClick) )
 
 // go back in history
-// mapkey( '<', '#Go back in history', ( ) => history.go(-1), {repeatIgnore: true} )
+api.mapkey( 'H', '#Go back in history', ( ) => history.go(-1), { repeatIgnore: true } )
 
 // go forward in history
-// mapkey( '>', '#4Go forward in history', ( ) => history.go(1), {repeatIgnore: true} )
+api.mapkey( 'L', '#4Go forward in history', ( ) => history.go(1), { repeatIgnore: true } )
 
 // go one tab left
 api.mapkey( 'K', '#3Go to previous {count} tabs', ( ) => api.RUNTIME('previousTab'), { repeatIgnore: true } )
@@ -43,10 +43,10 @@ api.mapkey( 'K', '#3Go to previous {count} tabs', ( ) => api.RUNTIME('previousTa
 api.mapkey( 'J', '#3Go to next {count} tabs', ( ) => api.RUNTIME('nextTab'), { repeatIgnore: true } )
 
 // move the current tab to the left
-// mapkey( 'H', '#3Move the current tab to the left', ( ) => RUNTIME('moveTab', {step: -1}) )
+// api.mapkey( 'H', '#3Move the current tab to the left', ( ) => api.RUNTIME('moveTab', {step: -1}) )
 
 // move the current tab to the right
-// mapkey( 'L', '#3Move the current tab to the right', ( ) => RUNTIME('moveTab', {step: 1}) )
+// api.mapkey( 'L', '#3Move the current tab to the right', ( ) => api.RUNTIME('moveTab', {step: 1}) )
 
 // toggle fullscreen
 // mapkey( 'q', '#3Toggle fullscreen', ( ) => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen() )
@@ -71,10 +71,10 @@ api.unmap('E')
 api.unmap('R')
 
 // unmap a key for going back in history
-// unmap('S')
+api.unmap('S')
 
 // unmap a key for going forward in history
-// unmap('D')
+api.unmap('D')
 
 // unmap a key for emoji completion
 // iunmap(':')
