@@ -80,7 +80,7 @@ user_pref('media.webspeech.synth.enabled', false);
 ///
 
 /// Use a configuration file for proxy settings
-user_pref('network.proxy.type', 2);
+user_pref('network.proxy.type', 0);
 
 /// Set a configuration file for proxy server settings
 user_pref('network.proxy.autoconfig_url', 'file:///home/user/.mozilla/firefox/ehackb4w.doc/proxy.pac');
