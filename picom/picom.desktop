@@ -4,4 +4,4 @@ Name=picom
 GenericName=X Compositor
 Icon=picom
 Exec=picom
-# Hidden=true
+Hidden=true
