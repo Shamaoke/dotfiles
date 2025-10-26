@@ -14,5 +14,5 @@ Name=IBus
 GenericName=Intelligent Input Bus
 Icon=ibus
 Exec=ibus-daemon --daemonize --xim --replace
-# Hidden=true
+Hidden=true
 
