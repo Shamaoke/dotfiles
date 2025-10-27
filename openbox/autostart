@@ -1,3 +1,6 @@
+
+picom --daemon &
+
 # amixer --card 0 set Speaker 100% unmute &
 
 # ibus-daemon -drx &
