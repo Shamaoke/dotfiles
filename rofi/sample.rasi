@@ -12,6 +12,7 @@ window {
   border-color:     @border-color;
   text-color:       @text-color;
   font:             @font;
+  width: 30%;
   padding: 4px;
   border:  1px;
 }
