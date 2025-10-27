@@ -2,7 +2,7 @@
 
 # ibus-daemon -drx &
 
-# pointer_hide &
+pointer_hide &
 
 # touchpad_toggle &
 
