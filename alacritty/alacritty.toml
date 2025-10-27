@@ -9,6 +9,8 @@ hide_when_typing = true
 decorations = "full"
 dynamic_title = true
 title = "terminal"
+padding.x = 2
+padding.y = 2
 
 [cursor]
 blink_interval = 500
@@ -20,7 +22,7 @@ shape = "Block"
 
 [font]
 builtin_box_drawing = true
-size = 13.0
+size = 15.0
 
 [font.normal]
 family = "Iosevka Term Slab"
@@ -43,6 +45,6 @@ x = 0
 y = 0
 
 [font.offset]
-x = 0
+x = 1
 y = 0
 
