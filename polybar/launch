@@ -11,6 +11,7 @@ while pgrep -x polybar > /dev/null; do sleep 1; done
 # Launch example
 
 # polybar --reload sample &
+polybar left &
 polybar center &
 polybar right &
 
