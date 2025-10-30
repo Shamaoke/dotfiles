@@ -168,13 +168,29 @@
   -#   %decor no
   -#   %maximized yes
 
-  %application{ :class => 'Gimp', :type => 'normal' }
+  %application{ :class => 'Gimp', :type => 'normal', :role => 'gimp-image-window-*' }
     %position{ :force => 'yes' }
-      %x 13
-      %y 9
+      %x 11
+      %y 15
     %size
-      %width 1890
-      %height 1010
+      %width 2534
+      %height 1356
+
+  %application{ :class => 'Gimp', :type => 'dialog', :title => 'Preferences' }
+    %position{ :force => 'yes' }
+      %x center
+      %y center
+    %size
+      %width 1920
+      %height 1080
+
+  %application{ :class => 'Gimp', :type => 'dialog', :title => 'Open Image' }
+    %position{ :force => 'yes' }
+      %x center
+      %y center
+    %size
+      %width 1920
+      %height 1080
 
   %application{ :class => 'Inkscape', :type => 'normal' }
     %maximized no
