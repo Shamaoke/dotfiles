@@ -34,7 +34,7 @@ if [[ $? -ne 0 ]] {
 
   # Window “docker”
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker image ls --format table'" C-m
   tmux split-window -t $session_name:3
   tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker container ls --all'" C-m
   tmux split-window -t $session_name:3

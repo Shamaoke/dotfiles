@@ -46,7 +46,7 @@ if [[ $? -ne 0 ]] {
   tmux select-layout -t $session_name:3 3477,158x33,0,0\[158x27,0,0\{79x27,0,0\[79x13,0,0,80,79x13,0,14,78\],78x27,80,0\[78x13,80,0,79,78x13,80,14,77\]\},158x5,0,28,74\]
   tmux send-keys -t $session_name:3.1 "watch -ctn 1 'docker container ls --all'" C-m
   tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker volume ls'" C-m
-  tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker image ls --format table'" C-m
   tmux send-keys -t $session_name:3.4 "watch -ctn 1 'docker network ls'" C-m
   tmux select-pane -t $session_name:3.5
 

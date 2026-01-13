@@ -23,7 +23,7 @@ if [[ $? -ne 0 ]] {
   # tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
 
   tmux split-window -t $session_name:2
-  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker image ls'" C-m
+  tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker image ls --format table'" C-m
 
   tmux split-window -t $session_name:2
   tmux send-keys -t $session_name:2.3 "watch -ctn 1 'docker container ls --all'" C-m
