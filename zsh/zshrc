@@ -74,6 +74,6 @@ source $HOME/.rvm/scripts/rvm
 # source $HOME/.virtualenvs/default/bin/activate
 
 # Load the Rust environment into a shell session
-# source $HOME/.cargo/env
+source $HOME/.cargo/env
 
 # vim: set textwidth=80 colorcolumn=80:
