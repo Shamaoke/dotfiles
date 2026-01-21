@@ -74,7 +74,7 @@ call plug#begin('~/.vim/plugged')
 " ::: YouCompleteMe :::
 " A code-completion engine for Vim
 " https://github.com/ycm-core/YouCompleteMe
-  Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
