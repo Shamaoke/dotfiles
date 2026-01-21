@@ -82,6 +82,11 @@ call plug#begin('~/.vim/plugged')
 " The CoC configuration directory is `~/.config/coc`
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
+" ::: lsp :::
+" Language Server Protocol (LSP) plugin for Vim9
+" https://github.com/yegappan/lsp
+" Plug 'yegappan/lsp'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
