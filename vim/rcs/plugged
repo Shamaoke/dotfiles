@@ -76,6 +76,12 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/ycm-core/YouCompleteMe
 " Plug 'ycm-core/YouCompleteMe'
 
+" ::: coc.nvim :::
+" Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers
+" https://github.com/neoclide/coc.nvim
+" The CoC configuration directory is `~/.config/coc`
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
