@@ -7,6 +7,7 @@ path=(
   ~/.cargo/bin
   ~/.opam/5.0.0/bin
   ~/.rvm/bin
+  ~/.local/share/vcpkg
   $path
 )
 
