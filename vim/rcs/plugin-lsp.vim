@@ -94,6 +94,9 @@ nmap <silent> <LocalLeader>jj :vertical LspGotoDefinition<CR>
 "" Display the diagnostics messages from the language
 nmap <silent> <LocalLeader>jl :LspDiag show<CR>
 
-"" Display the diagnostic message for the current line.
+"" Display the diagnostic message for the current line
 nmap <silent> <LocalLeader>jc :LspDiag current<CR>
+
+"" Restart the language server
+nmap <LocalLeader>jr :LspServer restart<CR>
 
