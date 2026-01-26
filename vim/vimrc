@@ -15,7 +15,10 @@ source ~/.dotfiles/vim/rcs/keybindings
 source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ultisnips.vim'`
 
 " load YouCompleteMe settings
-source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ycm.vim'`
+" source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-ycm.vim'`
+
+" Load LSP settings
+source `=expand("<script>:h") .. '/.dotfiles/vim/rcs/plugin-lsp.vim'`
 
 " load Markdown settings
 source ~/.dotfiles/vim/rcs/plugin-markdown

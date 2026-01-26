@@ -76,16 +76,10 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/artoj/qmake-syntax-vim
   Plug 'artoj/qmake-syntax-vim'
 
-" ::: YouCompleteMe :::
-" A code-completion engine for Vim
-" https://github.com/ycm-core/YouCompleteMe
-  Plug 'ycm-core/YouCompleteMe'
-
-" ::: coc.nvim :::
-" Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers
-" https://github.com/neoclide/coc.nvim
-" The CoC configuration directory is `~/.config/coc`
-  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+" ::: lsp :::
+" Language Server Protocol (LSP) plugin for Vim9
+" https://github.com/yegappan/lsp
+  Plug 'yegappan/lsp'
 
 call plug#end()
 

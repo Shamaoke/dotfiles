@@ -143,6 +143,8 @@ set completeopt=menuone
 ""
 "" The option is used to set the popup delay for the YouCompleteMe plugin
 ""
-set updatetime=300
+"" This option is also used to set the popup delay for the LSP plugin
+""
+set updatetime=1200
 
 " vim: set filetype=vim textwidth=80 colorcolumn=80:
