@@ -36,6 +36,13 @@ let lspServers = [
   \  filetype: ['rust'],
   \  path: '/home/user/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer',
   \  args: [ ]
+  \},
+  \
+  \#{
+  \  name: 'slintlang',
+  \  filetype: ['slint'],
+  \  path: '/home/user/.cargo/bin/slint-lsp',
+  \  args: [ ]
   \}
 \]
 

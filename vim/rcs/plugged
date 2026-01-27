@@ -87,6 +87,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/yegappan/lsp
   Plug 'yegappan/lsp'
 
+" ::: vim-slint :::
+" Support for the slint language for vim
+" https://github.com/slint-ui/vim-slint
+  Plug 'slint-ui/vim-slint'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
