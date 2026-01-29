@@ -39,6 +39,13 @@ let lspServers = [
   \},
   \
   \#{
+  \  name: 'cmakelang',
+  \  filetype: ['cmake'],
+  \  path: '/home/user/.cargo/bin/neocmakelsp',
+  \  args: ['stdio']
+  \},
+  \
+  \#{
   \  name: 'slintlang',
   \  filetype: ['slint'],
   \  path: '/home/user/.cargo/bin/slint-lsp',
