@@ -233,7 +233,28 @@ MacroBlockBegin: ''
 MacroBlockEnd: ''
 MainIncludeChar: Quote
 MaxEmptyLinesToKeep: 1
-NamespaceIndentation: None
+##
+## `NamespaceIndentation`
+##
+## Задать формат отступа, используемый для пространств имен.
+##
+## • `None`
+##
+##   Не использовать отступ для содержимого пространств имен.
+##
+## • `Inner`
+##
+##   Использовать отступ для содержимого только вложенных пространств имен.
+##
+## • `All`
+##
+##   Всегда использовать отступ.
+##
+## Детали
+## ------
+## [Clang-Format Style Options — Clang 23.0.0git documentation \| NamespaceIndentation](https://clang.llvm.org/docs/ClangFormatStyleOptions.html#namespaceindentation)
+##
+NamespaceIndentation: All
 ObjCBinPackProtocolList: Auto
 ObjCBlockIndentWidth: 2
 ObjCBreakBeforeNestedBlockParam: true
