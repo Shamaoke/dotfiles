@@ -111,6 +111,15 @@ nmap <silent> <LocalLeader>jl :LspDiag show<CR>
 "" Display the diagnostic message for the current line
 nmap <silent> <LocalLeader>jc :LspDiag current<CR>
 
+"" Go to the diagnostic message after the current cursor position
+nmap <silent> <LocalLeader>jn :LspDiag next<CR>
+
+"" Go to the diagnostic message before the current cursor position
+nmap <silent> <LocalLeader>jp :LspDiag prev<CR>
+
+"" Apply the code action supplied by the language server to the diagnostic in the current line
+nmap <LocalLeader>ja :LspCodeAction<CR>
+
 "" Restart the language server
 nmap <LocalLeader>jr :LspServer restart<CR>
 
