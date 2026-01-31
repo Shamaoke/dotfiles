@@ -32,14 +32,21 @@ let lspServers = [
   \},
   \
   \#{
-  \  name: 'rustlang',
+  \  name: 'rust-analyzer',
   \  filetype: ['rust'],
   \  path: '/home/user/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer',
   \  args: [ ]
   \},
   \
   \#{
-  \  name: 'slintlang',
+  \  name: 'neocmakelsp',
+  \  filetype: ['cmake'],
+  \  path: '/home/user/.cargo/bin/neocmakelsp',
+  \  args: ['stdio']
+  \},
+  \
+  \#{
+  \  name: 'slint-lsp',
   \  filetype: ['slint'],
   \  path: '/home/user/.cargo/bin/slint-lsp',
   \  args: [ ]
