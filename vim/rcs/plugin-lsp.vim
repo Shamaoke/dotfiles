@@ -120,6 +120,12 @@ nmap <silent> <LocalLeader>jp :LspDiag prev<CR>
 "" Apply the code action supplied by the language server to the diagnostic in the current line
 nmap <LocalLeader>ja :LspCodeAction<CR>
 
+"" Display the symbols in the current file in a popup menu
+nmap <LocalLeader>js :LspDocumentSymbol<CR>
+
+"" Creates a new location list with the list of locations where the symbol under the cursor is referenced
+nmap <LocalLeader>jf :LspShowReferences<CR>
+
 "" Restart the language server
 nmap <LocalLeader>jr :LspServer restart<CR>
 
