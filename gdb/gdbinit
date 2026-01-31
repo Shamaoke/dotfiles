@@ -5,3 +5,9 @@ set debuginfod enabled off
 ## Disable confirmation requests
 set confirm off
 
+## Print structures in an indented format with one member per line
+set print pretty on
+
+## Make the list command display COUNT source lines. Setting count to `unlimited` or `0` means there’s no limit.
+set listsize 20
+
