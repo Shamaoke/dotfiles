@@ -37,8 +37,14 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/playground/rust
   # mux start --detached --name='playground | rust' generic
 
-  cd $HOME/.workspace/playground
-  mux start --detached --name=playground generic
+  # cd $HOME/.workspace/playground
+  # mux start --detached --name=playground generic
+
+  cd $HOME/.workspace/playground/rust/learn_rust
+  mux start --detached --name=pg-rust generic
+
+  cd $HOME/.workspace/playground/cpp/learn_cpp
+  mux start --detached --name=pg-cpp generic
 
   cd $HOME/.desktop
   mux start --detached --name=desktop console
