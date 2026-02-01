@@ -156,3 +156,9 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 export TIGRC_SYSTEM=/dev/null
 
+##
+## ::: hwatch :::
+##
+
+export HWATCH='--no-help-banner --no-title --color --interval 1 --keymap k=watch_pane_up --keymap k=up --keymap j=watch_pane_down --keymap j=down --keymap h=scroll_left --keymap l=scroll_right --keymap t=watch_pane_move_top --keymap e=watch_pane_move_end --keymap n=next_keyword --keymap p=prev_keyword --keymap u=toggle_view_pane_ui --keymap ?=help'
+
