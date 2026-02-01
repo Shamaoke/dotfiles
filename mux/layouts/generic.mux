@@ -34,11 +34,11 @@ if [[ $? -ne 0 ]] {
 
   # Window “docker”
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.2 "watch -ctn 1 'docker image ls --format table'" C-m
+  tmux send-keys -t $session_name:3.2 "hwatch 'docker image ls --format table'" C-m
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.3 "watch -ctn 1 'docker container ls --all'" C-m
+  tmux send-keys -t $session_name:3.3 "hwatch 'docker container ls --all'" C-m
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.4 "watch -ctn 1 'docker network ls'" C-m
+  tmux send-keys -t $session_name:3.4 "hwatch 'docker network ls'" C-m
   tmux select-layout -t $session_name:3 'cf5d,158x33,0,0{80x33,0,0,1,77x33,81,0[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7]}'
   tmux select-pane -t $session_name:3.1
 
@@ -52,9 +52,9 @@ if [[ $? -ne 0 ]] {
   # Window “console”
 
   # Window “git”
-  tmux send-keys     -t $session_name:6.1 "watch -ctn 1 'git godlog'" C-m
+  tmux send-keys     -t $session_name:6.1 "hwatch 'git godlog'" C-m
   tmux split-window  -t $session_name:6
-  tmux send-keys     -t $session_name:6.2 "watch -ctn 1 'git st'" C-m
+  tmux send-keys     -t $session_name:6.2 "hwatch 'git st'" C-m
   tmux split-window  -t $session_name:6
   tmux select-layout -t $session_name:6 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
   tmux select-pane   -t $session_name:6.3
