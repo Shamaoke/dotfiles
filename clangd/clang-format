@@ -190,7 +190,16 @@ IncludeCategories:
     CaseSensitive: false
 IncludeIsMainRegex: '(Test)?$'
 IncludeIsMainSourceRegex: ''
-IndentAccessModifiers: false
+##
+## `IndentAccessModifiers` {true|false}
+##
+## Определить, следует ли модификаторам доступа иметь свой собственный отступ.
+##
+## Детали
+## ------
+## [Clang-Format Style Options — Clang 23.0.0git documentation \| IndentAccessModifiers](https://clang.llvm.org/docs/ClangFormatStyleOptions.html#indentaccessmodifiers)
+##
+IndentAccessModifiers: true
 IndentCaseBlocks: false
 IndentCaseLabels: false
 IndentExternBlock: AfterExternBlock
@@ -328,12 +337,30 @@ SpacesInContainerLiterals: true
 SpacesInLineCommentPrefix:
   Minimum: 1
   Maximum: -1
-SpacesInParens: Never
+##
+## `SpacesInParens` {Never|Custom}
+##
+## Defines in which cases spaces will be inserted after ( and before ).
+##
+## Details
+## -------
+## [Clang-Format Documentation \| SpacesInParens](https://clang.llvm.org/docs/ClangFormatStyleOptions.html#spacesinparens)
+##
+SpacesInParens: Custom
+##
+## `SpacesInParensOptions`
+##
+## Control of individual spaces in parentheses.
+##
+## Details
+## -------
+## [Clang-Format Documentation \| SpacesInParensOptions](https://clang.llvm.org/docs/ClangFormatStyleOptions.html#spacesinparensoptions)
+##
 SpacesInParensOptions:
   ExceptDoubleParentheses: false
   InCStyleCasts: false
   InConditionalStatements: false
-  InEmptyParentheses: false
+  InEmptyParentheses: true
   Other: false
 SpacesInSquareBrackets: false
 Standard: Latest
