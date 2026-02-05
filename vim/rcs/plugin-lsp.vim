@@ -50,6 +50,13 @@ let lspServers = [
   \  filetype: ['slint'],
   \  path: '/home/user/.cargo/bin/slint-lsp',
   \  args: [ ]
+  \},
+  \
+  \#{
+  \  name: 'qmlls',
+  \  filetype: ['qml'],
+  \  path: '/usr/lib/qt6/bin/qmlls',
+  \  args: [ ]
   \}
 \]
 
