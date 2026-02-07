@@ -21,6 +21,7 @@
   autocmd BufRead,BufNewFile *.pdftk       set filetype=pdftk
   autocmd BufRead,BufNewFile *.qrc         set filetype=xml
   autocmd BufRead,BufNewFile Dockerfile.*  set filetype=dockerfile
+  autocmd BufRead,BufNewFile Dockerfile-*  set filetype=dockerfile
   autocmd BufRead,BufNewFile *rvmrc        set filetype=zsh
   autocmd BufRead,BufNewFile vifmrc        set filetype=vim
   autocmd BufRead,BufNewFile .vifmrc       set filetype=vim
