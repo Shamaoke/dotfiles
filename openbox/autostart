@@ -20,6 +20,10 @@ dunst &
 # launch polybar
 ~/.config/polybar/launch &
 
+## Grand access for Docker containers to connect to the X server
+# xhost +
+xhost +local:docker
+
 # picom --daemon &
 
 # start a jack session through cadence at startup
