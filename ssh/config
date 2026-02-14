@@ -2,5 +2,16 @@
 Host *
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_rsa
+  ##
+  ## `WarnWeakCrypto` {yes|no|no-pq-kex}
+  ##
+  ## Controls whether the user is warned when the cryptographic algorithms
+  ## negotiated for the connection are weak or otherwise recommended against.
+  ## Warnings may be disabled by turning off a specific warning or by disabling
+  ## all warnings. Warnings about connections that don't use a post-quantum key
+  ## exchange may be disabled using the `no-pq-kex` flag. `no` will disable all
+  ## warnings. The default, equivalent to `yes`, is to enable all warnings.
+  ##
+  WarnWeakCrypto no
 
 # vim: set filetype=sshconfig:
