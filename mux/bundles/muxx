@@ -40,11 +40,20 @@ function main TRAPEXIT {
   # cd $HOME/.workspace/playground
   # mux start --detached --name=playground generic
 
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-display/source
+  mux start --detached --name=tem18lng-display generic
+
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/source
+  mux start --detached --name=tem18lng-rack generic
+
   cd $HOME/.workspace/playground/rust/learn_rust
   mux start --detached --name=pg-rust generic
 
   cd $HOME/.workspace/playground/cpp/learn_cpp
   mux start --detached --name=pg-cpp generic
+
+  cd $HOME/.workspace/playground/c/learn_c
+  mux start --detached --name=pg-c generic
 
   cd $HOME/.desktop
   mux start --detached --name=desktop console
