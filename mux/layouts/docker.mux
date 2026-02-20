@@ -3,24 +3,28 @@
 declare session_name="$1"
 declare session_state="$2"
 
-tmux has-session -t $session_name 2>/dev/null
+## Using the `=` prefix for a session name forces an exact match, preventing
+## prefix matching (which occurs in tmux by default), so, for example, `=my_sess`
+## will only match exactly `my_sess`, not `my_session`.
+tmux has-session -t=$session_name 2>/dev/null
 
 if [[ $? -ne 0 ]] {
-  # Create a new session
+
+  ## Create a new session
   tmux new-session -d -s $session_name -n 'editor'
 
-  # Create the sessions' windows
+  ## Create the sessions' windows
   tmux new-window -t $session_name:2 -n 'work'
   tmux new-window -t $session_name:3 -n 'build|install'
   tmux new-window -t $session_name:4 -n 'console|man'
   tmux new-window -t $session_name:5 -n 'fm'
 
-  # Window “editor”
+  ## Window “editor”
   tmux send-keys -t $session_name:1 vim C-m
 
-  # Window “work”
-  # tmux split-window -t $session_name:2
-  # tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
+  ## Window “work”
+  ## tmux split-window -t $session_name:2
+  ## tmux send-keys -t $session_name:2.2 "watch -ctn 1 'docker volume ls'" C-m
 
   tmux split-window -t $session_name:2
   tmux send-keys -t $session_name:2.2 "hwatch 'docker image ls --format table'" C-m
@@ -32,41 +36,41 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:2.4 "hwatch 'docker network ls'" C-m
 
   tmux select-layout -t $session_name:2 'cf5d,158x33,0,0{80x33,0,0,1,77x33,81,0[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7]}'
-  # tmux select-layout -t $session_name:2 'fb7d,158x33,0,0{80x33,0,0[80x16,0,0,12,80x16,0,17,21],77x33,81,0[77x10,81,0,16,77x10,81,11,17,77x11,81,22,18]}'
+  ## tmux select-layout -t $session_name:2 'fb7d,158x33,0,0{80x33,0,0[80x16,0,0,12,80x16,0,17,21],77x33,81,0[77x10,81,0,16,77x10,81,11,17,77x11,81,22,18]}'
 
   tmux select-pane -t $session_name:2.1
 
-  # Window “build|install”
+  ## Window “build|install”
   tmux split-window -t $session_name:3
 
   tmux select-layout -t $session_name:3 even-horizontal
 
   tmux select-pane -t $session_name:3.1
 
-  # Window “console|man”
+  ## Window “console|man”
   tmux split-window -t $session_name:4
 
   tmux select-layout -t $session_name:4 even-horizontal
 
   tmux select-pane -t $session_name:4.1
 
-  # Window “fm”
+  ## Window “fm”
   tmux send-keys -t $session_name:5 vifm C-m
 
-  # Select the initial window and pane
+  ## Select the initial window and pane
   tmux select-window -t $session_name:1
   tmux select-pane -t $session_name:1.1
 
-  # Attach the session
+  ## Attach the session
   [[ $session_state == 'attached' ]] && tmux attach-session -t $session_name
 
   return 0
 
 } else {
-  # Attach the session
+
+  ## Attach the session
   [[ $session_state == 'attached' ]] && tmux attach-session -t $session_name
 
   return 0
 }
 
-# vim: set textwidth=80 colorcolumn=80:

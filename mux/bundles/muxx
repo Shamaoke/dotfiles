@@ -1,6 +1,7 @@
 #! /usr/bin/env zsh
 
 function main TRAPEXIT {
+
   cd $DATA_DIR/pm
   mux start --detached --name=organizer organizer
 
@@ -16,41 +17,20 @@ function main TRAPEXIT {
   cd $HOME/.workspace/summaries
   mux start --detached --name=summaries generic
 
-  # cd $HOME/.workspace/dark_cam
-  # mux start --detached --name=dark_cam cpp
-
-  # cd $HOME/.workspace/tem18lngdm
-  # mux start --detached --name=tem18lngdm cpp
-
-  # cd $HOME/.workspace/sample_media_player
-  # mux start --detached --name=sample_media_player cpp
-
-  # cd $HOME/.workspace/doc/bi05-openv
-  # mux start --detached --name=bi05-openv generic
-
-  # cd $HOME/.workspace/sdb
-  # mux start --detached --name=sdb generic
-
-  cd $HOME/.workspace/tem18lng-soft/tem18lng-display_unit/source
-  mux start --detached --name=tem18lng-display_unit generic
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-display/source
+  mux start --detached --name=tem18lng-display generic
 
   cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/source
   mux start --detached --name=tem18lng-rack generic
 
-  # cd $HOME/.workspace/asudpp
-  # mux start --detached --name=asudpp generic
-
-  # cd $HOME/.workspace/playground/rust
-  # mux start --detached --name='playground | rust' generic
-
-  # cd $HOME/.workspace/playground
-  # mux start --detached --name=playground generic
+  cd $HOME/.workspace/playground/rust/learn_rust
+  mux start --detached --name=pg-rust generic
 
   cd $HOME/.workspace/playground/cpp/learn_cpp
   mux start --detached --name=pg-cpp generic
 
-  cd $HOME/.workspace/playground/rust/learn_rust
-  mux start --detached --name=pg-rust generic
+  cd $HOME/.workspace/playground/c/learn_c
+  mux start --detached --name=pg-c generic
 
   cd $HOME/.desktop
   mux start --detached --name=desktop console
