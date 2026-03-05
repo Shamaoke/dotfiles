@@ -129,6 +129,7 @@ export DATA_DIR=/mnt/flash
 
 export VCPKG_ROOT=$HOME/.local/share/vcpkg
 export VCPKG_DISABLE_METRICS=true
+export VCPKG_DEFAULT_TRIPLET=x64-linux
 
 ##
 ## ::: SSH-Agent :::
