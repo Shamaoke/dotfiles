@@ -38,9 +38,6 @@ function main TRAPEXIT {
   cd $HOME/.workspace/playground/copilot
   mux start --detached --name=pg-copilot generic
 
-  cd $HOME/.workspace/playground/thor
-  mux start --detached --name=pg-thor generic
-
   cd $HOME/.desktop
   mux start --detached --name=desktop console
 
