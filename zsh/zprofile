@@ -12,3 +12,7 @@ path=(
   $path
 )
 
+
+# Bootstrap rbenv into the current shell environment
+eval "$(rbenv init - --no-rehash zsh)"
+
