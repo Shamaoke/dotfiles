@@ -7,7 +7,12 @@ path=(
   ~/.cargo/bin
   ~/.opam/5.0.0/bin
   ~/.local/share/vcpkg
+  ~/.rbenv/versions/4.0.1/bin
   $path
 )
 
 ecryptfs-auto-mount
+
+## Load rbenv into the shell environment
+eval "$(rbenv init - --no-rehash zsh)"
+
