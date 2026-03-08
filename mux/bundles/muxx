@@ -58,6 +58,9 @@ function main TRAPEXIT {
   cd $HOME/.workspace/playground/qt/learn_qt
   mux start --detached --name=pg-qt generic
 
+  cd $HOME/.workspace/playground/copilot
+  mux start --detached --name=pg-copilot generic
+
   cd $HOME/.desktop
   mux start --detached --name=desktop console
 
