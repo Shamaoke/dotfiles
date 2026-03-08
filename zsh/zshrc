@@ -68,7 +68,7 @@ bindkey -M vicmd v edit-command-line
 source $HOME/.opam/opam-init/init.zsh
 
 # Load the Ruby Version Manager (RVM) into a shell session
-source $HOME/.rvm/scripts/rvm
+# source $HOME/.rvm/scripts/rvm
 
 # Load the Python virtual environment into a shell session
 source $HOME/.virtualenvs/default/bin/activate
