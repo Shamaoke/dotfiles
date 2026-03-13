@@ -23,6 +23,12 @@ function main TRAPEXIT {
   cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/source
   mux start --detached --name=tem18lng-rack generic
 
+  cd $HOME/.workspace/kickstart
+  mux start --detached --name=kickstart generic
+
+  cd $HOME/.workspace/ks
+  mux start --detached --name=ks generic
+
   cd $HOME/.workspace/playground/rust/learn_rust
   mux start --detached --name=pg-rust generic
 
