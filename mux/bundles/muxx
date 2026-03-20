@@ -44,6 +44,9 @@ function main TRAPEXIT {
   cd $HOME/.workspace/playground/python
   mux start --detached --name=pg-python generic
 
+  cd $HOME/.workspace/playground/shell
+  mux start --detached --name=pg-shell generic
+
   cd $HOME/.workspace/playground/kickstart
   mux start --detached --name=pg-kickstart generic
 
