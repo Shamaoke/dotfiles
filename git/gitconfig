@@ -1,9 +1,14 @@
+
+# [user]
+#   name = Shamaoke
+#   email = shamaoke@yandex.ru
 [core]
   editor = vim
   quotepath = false
 [alias]
+  mylog   = log --graph --date=format:'%d.%m.%Y %H:%M' --pretty=format:'%C(yellow)%<(7)%h %C(brightgreen)%<(12,mtrunc)%an %C(brightblue)%<(16)%ad%C(auto)%d %C(brightwhite)%s'
   godalog = log --graph --oneline --decorate=short --all
-  godlog = log --graph --oneline --decorate=short
+  godlog  = log --graph --oneline --decorate=short
   merge = merge --ff-only
   st = !git branch && git status -su
   sd = !git branch && git diff --stat
@@ -13,9 +18,6 @@
   ui = always
 [push]
   default = matching
-# [user]
-#   name = Shamaoke
-#   email = shamaoke@yandex.ru
 [commit]
   verbose = true
 [init]
@@ -24,3 +26,4 @@
   tool = vimdiff
 [difftool]
   prompt = false
+
