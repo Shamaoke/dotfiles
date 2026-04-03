@@ -47,6 +47,9 @@ function main TRAPEXIT {
   cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/source
   mux start --detached --name=tem18lng-rack generic
 
+  cd $HOME/.workspace/playground
+  mux start --detached --name=playground generic
+
   cd $HOME/.workspace/playground/rust/learn_rust
   mux start --detached --name=pg-rust generic
 
@@ -58,6 +61,12 @@ function main TRAPEXIT {
 
   cd $HOME/.workspace/playground/qt/learn_qt
   mux start --detached --name=pg-qt generic
+
+  cd $HOME/.workspace/ks
+  mux start --detached --name=ks generic
+
+  cd $HOME/.workspace/kickstart-templates
+  mux start --detached --name=kickstart-templates generic
 
   # cd $HOME/.workspace/playground/python
   # mux start --detached --name=pg-python generic
