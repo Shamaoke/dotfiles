@@ -55,7 +55,7 @@ if [[ $? -ne 0 ]] {
   # Window “console”
 
   # Window “git”
-  tmux send-keys     -t $session_name:6.1 "hwatch 'git godlog'" C-m
+  tmux send-keys     -t $session_name:6.1 "hwatch 'git mylog'" C-m
   tmux split-window  -t $session_name:6
   tmux send-keys     -t $session_name:6.2 "hwatch 'git st'" C-m
   tmux split-window  -t $session_name:6

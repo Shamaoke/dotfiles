@@ -43,12 +43,12 @@ if [[ $? -ne 0 ]] {
   tmux send-keys -t $session_name:4 'vim -p goals.md activities.md time.md books.md soft.md' C-m
 
   # Window “git-accounts”
-  tmux send-keys   -t $session_name:5.1 "hwatch 'git godlog'" C-m
+  tmux send-keys   -t $session_name:5.1 "hwatch 'git mylog'" C-m
   tmux send-keys   -t $session_name:5.2 "hwatch 'git st'" C-m
   tmux select-pane -t $session_name:5.3
 
   # Window “git-pm”
-  tmux send-keys   -t $session_name:6.1 "hwatch 'git godlog'" C-m
+  tmux send-keys   -t $session_name:6.1 "hwatch 'git mylog'" C-m
   tmux send-keys   -t $session_name:6.2 "hwatch 'git st'" C-m
   tmux select-pane -t $session_name:6.3
 
