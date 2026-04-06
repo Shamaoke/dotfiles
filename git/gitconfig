@@ -4,6 +4,7 @@
   quotepath = false
 
 [alias]
+  mylog   = log --graph --date=format:'%d.%m.%Y %H:%M' --pretty=format:'%C(yellow)%<(7)%h %C(brightgreen)%<(12,mtrunc)%an %C(brightblue)%<(16)%ad%C(auto)%d %C(brightwhite)%s'
   godalog = log --graph --oneline --decorate=short --all
   godlog = log --graph --oneline --decorate=short
   merge = merge --ff-only
