@@ -29,6 +29,7 @@
   autocmd BufRead,BufNewFile *.vifm        set filetype=vim
   autocmd BufRead,BufNewFile *.xrs         set filetype=xdefaults
   autocmd BufRead,BufNewFile .clang-format set filetype=yaml
+  autocmd BufRead,BufNewFile gitconfig     set filetype=gitconfig
 
 " enable paredit mode for the WebAssembly .wat files
   autocmd FileType wat call PareditInitBuffer()
