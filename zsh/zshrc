@@ -32,6 +32,7 @@ alias w3m='w3m -B -title'
 alias ip='ip --color'
 alias ls="ls --color=auto --human-readable --group-directories-first --time-style='+%Y-%m-%d %H:%M:%S'"
 alias copilot='copilot --banner'
+alias diff='diff --color=always'
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
