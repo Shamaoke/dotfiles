@@ -53,9 +53,9 @@ let lspServers = [
   \},
   \
   \#{
-  \  name: 'qmlls',
+  \  name: 'qml-language-server',
   \  filetype: ['qml'],
-  \  path: '/usr/lib/qt6/bin/qmlls',
+  \  path: '/usr/bin/qml-language-server',
   \  args: [ ]
   \}
 \]
