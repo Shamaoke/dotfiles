@@ -29,29 +29,29 @@ function main TRAPEXIT {
   cd $HOME/.workspace/ks
   mux start --detached --name=ks generic
 
-  cd $HOME/.workspace/playground/rust/learn_rust
-  mux start --detached --name=pg-rust generic
+  cd $HOME/.workspace/kickstart-templates
+  mux start --detached --name=kickstart-templates generic
 
-  cd $HOME/.workspace/playground/cpp/learn_cpp
-  mux start --detached --name=pg-cpp generic
+  cd $HOME/.workspace/playground
+  mux start --detached --name=playground generic
 
   cd $HOME/.workspace/playground/c/learn_c
   mux start --detached --name=pg-c generic
 
-  cd $HOME/.workspace/playground/qt/learn_qt
-  mux start --detached --name=pg-qt generic
+  cd $HOME/.workspace/playground/cpp/learn_cpp
+  mux start --detached --name=pg-cpp generic
 
-  cd $HOME/.workspace/playground/python
-  mux start --detached --name=pg-python generic
+  cd $HOME/.workspace/playground/rust/learn_rust
+  mux start --detached --name=pg-rust generic
 
   cd $HOME/.workspace/playground/shell
   mux start --detached --name=pg-shell generic
 
+  cd $HOME/.workspace/playground/qt/learn_qt
+  mux start --detached --name=pg-qt generic
+
   cd $HOME/.workspace/playground/kickstart
   mux start --detached --name=pg-kickstart generic
-
-  cd $HOME/.workspace/kickstart-templates
-  mux start --detached --name=kickstart-templates generic
 
   cd $HOME/.desktop
   mux start --detached --name=desktop console
