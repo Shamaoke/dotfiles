@@ -26,7 +26,7 @@ let lspServers = [
   \
   \#{
   \  name: 'clangd',
-  \  filetype: ['cpp'],
+  \  filetype: ['c', 'cpp'],
   \  path: '/usr/bin/clangd',
   \  args: [ ]
   \},
