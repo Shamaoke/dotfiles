@@ -1,8 +1,6 @@
 
 # amixer --card 0 set Speaker 100% unmute &
 
-# ibus-daemon -drx &
-
 pointer_hide &
 
 # touchpad_toggle &
@@ -23,7 +21,9 @@ dunst &
 
 ## Grand access for Docker containers to connect to the X server
 # xhost +
-xhost +local:docker
+xhost +local:docker &
+
+ibus-daemon -drx &
 
 # picom --daemon &
 
