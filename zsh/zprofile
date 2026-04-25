@@ -8,6 +8,7 @@ path=(
   ~/.opam/5.0.0/bin
   ~/.local/share/vcpkg
   ~/.rbenv/versions/4.0.1/bin
+  ~/.npm-packages/bin
   $path
 )
 
