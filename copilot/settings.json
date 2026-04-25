@@ -1,0 +1,7 @@
+{
+  "autoUpdate": false,
+  "banner": "always",
+  "includeCoAuthoredBy": false,
+  "model": "claude-haiku-4.5",
+  "mouse": false
+}
