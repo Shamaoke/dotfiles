@@ -3,7 +3,7 @@
 "" ::: Set command for previewing files :::
 ""
 
-fileviewer */ tree -C %c
+fileviewer */ eza --color=always --tree %c
 fileviewer <text/*,application/*> /usr/bin/bat --color=always --terminal-width=100 --wrap=never --paging=never %c
 fileviewer * /usr/bin/hexyl %c
 
