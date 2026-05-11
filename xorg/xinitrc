@@ -1,11 +1,67 @@
-userresources=$HOME/.Xresources
 
-if [ -f "$userresources" ]; then
+userresources=$HOME/.Xresources
+xinitdir="/etc/X11/xinit"
+
+if [ -f "$userresources" ]
+then
   xrdb -merge "$userresources"
 fi
 
-# xrandr --mode 1600x900 &
-
-# compton -r 5 -o .5 -l -7 -t -7 &
+##
+## Run all scripts in the `/etc/X11/xinit/xinitrc.d/` directory. This will set
+## the necessary environment variables. These variables will be used by
+## the `xdg-desktop-portal-gtk` service. This service, among other things, allows
+## some applications (e. g. Firefox, Chromium, Electron applications) to display
+## file picker dialogs in corresponding situations. Without setting the necessary
+## environment variables the `xdg-desktop-portal-gtk` service will not start and
+## some applications will not be able to display the file picker and other dialogs.
+##
+## Details
+## -------
+##
+## ````
+## ● xdg-desktop-portal is a system service on Linux that provides a
+##   standardized way for sandboxed or confined applications (like Flatpak apps) to
+##   access desktop features safely.
+##
+##   Its main purposes:
+##
+##    1. Sandboxing bridge — It acts as an intermediary between restricted apps
+##       and the full desktop, allowing them to request access to sensitive resources
+##       without having full system permissions.
+##
+##    2. Common access patterns — Provides a unified API for apps to:
+##       - Open/save files (through native file dialogs)
+##       - Print documents
+##       - Access the clipboard
+##       - Take screenshots
+##       - Access camera/microphone
+##       - Access location data
+##       - And other desktop features
+##
+##    3. User control — The portal prompts users to approve requests, giving
+##       them control over what permissions apps get (similar to mobile app permission
+##       systems).
+##
+##    4. Cross-desktop compatibility — Works across different desktop
+##       environments (GNOME, KDE, etc.) by using backend implementations specific to
+##       each environment.
+##
+## Example: A Flatpak app can't directly access your file system, but it can use
+## xdg-desktop-portal to ask permission to open a file, and the user sees a native
+## file dialog.
+##
+## Claude Haiku 4.5
+## ````
+##
+if [ -d "$xinitdir"/xinitrc.d ]
+then
+  for f in "$xinitdir/xinitrc.d"/?*.sh
+  do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
 
 exec openbox-session
+
