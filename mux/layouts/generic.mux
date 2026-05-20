@@ -38,12 +38,14 @@ if [[ $? -ne 0 ]] {
 
   ## Window “docker”
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.2 "hwatch 'docker image ls --format table'" C-m
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.3 "hwatch 'docker container ls --all'" C-m
   tmux split-window -t $session_name:3
-  tmux send-keys -t $session_name:3.4 "hwatch 'docker network ls'" C-m
-  tmux select-layout -t $session_name:3 'cf5d,158x33,0,0{80x33,0,0,1,77x33,81,0[77x10,81,0,5,77x10,81,11,6,77x11,81,22,7]}'
+  tmux select-layout -t $session_name:3 -E # Spread out current panes evenly so that there's enough space for a new pane (otherwise, an error about lack of space for a new pane appears).
+  tmux split-window -t $session_name:3
+  tmux send-keys -t $session_name:3.3 "hwatch 'docker image ls --format table'" C-m
+  tmux send-keys -t $session_name:3.4 "hwatch 'docker container ls --all'" C-m
+  tmux send-keys -t $session_name:3.5 "hwatch 'docker network ls'" C-m
+  tmux select-layout -t $session_name:3 'f2cb,230x52,0,0{116x52,0,0[116x26,0,0,65,116x25,0,27,338],113x52,117,0[113x17,117,0,75,113x16,117,18,76,113x17,117,35,77]}'
   tmux select-pane -t $session_name:3.1
 
   ## Window “build|install”
