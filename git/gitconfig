@@ -8,8 +8,8 @@
   godalog = log --graph --oneline --decorate=short --all
   godlog = log --graph --oneline --decorate=short
   merge = merge --ff-only
-  st = !git branch && git status -su
-  sd = !git branch && git diff --stat
+  st = !git branch && echo && git status --short --untracked-files=all && echo && git diff --stat
+  stl = stash list --pretty=format:'%C(red)%gd %C(blue)%cr %C(brightwhite)%s'
 
 [merge]
   tool = vimdiff
