@@ -56,13 +56,15 @@ if [[ $? -ne 0 ]] {
 
   # Window “console”
 
-  # Window “git”
+  ## Window “git”
+  tmux split-window  -t $session_name:6
+  tmux split-window  -t $session_name:6
+  tmux split-window  -t $session_name:6
   tmux send-keys     -t $session_name:6.1 "hwatch 'git mylog'" C-m
-  tmux split-window  -t $session_name:6
-  tmux send-keys     -t $session_name:6.2 "hwatch 'git st'" C-m
-  tmux split-window  -t $session_name:6
-  tmux select-layout -t $session_name:6 28ed,157x45,0,0\{78x45,0,0,52,78x45,79,0\[78x22,79,0,57,78x22,79,23,58\]\}
-  tmux select-pane   -t $session_name:6.3
+  tmux send-keys     -t $session_name:6.2 "hwatch 'git stl'" C-m
+  tmux send-keys     -t $session_name:6.3 "hwatch 'git st'" C-m
+  tmux select-layout -t $session_name:6 '78e9,230x52,0,0{115x52,0,0[115x26,0,0,70,115x25,0,27,354],114x52,116,0[114x26,116,0,82,114x25,116,27,83]}'
+  tmux select-pane   -t $session_name:6.4
 
   # Window “man”
   tmux split-window  -t $session_name:7
