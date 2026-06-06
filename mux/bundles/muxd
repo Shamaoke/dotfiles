@@ -1,0 +1,28 @@
+#! /usr/bin/env zsh
+
+function main TRAPEXIT {
+
+  cd $DATA_DIR/pm
+  mux start --detached --name=organizer organizer
+
+  cd $DATA_DIR/artifacts
+  mux start --detached --name=notes notes
+
+  cd $HOME/.dotfiles
+  mux start --detached --name=dotfiles generic
+
+  cd $HOME/.lingo
+  mux start --detached --name=lingo lingo
+
+  cd $HOME/.workspace/summaries
+  mux start --detached --name=summaries generic
+
+  cd $HOME/.workspace/playground
+  mux start --detached --name=playground generic
+
+  cd $HOME/.desktop
+  mux start --detached --name=desktop console
+
+  tmux attach-session -t desktop
+}
+
