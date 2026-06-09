@@ -59,6 +59,10 @@ user_pref('sidebar.verticalTabs', true);
 /// Enable loading of the `userChrome.css` and `userContent.css` files
 user_pref('toolkit.legacyUserProfileCustomizations.stylesheets', true);
 
+/// A list of comma-separated numbers, representing the zoom levels as multipliers that the user can use on content
+/// [Toolkit.zoomManager.zoomValues - MozillaZine Knowledge Base](https://kb.mozillazine.org/Toolkit.zoomManager.zoomValues)
+user_pref('toolkit.zoomManager.zoomValues', '.1,.2,.3,.4,.5,.6,.7,.8,.9,1.0,1.1,1.2,1.25,1.3,1.31,1.32,1.33,1.34,1.35,1.4,1.45,1.5');
+
 ///
 /// ::: Browser features :::
 ///
