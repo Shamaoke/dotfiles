@@ -14,6 +14,9 @@ function main TRAPEXIT {
   cd $HOME/.lingo
   mux start --detached --name=lingo lingo
 
+  cd $DATA_DIR/ai
+  mux start --detached --name=ai generic
+
   cd $HOME/.workspace/summaries
   mux start --detached --name=summaries generic
 
