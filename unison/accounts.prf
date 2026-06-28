@@ -1,0 +1,6 @@
+
+root = /home/user/.data-upper/accounts
+root = /mnt/flash/accounts
+
+ignore = Name .git
+
