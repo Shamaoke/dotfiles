@@ -73,7 +73,7 @@ bindkey -M vicmd v edit-command-line
 # source $HOME/.rvm/scripts/rvm
 
 # Load the Python virtual environment into a shell session
-# source $HOME/.virtualenvs/default/bin/activate
+source $HOME/.virtualenvs/default/bin/activate
 
 # Load the Rust environment into a shell session
 source $HOME/.cargo/env
