@@ -33,6 +33,10 @@ alias ip='ip --color'
 alias ls="ls --color=auto --human-readable --group-directories-first --time-style='+%Y-%m-%d %H:%M:%S'"
 alias diff='diff --color=always --unified'
 alias eza='eza --color=always'
+alias dobackup=". ~/.restic_env && restic --repo 's3:https://s3.twcstorage.ru/f5a9c075-0a82-421c-a816-2b8b538d39c3' backup /mnt/data/accounts"
+alias getbackup=". ~/.restic_env && restic --repo 's3:https://s3.twcstorage.ru/f5a9c075-0a82-421c-a816-2b8b538d39c3' restore latest --target /"
+alias dobackls=". ~/.restic_env && restic --repo 's3:https://s3.twcstorage.ru/f5a9c075-0a82-421c-a816-2b8b538d39c3' ls latest"
+alias getbacksnaps=". ~/.restic_env && restic --repo 's3:https://s3.twcstorage.ru/f5a9c075-0a82-421c-a816-2b8b538d39c3' snapshots"
 
 # Set the named directories
 hash -d pm=$HOME/.data-upper/pm
