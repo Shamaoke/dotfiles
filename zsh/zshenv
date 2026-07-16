@@ -1,3 +1,10 @@
+
+##
+## ::: Restic :::
+##
+
+. $HOME/.restic_env
+
 #
 # ZSH prompt
 #
