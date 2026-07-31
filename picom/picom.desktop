@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=picom
+GenericName=X Compositor
+Icon=picom
+Exec=picom
+Hidden=false
