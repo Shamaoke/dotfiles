@@ -1,0 +1,6 @@
+
+root = /mnt/s3/accounts
+root = /mnt/data/accounts
+
+ignore = Name .git
+
