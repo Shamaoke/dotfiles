@@ -3,15 +3,22 @@ GEM
   specs:
     haml (4.0.7)
       tilt
-    rake (13.0.6)
-    tilt (2.1.0)
+    rake (13.4.2)
+    tilt (2.8.0)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
   haml (= 4.0.7)
   rake
 
+CHECKSUMS
+  bundler (4.0.12) sha256=7f8b757d28dfb636e7b24fba2344ac6dd13b5b24f4b46d62573d483f211825ac
+  haml (4.0.7) sha256=3754d0f7c21cf261a30b207a94524211293b921492fab58c89d1ede7e7933f57
+  rake (13.4.2) sha256=cb825b2bd5f1f8e91ca37bddb4b9aaf345551b4731da62949be002fa89283701
+  tilt (2.8.0) sha256=ba472eb2716fe1e04112d6d219a9dae938ec09a6a1e2ad3ecc7922e79bde3721
+
 BUNDLED WITH
-   2.4.10
+  4.0.12
