@@ -1,0 +1,6 @@
+
+root=/mnt/s3/artifacts
+root=/mnt/data/artifacts
+
+ignore = Name .git
+

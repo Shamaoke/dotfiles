@@ -1,6 +1,6 @@
 
-root=/home/user/.data-upper/ai
-root=/mnt/flash/ai
+root=/mnt/s3/ai
+root=/mnt/data/ai
 
 ignore = Name .git
 

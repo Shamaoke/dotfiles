@@ -1,4 +1,4 @@
 
-root=/home/user/.data-upper/library/development
-root=/mnt/flash/books/development
+root=/mnt/s3/library
+root=/mnt/data/library
 

@@ -1,6 +1,6 @@
 
-root = /home/user/.data-upper/accounts
-root = /mnt/flash/accounts
+root = /mnt/s3/accounts
+root = /mnt/data/accounts
 
 ignore = Name .git
 
