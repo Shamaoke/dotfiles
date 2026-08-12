@@ -9,7 +9,7 @@ set confirm off
 set print pretty on
 
 ## Make the list command display COUNT source lines. Setting count to `unlimited` or `0` means there’s no limit.
-set listsize 20
+set listsize 40
 
 ## Removes the limit on the number of array elements that GDB will display in the console
 set print elements 0
