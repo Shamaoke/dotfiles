@@ -1,0 +1,12 @@
+
+## `~/.config/cgdb/cgdbrc`
+
+## Set vertical panel split
+set winsplitorientation=vertical
+
+## Set equal panel sizes
+set winsplit=even
+
+## Highlight all matches of a previous search pattern
+set hlsearch
+
