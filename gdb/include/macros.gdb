@@ -27,7 +27,9 @@ define print_hex_array
 end
 
 document print_hex_array
-  Prints an array with decimal indices and hexadecimal values.
+
+  Print an array with decimal indices and hexadecimal values.
+
   Usage: print_hex_array POINTER COUNT
 end
 
