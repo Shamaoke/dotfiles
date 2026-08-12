@@ -31,5 +31,22 @@ document print_hex_array
   Print an array with decimal indices and hexadecimal values.
 
   Usage: print_hex_array POINTER COUNT
+
+end
+
+define print_qbyte_array
+
+  set $ary = $arg0.constData()
+  set $count = $arg0.size()
+
+  print_hex_array $ary $count
+end
+
+document print_qbyte_array
+
+  Print a QByteArray with decimal indices and hexadecimal values.
+
+  Usage: print_qbyte_array QByteArray
+
 end
 
