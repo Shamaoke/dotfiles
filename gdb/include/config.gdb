@@ -1,6 +1,6 @@
 
-## Download debugging resources with debuginfod
-set debuginfod enabled on
+## Download debugging resources with debuginfod. Ask before download.
+set debuginfod enabled ask
 
 ## Disable confirmation requests
 set confirm off
