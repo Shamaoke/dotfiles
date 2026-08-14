@@ -1,4 +1,5 @@
 
+source ~/.config/gdb/include/env.gdb
 source ~/.config/gdb/include/config.gdb
 source ~/.config/gdb/include/macros.gdb
 
