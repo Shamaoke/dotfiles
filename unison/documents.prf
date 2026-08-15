@@ -1,0 +1,6 @@
+
+root = /mnt/data/s3/documents
+root = /mnt/data/local/documents
+
+ignore = Name .git
+
