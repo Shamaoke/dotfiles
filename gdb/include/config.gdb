@@ -23,3 +23,12 @@ set print array on
 ## Display the explicit index number of each element when printing an array
 set print array-indexes on
 
+# Limit autocompletion items to avoid UI hangs
+set max-completions 200
+
+# Enable symbol index caching on disk to speed up TAB completion
+set index-cache enabled on
+
+# Set a directory for index caching
+set index-cache directory ~/.cache/gdb
+
