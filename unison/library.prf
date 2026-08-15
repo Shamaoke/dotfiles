@@ -1,4 +1,4 @@
 
-root=/mnt/s3/library
-root=/mnt/data/library
+root=/mnt/data/s3/library
+root=/mnt/data/local/library
 

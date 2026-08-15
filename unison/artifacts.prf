@@ -1,6 +1,6 @@
 
-root=/mnt/s3/artifacts
-root=/mnt/data/artifacts
+root=/mnt/data/s3/artifacts
+root=/mnt/data/local/artifacts
 
 ignore = Name .git
 
