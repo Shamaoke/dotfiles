@@ -1,6 +1,6 @@
 
-root = /mnt/s3/accounts
-root = /mnt/data/accounts
+root = /mnt/data/s3/accounts
+root = /mnt/data/local/accounts
 
 ignore = Name .git
 

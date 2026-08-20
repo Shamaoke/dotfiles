@@ -1,6 +1,6 @@
 
-root=/mnt/s3/ai
-root=/mnt/data/ai
+root = /mnt/data/s3/ai
+root = /mnt/data/local/ai
 
 ignore = Name .git
 

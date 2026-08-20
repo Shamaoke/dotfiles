@@ -1,6 +1,6 @@
 
-root = /mnt/s3/pm
-root = /mnt/data/pm
+root = /mnt/data/s3/pm
+root = /mnt/data/local/pm
 
 ignore = Name .git
 
