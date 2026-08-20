@@ -1,0 +1,13 @@
+
+root = /mnt/data/s3
+root = /mnt/data/local
+
+path = accounts
+path = ai
+path = artifacts
+path = documents
+path = library
+path = pm
+
+ignore = Name .git
+
