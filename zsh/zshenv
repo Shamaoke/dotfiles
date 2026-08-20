@@ -128,7 +128,7 @@ export RAILS_CONFIG=$HOME/.config/rails
 
 export PLAYGROUND=$HOME/.workspace/playground
 
-export DATA_DIR=/mnt/data
+export DATA_DIR=/mnt/data/local
 
 ##
 ## ::: VCPKG :::
