@@ -1,4 +1,26 @@
 
+python
+
+def _print_doc(a: gdb.Value):
+  s = a.string() if hasattr(a, 'string') else str(a)
+  print(f"{s}")
+
+import __main__
+
+__main__._print_doc = _print_doc
+
+end
+
+alias examine = x
+
+document examine
+
+  Short alias for `x`
+
+  Usage: examine
+
+end
+
 define print_hex_array
 
   ## Verify if both required arguments (POINTER and COUNT) are provided
@@ -148,6 +170,11 @@ define print_qstring
   if $argc == 1
     | print /s static_cast<char16_t*>($arg0.d->data()) \
     | sed 's/.*\(u"\(.*\)"\)/\2/'
+    ## or
+    ## | x /h (const char16_t*) sample4.d->data()
+    ## | sed 's/.*u"\(.*\)"/\1/'
+    ## or simply
+    ## print $arg0.toStdString()
   else
     help print_qstring
   end
@@ -205,6 +232,32 @@ document pqsa
   Short alias for `print_qstring_all`
 
   Usage: pqsa QSTRING
+
+end
+
+define print_doc
+  ## To print `QString` use `qstr.toStdString().c_str()`
+  ## To print `std::string` use `str.c_str()`
+  python _print_doc(gdb.parse_and_eval("$arg0"))
+end
+
+document print_doc
+
+  Print documentation for the specified program entity
+
+  Usage: print_doc ENTITY
+
+  Alias: doc
+
+end
+
+alias doc = print_doc
+
+document doc
+
+  Short alias for `print_doc`
+
+  Usage: doc ENTITY
 
 end
 
