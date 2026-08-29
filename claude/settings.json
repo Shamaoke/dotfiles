@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "haiku",
+  "language": "Russian",
+  "promptSuggestionEnabled": false,
+  "tui": "fullscreen",
+  "theme": "dark",
+  "editorMode": "vim"
+}
