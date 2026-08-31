@@ -6,6 +6,8 @@
   "language": "Russian",
   "promptSuggestionEnabled": false,
   "tui": "fullscreen",
-  "theme": "dark",
-  "editorMode": "vim"
+  "theme": "dark-ansi",
+  "editorMode": "normal",
+  "verbose": true,
+  "showThinkingSummaries": true
 }
