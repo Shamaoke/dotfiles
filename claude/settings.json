@@ -9,5 +9,6 @@
   "theme": "dark-ansi",
   "editorMode": "normal",
   "verbose": true,
-  "showThinkingSummaries": true
+  "showThinkingSummaries": true,
+  "outputStyle": "Explanatory"
 }
