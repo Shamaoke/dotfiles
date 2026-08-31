@@ -94,6 +94,14 @@ index = 254
 color = "#ccdae5"
 index = 255
 
+[colors.primary]
+background = "#101a23"
+foreground = "#ffffff"
+
+[colors.cursor]
+cursor = "#ffffff"
+text = "#101a23"
+
 [colors.bright]
 black = "#4d5e7f"
 blue = "#90b1ea"
@@ -103,10 +111,6 @@ magenta = "#f48aec"
 red = "#f9807b"
 white = "#ffffff"
 yellow = "#f4b74d"
-
-[colors.cursor]
-cursor = "#ffffff"
-text = "#101a23"
 
 [colors.normal]
 black = "#101a23"
@@ -118,6 +122,3 @@ red = "#f45752"
 white = "#8091b2"
 yellow = "#f67d22"
 
-[colors.primary]
-background = "#101a23"
-foreground = "#ffffff"
