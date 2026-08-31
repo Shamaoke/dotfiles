@@ -8,6 +8,7 @@ path = artifacts
 path = documents
 path = library
 path = pm
+path = task
 
 ignore = Name .git
 
