@@ -2,13 +2,18 @@
   "permissions": {
     "defaultMode": "default"
   },
-  "model": "haiku",
+  "model": "sonnet",
+  "outputStyle": "Explanatory",
   "language": "Russian",
   "promptSuggestionEnabled": false,
   "tui": "fullscreen",
+  "showThinkingSummaries": true,
   "theme": "dark-ansi",
   "editorMode": "normal",
   "verbose": true,
-  "showThinkingSummaries": true,
-  "outputStyle": "Explanatory"
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  }
 }
