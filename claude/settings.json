@@ -1,0 +1,26 @@
+
+{
+  "env": {
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_UPDATES": "1"
+  },
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "sonnet",
+  "outputStyle": "Explanatory",
+  "language": "Russian",
+  "promptSuggestionEnabled": false,
+  "tui": "fullscreen",
+  "showThinkingSummaries": true,
+  "theme": "dark-ansi",
+  "editorMode": "normal",
+  "verbose": true,
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "autoUpdatesChannel": "stable"
+}
+
