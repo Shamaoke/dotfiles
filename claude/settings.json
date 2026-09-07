@@ -1,8 +1,12 @@
-
 {
   "env": {
     "DISABLE_AUTOUPDATER": "1",
     "DISABLE_UPDATES": "1"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
   },
   "permissions": {
     "defaultMode": "default"
@@ -11,16 +15,10 @@
   "outputStyle": "Explanatory",
   "language": "Russian",
   "promptSuggestionEnabled": false,
+  "autoUpdatesChannel": "stable",
   "tui": "fullscreen",
   "showThinkingSummaries": true,
-  "theme": "dark-ansi",
+  "theme": "dark",
   "editorMode": "normal",
-  "verbose": true,
-  "attribution": {
-    "commit": "",
-    "pr": "",
-    "sessionUrl": false
-  },
-  "autoUpdatesChannel": "stable"
+  "verbose": true
 }
-
