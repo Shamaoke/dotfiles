@@ -1,0 +1,6 @@
+
+root=/mnt/data/s3/claude
+root=/mnt/data/local/claude
+
+ignore = Name .git
+
