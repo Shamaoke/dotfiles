@@ -1,0 +1,6 @@
+
+root=/mnt/data/s3/task
+root=/mnt/data/local/task
+
+ignore = Name .git
+
