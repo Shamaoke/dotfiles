@@ -5,9 +5,11 @@ root = /mnt/data/local
 path = accounts
 path = ai
 path = artifacts
+path = claude
 path = documents
 path = library
 path = pm
+path = task
 
 ignore = Name .git
 
