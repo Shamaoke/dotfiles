@@ -1,65 +1,65 @@
 [[colors.indexed_colors]]
-color = "#172430"
+color = "#101a23"
 index = 232
 
 [[colors.indexed_colors]]
-color = "#202f3d"
+color = "#1a2632"
 index = 233
 
 [[colors.indexed_colors]]
-color = "#293a4a"
+color = "#243242"
 index = 234
 
 [[colors.indexed_colors]]
-color = "#334657"
+color = "#2e3e51"
 index = 235
 
 [[colors.indexed_colors]]
-color = "#3d5264"
+color = "#394a60"
 index = 236
 
 [[colors.indexed_colors]]
-color = "#495e71"
+color = "#435470"
 index = 237
 
 [[colors.indexed_colors]]
-color = "#556b7e"
+color = "#4d5e7f"
 index = 238
 
 [[colors.indexed_colors]]
-color = "#63788b"
+color = "#57688e"
 index = 239
 
 [[colors.indexed_colors]]
-color = "#718597"
+color = "#4d5e7f"
 index = 240
 
 [[colors.indexed_colors]]
-color = "#8093a4"
+color = "#61729e"
 index = 241
 
 [[colors.indexed_colors]]
-color = "#8fa1b1"
+color = "#7081a8"
 index = 242
 
 [[colors.indexed_colors]]
-color = "#a0b0be"
+color = "#8091b2"
 index = 243
 
 [[colors.indexed_colors]]
-color = "#b1bfcb"
+color = "#8fa0bd"
 index = 244
 
 [[colors.indexed_colors]]
-color = "#c3ced8"
+color = "#9eafc7"
 index = 245
 
 [[colors.indexed_colors]]
-color = "#d6dee5"
+color = "#adbed1"
 index = 246
 
 [[colors.indexed_colors]]
-color = "#eaeef2"
+color = "#bdcddb"
 index = 247
 
 [[colors.indexed_colors]]
@@ -94,6 +94,14 @@ index = 254
 color = "#ccdae5"
 index = 255
 
+[colors.primary]
+background = "#101a23"
+foreground = "#ffffff"
+
+[colors.cursor]
+cursor = "#ffffff"
+text = "#101a23"
+
 [colors.bright]
 black = "#4d5e7f"
 blue = "#90b1ea"
@@ -103,10 +111,6 @@ magenta = "#f48aec"
 red = "#f9807b"
 white = "#ffffff"
 yellow = "#f4b74d"
-
-[colors.cursor]
-cursor = "#ffffff"
-text = "#101a23"
 
 [colors.normal]
 black = "#101a23"
@@ -118,6 +122,3 @@ red = "#f45752"
 white = "#8091b2"
 yellow = "#f67d22"
 
-[colors.primary]
-background = "#101a23"
-foreground = "#ffffff"
