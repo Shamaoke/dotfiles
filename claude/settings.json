@@ -11,7 +11,7 @@
   "permissions": {
     "defaultMode": "default"
   },
-  "model": "sonnet",
+  "model": "opus",
   "outputStyle": "Explanatory",
   "language": "Russian",
   "promptSuggestionEnabled": false,
