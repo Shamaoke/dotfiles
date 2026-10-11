@@ -17,6 +17,12 @@ function main TRAPEXIT {
   cd $HOME/.dotfiles
   mux start --detached --name=dotfiles generic
 
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-display/source
+  mux start --detached --name=tem18lng-display generic
+
+  cd $HOME/.workspace/tem18lng-soft/tem18lng-rack/source
+  mux start --detached --name=tem18lng-rack generic
+
   cd $HOME/.workspace/summaries
   mux start --detached --name=summaries generic
 
