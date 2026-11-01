@@ -1,3 +1,14 @@
+##
+## ::: Claude Code :::
+##
+
+. $HOME/.claude_env
+
+##
+## ::: DeepSeek :::
+##
+
+. $HOME/.deepseek_env
 
 ##
 ## ::: Restic :::
