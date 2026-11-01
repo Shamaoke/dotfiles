@@ -72,8 +72,8 @@ keep_alive_while_idle = true
 accept_invalid_certs = false
 
 [session]
-provider_id = "openai_compatible"
-model_id = "deepseek/deepseek-v4-flash"
+provider_id = "deepseek"
+model_id = "deepseek-v4-pro"
 
 [updates]
 frequency = "daily"
