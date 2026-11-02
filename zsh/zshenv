@@ -1,5 +1,17 @@
 
 ##
+## ::: DeepSeek :::
+##
+
+. $HOME/.deepseek_env
+
+##
+## ::: Claude :::
+##
+
+. $HOME/.claude_env
+
+##
 ## ::: Restic :::
 ##
 
@@ -147,5 +159,12 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 ## ::: hwatch :::
 ##
 export HWATCH='--wrap --no-help-banner --no-title --color --interval 1 --keymap k=watch_pane_up --keymap k=up --keymap j=watch_pane_down --keymap j=down --keymap h=scroll_left --keymap l=scroll_right --keymap t=watch_pane_move_top --keymap e=watch_pane_move_end --keymap n=next_keyword --keymap p=prev_keyword --keymap u=toggle_view_pane_ui --keymap ?=help'
+
+##
+## ::: Puppeteer :::
+##
+
+## Установить путь к браузеру, используемому Puppeteer при запуске Mermaid CLI
+export PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
 # vim: set textwidth=80 colorcolumn=80:
