@@ -87,8 +87,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_RGUI",
       "KC_LALT",
+      "KC_LGUI",
       "MO(4)",
       "KC_RCTL"
     ],
@@ -159,8 +159,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
       "KC_LALT",
+      "KC_NO",
       "MO(4)",
       "KC_RCTL"
     ],
@@ -231,8 +231,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_APP",
       "KC_LALT",
+      "KC_APP",
       "MO(4)",
       "KC_RCTL"
     ],
@@ -303,8 +303,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
       "KC_LALT",
+      "KC_NO",
       "MO(4)",
       "KC_RCTL"
     ],
@@ -375,8 +375,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
       "KC_LALT",
+      "KC_NO",
       "MO(4)",
       "KC_RCTL"
     ]
