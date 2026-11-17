@@ -11,9 +11,6 @@ function main TRAPEXIT {
   cd $HOME/.dotfiles
   mux start --detached --name=dotfiles generic
 
-  cd $HOME/.lingo
-  mux start --detached --name=lingo lingo
-
   cd $DATA_DIR/ai
   mux start --detached --name=ai generic
 
