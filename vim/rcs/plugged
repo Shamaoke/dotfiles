@@ -86,6 +86,11 @@ call plug#begin('~/.vim/plugged')
 " https://github.com/slint-ui/vim-slint
   Plug 'slint-ui/vim-slint'
 
+" ::: jlcrochet/vim-rbs :::
+" Syntax highlighting and indentation for Ruby Signature (RBS) files
+" https://github.com/jlcrochet/vim-rbs
+  Plug 'jlcrochet/vim-rbs'
+
 call plug#end()
 
 " vim: filetype=vim textwidth=80 colorcolumn=80:
